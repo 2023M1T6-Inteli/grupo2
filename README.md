@@ -4,9 +4,7 @@
 <a href= "https://www.inteli.edu.br/"><img src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
-# Nome do Projeto
-
-## Nome do Grupo
+# PlayVC
 
 ## Integrantes: <a href="https://www.linkedin.com/in/victor-marques-profile/">Victor Gabriel Marques</a>, <a href="https://www.linkedin.com/in/gabriel-farias-alves/">Gabriel Farias Alves</a>, <a href="https://www.linkedin.com/in/rafael-coutinho2004/">Rafael Cauã Coutinho Montenegro</a>, <a href="https://www.linkedin.com/in/henrique-ottoboni-magalh%C3%A3es-77b950264/">Henrique Ottoboni Magalhães</a>, <a href="https://www.linkedin.com/in/davi-arantes-308949264/">Davi Arantes</a>, <a href="https://www.linkedin.com/in/caio-kakunaka-235754264">Caio Enoki Kakunaka</a>, <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-santos-872753264/">João Paulo Santos</a>
 
