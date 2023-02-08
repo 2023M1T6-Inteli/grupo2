@@ -1,53 +1,83 @@
 extends KinematicBody2D
 
-export var walk_speed = 4
+export var walkSpeed = 4
 const TILE_SIZE = 16
 
-onready var animation_tree = $AnimationTree  # animações criadas
-onready var animation_state = animation_tree.get("parameters/playback")  # pode ser idle ou walk
+onready var animationTree = $AnimationTree  # animações criadas
+onready var animationState = animationTree.get("parameters/playback")  # pode ser idle ou walk
 
-var initial_position = Vector2(0, 0)  # Posição inicial (ou atual) do sprite
-var input_direction = Vector2(0, 0)  # Movimento do sprite de acordo com as teclas pressionadas
-var is_moving = false  # Serve como checagem da movimentação do sprite
-var percent_moved_to_next_tile = 0.0  # Verifica a porcentagem de movimentação do sprite
+
+var initialPosition = Vector2(0, 0)  # Posição inicial (ou atual) do sprite
+var inputDirection = Vector2(0, 0)  # Movimento do sprite de acordo com as teclas pressionadas
+var isMoving = false  # Serve como checagem da movimentação do sprite
+var percentMovedToNextTile = 0.0  # Verifica a porcentagem de movimentação do sprite
 
 
 # Chamada no início do jogo
 func _ready():
-	initial_position = position
-	
+	initialPosition = position
 
+
+# Função responsável por verificar, constantemente, o status do personagem
+# Além de mudar a animação (walk quando caminha e idle quando para)
 func _physics_process(delta):
-	if is_moving == false:
+	if isMoving == false:
 		process_player_input()
-	elif input_direction != Vector2.ZERO:
-		animation_state.travel("Walk")
+	elif inputDirection != Vector2.ZERO:
+		animationState.travel("Walk")  # muda animação para walk (quando estiver andando)
 		move(delta)
 	else:
-		animation_state.travel("Idle")
-		is_moving = false
-		
+		animationState.travel("Idle")  # muda animação para idle (quando estiver parado)
+		isMoving = false 
 
+
+# Função que processa o input do usuário (direita, esquerda, cima e baixo)
 func process_player_input():
-	if input_direction.y == 0:
-		input_direction.x = int(Input.is_action_pressed("ui_right")) - int(Input.is_action_pressed("ui_left"))
-	if input_direction.x == 0:
-		input_direction.y = int(Input.is_action_pressed("ui_down")) - int(Input.is_action_pressed("ui_up"))
+	# Processa e salva inputs na horizontal e na vertical
+	if inputDirection.y == 0:
+		inputDirection.x = (
+				int(Input.is_action_pressed("ui_right")) - int(Input.is_action_pressed("ui_left"))
+		)
+	if inputDirection.x == 0:
+		inputDirection.y = (
+				int(Input.is_action_pressed("ui_down")) - int(Input.is_action_pressed("ui_up"))
+		)
 
-	if input_direction != Vector2.ZERO:
-		animation_tree.set("parameters/Idle/blend_position", input_direction)
-		animation_tree.set("parameters/Walk/blend_position", input_direction)
-		initial_position = position
-		is_moving = true
+	# Se o vetor de direção não for 0, significa que houve input do usuário, logo, is_moving = true
+	if inputDirection != Vector2.ZERO:
+		animationTree.set("parameters/Idle/blend_position", inputDirection)
+		animationTree.set("parameters/Walk/blend_position", inputDirection)
+		initialPosition = position
+		isMoving = true
 	else:
-		animation_state.travel("Idle")
+		animationState.travel("Idle")
 
 
+# Responsável pela movimentação do personagem
 func move(delta):
-	percent_moved_to_next_tile += walk_speed * delta
-	if percent_moved_to_next_tile >= 1.0:
-		position = initial_position + (TILE_SIZE * input_direction)
-		percent_moved_to_next_tile = 0.0
-		is_moving = false
+	percentMovedToNextTile += walkSpeed * delta
+	
+	# Incrementa a posição do personagem, de acordo com a posição inicial, com o input do usuário e
+	# com o tamanho do tile (16px)
+	if percentMovedToNextTile >= 1.0:
+		position = initialPosition + (TILE_SIZE * inputDirection)
+		percentMovedToNextTile = 0.0
+		isMoving = false
 	else:
-		position = initial_position + (TILE_SIZE * input_direction * percent_moved_to_next_tile)
+		position = initialPosition + (TILE_SIZE * inputDirection * percentMovedToNextTile)
+	
+	# Se o personagem chegar no final da tela (lado direito) horizontal, não permite que ele passe
+	if position.x >= 650:
+		position.x = 650
+	
+	# Se o personagem chegar no final da tela (lado esquerdo) horizontal, não permite que ele passe
+	if position.x <= -530:
+		position.x = -530
+	
+	# Se o personagem chegar no final da tela (cima) vertical, não permite que ele passe
+	if position.y <= -390:
+		position.y = -390
+	
+	# Se o personagem chegar no final da tela (baixo) vertical, não permite que ele passe
+	if position.y >= 345:
+		position.y = 345

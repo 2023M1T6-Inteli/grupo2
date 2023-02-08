@@ -9,9 +9,9 @@ __meta__ = {
 }
 
 [node name="TextureRect" type="TextureRect" parent="."]
-margin_left = -432.0
+margin_left = -544.0
 margin_top = -400.0
-margin_right = 784.0
+margin_right = 672.0
 margin_bottom = 368.0
 texture = ExtResource( 2 )
 expand = true
@@ -23,8 +23,8 @@ remote_path = NodePath("../../Camera2D")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
-limit_left = -425
+limit_left = -535
 limit_top = -400
-limit_right = 775
+limit_right = 665
 limit_bottom = 360
 editor_draw_limits = true
