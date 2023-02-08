@@ -17,6 +17,10 @@ run/main_scene="res://Scenes/MenuInicial.tscn"
 
 default_bus_layout=""
 
+[autoload]
+
+MenuInicial="*res://Scenes/MenuInicial.tscn"
+
 [display]
 
 window/size/width=640
