@@ -4,11 +4,9 @@
 <a href= "https://www.inteli.edu.br/"><img src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
-# Nome do Projeto
+# PlayVC
 
-## Nome do Grupo
-
-## Integrantes: <a href="https://www.linkedin.com/in/victorbarq/">Goku Sayajin</a>, <a href="https://www.linkedin.com/in/victorbarq/">Saitama One</a>, <a href="https://www.linkedin.com/in/victorbarq/">Ikki de Fenix</a>, <a href="https://www.linkedin.com/in/victorbarq/">Yusuke Urameshi</a>, <a href="https://www.linkedin.com/in/victorbarq/">Roronoa Zoro</a>
+## Integrantes: <a href="https://www.linkedin.com/in/victor-marques-profile/">Victor Gabriel Marques</a>, <a href="https://www.linkedin.com/in/gabriel-farias-alves/">Gabriel Farias Alves</a>, <a href="https://www.linkedin.com/in/rafael-coutinho2004/">Rafael Cauã Coutinho Montenegro</a>, <a href="https://www.linkedin.com/in/henrique-ottoboni-magalh%C3%A3es-77b950264/">Henrique Ottoboni Magalhães</a>, <a href="https://www.linkedin.com/in/davi-arantes-308949264/">Davi Arantes</a>, <a href="https://www.linkedin.com/in/caio-kakunaka-235754264">Caio Enoki Kakunaka</a>, <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-santos-872753264/">João Paulo Santos</a>
 
 ## Descrição
 
@@ -111,9 +109,3 @@ A cada atualização os detalhes devem ser lançados aqui.
 ## 🎓 Referências
 
 Aqui estão as referências usadas no projeto.
-
-1. <https://github.com/iuricode/readme-template>
-2. <https://github.com/gabrieldejesus/readme-model>
-3. <https://creativecommons.org/share-your-work/>
-4. <https://freesound.org/>
-5. Músicas por: <a href="https://freesound.org/people/DaveJf/sounds/616544/"> DaveJf </a> e <a href="https://freesound.org/people/DRFX/sounds/338986/"> DRFX </a> ambas com Licença CC 0.
