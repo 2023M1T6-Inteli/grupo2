@@ -4,7 +4,9 @@
 <a href= "https://www.inteli.edu.br/"><img src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
-# PlayVC
+# Celso Drive 🚛
+
+## PlayVC
 
 ## Integrantes
 
@@ -31,22 +33,14 @@
 
 ## Descrição
 
-📜 Descrição curta sobre o que seu projeto faz.
-<br><br>
-Meu projeto é um exemplo de como utilizar o github.
-<br><br>
+> 📜 O projeto foi desenvolvido no módulo 1 da turma de 2023.1 do Inteli - Instituto de Tecnologia e Liderança, pela equipe PlayVC. Sem pormenorizar, o projeto visa demonstrar, sobretudo aos motoristas que transportam os produtos do parceiro (Grupo Unipar), a importância das boas atitudes antes e durante o transporte, de modo a enfatizar que a direção começa em casa.
+
 <p align="center">
-<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
-  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
+  <img src="https://user-images.githubusercontent.com/86068797/217979057-5ab4ce27-7bd6-44ff-b5f4-5926101ae9fd.gif" alt="Celso Drive" border="0">
+  Celso Drive by PlayVC
 </p>
 
-
-💡 De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
-<br><br>
-Meu projeto ajuda estudantes inteli a configurarem seus githubs.
-<br><br>
 May the force be with you!
-<br><br>
 
 ## 🛠 Estrutura de pastas
 
