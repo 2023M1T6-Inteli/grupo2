@@ -99,8 +99,8 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 
 A cada atualização os detalhes são lançados aqui.
 
-* 0.0.1 - 01/01/2022
-    * Trabalho em andamento
+* 0.1.0 - 10/02/2023
+    * Lançamento da primeira versão (artefato) -> mecânica básica de movimentação, câmera e sons
 
 ## 📋 Licença/License
 
