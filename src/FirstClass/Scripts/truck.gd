@@ -23,3 +23,7 @@ func _physics_process(delta):
 		
 	velocity = move_and_slide(velocity * moveSpeed)
 	
+
+
+func _on_area_truck_body_entered(body):
+	print("bateu")

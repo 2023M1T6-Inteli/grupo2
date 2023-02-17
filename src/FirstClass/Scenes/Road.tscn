@@ -1,9 +1,9 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Assets/Tilesets/Modern_Exteriors_Complete_Tileset.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Road.gd" type="Script" id=2]
 [ext_resource path="res://Assets/Player/truck.png" type="Texture" id=3]
-[ext_resource path="res://Scenes/truck.gd" type="Script" id=4]
+[ext_resource path="res://Scripts/truck.gd" type="Script" id=4]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Modern_Exteriors_Complete_Tileset.png 0"
@@ -126,10 +126,13 @@
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 69, 364 )
 
-[sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 8, 32 )
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 12.956, 28.495 )
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 16, 18.5447 )
+
+[node name="Road" type="Node2D"]
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_horizontal_guides_": [  ]
@@ -156,30 +159,73 @@ cell_quadrant_size = 8
 format = 1
 tile_data = PoolIntArray( -2293760, 536870912, 0, -2293752, 536870912, 0, -2293696, 536870912, 0, -2293688, 536870912, 0, -1966076, 536870912, 0, -1966069, 536870912, 0, -1966012, 536870912, 0, -1966005, 536870912, 0, -1703936, 536870912, 0, -1703872, 536870912, 0, -1638392, 536870912, 0, -1638328, 536870912, 0, -1376252, 536870912, 0, -1376245, 536870912, 0, -1376188, 536870912, 0, -1376181, 536870912, 0, -1114112, 536870912, 0, -1114048, 536870912, 0, -983032, 536870912, 0, -982968, 536870912, 0, -786428, 536870912, 0, -786364, 536870912, 0, 720896, 536870912, 0, 720904, 536870912, 0, 720960, 536870912, 0, 720968, 536870912, 0, 1048580, 536870912, 0, 1048587, 536870912, 0, 1048644, 536870912, 0, 1048651, 536870912, 0, 1310720, 536870912, 0, 1310784, 536870912, 0, 1376264, 536870912, 0, 1376328, 536870912, 0, 1638404, 536870912, 0, 1638411, 536870912, 0, 1638468, 536870912, 0, 1638475, 536870912, 0, 1900544, 536870912, 0, 1900608, 536870912, 0, 2031624, 536870912, 0, 2031688, 536870912, 0, 2228228, 536870912, 0, 2228292, 536870912, 0 )
 
-[node name="margin-left" type="StaticBody2D" parent="."]
+[node name="margin_left" type="StaticBody2D" parent="."]
 scale = Vector2( 1.01979, 1 )
 
-[node name="collision-left" type="CollisionShape2D" parent="margin-left"]
+[node name="collision_left" type="CollisionShape2D" parent="margin_left"]
 position = Vector2( 59, -4 )
 shape = SubResource( 4 )
 
-[node name="margin-right" type="StaticBody2D" parent="."]
+[node name="margin_right" type="StaticBody2D" parent="."]
 position = Vector2( 504, 0 )
 scale = Vector2( 1.08043, 1 )
 
-[node name="collision-right" type="CollisionShape2D" parent="margin-right"]
+[node name="collision_right" type="CollisionShape2D" parent="margin_right"]
 position = Vector2( 59, -4 )
 shape = SubResource( 4 )
 
 [node name="truck" type="KinematicBody2D" parent="."]
+position = Vector2( 0, 8 )
 script = ExtResource( 4 )
-
-[node name="collision_truck" type="CollisionShape2D" parent="truck"]
-position = Vector2( 304, 312 )
-shape = SubResource( 5 )
 
 [node name="sprite_truck" type="Sprite" parent="truck"]
 position = Vector2( 304, 312 )
 rotation = 3.14159
 scale = Vector2( 0.124444, 0.0955797 )
 texture = ExtResource( 3 )
+
+[node name="area_truck" type="Area2D" parent="truck"]
+position = Vector2( 0, 8 )
+scale = Vector2( 1.23495, 1.123 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="truck/area_truck"]
+position = Vector2( 246.163, 270.703 )
+shape = SubResource( 6 )
+
+[node name="collision_truck" type="CollisionShape2D" parent="truck"]
+position = Vector2( 304, 310 )
+scale = Vector2( 1, 1.61771 )
+shape = SubResource( 7 )
+
+[node name="spawn_carros" type="Node2D" parent="."]
+position = Vector2( 0, -88 )
+
+[node name="posicoes_spawn" type="Node2D" parent="spawn_carros"]
+position = Vector2( 312, 16 )
+scale = Vector2( 1.52499, 9.18033 )
+
+[node name="pista1" type="Position2D" parent="spawn_carros/posicoes_spawn"]
+position = Vector2( -94.4266, 0 )
+
+[node name="faixa1" type="Position2D" parent="spawn_carros/posicoes_spawn"]
+position = Vector2( -62.9511, 0 )
+
+[node name="pista2" type="Position2D" parent="spawn_carros/posicoes_spawn"]
+position = Vector2( -31.4755, 0 )
+
+[node name="faixa2" type="Position2D" parent="spawn_carros/posicoes_spawn"]
+
+[node name="pista3" type="Position2D" parent="spawn_carros/posicoes_spawn"]
+position = Vector2( 31.4756, 0 )
+
+[node name="faixa3" type="Position2D" parent="spawn_carros/posicoes_spawn"]
+position = Vector2( 62.9511, 0 )
+
+[node name="pista4" type="Position2D" parent="spawn_carros/posicoes_spawn"]
+position = Vector2( 94.4267, 0 )
+
+[node name="Timer" type="Timer" parent="spawn_carros"]
+autostart = true
+
+[connection signal="body_entered" from="truck/area_truck" to="truck" method="_on_area_truck_body_entered"]
+[connection signal="timeout" from="spawn_carros/Timer" to="." method="_on_Timer_timeout"]

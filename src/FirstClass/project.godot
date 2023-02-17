@@ -20,6 +20,7 @@ default_bus_layout=""
 [autoload]
 
 MenuInicial="*res://Scenes/MenuInicial.tscn"
+Global="*res://Scripts/Global.gd"
 
 [display]
 
