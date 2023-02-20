@@ -78,7 +78,9 @@ text = "CRÉDITOS"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
-volume_db = -17.333
+volume_db = -30.0
 autoplay = true
+mix_target = 1
 
-[connection signal="pressed" from="JogarButton" to="." method="_on_Button_pressed"]
+[connection signal="pressed" from="JogarButton" to="." method="_on_JogarButton_pressed"]
+[connection signal="pressed" from="ConfigButton" to="." method="_on_ConfigButton_pressed"]

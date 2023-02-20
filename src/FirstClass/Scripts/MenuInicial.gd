@@ -5,6 +5,6 @@ func _ready():
 	pass
 
 
-func _on_Button_pressed():
-	# Vai para a cena da visão exterior da casa
+# Direciona para a visão exterior da casa
+func _on_JogarButton_pressed():
 	get_tree().change_scene("res://Scenes/CasaExterior.tscn")
