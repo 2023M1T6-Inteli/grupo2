@@ -1525,6 +1525,20 @@ points = PoolVector2Array( 0, 16, 0, 0, 16, 16, 0, 16 )
 11/shape_one_way_margin = 0.0
 11/shapes = [  ]
 11/z_index = 0
+12/name = "12_Kitchen_16x16.png 12"
+12/texture = ExtResource( 3 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 128, 112, 32, 16 )
+12/tile_mode = 0
+12/occluder_offset = Vector2( 0, 0 )
+12/navigation_offset = Vector2( 0, 0 )
+12/shape_offset = Vector2( 0, 0 )
+12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+12/shape_one_way = false
+12/shape_one_way_margin = 0.0
+12/shapes = [  ]
+12/z_index = 0
 
 [sub_resource type="ConvexPolygonShape2D" id=48]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 16, 0, 16 )
@@ -2292,7 +2306,7 @@ tile_set = SubResource( 43 )
 cell_size = Vector2( 16, 16 )
 collision_layer = 4
 format = 1
-tile_data = PoolIntArray( 983041, 536870913, 0, 983042, 1, 0, 983046, 11, 0, 1048589, 6, 0, 1310724, 4, 0, 1310725, 3, 0, 1310728, 5, 0, 1376260, 4, 0, 1376264, 5, 0 )
+tile_data = PoolIntArray( 983041, 536870913, 0, 983042, 1, 0, 983046, 11, 0, 1048586, 12, 0, 1048589, 6, 0, 1310724, 4, 0, 1310725, 3, 0, 1310728, 5, 0, 1376260, 4, 0, 1376264, 5, 0 )
 
 [node name="ChildrenRoom" type="TileMap" parent="."]
 tile_set = SubResource( 49 )
