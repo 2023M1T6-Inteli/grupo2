@@ -28,8 +28,12 @@ func _physics_process(delta):
 		velocity = Vector2.ZERO
 	
 	# Restringe a movimentação do personagem de acordo com o tamanho da tela
-	position.x = clamp(position.x, 0, screenSize.x - 16)
+	position.x = clamp(position.x, -110, screenSize.x - 16)
 	position.y = clamp(position.y, 0, screenSize.y - 16)
 	
 	# Movimenta o personagem de acordo com o vetor velocity vezes a rapidez do movimento
 	velocity = move_and_slide(velocity * walkSpeed)
+
+
+func _on_Exit_body_entered(body):
+	get_tree().change_scene("res://Scenes/CasaExterior.tscn")
