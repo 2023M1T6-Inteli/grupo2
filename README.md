@@ -99,6 +99,9 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 
 A cada atualização os detalhes são lançados aqui.
 
+* 0.2.1 - 24/02/2023
+    * Criação de dois novos mapas (visão externa e interna da casa), criação da primeira tela do menu de opções e adição dos botões de crédito e de opções no menu inicial.
+    * Correção do GDD.
 * 0.1.0 - 10/02/2023
     * Lançamento da primeira versão (artefato) -> mecânica básica de movimentação, câmera e sons
 
