@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/3_Bathroom_Shadowless.png-689715e68e2961ea85d00efe84d9bedb.stex"
+path="res://.import/exterior.png-07033a812d3b7c45a6b5f0344188dcb2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tilesets/3_Bathroom_Shadowless.png"
-dest_files=[ "res://.import/3_Bathroom_Shadowless.png-689715e68e2961ea85d00efe84d9bedb.stex" ]
+source_file="res://Assets/Tilesets/exterior.png"
+dest_files=[ "res://.import/exterior.png-07033a812d3b7c45a6b5f0344188dcb2.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/12_Kitchen_16x16.png-300bd5d2c57de40a1c9e3bb6a7640b26.stex"
+path="res://.import/banheiro.png-8366c4b4d10715ec7cbbb3fb5c6f25ba.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tilesets/12_Kitchen_16x16.png"
-dest_files=[ "res://.import/12_Kitchen_16x16.png-300bd5d2c57de40a1c9e3bb6a7640b26.stex" ]
+source_file="res://Assets/Tilesets/banheiro.png"
+dest_files=[ "res://.import/banheiro.png-8366c4b4d10715ec7cbbb3fb5c6f25ba.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Room_Builder_16x16.png-bae83080d13dc72df1907f8b2ab41337.stex"
+path="res://.import/estrutura_interior.png-fb1aebbb202d39f800c9dfa5f1204f39.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tilesets/Room_Builder_16x16.png"
-dest_files=[ "res://.import/Room_Builder_16x16.png-bae83080d13dc72df1907f8b2ab41337.stex" ]
+source_file="res://Assets/Tilesets/estrutura_interior.png"
+dest_files=[ "res://.import/estrutura_interior.png-fb1aebbb202d39f800c9dfa5f1204f39.stex" ]
 
 [params]
 

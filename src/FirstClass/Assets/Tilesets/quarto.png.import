@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/2_LivingRoom_Shadowless.png-ec4871849fbc1b9dc9f0ec80414d0920.stex"
+path="res://.import/quarto.png-f683e9b54b8fcf5deb8f90fc6ca1ac19.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tilesets/2_LivingRoom_Shadowless.png"
-dest_files=[ "res://.import/2_LivingRoom_Shadowless.png-ec4871849fbc1b9dc9f0ec80414d0920.stex" ]
+source_file="res://Assets/Tilesets/quarto.png"
+dest_files=[ "res://.import/quarto.png-f683e9b54b8fcf5deb8f90fc6ca1ac19.stex" ]
 
 [params]
 

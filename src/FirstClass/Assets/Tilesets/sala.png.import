@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/4_Bedroom_16x16.png-ec143a368d29d94752b604a42347c07f.stex"
+path="res://.import/sala.png-21f6c8e0698cea38263080f3b38cc2e6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tilesets/4_Bedroom_16x16.png"
-dest_files=[ "res://.import/4_Bedroom_16x16.png-ec143a368d29d94752b604a42347c07f.stex" ]
+source_file="res://Assets/Tilesets/sala.png"
+dest_files=[ "res://.import/sala.png-21f6c8e0698cea38263080f3b38cc2e6.stex" ]
 
 [params]
 
