@@ -17,6 +17,10 @@ run/main_scene="res://Scenes/MenuInicial.tscn"
 
 default_bus_layout=""
 
+[autoload]
+
+Global="*res://Scripts/Global.gd"
+
 [display]
 
 window/size/width=640
