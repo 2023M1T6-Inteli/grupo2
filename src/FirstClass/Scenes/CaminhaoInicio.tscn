@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assets/Items/caminhao.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/CaminhaoInicio.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Items/caminhao2.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Items/caminhao3.png" type="Texture" id=4]
+
+[sub_resource type="SpriteFrames" id=11]
+animations = [ {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "azul_com_laranja",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "verde_com_azul",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "verde_escuro",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 16, 32 )
+
+[node name="CaminhaoInicio" type="RigidBody2D"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+position = Vector2( 15, -33 )
+scale = Vector2( 0.516667, 0.558333 )
+frames = SubResource( 11 )
+animation = "azul_com_laranja"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 16, -32 )
+shape = SubResource( 10 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
