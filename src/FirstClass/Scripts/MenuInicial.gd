@@ -1,6 +1,6 @@
 extends Node2D
 
-const caminhao = preload("res://Scenes/CaminhaoInicio.tscn")
+const truck = preload("res://Scenes/CaminhaoInicio.tscn")
 
 
 func _ready():
@@ -8,7 +8,7 @@ func _ready():
 
 
 # Direciona para a visão exterior da casa
-func _on_JogarButton_pressed():
+func _on_PlayButton_pressed():
 	get_tree().change_scene("res://Scenes/Tutorial.tscn")
 
 
@@ -17,15 +17,15 @@ func _on_ConfigButton_pressed():
 	get_tree().change_scene("res://Scenes/MenuOpcoes.tscn")
 
 
-func _on_TimerCaminhao_timeout():
-	$PathEsquerda/PathFollow2D.offset = randi()
-	$PathDireita/PathFollow2D.offset = randi()
-	var novoCaminhaoEsquerda = caminhao.instance()
-	var novoCaminhaoDireita = caminhao.instance()
-	add_child(novoCaminhaoEsquerda)
-	add_child(novoCaminhaoDireita)
-	novoCaminhaoEsquerda.position = $PathEsquerda/PathFollow2D.position
-	novoCaminhaoDireita.position = $PathDireita/PathFollow2D.position
-	novoCaminhaoEsquerda.linear_velocity = Vector2(0, rand_range(novoCaminhaoEsquerda.minSpeed, novoCaminhaoEsquerda.maxSpeed))
-	novoCaminhaoDireita.linear_velocity = Vector2(0, rand_range(novoCaminhaoDireita.minSpeed, novoCaminhaoDireita.maxSpeed))
+func _on_TruckTimer_timeout():
+	$PathLeft/PathFollow2D.offset = randi()
+	$PathRight/PathFollow2D.offset = randi()
+	var newTruckLeft = truck.instance()
+	var newTruckRight = truck.instance()
+	add_child(newTruckLeft)
+	add_child(newTruckRight)
+	newTruckLeft.position = $PathLeft/PathFollow2D.position
+	newTruckRight.position = $PathRight/PathFollow2D.position
+	newTruckLeft.linear_velocity = Vector2(0, rand_range(newTruckLeft.minSpeed, newTruckLeft.maxSpeed))
+	newTruckRight.linear_velocity = Vector2(0, rand_range(newTruckRight.minSpeed, newTruckRight.maxSpeed))
 	
