@@ -3,7 +3,7 @@ extends Node2D
 var velocity = Vector2.ZERO  # Vetor responsável pela movimentação do caminhão
 var inputDirection = Vector2(0, 0)  # Vetor atualizado de acordo com as teclas pressionadas
 var backgroundSpeed = Global.gameBaseSpeed * 0.9 # Velocidade com que o background se move (90% da velocidade dos carros)
-const enemy = preload("res://Scenes/CarrosInimigos.tscn")
+const enemy = preload("res://Scenes/EnemyCar.tscn")
 var spawnPositions
 
 
