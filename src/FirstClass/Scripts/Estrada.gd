@@ -8,7 +8,7 @@ var spawnPositions
 
 
 func _ready():
-	spawnPositions = $spawn_carros/posicoes_spawn.get_children()
+	spawnPositions = $spawn_carros/spawn_positions.get_children()
 
 
 func _process(delta):
