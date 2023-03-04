@@ -974,7 +974,7 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 8 ) ],
 "loop": true,
-"name": "pressionada",
+"name": "pressed",
 "speed": 5.0
 } ]
 
@@ -987,7 +987,7 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 9 ) ],
 "loop": true,
-"name": "pressionada",
+"name": "pressed",
 "speed": 5.0
 } ]
 
@@ -1000,7 +1000,7 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 10 ) ],
 "loop": true,
-"name": "pressionada",
+"name": "pressed",
 "speed": 5.0
 } ]
 
@@ -1013,7 +1013,7 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 11 ) ],
 "loop": true,
-"name": "pressionada",
+"name": "pressed",
 "speed": 5.0
 } ]
 
@@ -1026,7 +1026,7 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 13 ) ],
 "loop": true,
-"name": "pressionada",
+"name": "pressed",
 "speed": 5.0
 } ]
 
@@ -1077,27 +1077,27 @@ cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( -655355, 0, 0, 13, 1, 0, 65537, 3, 0, 65539, 3, 0, 65552, 2, 0, 131084, 9, 0, 262148, 8, 0, 393217, 12, 0, 393218, 11, 0, 458764, 5, 0, 458789, 5, 0, 524300, 7, 0, 524325, 6, 0, 983049, 4, 0, 983074, 4, 0 )
 
-[node name="Cima" type="AnimatedSprite" parent="."]
+[node name="UpSprite" type="AnimatedSprite" parent="."]
 position = Vector2( -72, 312 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 27 )
 
-[node name="Baixo" type="AnimatedSprite" parent="."]
+[node name="DownSprite" type="AnimatedSprite" parent="."]
 position = Vector2( -72, 344 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 28 )
 
-[node name="Esquerda" type="AnimatedSprite" parent="."]
+[node name="LeftSprite" type="AnimatedSprite" parent="."]
 position = Vector2( -93, 328 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 29 )
 
-[node name="Direita" type="AnimatedSprite" parent="."]
+[node name="RigthSprite" type="AnimatedSprite" parent="."]
 position = Vector2( -51, 328 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 30 )
 
-[node name="TeclaE" type="AnimatedSprite" parent="."]
+[node name="InteractKeySprite" type="AnimatedSprite" parent="."]
 position = Vector2( -3, 328 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 32 )
@@ -1113,7 +1113,7 @@ shape = SubResource( 31 )
 position = Vector2( -3, 328 )
 shape = SubResource( 33 )
 
-[node name="DialogoLabel" type="Label" parent="."]
+[node name="InteractLabel" type="Label" parent="."]
 margin_left = -30.0
 margin_top = 304.0
 margin_right = 28.0

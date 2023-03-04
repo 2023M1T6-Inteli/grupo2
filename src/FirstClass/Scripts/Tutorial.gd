@@ -13,22 +13,22 @@ func _process(delta):
 # Altera animação das setas de acordo com a tecla pressionada
 func key_pressed():
 	if Input.is_action_pressed("ui_up"):
-		$Cima.play("pressionada")
+		$UpSprite.play("pressed")
 	else:
-		$Cima.play("default")
+		$UpSprite.play("default")
 	if Input.is_action_pressed("ui_down"):
-		$Baixo.play("pressionada")
+		$DownSprite	.play("pressed")
 	else:
-		$Baixo.play("default")
+		$DownSprite.play("default")
 	if Input.is_action_pressed("ui_left"):
-		$Esquerda.play("pressionada")
+		$LeftSprite.play("pressed")
 	else:
-		$Esquerda.play("default")
+		$LeftSprite.play("default")
 	if Input.is_action_pressed("ui_right"):
-		$Direita.play("pressionada")
+		$RigthSprite.play("pressed")
 	else:
-		$Direita.play("default")
+		$RigthSprite.play("default")
 	if Input.is_action_pressed("interagir"):
-		$TeclaE.play("pressionada")
+		$InteractKeySprite.play("pressed")
 	else:
-		$TeclaE.play("default")
+		$InteractKeySprite.play("default")
