@@ -5,5 +5,5 @@ func _ready():
 	pass
 
 
-func _on_CasaCelso_body_entered(body):
-	get_tree().change_scene("res://Scenes/CasaInterior.tscn")
+func _on_CelsoHouse_body_entered(body):
+	get_tree().change_scene("res://Scenes/InsideHouse.tscn")

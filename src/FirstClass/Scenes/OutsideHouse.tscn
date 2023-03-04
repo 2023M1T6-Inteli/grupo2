@@ -1,12 +1,12 @@
 [gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Assets/Tilesets/exterior.png" type="Texture" id=2]
-[ext_resource path="res://Scripts/CasaExterior.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/CasaExterior.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Tilesets/exterior.png" type="Texture" id=3]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Modern_Exteriors_Complete_Tileset.png 0"
-0/texture = ExtResource( 2 )
+0/texture = ExtResource( 3 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 80, 80, 16, 16 )
@@ -20,7 +20,7 @@
 0/shapes = [  ]
 0/z_index = 0
 1/name = "Modern_Exteriors_Complete_Tileset.png 1"
-1/texture = ExtResource( 2 )
+1/texture = ExtResource( 3 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 96, 80, 16, 16 )
@@ -34,7 +34,7 @@
 1/shapes = [  ]
 1/z_index = 0
 2/name = "Modern_Exteriors_Complete_Tileset.png 2"
-2/texture = ExtResource( 2 )
+2/texture = ExtResource( 3 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 80, 96, 16, 16 )
@@ -48,7 +48,7 @@
 2/shapes = [  ]
 2/z_index = 0
 3/name = "Modern_Exteriors_Complete_Tileset.png 3"
-3/texture = ExtResource( 2 )
+3/texture = ExtResource( 3 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 96, 96, 16, 16 )
@@ -62,7 +62,7 @@
 3/shapes = [  ]
 3/z_index = 0
 4/name = "Modern_Exteriors_Complete_Tileset.png 4"
-4/texture = ExtResource( 2 )
+4/texture = ExtResource( 3 )
 4/tex_offset = Vector2( 0, 0 )
 4/modulate = Color( 1, 1, 1, 1 )
 4/region = Rect2( 64, 80, 16, 16 )
@@ -76,7 +76,7 @@
 4/shapes = [  ]
 4/z_index = 0
 5/name = "Modern_Exteriors_Complete_Tileset.png 5"
-5/texture = ExtResource( 2 )
+5/texture = ExtResource( 3 )
 5/tex_offset = Vector2( 0, 0 )
 5/modulate = Color( 1, 1, 1, 1 )
 5/region = Rect2( 0, 128, 16, 16 )
@@ -90,7 +90,7 @@
 5/shapes = [  ]
 5/z_index = 0
 6/name = "Modern_Exteriors_Complete_Tileset.png 6"
-6/texture = ExtResource( 2 )
+6/texture = ExtResource( 3 )
 6/tex_offset = Vector2( 0, 0 )
 6/modulate = Color( 1, 1, 1, 1 )
 6/region = Rect2( 0, 112, 16, 16 )
@@ -104,7 +104,7 @@
 6/shapes = [  ]
 6/z_index = 0
 7/name = "Modern_Exteriors_Complete_Tileset.png 7"
-7/texture = ExtResource( 2 )
+7/texture = ExtResource( 3 )
 7/tex_offset = Vector2( 0, 0 )
 7/modulate = Color( 1, 1, 1, 1 )
 7/region = Rect2( 192, 16, 16, 16 )
@@ -118,7 +118,7 @@
 7/shapes = [  ]
 7/z_index = 0
 8/name = "Modern_Exteriors_Complete_Tileset.png 8"
-8/texture = ExtResource( 2 )
+8/texture = ExtResource( 3 )
 8/tex_offset = Vector2( 0, 0 )
 8/modulate = Color( 1, 1, 1, 1 )
 8/region = Rect2( 208, 16, 16, 16 )
@@ -132,7 +132,7 @@
 8/shapes = [  ]
 8/z_index = 0
 9/name = "Modern_Exteriors_Complete_Tileset.png 9"
-9/texture = ExtResource( 2 )
+9/texture = ExtResource( 3 )
 9/tex_offset = Vector2( 0, 0 )
 9/modulate = Color( 1, 1, 1, 1 )
 9/region = Rect2( 224, 16, 16, 16 )
@@ -146,7 +146,7 @@
 9/shapes = [  ]
 9/z_index = 0
 10/name = "Modern_Exteriors_Complete_Tileset.png 10"
-10/texture = ExtResource( 2 )
+10/texture = ExtResource( 3 )
 10/tex_offset = Vector2( 0, 0 )
 10/modulate = Color( 1, 1, 1, 1 )
 10/region = Rect2( 192, 32, 16, 16 )
@@ -160,7 +160,7 @@
 10/shapes = [  ]
 10/z_index = 0
 11/name = "Modern_Exteriors_Complete_Tileset.png 11"
-11/texture = ExtResource( 2 )
+11/texture = ExtResource( 3 )
 11/tex_offset = Vector2( 0, 0 )
 11/modulate = Color( 1, 1, 1, 1 )
 11/region = Rect2( 208, 32, 16, 16 )
@@ -174,7 +174,7 @@
 11/shapes = [  ]
 11/z_index = 0
 12/name = "Modern_Exteriors_Complete_Tileset.png 12"
-12/texture = ExtResource( 2 )
+12/texture = ExtResource( 3 )
 12/tex_offset = Vector2( 0, 0 )
 12/modulate = Color( 1, 1, 1, 1 )
 12/region = Rect2( 224, 32, 16, 16 )
@@ -188,7 +188,7 @@
 12/shapes = [  ]
 12/z_index = 0
 13/name = "Modern_Exteriors_Complete_Tileset.png 13"
-13/texture = ExtResource( 2 )
+13/texture = ExtResource( 3 )
 13/tex_offset = Vector2( 0, 0 )
 13/modulate = Color( 1, 1, 1, 1 )
 13/region = Rect2( 192, 48, 16, 16 )
@@ -202,7 +202,7 @@
 13/shapes = [  ]
 13/z_index = 0
 14/name = "Modern_Exteriors_Complete_Tileset.png 14"
-14/texture = ExtResource( 2 )
+14/texture = ExtResource( 3 )
 14/tex_offset = Vector2( 0, 0 )
 14/modulate = Color( 1, 1, 1, 1 )
 14/region = Rect2( 208, 48, 16, 16 )
@@ -216,7 +216,7 @@
 14/shapes = [  ]
 14/z_index = 0
 15/name = "Modern_Exteriors_Complete_Tileset.png 15"
-15/texture = ExtResource( 2 )
+15/texture = ExtResource( 3 )
 15/tex_offset = Vector2( 0, 0 )
 15/modulate = Color( 1, 1, 1, 1 )
 15/region = Rect2( 224, 48, 16, 16 )
@@ -230,7 +230,7 @@
 15/shapes = [  ]
 15/z_index = 0
 16/name = "Modern_Exteriors_Complete_Tileset.png 16"
-16/texture = ExtResource( 2 )
+16/texture = ExtResource( 3 )
 16/tex_offset = Vector2( 0, 0 )
 16/modulate = Color( 1, 1, 1, 1 )
 16/region = Rect2( 112, 144, 16, 16 )
@@ -244,7 +244,7 @@
 16/shapes = [  ]
 16/z_index = 0
 17/name = "Modern_Exteriors_Complete_Tileset.png 17"
-17/texture = ExtResource( 2 )
+17/texture = ExtResource( 3 )
 17/tex_offset = Vector2( 0, 0 )
 17/modulate = Color( 1, 1, 1, 1 )
 17/region = Rect2( 48, 128, 16, 16 )
@@ -258,7 +258,7 @@
 17/shapes = [  ]
 17/z_index = 0
 18/name = "Modern_Exteriors_Complete_Tileset.png 18"
-18/texture = ExtResource( 2 )
+18/texture = ExtResource( 3 )
 18/tex_offset = Vector2( 0, 0 )
 18/modulate = Color( 1, 1, 1, 1 )
 18/region = Rect2( 512, 224, 144, 80 )
@@ -272,7 +272,7 @@
 18/shapes = [  ]
 18/z_index = 0
 19/name = "Modern_Exteriors_Complete_Tileset.png 19"
-19/texture = ExtResource( 2 )
+19/texture = ExtResource( 3 )
 19/tex_offset = Vector2( 0, 0 )
 19/modulate = Color( 1, 1, 1, 1 )
 19/region = Rect2( 512, 224, 16, 16 )
@@ -286,7 +286,7 @@
 19/shapes = [  ]
 19/z_index = 0
 20/name = "Modern_Exteriors_Complete_Tileset.png 20"
-20/texture = ExtResource( 2 )
+20/texture = ExtResource( 3 )
 20/tex_offset = Vector2( 0, 0 )
 20/modulate = Color( 1, 1, 1, 1 )
 20/region = Rect2( 528, 224, 16, 16 )
@@ -300,7 +300,7 @@
 20/shapes = [  ]
 20/z_index = 0
 21/name = "Modern_Exteriors_Complete_Tileset.png 21"
-21/texture = ExtResource( 2 )
+21/texture = ExtResource( 3 )
 21/tex_offset = Vector2( 0, 0 )
 21/modulate = Color( 1, 1, 1, 1 )
 21/region = Rect2( 640, 224, 16, 16 )
@@ -314,7 +314,7 @@
 21/shapes = [  ]
 21/z_index = 0
 22/name = "Modern_Exteriors_Complete_Tileset.png 22"
-22/texture = ExtResource( 2 )
+22/texture = ExtResource( 3 )
 22/tex_offset = Vector2( 0, 0 )
 22/modulate = Color( 1, 1, 1, 1 )
 22/region = Rect2( 512, 240, 16, 16 )
@@ -328,7 +328,7 @@
 22/shapes = [  ]
 22/z_index = 0
 23/name = "Modern_Exteriors_Complete_Tileset.png 23"
-23/texture = ExtResource( 2 )
+23/texture = ExtResource( 3 )
 23/tex_offset = Vector2( 0, 0 )
 23/modulate = Color( 1, 1, 1, 1 )
 23/region = Rect2( 528, 240, 16, 16 )
@@ -342,7 +342,7 @@
 23/shapes = [  ]
 23/z_index = 0
 24/name = "Modern_Exteriors_Complete_Tileset.png 24"
-24/texture = ExtResource( 2 )
+24/texture = ExtResource( 3 )
 24/tex_offset = Vector2( 0, 0 )
 24/modulate = Color( 1, 1, 1, 1 )
 24/region = Rect2( 640, 240, 16, 16 )
@@ -356,7 +356,7 @@
 24/shapes = [  ]
 24/z_index = 0
 25/name = "Modern_Exteriors_Complete_Tileset.png 25"
-25/texture = ExtResource( 2 )
+25/texture = ExtResource( 3 )
 25/tex_offset = Vector2( 0, 0 )
 25/modulate = Color( 1, 1, 1, 1 )
 25/region = Rect2( 512, 256, 16, 16 )
@@ -370,7 +370,7 @@
 25/shapes = [  ]
 25/z_index = 0
 26/name = "Modern_Exteriors_Complete_Tileset.png 26"
-26/texture = ExtResource( 2 )
+26/texture = ExtResource( 3 )
 26/tex_offset = Vector2( 0, 0 )
 26/modulate = Color( 1, 1, 1, 1 )
 26/region = Rect2( 528, 256, 16, 16 )
@@ -384,7 +384,7 @@
 26/shapes = [  ]
 26/z_index = 0
 27/name = "Modern_Exteriors_Complete_Tileset.png 27"
-27/texture = ExtResource( 2 )
+27/texture = ExtResource( 3 )
 27/tex_offset = Vector2( 0, 0 )
 27/modulate = Color( 1, 1, 1, 1 )
 27/region = Rect2( 640, 256, 16, 16 )
@@ -398,7 +398,7 @@
 27/shapes = [  ]
 27/z_index = 0
 28/name = "Modern_Exteriors_Complete_Tileset.png 28"
-28/texture = ExtResource( 2 )
+28/texture = ExtResource( 3 )
 28/tex_offset = Vector2( 0, 0 )
 28/modulate = Color( 1, 1, 1, 1 )
 28/region = Rect2( 512, 272, 16, 16 )
@@ -412,7 +412,7 @@
 28/shapes = [  ]
 28/z_index = 0
 29/name = "Modern_Exteriors_Complete_Tileset.png 29"
-29/texture = ExtResource( 2 )
+29/texture = ExtResource( 3 )
 29/tex_offset = Vector2( 0, 0 )
 29/modulate = Color( 1, 1, 1, 1 )
 29/region = Rect2( 528, 272, 16, 16 )
@@ -426,7 +426,7 @@
 29/shapes = [  ]
 29/z_index = 0
 30/name = "Modern_Exteriors_Complete_Tileset.png 30"
-30/texture = ExtResource( 2 )
+30/texture = ExtResource( 3 )
 30/tex_offset = Vector2( 0, 0 )
 30/modulate = Color( 1, 1, 1, 1 )
 30/region = Rect2( 640, 272, 16, 16 )
@@ -440,7 +440,7 @@
 30/shapes = [  ]
 30/z_index = 0
 31/name = "Modern_Exteriors_Complete_Tileset.png 31"
-31/texture = ExtResource( 2 )
+31/texture = ExtResource( 3 )
 31/tex_offset = Vector2( 0, 0 )
 31/modulate = Color( 1, 1, 1, 1 )
 31/region = Rect2( 512, 288, 16, 16 )
@@ -454,7 +454,7 @@
 31/shapes = [  ]
 31/z_index = 0
 32/name = "Modern_Exteriors_Complete_Tileset.png 32"
-32/texture = ExtResource( 2 )
+32/texture = ExtResource( 3 )
 32/tex_offset = Vector2( 0, 0 )
 32/modulate = Color( 1, 1, 1, 1 )
 32/region = Rect2( 528, 288, 16, 16 )
@@ -468,7 +468,7 @@
 32/shapes = [  ]
 32/z_index = 0
 33/name = "Modern_Exteriors_Complete_Tileset.png 33"
-33/texture = ExtResource( 2 )
+33/texture = ExtResource( 3 )
 33/tex_offset = Vector2( 0, 0 )
 33/modulate = Color( 1, 1, 1, 1 )
 33/region = Rect2( 640, 288, 16, 16 )
@@ -482,7 +482,7 @@
 33/shapes = [  ]
 33/z_index = 0
 34/name = "Modern_Exteriors_Complete_Tileset.png 34"
-34/texture = ExtResource( 2 )
+34/texture = ExtResource( 3 )
 34/tex_offset = Vector2( 0, 0 )
 34/modulate = Color( 1, 1, 1, 1 )
 34/region = Rect2( 0, 112, 16, 16 )
@@ -496,7 +496,7 @@
 34/shapes = [  ]
 34/z_index = 0
 35/name = "Modern_Exteriors_Complete_Tileset.png 35"
-35/texture = ExtResource( 2 )
+35/texture = ExtResource( 3 )
 35/tex_offset = Vector2( 0, 0 )
 35/modulate = Color( 1, 1, 1, 1 )
 35/region = Rect2( 16, 112, 16, 16 )
@@ -510,7 +510,7 @@
 35/shapes = [  ]
 35/z_index = 0
 36/name = "Modern_Exteriors_Complete_Tileset.png 36"
-36/texture = ExtResource( 2 )
+36/texture = ExtResource( 3 )
 36/tex_offset = Vector2( 0, 0 )
 36/modulate = Color( 1, 1, 1, 1 )
 36/region = Rect2( 32, 112, 16, 16 )
@@ -524,7 +524,7 @@
 36/shapes = [  ]
 36/z_index = 0
 37/name = "Modern_Exteriors_Complete_Tileset.png 37"
-37/texture = ExtResource( 2 )
+37/texture = ExtResource( 3 )
 37/tex_offset = Vector2( 0, 0 )
 37/modulate = Color( 1, 1, 1, 1 )
 37/region = Rect2( 48, 112, 16, 16 )
@@ -538,7 +538,7 @@
 37/shapes = [  ]
 37/z_index = 0
 38/name = "Modern_Exteriors_Complete_Tileset.png 38"
-38/texture = ExtResource( 2 )
+38/texture = ExtResource( 3 )
 38/tex_offset = Vector2( 0, 0 )
 38/modulate = Color( 1, 1, 1, 1 )
 38/region = Rect2( 64, 112, 16, 16 )
@@ -552,7 +552,7 @@
 38/shapes = [  ]
 38/z_index = 0
 39/name = "Modern_Exteriors_Complete_Tileset.png 39"
-39/texture = ExtResource( 2 )
+39/texture = ExtResource( 3 )
 39/tex_offset = Vector2( 0, 0 )
 39/modulate = Color( 1, 1, 1, 1 )
 39/region = Rect2( 0, 128, 16, 16 )
@@ -566,7 +566,7 @@
 39/shapes = [  ]
 39/z_index = 0
 40/name = "Modern_Exteriors_Complete_Tileset.png 40"
-40/texture = ExtResource( 2 )
+40/texture = ExtResource( 3 )
 40/tex_offset = Vector2( 0, 0 )
 40/modulate = Color( 1, 1, 1, 1 )
 40/region = Rect2( 16, 128, 16, 16 )
@@ -580,7 +580,7 @@
 40/shapes = [  ]
 40/z_index = 0
 41/name = "Modern_Exteriors_Complete_Tileset.png 41"
-41/texture = ExtResource( 2 )
+41/texture = ExtResource( 3 )
 41/tex_offset = Vector2( 0, 0 )
 41/modulate = Color( 1, 1, 1, 1 )
 41/region = Rect2( 32, 128, 16, 16 )
@@ -594,7 +594,7 @@
 41/shapes = [  ]
 41/z_index = 0
 42/name = "Modern_Exteriors_Complete_Tileset.png 42"
-42/texture = ExtResource( 2 )
+42/texture = ExtResource( 3 )
 42/tex_offset = Vector2( 0, 0 )
 42/modulate = Color( 1, 1, 1, 1 )
 42/region = Rect2( 48, 112, 16, 16 )
@@ -608,7 +608,7 @@
 42/shapes = [  ]
 42/z_index = 0
 43/name = "Modern_Exteriors_Complete_Tileset.png 43"
-43/texture = ExtResource( 2 )
+43/texture = ExtResource( 3 )
 43/tex_offset = Vector2( 0, 0 )
 43/modulate = Color( 1, 1, 1, 1 )
 43/region = Rect2( 64, 128, 16, 16 )
@@ -622,7 +622,7 @@
 43/shapes = [  ]
 43/z_index = 0
 44/name = "Modern_Exteriors_Complete_Tileset.png 44"
-44/texture = ExtResource( 2 )
+44/texture = ExtResource( 3 )
 44/tex_offset = Vector2( 0, 0 )
 44/modulate = Color( 1, 1, 1, 1 )
 44/region = Rect2( 0, 144, 16, 16 )
@@ -636,7 +636,7 @@
 44/shapes = [  ]
 44/z_index = 0
 45/name = "Modern_Exteriors_Complete_Tileset.png 45"
-45/texture = ExtResource( 2 )
+45/texture = ExtResource( 3 )
 45/tex_offset = Vector2( 0, 0 )
 45/modulate = Color( 1, 1, 1, 1 )
 45/region = Rect2( 16, 144, 16, 16 )
@@ -650,7 +650,7 @@
 45/shapes = [  ]
 45/z_index = 0
 46/name = "Modern_Exteriors_Complete_Tileset.png 46"
-46/texture = ExtResource( 2 )
+46/texture = ExtResource( 3 )
 46/tex_offset = Vector2( 0, 0 )
 46/modulate = Color( 1, 1, 1, 1 )
 46/region = Rect2( 32, 144, 16, 16 )
@@ -664,7 +664,7 @@
 46/shapes = [  ]
 46/z_index = 0
 47/name = "Modern_Exteriors_Complete_Tileset.png 47"
-47/texture = ExtResource( 2 )
+47/texture = ExtResource( 3 )
 47/tex_offset = Vector2( 0, 0 )
 47/modulate = Color( 1, 1, 1, 1 )
 47/region = Rect2( 48, 144, 16, 16 )
@@ -678,7 +678,7 @@
 47/shapes = [  ]
 47/z_index = 0
 48/name = "Modern_Exteriors_Complete_Tileset.png 48"
-48/texture = ExtResource( 2 )
+48/texture = ExtResource( 3 )
 48/tex_offset = Vector2( 0, 0 )
 48/modulate = Color( 1, 1, 1, 1 )
 48/region = Rect2( 64, 144, 16, 16 )
@@ -745,7 +745,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 80, 0, 80 )
 
 [sub_resource type="TileSet" id=2]
 0/name = "Modern_Exteriors_Complete_Tileset.png 0"
-0/texture = ExtResource( 2 )
+0/texture = ExtResource( 3 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 112, 96, 16, 16 )
@@ -759,7 +759,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 80, 0, 80 )
 0/shapes = [  ]
 0/z_index = 0
 1/name = "Modern_Exteriors_Complete_Tileset.png 1"
-1/texture = ExtResource( 2 )
+1/texture = ExtResource( 3 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 128, 96, 16, 16 )
@@ -773,7 +773,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 80, 0, 80 )
 1/shapes = [  ]
 1/z_index = 0
 2/name = "Modern_Exteriors_Complete_Tileset.png 2"
-2/texture = ExtResource( 2 )
+2/texture = ExtResource( 3 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 112, 112, 16, 16 )
@@ -794,7 +794,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 80, 0, 80 )
 } ]
 2/z_index = 0
 3/name = "Modern_Exteriors_Complete_Tileset.png 3"
-3/texture = ExtResource( 2 )
+3/texture = ExtResource( 3 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 128, 112, 16, 16 )
@@ -815,7 +815,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 80, 0, 80 )
 } ]
 3/z_index = 0
 4/name = "Modern_Exteriors_Complete_Tileset.png 4"
-4/texture = ExtResource( 2 )
+4/texture = ExtResource( 3 )
 4/tex_offset = Vector2( 0, 0 )
 4/modulate = Color( 1, 1, 1, 1 )
 4/region = Rect2( 112, 128, 16, 16 )
@@ -836,7 +836,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 80, 0, 80 )
 } ]
 4/z_index = 0
 5/name = "Modern_Exteriors_Complete_Tileset.png 5"
-5/texture = ExtResource( 2 )
+5/texture = ExtResource( 3 )
 5/tex_offset = Vector2( 0, 0 )
 5/modulate = Color( 1, 1, 1, 1 )
 5/region = Rect2( 128, 128, 16, 16 )
@@ -857,7 +857,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 80, 0, 80 )
 } ]
 5/z_index = 0
 6/name = "Modern_Exteriors_Complete_Tileset.png 6"
-6/texture = ExtResource( 2 )
+6/texture = ExtResource( 3 )
 6/tex_offset = Vector2( 0, 0 )
 6/modulate = Color( 1, 1, 1, 1 )
 6/region = Rect2( 112, 144, 16, 16 )
@@ -878,7 +878,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 80, 0, 80 )
 } ]
 6/z_index = 0
 7/name = "Modern_Exteriors_Complete_Tileset.png 7"
-7/texture = ExtResource( 2 )
+7/texture = ExtResource( 3 )
 7/tex_offset = Vector2( 0, 0 )
 7/modulate = Color( 1, 1, 1, 1 )
 7/region = Rect2( 128, 144, 16, 16 )
@@ -899,7 +899,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 80, 0, 80 )
 } ]
 7/z_index = 0
 8/name = "Modern_Exteriors_Complete_Tileset.png 8"
-8/texture = ExtResource( 2 )
+8/texture = ExtResource( 3 )
 8/tex_offset = Vector2( 0, 0 )
 8/modulate = Color( 1, 1, 1, 1 )
 8/region = Rect2( 128, 336, 48, 80 )
@@ -926,7 +926,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 80, 0, 80 )
 } ]
 8/z_index = 0
 9/name = "Modern_Exteriors_Complete_Tileset.png 9"
-9/texture = ExtResource( 2 )
+9/texture = ExtResource( 3 )
 9/tex_offset = Vector2( 0, 0 )
 9/modulate = Color( 1, 1, 1, 1 )
 9/region = Rect2( 176, 336, 64, 80 )
@@ -947,7 +947,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 80, 0, 80 )
 } ]
 9/z_index = 0
 10/name = "Modern_Exteriors_Complete_Tileset.png 10"
-10/texture = ExtResource( 2 )
+10/texture = ExtResource( 3 )
 10/tex_offset = Vector2( 0, 0 )
 10/modulate = Color( 1, 1, 1, 1 )
 10/region = Rect2( 240, 336, 16, 48 )
@@ -968,7 +968,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 80, 0, 80 )
 } ]
 10/z_index = 0
 11/name = "Modern_Exteriors_Complete_Tileset.png 11"
-11/texture = ExtResource( 2 )
+11/texture = ExtResource( 3 )
 11/tex_offset = Vector2( 0, 0 )
 11/modulate = Color( 1, 1, 1, 1 )
 11/region = Rect2( 256, 224, 32, 48 )
@@ -995,7 +995,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 80, 0, 80 )
 } ]
 11/z_index = 0
 12/name = "Modern_Exteriors_Complete_Tileset.png 12"
-12/texture = ExtResource( 2 )
+12/texture = ExtResource( 3 )
 12/tex_offset = Vector2( 0, 0 )
 12/modulate = Color( 1, 1, 1, 1 )
 12/region = Rect2( 128, 272, 16, 64 )
@@ -1016,7 +1016,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 80, 0, 80 )
 } ]
 12/z_index = 0
 13/name = "Modern_Exteriors_Complete_Tileset.png 13"
-13/texture = ExtResource( 2 )
+13/texture = ExtResource( 3 )
 13/tex_offset = Vector2( 0, 0 )
 13/modulate = Color( 1, 1, 1, 1 )
 13/region = Rect2( 176, 336, 80, 48 )
@@ -1030,7 +1030,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 80, 0, 80 )
 13/shapes = [  ]
 13/z_index = 0
 14/name = "Modern_Exteriors_Complete_Tileset.png 14"
-14/texture = ExtResource( 2 )
+14/texture = ExtResource( 3 )
 14/tex_offset = Vector2( 0, 0 )
 14/modulate = Color( 1, 1, 1, 1 )
 14/region = Rect2( 192, 384, 48, 32 )
@@ -1044,7 +1044,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 80, 0, 80 )
 14/shapes = [  ]
 14/z_index = 0
 15/name = "Modern_Exteriors_Complete_Tileset.png 15"
-15/texture = ExtResource( 2 )
+15/texture = ExtResource( 3 )
 15/tex_offset = Vector2( 0, 0 )
 15/modulate = Color( 1, 1, 1, 1 )
 15/region = Rect2( 80, 208, 48, 32 )
@@ -1058,7 +1058,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 80, 0, 80 )
 15/shapes = [  ]
 15/z_index = 0
 16/name = "Modern_Exteriors_Complete_Tileset.png 16"
-16/texture = ExtResource( 2 )
+16/texture = ExtResource( 3 )
 16/tex_offset = Vector2( 0, 0 )
 16/modulate = Color( 1, 1, 1, 1 )
 16/region = Rect2( 1072, 240, 64, 32 )
@@ -1072,7 +1072,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 80, 0, 80 )
 16/shapes = [  ]
 16/z_index = 0
 17/name = "Modern_Exteriors_Complete_Tileset.png 17"
-17/texture = ExtResource( 2 )
+17/texture = ExtResource( 3 )
 17/tex_offset = Vector2( 0, 0 )
 17/modulate = Color( 1, 1, 1, 1 )
 17/region = Rect2( 928, 128, 32, 32 )
@@ -1086,7 +1086,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 80, 0, 80 )
 17/shapes = [  ]
 17/z_index = 0
 18/name = "Modern_Exteriors_Complete_Tileset.png 18"
-18/texture = ExtResource( 2 )
+18/texture = ExtResource( 3 )
 18/tex_offset = Vector2( 0, 0 )
 18/modulate = Color( 1, 1, 1, 1 )
 18/region = Rect2( 960, 128, 32, 32 )
@@ -1100,7 +1100,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 80, 0, 80 )
 18/shapes = [  ]
 18/z_index = 0
 19/name = "Modern_Exteriors_Complete_Tileset.png 19"
-19/texture = ExtResource( 2 )
+19/texture = ExtResource( 3 )
 19/tex_offset = Vector2( 0, 0 )
 19/modulate = Color( 1, 1, 1, 1 )
 19/region = Rect2( 832, 144, 96, 32 )
@@ -1114,7 +1114,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 80, 0, 80 )
 19/shapes = [  ]
 19/z_index = 0
 20/name = "Modern_Exteriors_Complete_Tileset.png 20"
-20/texture = ExtResource( 2 )
+20/texture = ExtResource( 3 )
 20/tex_offset = Vector2( 0, 0 )
 20/modulate = Color( 1, 1, 1, 1 )
 20/region = Rect2( 0, 112, 80, 48 )
@@ -1128,7 +1128,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 80, 0, 80 )
 20/shapes = [  ]
 20/z_index = 0
 21/name = "Modern_Exteriors_Complete_Tileset.png 21"
-21/texture = ExtResource( 2 )
+21/texture = ExtResource( 3 )
 21/tex_offset = Vector2( 0, 0 )
 21/modulate = Color( 1, 1, 1, 1 )
 21/region = Rect2( 512, 224, 144, 80 )
@@ -1142,7 +1142,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 80, 0, 80 )
 21/shapes = [  ]
 21/z_index = 0
 22/name = "Modern_Exteriors_Complete_Tileset.png 22"
-22/texture = ExtResource( 2 )
+22/texture = ExtResource( 3 )
 22/tex_offset = Vector2( 0, 0 )
 22/modulate = Color( 1, 1, 1, 1 )
 22/region = Rect2( 64, 1216, 32, 64 )
@@ -1163,7 +1163,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 80, 0, 80 )
 } ]
 22/z_index = 0
 23/name = "Modern_Exteriors_Complete_Tileset.png 23"
-23/texture = ExtResource( 2 )
+23/texture = ExtResource( 3 )
 23/tex_offset = Vector2( 0, 0 )
 23/modulate = Color( 1, 1, 1, 1 )
 23/region = Rect2( 64, 1344, 32, 64 )
@@ -1184,7 +1184,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 80, 0, 80 )
 } ]
 23/z_index = 0
 24/name = "Modern_Exteriors_Complete_Tileset.png 24"
-24/texture = ExtResource( 2 )
+24/texture = ExtResource( 3 )
 24/tex_offset = Vector2( 0, 0 )
 24/modulate = Color( 1, 1, 1, 1 )
 24/region = Rect2( 304, 272, 48, 32 )
@@ -1205,7 +1205,7 @@ points = PoolVector2Array( 0, 0, 64, 0, 64, 80, 0, 80 )
 } ]
 24/z_index = 0
 25/name = "Modern_Exteriors_Complete_Tileset.png 25"
-25/texture = ExtResource( 2 )
+25/texture = ExtResource( 3 )
 25/tex_offset = Vector2( 0, 0 )
 25/modulate = Color( 1, 1, 1, 1 )
 25/region = Rect2( 176, 336, 80, 48 )
@@ -1252,7 +1252,7 @@ points = PoolVector2Array( 0, 0, 96, 0, 96, 176, 0, 176 )
 
 [sub_resource type="TileSet" id=3]
 0/name = "Modern_Exteriors_Complete_Tileset.png 0"
-0/texture = ExtResource( 2 )
+0/texture = ExtResource( 3 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
 0/region = Rect2( 688, 352, 48, 192 )
@@ -1266,7 +1266,7 @@ points = PoolVector2Array( 0, 0, 96, 0, 96, 176, 0, 176 )
 0/shapes = [  ]
 0/z_index = 0
 1/name = "Modern_Exteriors_Complete_Tileset.png 1"
-1/texture = ExtResource( 2 )
+1/texture = ExtResource( 3 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 800, 352, 32, 192 )
@@ -1280,7 +1280,7 @@ points = PoolVector2Array( 0, 0, 96, 0, 96, 176, 0, 176 )
 1/shapes = [  ]
 1/z_index = 0
 2/name = "Modern_Exteriors_Complete_Tileset.png 2"
-2/texture = ExtResource( 2 )
+2/texture = ExtResource( 3 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 864, 352, 16, 192 )
@@ -1294,7 +1294,7 @@ points = PoolVector2Array( 0, 0, 96, 0, 96, 176, 0, 176 )
 2/shapes = [  ]
 2/z_index = 0
 3/name = "Modern_Exteriors_Complete_Tileset.png 3"
-3/texture = ExtResource( 2 )
+3/texture = ExtResource( 3 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 688, 464, 96, 80 )
@@ -1308,7 +1308,7 @@ points = PoolVector2Array( 0, 0, 96, 0, 96, 176, 0, 176 )
 3/shapes = [  ]
 3/z_index = 0
 4/name = "Modern_Exteriors_Complete_Tileset.png 4"
-4/texture = ExtResource( 2 )
+4/texture = ExtResource( 3 )
 4/tex_offset = Vector2( 0, 0 )
 4/modulate = Color( 1, 1, 1, 1 )
 4/region = Rect2( 800, 496, 32, 48 )
@@ -1322,7 +1322,7 @@ points = PoolVector2Array( 0, 0, 96, 0, 96, 176, 0, 176 )
 4/shapes = [  ]
 4/z_index = 0
 5/name = "Modern_Exteriors_Complete_Tileset.png 5"
-5/texture = ExtResource( 2 )
+5/texture = ExtResource( 3 )
 5/tex_offset = Vector2( 0, 0 )
 5/modulate = Color( 1, 1, 1, 1 )
 5/region = Rect2( 800, 464, 32, 80 )
@@ -1336,7 +1336,7 @@ points = PoolVector2Array( 0, 0, 96, 0, 96, 176, 0, 176 )
 5/shapes = [  ]
 5/z_index = 0
 6/name = "Modern_Exteriors_Complete_Tileset.png 6"
-6/texture = ExtResource( 2 )
+6/texture = ExtResource( 3 )
 6/tex_offset = Vector2( 0, 0 )
 6/modulate = Color( 1, 1, 1, 1 )
 6/region = Rect2( 736, 352, 48, 64 )
@@ -1350,7 +1350,7 @@ points = PoolVector2Array( 0, 0, 96, 0, 96, 176, 0, 176 )
 6/shapes = [  ]
 6/z_index = 0
 7/name = "Modern_Exteriors_Complete_Tileset.png 7"
-7/texture = ExtResource( 2 )
+7/texture = ExtResource( 3 )
 7/tex_offset = Vector2( 0, 0 )
 7/modulate = Color( 1, 1, 1, 1 )
 7/region = Rect2( 848, 352, 16, 64 )
@@ -1364,7 +1364,7 @@ points = PoolVector2Array( 0, 0, 96, 0, 96, 176, 0, 176 )
 7/shapes = [  ]
 7/z_index = 0
 8/name = "Modern_Exteriors_Complete_Tileset.png 8"
-8/texture = ExtResource( 2 )
+8/texture = ExtResource( 3 )
 8/tex_offset = Vector2( 0, 0 )
 8/modulate = Color( 1, 1, 1, 1 )
 8/region = Rect2( 800, 352, 32, 64 )
@@ -1378,7 +1378,7 @@ points = PoolVector2Array( 0, 0, 96, 0, 96, 176, 0, 176 )
 8/shapes = [  ]
 8/z_index = 0
 9/name = "Modern_Exteriors_Complete_Tileset.png 9"
-9/texture = ExtResource( 2 )
+9/texture = ExtResource( 3 )
 9/tex_offset = Vector2( 0, 0 )
 9/modulate = Color( 1, 1, 1, 1 )
 9/region = Rect2( 256, 576, 48, 48 )
@@ -1392,7 +1392,7 @@ points = PoolVector2Array( 0, 0, 96, 0, 96, 176, 0, 176 )
 9/shapes = [  ]
 9/z_index = 0
 10/name = "Modern_Exteriors_Complete_Tileset.png 10"
-10/texture = ExtResource( 2 )
+10/texture = ExtResource( 3 )
 10/tex_offset = Vector2( 0, 0 )
 10/modulate = Color( 1, 1, 1, 1 )
 10/region = Rect2( 96, 560, 32, 16 )
@@ -1406,7 +1406,7 @@ points = PoolVector2Array( 0, 0, 96, 0, 96, 176, 0, 176 )
 10/shapes = [  ]
 10/z_index = 0
 11/name = "Modern_Exteriors_Complete_Tileset.png 11"
-11/texture = ExtResource( 2 )
+11/texture = ExtResource( 3 )
 11/tex_offset = Vector2( 0, 0 )
 11/modulate = Color( 1, 1, 1, 1 )
 11/region = Rect2( 144, 688, 48, 48 )
@@ -1420,7 +1420,7 @@ points = PoolVector2Array( 0, 0, 96, 0, 96, 176, 0, 176 )
 11/shapes = [  ]
 11/z_index = 0
 12/name = "Modern_Exteriors_Complete_Tileset.png 12"
-12/texture = ExtResource( 2 )
+12/texture = ExtResource( 3 )
 12/tex_offset = Vector2( 0, 0 )
 12/modulate = Color( 1, 1, 1, 1 )
 12/region = Rect2( 128, 640, 64, 48 )
@@ -1434,7 +1434,7 @@ points = PoolVector2Array( 0, 0, 96, 0, 96, 176, 0, 176 )
 12/shapes = [  ]
 12/z_index = 0
 13/name = "Modern_Exteriors_Complete_Tileset.png 13"
-13/texture = ExtResource( 2 )
+13/texture = ExtResource( 3 )
 13/tex_offset = Vector2( 0, 0 )
 13/modulate = Color( 1, 1, 1, 1 )
 13/region = Rect2( 48, 688, 16, 48 )
@@ -1448,7 +1448,7 @@ points = PoolVector2Array( 0, 0, 96, 0, 96, 176, 0, 176 )
 13/shapes = [  ]
 13/z_index = 0
 14/name = "Modern_Exteriors_Complete_Tileset.png 14"
-14/texture = ExtResource( 2 )
+14/texture = ExtResource( 3 )
 14/tex_offset = Vector2( 0, 0 )
 14/modulate = Color( 1, 1, 1, 1 )
 14/region = Rect2( 16, 768, 16, 16 )
@@ -1462,7 +1462,7 @@ points = PoolVector2Array( 0, 0, 96, 0, 96, 176, 0, 176 )
 14/shapes = [  ]
 14/z_index = 0
 15/name = "Modern_Exteriors_Complete_Tileset.png 15"
-15/texture = ExtResource( 2 )
+15/texture = ExtResource( 3 )
 15/tex_offset = Vector2( 0, 0 )
 15/modulate = Color( 1, 1, 1, 1 )
 15/region = Rect2( 0, 736, 192, 176 )
@@ -1483,7 +1483,7 @@ points = PoolVector2Array( 0, 0, 96, 0, 96, 176, 0, 176 )
 } ]
 15/z_index = 0
 16/name = "Modern_Exteriors_Complete_Tileset.png 16"
-16/texture = ExtResource( 2 )
+16/texture = ExtResource( 3 )
 16/tex_offset = Vector2( 0, 0 )
 16/modulate = Color( 1, 1, 1, 1 )
 16/region = Rect2( 0, 944, 96, 176 )
@@ -1504,7 +1504,7 @@ points = PoolVector2Array( 0, 0, 96, 0, 96, 176, 0, 176 )
 } ]
 16/z_index = 0
 17/name = "Modern_Exteriors_Complete_Tileset.png 17"
-17/texture = ExtResource( 2 )
+17/texture = ExtResource( 3 )
 17/tex_offset = Vector2( 0, 0 )
 17/modulate = Color( 1, 1, 1, 1 )
 17/region = Rect2( 176, 240, 16, 16 )
@@ -1525,7 +1525,7 @@ points = PoolVector2Array( 0, 0, 96, 0, 96, 176, 0, 176 )
 } ]
 17/z_index = 0
 18/name = "Modern_Exteriors_Complete_Tileset.png 18"
-18/texture = ExtResource( 2 )
+18/texture = ExtResource( 3 )
 18/tex_offset = Vector2( 0, 0 )
 18/modulate = Color( 1, 1, 1, 1 )
 18/region = Rect2( 192, 240, 16, 16 )
@@ -1546,7 +1546,7 @@ points = PoolVector2Array( 0, 0, 96, 0, 96, 176, 0, 176 )
 } ]
 18/z_index = 0
 19/name = "Modern_Exteriors_Complete_Tileset.png 19"
-19/texture = ExtResource( 2 )
+19/texture = ExtResource( 3 )
 19/tex_offset = Vector2( 0, 0 )
 19/modulate = Color( 1, 1, 1, 1 )
 19/region = Rect2( 208, 240, 16, 16 )
@@ -1567,7 +1567,7 @@ points = PoolVector2Array( 0, 0, 96, 0, 96, 176, 0, 176 )
 } ]
 19/z_index = 0
 20/name = "Modern_Exteriors_Complete_Tileset.png 20"
-20/texture = ExtResource( 2 )
+20/texture = ExtResource( 3 )
 20/tex_offset = Vector2( 0, 0 )
 20/modulate = Color( 1, 1, 1, 1 )
 20/region = Rect2( 96, 736, 96, 176 )
@@ -1588,7 +1588,7 @@ points = PoolVector2Array( 0, 0, 96, 0, 96, 176, 0, 176 )
 } ]
 20/z_index = 0
 21/name = "Modern_Exteriors_Complete_Tileset.png 21"
-21/texture = ExtResource( 2 )
+21/texture = ExtResource( 3 )
 21/tex_offset = Vector2( 0, 0 )
 21/modulate = Color( 1, 1, 1, 1 )
 21/region = Rect2( 0, 736, 96, 176 )
@@ -1602,7 +1602,7 @@ points = PoolVector2Array( 0, 0, 96, 0, 96, 176, 0, 176 )
 21/shapes = [  ]
 21/z_index = 0
 22/name = "exterior.png 22"
-22/texture = ExtResource( 2 )
+22/texture = ExtResource( 3 )
 22/tex_offset = Vector2( 0, 0 )
 22/modulate = Color( 1, 1, 1, 1 )
 22/region = Rect2( 0, 736, 96, 176 )
@@ -1632,8 +1632,8 @@ points = PoolVector2Array( 0, 0, 96, 0, 96, 176, 0, 176 )
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 32, 28 )
 
-[node name="CasaExterior" type="Node2D"]
-script = ExtResource( 3 )
+[node name="OutsideHouse" type="Node2D"]
+script = ExtResource( 2 )
 
 [node name="Floor" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
@@ -1655,10 +1655,10 @@ collision_mask = 0
 format = 1
 tile_data = PoolIntArray( -393188, 15, 0, -393182, 15, 0, -327651, 10, 0, 65538, 15, 0, 65544, 20, 0, 65545, 9, 0, 65550, 16, 0, 196592, 18, 0, 196593, 18, 0, 196594, 18, 0, 196595, 18, 0, 196596, 18, 0, 196597, 18, 0, 196598, 18, 0, 196599, 18, 0, 196600, 18, 0, 196601, 18, 0, 196602, 18, 0, 196603, 18, 0, 196604, 18, 0, 196605, 18, 0, 196606, 18, 0, 196607, 18, 0, 131072, 18, 0, 131073, 18, 0, 131076, 10, 0, 131090, 10, 0, 131092, 18, 0, 131093, 18, 0, 131094, 18, 0, 131095, 18, 0, 131096, 18, 0, 131097, 18, 0, 131098, 18, 0, 131099, 18, 0, 983068, 16, 0, 983074, 20, 0 )
 
-[node name="CasaCelso" type="Area2D" parent="House"]
+[node name="CelsoHouse" type="Area2D" parent="House"]
 collision_layer = 4
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="House/CasaCelso"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="House/CelsoHouse"]
 position = Vector2( 80, 156 )
 shape = SubResource( 4 )
 
@@ -1678,4 +1678,4 @@ limit_right = 640
 limit_bottom = 360
 editor_draw_limits = true
 
-[connection signal="body_entered" from="House/CasaCelso" to="." method="_on_CasaCelso_body_entered"]
+[connection signal="body_entered" from="House/CelsoHouse" to="." method="_on_CelsoHouse_body_entered"]
