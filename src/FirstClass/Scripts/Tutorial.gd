@@ -28,3 +28,7 @@ func key_pressed():
 		$Direita.play("pressionada")
 	else:
 		$Direita.play("default")
+	if Input.is_action_pressed("interagir"):
+		$TeclaE.play("pressionada")
+	else:
+		$TeclaE.play("default")

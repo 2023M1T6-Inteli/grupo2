@@ -9,7 +9,7 @@ func _ready():
 
 # Direciona para a visão exterior da casa
 func _on_JogarButton_pressed():
-	get_tree().change_scene("res://Scenes/CasaExterior.tscn")
+	get_tree().change_scene("res://Scenes/Tutorial.tscn")
 
 
 # Direciona para o menu de opções

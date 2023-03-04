@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=2]
+[gd_scene load_steps=49 format=2]
 
 [ext_resource path="res://Assets/Tilesets/Modern_Exteriors_Complete_Tileset.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -11,6 +11,9 @@
 [ext_resource path="res://Assets/Items/seta_baixo_pressionada.png" type="Texture" id=9]
 [ext_resource path="res://Assets/Items/seta_esquerda_pressionada.png" type="Texture" id=10]
 [ext_resource path="res://Assets/Items/seta_direita_pressionada.png" type="Texture" id=11]
+[ext_resource path="res://Assets/Items/tecla_e.png" type="Texture" id=12]
+[ext_resource path="res://Assets/Items/tecla_e_pressionada.png" type="Texture" id=13]
+[ext_resource path="res://Assets/Fonts/compasspro.ttf" type="DynamicFontData" id=14]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Modern_Exteriors_Complete_Tileset.png 0"
@@ -1014,6 +1017,29 @@ animations = [ {
 "speed": 5.0
 } ]
 
+[sub_resource type="SpriteFrames" id=32]
+animations = [ {
+"frames": [ ExtResource( 12 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 13 ) ],
+"loop": true,
+"name": "pressionada",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=31]
+extents = Vector2( 29.25, 24 )
+
+[sub_resource type="RectangleShape2D" id=33]
+extents = Vector2( 8, 8 )
+
+[sub_resource type="DynamicFont" id=34]
+size = 15
+font_data = ExtResource( 14 )
+
 [node name="Tutorial" type="Node2D"]
 position = Vector2( 11, 0 )
 script = ExtResource( 7 )
@@ -1031,15 +1057,15 @@ format = 1
 tile_data = PoolIntArray( 0, 10, 0, 1, 11, 0, 2, 11, 0, 3, 11, 0, 4, 11, 0, 5, 11, 0, 6, 11, 0, 7, 11, 0, 8, 11, 0, 9, 11, 0, 10, 11, 0, 11, 11, 0, 12, 11, 0, 13, 11, 0, 14, 11, 0, 15, 11, 0, 16, 11, 0, 17, 11, 0, 18, 11, 0, 19, 12, 0, 23, 25, 0, 65557, 25, 0, 131072, 9, 0, 131084, 23, 0, 131087, 19, 0, 131091, 13, 0, 131092, 25, 0, 131094, 25, 0, 131096, 25, 0, 196608, 9, 0, 196620, 19, 0, 196621, 19, 0, 196622, 19, 0, 196623, 19, 0, 196627, 13, 0, 262144, 9, 0, 262148, 22, 0, 262156, 19, 0, 262157, 19, 0, 262158, 19, 0, 262159, 19, 0, 262163, 13, 0, 327680, 9, 0, 327692, 19, 0, 327693, 19, 0, 327698, 19, 0, 327699, 13, 0, 393216, 9, 0, 393235, 13, 0, 458752, 9, 0, 458771, 13, 0, 458789, 0, 0, 524288, 9, 0, 524289, 27, 0, 524307, 13, 0, 524325, 2, 0, 589824, 8, 0, 589825, 6, 0, 589826, 6, 0, 589827, 6, 0, 589828, 15, 0, 589835, 16, 0, 589836, 11, 0, 589837, 11, 0, 589838, 11, 0, 589839, 11, 0, 589840, 11, 0, 589841, 11, 0, 589842, 11, 0, 589843, 14, 0, 720893, 3, 0, 655374, 26, 0, 983074, 5, 0 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 53, 304 )
+position = Vector2( 117, 304 )
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
 remote_path = NodePath("../../Camera2D")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( 53, 304 )
+position = Vector2( 117, 304 )
 current = true
-limit_left = -92
+limit_left = -100
 limit_top = 0
 limit_right = 649
 limit_bottom = 360
@@ -1070,3 +1096,28 @@ frames = SubResource( 29 )
 position = Vector2( -51, 328 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 30 )
+
+[node name="TeclaE" type="AnimatedSprite" parent="."]
+position = Vector2( -3, 328 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 32 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -72.25, 328 )
+shape = SubResource( 31 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -3, 328 )
+shape = SubResource( 33 )
+
+[node name="DialogoLabel" type="Label" parent="."]
+margin_left = -30.0
+margin_top = 304.0
+margin_right = 28.0
+margin_bottom = 319.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 34 )
+text = "Interagir"
