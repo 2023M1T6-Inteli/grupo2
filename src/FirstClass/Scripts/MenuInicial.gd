@@ -1,6 +1,6 @@
 extends Node2D
 
-const truck = preload("res://Scenes/CaminhaoInicio.tscn")
+const truck = preload("res://Scenes/MainTruck.tscn")
 
 
 func _ready():
