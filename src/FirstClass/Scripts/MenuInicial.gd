@@ -14,7 +14,7 @@ func _on_PlayButton_pressed():
 
 # Direciona para o menu de opções
 func _on_ConfigButton_pressed():
-	get_tree().change_scene("res://Scenes/MenuOpcoes.tscn")
+	get_tree().change_scene("res://Scenes/SettingsMenu.tscn")
 
 
 func _on_TruckTimer_timeout():
