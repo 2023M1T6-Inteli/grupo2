@@ -13,7 +13,7 @@
 [ext_resource path="res://Assets/Items/seta_direita_pressionada.png" type="Texture" id=11]
 [ext_resource path="res://Assets/Items/tecla_e.png" type="Texture" id=12]
 [ext_resource path="res://Assets/Items/tecla_e_pressionada.png" type="Texture" id=13]
-[ext_resource path="res://Assets/Fonts/compasspro.ttf" type="DynamicFontData" id=14]
+[ext_resource path="res://Assets/Fonts/CompassPro.ttf" type="DynamicFontData" id=14]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Modern_Exteriors_Complete_Tileset.png 0"
@@ -1085,6 +1085,7 @@ tile_data = PoolIntArray( 0, 10, 0, 1, 11, 0, 2, 11, 0, 3, 11, 0, 4, 11, 0, 5, 1
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 117, 304 )
+walkSpeed = 100
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
 remote_path = NodePath("../../Camera2D")
