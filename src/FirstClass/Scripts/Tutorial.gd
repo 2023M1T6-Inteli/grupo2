@@ -47,5 +47,7 @@ func key_pressed():
 		$InteractKeySprite.play("default")
 
 
+# Aciona diálogo com tinhoso quando o personagem entra na Area2D
 func _on_NextSceneArea_body_entered(body):
-	pass # Replace with function body.
+	var dialogTinhoso = Dialogic.start("tinhoso-1")
+	add_child(dialogTinhoso)

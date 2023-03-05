@@ -1,0 +1,122 @@
+{
+	"events": [
+		{
+			"animation": "2-fade_in_up.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1677975462.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 100
+		},
+		{
+			"character": "character-1677975462.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Cof cof... Celsão! Ainda bem que você chegou!"
+		},
+		{
+			"character": "character-1677975462.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Tenho um serviço de entrega para você... Ele tem algumas condições especiais"
+		},
+		{
+			"character": "character-1677975462.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Te pago o dobro do valor..."
+		},
+		{
+			"character": "character-1677975462.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Mas... Como eu preciso disso com urgência, não vou ter tempo de pesar a carga e realizar o check-list da entrega..."
+		},
+		{
+			"character": "character-1677975462.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Bom, mas isso é o de menos. Me diz aí Celsão, bora ganhar uma grana preta?"
+		},
+		{
+			"animation": "2-fade_in_up.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1677975634.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 100
+		},
+		{
+			"character": "character-1677975634.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "O que você acha dessa proposta? Pelo visto tem muito dinheiro em jogo!!"
+		},
+		{
+			"choice": "Aceitar serviço",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
+		},
+		{
+			"change_scene": "res://Scenes/Road.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"choice": "Recusar",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"emit_signal": "finished",
+			"event_id": "dialogic_040"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1677975833.json",
+		"name": "tinhoso-1"
+	}
+}
