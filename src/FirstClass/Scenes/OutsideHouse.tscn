@@ -1,8 +1,9 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/CasaExterior.gd" type="Script" id=2]
 [ext_resource path="res://Assets/Tilesets/exterior.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=4]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Modern_Exteriors_Complete_Tileset.png 0"
@@ -1677,5 +1678,7 @@ limit_top = 0
 limit_right = 640
 limit_bottom = 360
 editor_draw_limits = true
+
+[node name="HUD" parent="." instance=ExtResource( 4 )]
 
 [connection signal="body_entered" from="House/CelsoHouse" to="." method="_on_CelsoHouse_body_entered"]

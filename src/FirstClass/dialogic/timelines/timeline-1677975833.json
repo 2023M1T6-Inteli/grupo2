@@ -97,7 +97,7 @@
 			"event_id": "dialogic_040"
 		},
 		{
-			"change_scene": "res://Scenes/Road.tscn",
+			"change_scene": "res://Scenes/RoadTinhoso.tscn",
 			"event_id": "dialogic_041"
 		},
 		{

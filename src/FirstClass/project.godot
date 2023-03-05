@@ -80,7 +80,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="FirstClass"
+config/name="Celso Caminhões"
 run/main_scene="res://Scenes/MainMenu.tscn"
 
 [audio]
