@@ -19,8 +19,20 @@ func _process(delta):
 # Recebe e trata os sinais do nó de diálogo
 func dialog_listener(string):
 	match string:
-		"finished":
-			dialog.queue_free()
+		# Adiciona na lista de escolhas a decisão ruim de aceitar a corrida do tinhoso
+		"acepted":
+			Global.choices.append(1);
+	
+		# Adiciona na lista de escolhas a decisão boa de recusar a corrida do tinhoso
+		"refused":
+			Global.choices.append(0);
+
+
+# Aciona diálogo com tinhoso quando o personagem entra na Area2D
+func _on_NextSceneArea_body_entered(body):
+	dialog = Dialogic.start("tinhoso-1")
+	dialog.connect("dialogic_signal", self, "dialog_listener")
+	add_child(dialog)
 
 
 # Altera animação das setas de acordo com a tecla pressionada
@@ -45,9 +57,3 @@ func key_pressed():
 		$InteractKeySprite.play("pressed")
 	else:
 		$InteractKeySprite.play("default")
-
-
-# Aciona diálogo com tinhoso quando o personagem entra na Area2D
-func _on_NextSceneArea_body_entered(body):
-	var dialogTinhoso = Dialogic.start("tinhoso-1")
-	add_child(dialogTinhoso)

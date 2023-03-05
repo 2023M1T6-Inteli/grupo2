@@ -12,6 +12,7 @@ func _ready():
 
 
 func _process(delta):
+	print(Global.choices)
 	if($Road.position.y + backgroundSpeed > 360): 
 		$Road.position.y = -8
 	else:

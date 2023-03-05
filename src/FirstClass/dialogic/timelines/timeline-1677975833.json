@@ -89,7 +89,12 @@
 		{
 			"event_id": "dialogic_023",
 			"hide_dialogbox": true,
-			"wait_seconds": 1
+			"wait_seconds": 1,
+			"waiting_skippable": true
+		},
+		{
+			"emit_signal": "acepted",
+			"event_id": "dialogic_040"
 		},
 		{
 			"change_scene": "res://Scenes/Road.tscn",
@@ -103,15 +108,25 @@
 			"value": ""
 		},
 		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1,
+			"waiting_skippable": true
+		},
+		{
+			"emit_signal": "refused",
+			"event_id": "dialogic_040"
+		},
+		{
+			"change_scene": "res://Scenes/OutsideHouse.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
 			"event_id": "dialogic_013"
 		},
 		{
 			"event_id": "dialogic_022",
-			"transition_duration": 1
-		},
-		{
-			"emit_signal": "finished",
-			"event_id": "dialogic_040"
+			"transition_duration": 2
 		}
 	],
 	"metadata": {

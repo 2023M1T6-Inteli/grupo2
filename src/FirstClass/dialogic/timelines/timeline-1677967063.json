@@ -97,10 +97,6 @@
 		{
 			"event_id": "dialogic_022",
 			"transition_duration": 2
-		},
-		{
-			"emit_signal": "finished",
-			"event_id": "dialogic_040"
 		}
 	],
 	"metadata": {
