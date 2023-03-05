@@ -1,0 +1,111 @@
+{
+	"events": [
+		{
+			"animation": "2-fade_in_up.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 100
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Olá irmão(ã) de tapetão, espero que esteja pronto(a) para sua próxima viagem..."
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Meu nome é Roberta e eu te acompanharei nesta jornada."
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nosso cliente é a UNIPAR e temos uma missão muito importante…"
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Entregar uma carga muito delicada, sem que aconteça nenhum acidente."
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Então, daqui para frente você pode enfrentar alguns obstáculos…"
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Mas, tenha sempre em mente: as suas ações aqui, definem muito mais do que só a sua pontuação."
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Quer que eu te acompanhe no seu tutorial?"
+		},
+		{
+			"choice": "Sim",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Com as setas do seu teclado você controla o personagem pela a cidade..."
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Já com a tecla \"e\", você pode interagir com os objetos e com as pessoas."
+		},
+		{
+			"choice": "Não",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 2
+		},
+		{
+			"emit_signal": "finished",
+			"event_id": "dialogic_040"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1677967063.json",
+		"name": "intro"
+	}
+}

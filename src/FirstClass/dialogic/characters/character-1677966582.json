@@ -1,0 +1,21 @@
+{
+	"color": "#ff717a7f",
+	"description": "",
+	"display_name": "Roberta",
+	"display_name_bool": true,
+	"id": "character-1677966582.json",
+	"mirror_portraits": false,
+	"name": "roberta",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Assets/NPC/roberta.png"
+		}
+	],
+	"scale": 10,
+	"theme": "theme-1677966809.cfg"
+}

@@ -1,13 +1,26 @@
 extends Node2D
 
 
-# Called when the node enters the scene tree for the first time.
+onready var dialog
+
+
 func _ready():
-	pass # Replace with function body.
+	# Inicia diálogo introdutório e adiciona-o como nó filho
+	dialog = Dialogic.start("intro")
+	dialog.connect("dialogic_signal", self, "dialog_listener")
+	add_child(dialog)
 
 
 func _process(delta):
+	# Verifica, a cada frame, as teclas pressionadas
 	key_pressed()
+
+
+# Recebe e trata os sinais do nó de diálogo
+func dialog_listener(string):
+	match string:
+		"finished":
+			dialog.queue_free()
 
 
 # Altera animação das setas de acordo com a tecla pressionada
@@ -32,3 +45,7 @@ func key_pressed():
 		$InteractKeySprite.play("pressed")
 	else:
 		$InteractKeySprite.play("default")
+
+
+func _on_NextSceneArea_body_entered(body):
+	pass # Replace with function body.
