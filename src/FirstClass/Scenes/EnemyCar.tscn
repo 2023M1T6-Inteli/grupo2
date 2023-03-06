@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Scripts/CarrosInimigos.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/EnemyCar.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Enemies/car.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]

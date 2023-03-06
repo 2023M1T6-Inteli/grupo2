@@ -30,7 +30,6 @@ func dialog_listener(string):
 
 # Aciona diálogo com tinhoso quando o personagem entra na Area2D
 func _on_NextSceneArea_body_entered(body):
-	Global.energy -= 2
 	dialog = Dialogic.start("tinhoso-1")
 	dialog.connect("dialogic_signal", self, "dialog_listener")
 	add_child(dialog)
