@@ -52,32 +52,56 @@ margin_top = 80.0
 margin_right = 256.0
 margin_bottom = 368.0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-margin_top = 96.0
+[node name="MainContainer" type="VBoxContainer" parent="."]
+margin_top = 93.0
 margin_right = 176.0
 margin_bottom = 368.0
 
-[node name="AudioLabel" type="Label" parent="VBoxContainer"]
+[node name="AudioLabel" type="Label" parent="MainContainer"]
 margin_right = 176.0
 margin_bottom = 19.0
 custom_fonts/font = SubResource( 3 )
 text = "Áudio"
 align = 1
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+[node name="LanguageLabel" type="Label" parent="MainContainer"]
+margin_top = 23.0
+margin_right = 176.0
+margin_bottom = 42.0
+custom_fonts/font = SubResource( 3 )
+text = "Idioma"
+align = 1
+
+[node name="ControlsLabel" type="Label" parent="MainContainer"]
+margin_top = 46.0
+margin_right = 176.0
+margin_bottom = 65.0
+custom_fonts/font = SubResource( 3 )
+text = "Controles"
+align = 1
+
+[node name="VideoLabe" type="Label" parent="MainContainer"]
+margin_top = 69.0
+margin_right = 176.0
+margin_bottom = 88.0
+custom_fonts/font = SubResource( 3 )
+text = "Vídeo"
+align = 1
+
+[node name="SettingsAudioContainer" type="VBoxContainer" parent="."]
 margin_left = 240.0
-margin_top = 96.0
+margin_top = 92.0
 margin_right = 528.0
 margin_bottom = 368.0
 
-[node name="MusicVolumeLabel" type="Label" parent="VBoxContainer2"]
+[node name="MusicVolumeLabel" type="Label" parent="SettingsAudioContainer"]
 margin_right = 288.0
 margin_bottom = 19.0
 custom_fonts/font = SubResource( 5 )
 text = "Volume da Música"
 align = 1
 
-[node name="MusicVolumeSlider" type="HSlider" parent="VBoxContainer2"]
+[node name="MusicVolumeSlider" type="HSlider" parent="SettingsAudioContainer"]
 modulate = Color( 0.992157, 0.905882, 0.027451, 1 )
 margin_top = 23.0
 margin_right = 288.0
@@ -99,5 +123,5 @@ volume_db = -30.0
 autoplay = true
 mix_target = 1
 
-[connection signal="value_changed" from="VBoxContainer2/MusicVolumeSlider" to="." method="_on_MusicVolumeSlider_value_changed"]
+[connection signal="value_changed" from="SettingsAudioContainer/MusicVolumeSlider" to="." method="_on_MusicVolumeSlider_value_changed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]
