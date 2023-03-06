@@ -1,26 +1,31 @@
 extends KinematicBody2D
 
-var velocity = Vector2.ZERO  # Vetor responsável pela movimentação do caminhão
-var inputDirection = Vector2(0, 0)  # Vetor atualizado de acordo com as teclas pressionadas
-var moveSpeed = 300 # Velocidade com que o caminhão se move lateralmente
+const MAX_SPEED = 200 # Define velocidade máxima do caminhão
+const acceleration = 300  # Define aceleração do caminhão 
+const FRICTION  = 100 # Valor da parada , responsável pela tração do caminhão 
+var velocity = Vector2.ZERO
 
 func _ready():
 	pass
 
 func _physics_process(delta):	
-	# Bloqueia o movimento para cima / baixo
-	if inputDirection.y == 0:
-		inputDirection.x = (
-				int(Input.is_action_pressed("ui_right")) - int(Input.is_action_pressed("ui_left"))
-		)
+	# Vetor vazio para receeber inputs 
+	var input_vector = Vector2.ZERO 
+	# Guarda valor do vetor referente a inputs do usuário e define valor de -input_vector
+	# Para movimentação horizontal do caminhão pelo cenário 
+	input_vector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
 	
-	# Se o vetor inputDirection for != ZERO, siginifica que há movimentação
-	if inputDirection != Vector2.ZERO:
-		velocity = inputDirection
-	else:
-		velocity = Vector2.ZERO
-		
-	velocity = move_and_slide(velocity * moveSpeed)
+	if input_vector != Vector2.ZERO:
+		# Calula e define -velocity, através de parâmetros da função, calculo que resulta em um vetor
+		# Considerando o framerate e -acceleration, de forma que não ultrapasse o -MAX-SPEED
+		velocity = velocity.move_toward(input_vector * MAX_SPEED, acceleration * delta)
+	else: 
+		# Responsável por desacelerar o caminhão de forma gradativa e pela movimentação fluída
+		# Também impede que o caminhão fique se mova infinitavemte  
+		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
+	# -velocity os valores do vetor sejão aplicados para que o caminhão se mova pela tela
+	velocity = move_and_slide(velocity)
+
 
 func _on_area_truck_body_entered(body):
 	print("bateu")
