@@ -1,0 +1,21 @@
+{
+	"color": "#ff0d8e34",
+	"description": "",
+	"display_name": "Celso",
+	"display_name_bool": true,
+	"id": "character-1677975634.json",
+	"mirror_portraits": false,
+	"name": "celso",
+	"nickname": "Celsão",
+	"nickname_bool": true,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Assets/Player/celso_ampliado.png"
+		}
+	],
+	"scale": 267,
+	"theme": "theme-1677966809.cfg"
+}

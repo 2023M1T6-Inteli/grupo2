@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Forró Estilizado.mp3-82dde2720f702b68cd0557b372c92669.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Forró Estilizado.mp3"
+dest_files=[ "res://.import/Forró Estilizado.mp3-82dde2720f702b68cd0557b372c92669.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
