@@ -53,59 +53,66 @@ margin_right = 256.0
 margin_bottom = 368.0
 
 [node name="MainContainer" type="VBoxContainer" parent="."]
-margin_top = 93.0
 margin_right = 176.0
 margin_bottom = 368.0
+alignment = 1
 
 [node name="AudioLabel" type="Label" parent="MainContainer"]
+margin_top = 140.0
 margin_right = 176.0
-margin_bottom = 19.0
+margin_bottom = 159.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 3 )
 text = "Áudio"
 align = 1
 
 [node name="LanguageLabel" type="Label" parent="MainContainer"]
-margin_top = 23.0
+margin_top = 163.0
 margin_right = 176.0
-margin_bottom = 42.0
+margin_bottom = 182.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 3 )
 text = "Idioma"
 align = 1
 
 [node name="ControlsLabel" type="Label" parent="MainContainer"]
-margin_top = 46.0
+margin_top = 186.0
 margin_right = 176.0
-margin_bottom = 65.0
+margin_bottom = 205.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 3 )
 text = "Controles"
 align = 1
 
 [node name="VideoLabe" type="Label" parent="MainContainer"]
-margin_top = 69.0
+margin_top = 209.0
 margin_right = 176.0
-margin_bottom = 88.0
+margin_bottom = 228.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 3 )
 text = "Vídeo"
 align = 1
 
 [node name="SettingsAudioContainer" type="VBoxContainer" parent="."]
+visible = false
 margin_left = 240.0
-margin_top = 92.0
 margin_right = 528.0
 margin_bottom = 368.0
+alignment = 1
 
 [node name="MusicVolumeLabel" type="Label" parent="SettingsAudioContainer"]
+margin_top = 164.0
 margin_right = 288.0
-margin_bottom = 19.0
+margin_bottom = 183.0
 custom_fonts/font = SubResource( 5 )
 text = "Volume da Música"
 align = 1
 
 [node name="MusicVolumeSlider" type="HSlider" parent="SettingsAudioContainer"]
 modulate = Color( 0.992157, 0.905882, 0.027451, 1 )
-margin_top = 23.0
+margin_top = 187.0
 margin_right = 288.0
-margin_bottom = 39.0
+margin_bottom = 203.0
 max_value = 15.0
 
 [node name="BackButton" type="Button" parent="."]
@@ -122,6 +129,36 @@ stream = ExtResource( 3 )
 volume_db = -30.0
 autoplay = true
 mix_target = 1
+
+[node name="SettingsLanguageContainer" type="VBoxContainer" parent="."]
+margin_left = 240.0
+margin_right = 528.0
+margin_bottom = 368.0
+alignment = 1
+
+[node name="LanguagePortLabel" type="Label" parent="SettingsLanguageContainer"]
+margin_top = 151.0
+margin_right = 288.0
+margin_bottom = 170.0
+custom_fonts/font = SubResource( 5 )
+text = "Português"
+align = 1
+
+[node name="LanguageEnLabel" type="Label" parent="SettingsLanguageContainer"]
+margin_top = 174.0
+margin_right = 288.0
+margin_bottom = 193.0
+custom_fonts/font = SubResource( 5 )
+text = "Inglês"
+align = 1
+
+[node name="LanguageEsLabel" type="Label" parent="SettingsLanguageContainer"]
+margin_top = 197.0
+margin_right = 288.0
+margin_bottom = 216.0
+custom_fonts/font = SubResource( 5 )
+text = "Espanhol"
+align = 1
 
 [connection signal="value_changed" from="SettingsAudioContainer/MusicVolumeSlider" to="." method="_on_MusicVolumeSlider_value_changed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]
