@@ -3,7 +3,7 @@ extends Node2D
 
 # Retorna para a tela do menu inicial
 func _on_BackButton_pressed():
-	get_tree().change_scene("res://Scenes/MainMenu.tscn")
+	return get_tree().change_scene("res://Scenes/MainMenu.tscn")
 
 
 # Altera volume da música de acordo com a mudança no valor do VolumeSlider

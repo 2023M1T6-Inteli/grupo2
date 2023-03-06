@@ -8,19 +8,18 @@ func _ready():
 	pass
 
 func _physics_process(delta):	
-	# Bloqueia o movimento para cima / baixo
-	if inputDirection.y == 0:
-		inputDirection.x = (
-				int(Input.is_action_pressed("ui_right")) - int(Input.is_action_pressed("ui_left"))
-		)
-	
-	# Se o vetor inputDirection for != ZERO, siginifica que há movimentação
-	if inputDirection != Vector2.ZERO:
-		velocity = inputDirection
-	else:
-		velocity = Vector2.ZERO
+	if Global.pausedGame == false:
+		# Bloqueia o movimento para cima / baixo
+		if inputDirection.y == 0:
+			inputDirection.x = (
+					int(Input.is_action_pressed("ui_right")) - int(Input.is_action_pressed("ui_left"))
+			)
 		
-	velocity = move_and_slide(velocity * moveSpeed)
+		# Se o vetor inputDirection for != ZERO, siginifica que há movimentação
+		if inputDirection != Vector2.ZERO:
+			velocity = inputDirection
+		else:
+			velocity = Vector2.ZERO
+			
+		velocity = move_and_slide(velocity * moveSpeed)
 
-func _on_area_truck_body_entered(body):
-	print("bateu")

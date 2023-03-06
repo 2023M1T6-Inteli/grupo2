@@ -9,12 +9,12 @@ func _ready():
 
 # Direciona para a visão exterior da casa
 func _on_PlayButton_pressed():
-	get_tree().change_scene("res://Scenes/Tutorial.tscn")
+	return get_tree().change_scene("res://Scenes/Tutorial.tscn")
 
 
 # Direciona para o menu de opções
 func _on_ConfigButton_pressed():
-	get_tree().change_scene("res://Scenes/SettingsMenu.tscn")
+	return get_tree().change_scene("res://Scenes/SettingsMenu.tscn")
 
 
 func _on_TruckTimer_timeout():
