@@ -21,9 +21,9 @@ func _physics_process(delta):
 		velocity = velocity.move_toward(input_vector * MAX_SPEED, acceleration * delta)
 	else: 
 		# Responsável por desacelerar o caminhão de forma gradativa e pela movimentação fluída
-		# Também impede que o caminhão fique se mova infinitavemte  
+		# Também impede que o caminhão se mova infinitavemte para o lado
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
-	# -velocity os valores do vetor sejão aplicados para que o caminhão se mova pela tela
+	# -velocity os valores do vetor serão aplicados para que o caminhão se mova pela tela
 	velocity = move_and_slide(velocity)
 
 
