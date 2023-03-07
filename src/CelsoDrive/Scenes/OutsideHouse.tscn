@@ -1,9 +1,10 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/OutsideHouse.gd" type="Script" id=2]
 [ext_resource path="res://Assets/Tilesets/exterior.png" type="Texture" id=3]
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/Items/seta_baixo.png" type="Texture" id=5]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Modern_Exteriors_Complete_Tileset.png 0"
@@ -1633,6 +1634,14 @@ points = PoolVector2Array( 0, 0, 96, 0, 96, 176, 0, 176 )
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 32, 28 )
 
+[sub_resource type="SpriteFrames" id=33]
+animations = [ {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
 [node name="OutsideHouse" type="Node2D"]
 script = ExtResource( 2 )
 
@@ -1681,4 +1690,10 @@ editor_draw_limits = true
 
 [node name="HUD" parent="." instance=ExtResource( 4 )]
 
+[node name="InteractKey" type="AnimatedSprite" parent="."]
+position = Vector2( 80, 144 )
+scale = Vector2( 0.4, 0.4 )
+frames = SubResource( 33 )
+
 [connection signal="body_entered" from="House/CelsoHouse" to="." method="_on_CelsoHouse_body_entered"]
+[connection signal="body_exited" from="House/CelsoHouse" to="." method="_on_CelsoHouse_body_exited"]

@@ -6,4 +6,8 @@ func _ready():
 
 
 func _on_CelsoHouse_body_entered(body):
-	get_tree().change_scene("res://Scenes/InsideHouse.tscn")
+	return get_tree().change_scene("res://Scenes/InsideHouse.tscn")
+
+
+func _on_CelsoHouse_body_exited(body):
+	$InteractKey.play("default")
