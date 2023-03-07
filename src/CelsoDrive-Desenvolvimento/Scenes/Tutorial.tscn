@@ -16,6 +16,7 @@
 [ext_resource path="res://Assets/Fonts/CompassPro.ttf" type="DynamicFontData" id=14]
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=15]
 
+
 [sub_resource type="TileSet" id=1]
 0/name = "Modern_Exteriors_Complete_Tileset.png 0"
 0/texture = ExtResource( 1 )

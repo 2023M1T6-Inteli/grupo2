@@ -9,6 +9,7 @@
 [ext_resource path="res://Assets/Tilesets/banheiro.png" type="Texture" id=7]
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=8]
 
+
 [sub_resource type="TileSet" id=1]
 0/name = "Room_Builder_16x16.png 0"
 0/texture = ExtResource( 1 )
