@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Scripts/Truck.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/RoadTinhoso.gd" type="Script" id=2]
@@ -127,9 +127,6 @@
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 69, 364 )
 
-[sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 12.956, 28.495 )
-
 [sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 16, 18.5447 )
 
@@ -160,43 +157,33 @@ cell_quadrant_size = 8
 format = 1
 tile_data = PoolIntArray( -2293760, 536870912, 0, -2293752, 536870912, 0, -2293696, 536870912, 0, -2293688, 536870912, 0, -1966076, 536870912, 0, -1966069, 536870912, 0, -1966012, 536870912, 0, -1966005, 536870912, 0, -1703936, 536870912, 0, -1703872, 536870912, 0, -1638392, 536870912, 0, -1638328, 536870912, 0, -1376252, 536870912, 0, -1376245, 536870912, 0, -1376188, 536870912, 0, -1376181, 536870912, 0, -1114112, 536870912, 0, -1114048, 536870912, 0, -983032, 536870912, 0, -982968, 536870912, 0, -786428, 536870912, 0, -786364, 536870912, 0, 720896, 536870912, 0, 720904, 536870912, 0, 720960, 536870912, 0, 720968, 536870912, 0, 1048580, 536870912, 0, 1048587, 536870912, 0, 1048644, 536870912, 0, 1048651, 536870912, 0, 1310720, 536870912, 0, 1310784, 536870912, 0, 1376264, 536870912, 0, 1376328, 536870912, 0, 1638404, 536870912, 0, 1638411, 536870912, 0, 1638468, 536870912, 0, 1638475, 536870912, 0, 1900544, 536870912, 0, 1900608, 536870912, 0, 2031624, 536870912, 0, 2031688, 536870912, 0, 2228228, 536870912, 0, 2228292, 536870912, 0 )
 
-[node name="margin_left" type="StaticBody2D" parent="."]
-scale = Vector2( 1.01979, 1 )
+[node name="Margin" type="StaticBody2D" parent="."]
 
-[node name="collision_left" type="CollisionShape2D" parent="margin_left"]
-position = Vector2( 59, -4 )
+[node name="collision_left" type="CollisionShape2D" parent="Margin"]
+position = Vector2( 60.1676, -4 )
+scale = Vector2( 1.01979, 1 )
 shape = SubResource( 4 )
 
-[node name="margin_right" type="StaticBody2D" parent="."]
-position = Vector2( 504, 0 )
+[node name="collision_right" type="CollisionShape2D" parent="Margin"]
+position = Vector2( 567.745, -4 )
 scale = Vector2( 1.08043, 1 )
-
-[node name="collision_right" type="CollisionShape2D" parent="margin_right"]
-position = Vector2( 59, -4 )
 shape = SubResource( 4 )
 
 [node name="truck" type="KinematicBody2D" parent="."]
 position = Vector2( 0, 8 )
+collision_mask = 4
 script = ExtResource( 1 )
+
+[node name="collision_truck" type="CollisionShape2D" parent="truck"]
+position = Vector2( 304, 310 )
+scale = Vector2( 1, 1.61771 )
+shape = SubResource( 7 )
 
 [node name="sprite_truck" type="Sprite" parent="truck"]
 position = Vector2( 304, 312 )
 rotation = 3.14159
 scale = Vector2( 0.124444, 0.0955797 )
 texture = ExtResource( 4 )
-
-[node name="area_truck" type="Area2D" parent="truck"]
-position = Vector2( 0, 8 )
-scale = Vector2( 1.23495, 1.123 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="truck/area_truck"]
-position = Vector2( 246.163, 270.703 )
-shape = SubResource( 6 )
-
-[node name="collision_truck" type="CollisionShape2D" parent="truck"]
-position = Vector2( 304, 310 )
-scale = Vector2( 1, 1.61771 )
-shape = SubResource( 7 )
 
 [node name="spawn_carros" type="Node2D" parent="."]
 position = Vector2( 0, -88 )
@@ -230,5 +217,4 @@ autostart = true
 
 [node name="HUD" parent="." instance=ExtResource( 5 )]
 
-[connection signal="body_entered" from="truck/area_truck" to="truck" method="_on_area_truck_body_entered"]
 [connection signal="timeout" from="spawn_carros/Timer" to="." method="_on_Timer_timeout"]

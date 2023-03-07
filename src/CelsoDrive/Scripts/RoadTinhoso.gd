@@ -23,11 +23,11 @@ func dialog_listener(string):
 
 
 func _process(delta):
-	print(Global.choices)
-	if($Road.position.y + backgroundSpeed > 360): 
-		$Road.position.y = -8
-	else:
-		$Road.position.y += backgroundSpeed
+	if Global.pausedGame == false:
+		if($Road.position.y + backgroundSpeed > 360): 
+			$Road.position.y = -8
+		else:
+			$Road.position.y += backgroundSpeed
 
 
 func cars_timer():
@@ -36,7 +36,7 @@ func cars_timer():
 
 
 func _on_Timer_timeout():
-	if finishedDialog:
+	if finishedDialog and Global.pausedGame == false:
 		car_spawn()
 
 
