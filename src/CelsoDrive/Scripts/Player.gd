@@ -4,6 +4,9 @@ export var walkSpeed = 50  # Rapidez do movimento
 var velocity = Vector2.ZERO  # Vetor responsável pela movimentação do personagem
 var inputDirection = Vector2(0, 0)  # Vetor atualizado de acordo com as teclas pressionadas
 onready var screenSize = get_viewport_rect().size  # Tamanho da tela
+onready var animationTree = $AnimationTree # Árvore de animações do personagem
+# Defini animation state de acordo com animationTree
+onready var animationState = animationTree.get("parameters/playback") 
 
 
 func _ready():
@@ -23,10 +26,18 @@ func _physics_process(delta):
 	
 	# Se o vetor inputDirection não for 0, siginifica que há movimentação
 	if inputDirection != Vector2.ZERO:
+		# Envia dados do input, os quais tornam-se animações
+		animationTree.set("parameters/Idle/blend_position", inputDirection)
+		animationTree.set("parameters/Run/blend_position", inputDirection)
+		
+		# Roda animação do personagem andando
+		animationState.travel("Run")
 		velocity = inputDirection
 	else:
+		# Se o vetor inputDirection for 0, siginifica que não há movimentação -> Idle
+		animationState.travel("idle")
 		velocity = Vector2.ZERO
-	
+
 	# Restringe a movimentação do personagem de acordo com o tamanho da tela
 	position.x = clamp(position.x, -110, screenSize.x - 16)
 	position.y = clamp(position.y, 0, screenSize.y - 16)
@@ -36,4 +47,4 @@ func _physics_process(delta):
 
 
 func _on_Exit_body_entered(body):
-	get_tree().change_scene("res://Scenes/OutsideHouse.tscn")
+	return get_tree().change_scene("res://Scenes/OutsideHouse.tscn")
