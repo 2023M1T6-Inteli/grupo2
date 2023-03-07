@@ -37,3 +37,11 @@ func _on_VideoLabel_pressed():
 	$SettingsLanguageContainer.visible = false
 	$SettingsControlsContainer.visible = false
 	$SettingsVideoContainer.visible = true
+
+
+func _on_FullScreenLabel_pressed():
+	OS.window_fullscreen = not OS.window_fullscreen
+
+
+func _on_CheckBox_pressed():
+	OS.window_fullscreen = not OS.window_fullscreen

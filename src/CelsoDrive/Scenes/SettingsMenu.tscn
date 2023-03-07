@@ -132,37 +132,44 @@ margin_right = 528.0
 margin_bottom = 368.0
 alignment = 1
 
-[node name="LanguagePortLabel" type="Label" parent="SettingsLanguageContainer"]
-margin_top = 151.0
+[node name="LanguagePortLabel" type="Button" parent="SettingsLanguageContainer"]
+margin_top = 157.0
 margin_right = 288.0
-margin_bottom = 170.0
+margin_bottom = 182.0
+focus_mode = 0
+custom_colors/font_color_hover = Color( 0.133333, 0.658824, 0.129412, 1 )
 custom_fonts/font = SubResource( 5 )
+enabled_focus_mode = 0
 text = "Português"
-align = 1
+flat = true
 
-[node name="LanguageEnLabel" type="Label" parent="SettingsLanguageContainer"]
-margin_top = 174.0
+[node name="LanguageEnLabel" type="Button" parent="SettingsLanguageContainer"]
+margin_top = 186.0
 margin_right = 288.0
-margin_bottom = 193.0
+margin_bottom = 211.0
+focus_mode = 0
+custom_colors/font_color_hover = Color( 0.133333, 0.658824, 0.129412, 1 )
 custom_fonts/font = SubResource( 5 )
+enabled_focus_mode = 0
 text = "Inglês"
-align = 1
+flat = true
 
 [node name="LanguageEsLabel" type="Label" parent="SettingsLanguageContainer"]
-margin_top = 197.0
+visible = false
+margin_top = 203.0
 margin_right = 288.0
-margin_bottom = 216.0
+margin_bottom = 222.0
 custom_fonts/font = SubResource( 5 )
 text = "Espanhol"
 align = 1
 
 [node name="SettingsControlsContainer" type="TextureRect" parent="."]
 visible = false
-margin_left = 239.0
-margin_top = 91.0
-margin_right = 703.0
-margin_bottom = 447.0
-rect_scale = Vector2( 0.5, 0.5 )
+margin_left = 184.0
+margin_top = 79.0
+margin_right = 808.0
+margin_bottom = 435.0
+rect_scale = Vector2( 0.6, 0.6 )
 texture = ExtResource( 6 )
 expand = true
 
@@ -187,13 +194,27 @@ margin_right = 528.0
 margin_bottom = 368.0
 alignment = 1
 
-[node name="FullScreenLabel" type="Label" parent="SettingsVideoContainer"]
-margin_top = 174.0
+[node name="HBoxContainer" type="HBoxContainer" parent="SettingsVideoContainer"]
+margin_top = 171.0
 margin_right = 288.0
-margin_bottom = 193.0
+margin_bottom = 196.0
+
+[node name="FullScreenLabel" type="Button" parent="SettingsVideoContainer/HBoxContainer"]
+margin_right = 95.0
+margin_bottom = 25.0
+focus_mode = 0
+custom_colors/font_color_hover = Color( 0.133333, 0.658824, 0.129412, 1 )
 custom_fonts/font = SubResource( 5 )
+enabled_focus_mode = 0
 text = "Tela Cheia"
-align = 1
+flat = true
+
+[node name="CheckBox" type="CheckBox" parent="SettingsVideoContainer/HBoxContainer"]
+margin_left = 99.0
+margin_right = 123.0
+margin_bottom = 25.0
+focus_mode = 0
+enabled_focus_mode = 0
 
 [connection signal="pressed" from="MainContainer/AudioLabel" to="." method="_on_AudioLabel_pressed"]
 [connection signal="pressed" from="MainContainer/LanguageLabel" to="." method="_on_LanguageLabel_pressed"]
@@ -201,3 +222,5 @@ align = 1
 [connection signal="pressed" from="MainContainer/VideoLabel" to="." method="_on_VideoLabel_pressed"]
 [connection signal="value_changed" from="SettingsAudioContainer/MusicVolumeSlider" to="." method="_on_MusicVolumeSlider_value_changed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]
+[connection signal="pressed" from="SettingsVideoContainer/HBoxContainer/FullScreenLabel" to="." method="_on_FullScreenLabel_pressed"]
+[connection signal="pressed" from="SettingsVideoContainer/HBoxContainer/CheckBox" to="." method="_on_CheckBox_pressed"]
