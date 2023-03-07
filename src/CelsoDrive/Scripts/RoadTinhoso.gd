@@ -6,10 +6,11 @@ var backgroundSpeed = Global.gameBaseSpeed * 0.9 # Velocidade com que o backgrou
 const enemy = preload("res://Scenes/EnemyCar.tscn")
 var spawnPositions
 var finishedDialog = false
+onready var dialog
 
 
 func _ready():
-	var dialog = Dialogic.start("minigame-tinhoso-tutorial")
+	dialog = Dialogic.start("minigame-tinhoso-tutorial")
 	dialog.connect("dialogic_signal", self, "dialog_listener")
 	add_child(dialog)
 	spawnPositions = $spawn_carros/spawn_positions.get_children()
@@ -19,7 +20,9 @@ func dialog_listener(string):
 	match string:
 		# Adiciona na lista de escolhas a decisão ruim de aceitar a corrida do tinhoso
 		"finishedDialog":
-			finishedDialog = true
+			finishedDialog = true;
+		"finishedMoral":
+			$GameOver.visible = true
 
 
 func _process(delta):
@@ -28,8 +31,6 @@ func _process(delta):
 			$Road.position.y = -8
 		else:
 			$Road.position.y += backgroundSpeed
-	else:
-		$GameOver.visible = true
 
 
 func cars_timer():
@@ -40,6 +41,11 @@ func cars_timer():
 func _on_Timer_timeout():
 	if finishedDialog and Global.pausedGame == false:
 		car_spawn()
+	if Global.pausedGame == true:
+		dialog = Dialogic.start("moral-minigame")
+		dialog.connect("dialogic_signal", self, "dialog_listener")
+		add_child(dialog)
+		$spawn_carros/Timer.stop()
 
 
 func car_spawn():
