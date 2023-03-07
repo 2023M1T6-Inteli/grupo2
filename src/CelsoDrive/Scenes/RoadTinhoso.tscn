@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Scripts/Truck.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/RoadTinhoso.gd" type="Script" id=2]
 [ext_resource path="res://Assets/Tilesets/Modern_Exteriors_Complete_Tileset.png" type="Texture" id=3]
 [ext_resource path="res://Assets/Player/truck.png" type="Texture" id=4]
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/GameOver.tscn" type="PackedScene" id=6]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Modern_Exteriors_Complete_Tileset.png 0"
@@ -216,5 +217,8 @@ position = Vector2( 94.4267, 0 )
 autostart = true
 
 [node name="HUD" parent="." instance=ExtResource( 5 )]
+
+[node name="GameOver" parent="." instance=ExtResource( 6 )]
+visible = false
 
 [connection signal="timeout" from="spawn_carros/Timer" to="." method="_on_Timer_timeout"]

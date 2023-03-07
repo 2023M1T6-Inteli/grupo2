@@ -28,6 +28,8 @@ func _process(delta):
 			$Road.position.y = -8
 		else:
 			$Road.position.y += backgroundSpeed
+	else:
+		$GameOver.visible = true
 
 
 func cars_timer():
