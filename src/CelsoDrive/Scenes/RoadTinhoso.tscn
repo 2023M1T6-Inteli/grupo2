@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://Scripts/Truck.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/RoadTinhoso.gd" type="Script" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Assets/Player/truck.png" type="Texture" id=4]
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/GameOver.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Assets/Music/Forró Estilizado.mp3" type="AudioStream" id=7]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Modern_Exteriors_Complete_Tileset.png 0"
@@ -220,5 +221,11 @@ autostart = true
 
 [node name="GameOver" parent="." instance=ExtResource( 6 )]
 visible = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -30.0
+autoplay = true
+mix_target = 1
 
 [connection signal="timeout" from="spawn_carros/Timer" to="." method="_on_Timer_timeout"]

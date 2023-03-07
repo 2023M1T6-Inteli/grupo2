@@ -34,18 +34,21 @@ func _process(delta):
 
 
 func cars_timer():
-	yield(get_tree().create_timer(1.0), "timeout")
+	yield(get_tree().create_timer(2.0), "timeout")
 	queue_free()
 
 
 func _on_Timer_timeout():
 	if finishedDialog and Global.pausedGame == false:
 		car_spawn()
+		car_spawn()
+		Global.points += 1
 	if Global.pausedGame == true:
 		dialog = Dialogic.start("moral-minigame")
 		dialog.connect("dialogic_signal", self, "dialog_listener")
 		add_child(dialog)
 		$spawn_carros/Timer.stop()
+		Global.energy -= 1
 
 
 func car_spawn():

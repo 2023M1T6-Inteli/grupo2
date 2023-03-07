@@ -8,6 +8,7 @@ func _ready():
 func _process(delta):
 	# Verifica, a cada frame, o nível de energia
 	update_energy_bar(Global.energy)
+	$CoinLabel.text = String(Global.points)
 
 
 # Altera a animação da barra de energia de acordo com o valor passado -> entre 0 e 4
