@@ -5,7 +5,7 @@ var velocity = Vector2.ZERO  # Vetor responsável pela movimentação do persona
 var inputDirection = Vector2(0, 0)  # Vetor atualizado de acordo com as teclas pressionadas
 onready var screenSize = get_viewport_rect().size  # Tamanho da tela
 onready var animationTree = $AnimationTree # Árvore de animações do personagem
-# Defini animation state de acordo com animationTree
+# Define animation state de acordo com animationTree
 onready var animationState = animationTree.get("parameters/playback") 
 
 
