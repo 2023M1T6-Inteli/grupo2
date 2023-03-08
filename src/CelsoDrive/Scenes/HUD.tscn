@@ -36,18 +36,18 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="DynamicFontData" id=2]
+[sub_resource type="DynamicFontData" id=4]
 font_path = "res://Assets/Fonts/CompassPro.ttf"
 
 [sub_resource type="DynamicFont" id=3]
 size = 32
-font_data = SubResource( 2 )
+font_data = SubResource( 4 )
 
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource( 6 )
 
 [node name="EnergySprite" type="AnimatedSprite" parent="."]
-position = Vector2( 598, 16 )
+position = Vector2( 598, 18 )
 scale = Vector2( 0.2, 0.2 )
 frames = SubResource( 1 )
 animation = "4"
