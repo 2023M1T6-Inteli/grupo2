@@ -87,6 +87,8 @@ func _on_Samba_pressed():
 func _on_LanguageEnLabel_pressed():
 	# Altera linguagem do jogo para inglês (1)
 	Global.selectedLanguage = 1
+	
+	# Traduz elementos da tela atual para inglês
 	if language != 1:
 		$SettingsLabel.text = "Settings"
 		$MainContainer/AudioLabel.text = "Audio"
