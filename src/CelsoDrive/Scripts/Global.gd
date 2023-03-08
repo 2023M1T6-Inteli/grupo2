@@ -5,4 +5,4 @@ var points = 0
 var choices := [] # Array que recebe os dados de cada escolha. 1 = ruim, 0 = boa
 var energy := 4 # Valor da barra de energia, usada na HUD
 var pausedGame = false
-var selectedMusic = preload("res://Assets/Music/Forró Estilizado.mp3")
+var selectedMusic = 0 # O = forró, 1 = sertanejo, 2 = rock e 3 = samba

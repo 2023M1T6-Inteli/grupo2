@@ -45,3 +45,23 @@ func _on_FullScreenLabel_pressed():
 
 func _on_CheckBox_pressed():
 	OS.window_fullscreen = not OS.window_fullscreen
+
+
+func _on_Forro_pressed():
+	Global.selectedMusic = 0
+	MusicController.play_music()
+
+
+func _on_CountryMusic_pressed():
+	Global.selectedMusic = 1
+	MusicController.play_music()
+
+
+func _on_RockAndRoll_pressed():
+	Global.selectedMusic = 2
+	MusicController.play_music()
+
+
+func _on_Samba_pressed():
+	Global.selectedMusic = 3
+	MusicController.play_music()

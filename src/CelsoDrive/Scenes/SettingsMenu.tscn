@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Assets/Fonts/CompassPro.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Scripts/SettingsMenu.gd" type="Script" id=2]
@@ -20,6 +20,13 @@ font_path = "res://Assets/Fonts/CompassPro.ttf"
 [sub_resource type="DynamicFont" id=5]
 size = 20
 font_data = SubResource( 4 )
+
+[sub_resource type="DynamicFontData" id=8]
+font_path = "res://Assets/Fonts/CompassPro.ttf"
+
+[sub_resource type="DynamicFont" id=9]
+size = 20
+font_data = SubResource( 8 )
 
 [sub_resource type="DynamicFontData" id=6]
 font_path = "res://Assets/Fonts/CompassPro.ttf"
@@ -103,19 +110,84 @@ margin_bottom = 368.0
 alignment = 1
 
 [node name="MusicVolumeLabel" type="Label" parent="SettingsAudioContainer"]
-margin_top = 164.0
+margin_top = 91.0
 margin_right = 288.0
-margin_bottom = 183.0
+margin_bottom = 110.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 4
+custom_constants/shadow_offset_y = 4
 custom_fonts/font = SubResource( 5 )
 text = "Volume da Música"
 align = 1
 
 [node name="MusicVolumeSlider" type="HSlider" parent="SettingsAudioContainer"]
 modulate = Color( 0.133333, 0.658824, 0.129412, 1 )
-margin_top = 187.0
+margin_top = 114.0
 margin_right = 288.0
-margin_bottom = 203.0
-max_value = 15.0
+margin_bottom = 130.0
+min_value = -30.0
+max_value = 20.0
+
+[node name="HSeparator" type="HSeparator" parent="SettingsAudioContainer"]
+margin_top = 134.0
+margin_right = 288.0
+margin_bottom = 138.0
+
+[node name="MusicalGenreLabel" type="Label" parent="SettingsAudioContainer"]
+margin_top = 142.0
+margin_right = 288.0
+margin_bottom = 161.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 4
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 9 )
+text = "Estilo Musical Preferido"
+align = 1
+valign = 1
+
+[node name="Forro" type="Button" parent="SettingsAudioContainer"]
+margin_top = 165.0
+margin_right = 288.0
+margin_bottom = 190.0
+focus_mode = 0
+custom_colors/font_color_hover = Color( 0.133333, 0.658824, 0.129412, 1 )
+custom_fonts/font = SubResource( 9 )
+enabled_focus_mode = 0
+text = "Forró"
+flat = true
+
+[node name="CountryMusic" type="Button" parent="SettingsAudioContainer"]
+margin_top = 194.0
+margin_right = 288.0
+margin_bottom = 219.0
+focus_mode = 0
+custom_colors/font_color_hover = Color( 0.133333, 0.658824, 0.129412, 1 )
+custom_fonts/font = SubResource( 9 )
+enabled_focus_mode = 0
+text = "Sertanejo"
+flat = true
+
+[node name="RockAndRoll" type="Button" parent="SettingsAudioContainer"]
+margin_top = 223.0
+margin_right = 288.0
+margin_bottom = 248.0
+focus_mode = 0
+custom_colors/font_color_hover = Color( 0.133333, 0.658824, 0.129412, 1 )
+custom_fonts/font = SubResource( 9 )
+enabled_focus_mode = 0
+text = "Rock"
+flat = true
+
+[node name="Samba" type="Button" parent="SettingsAudioContainer"]
+margin_top = 252.0
+margin_right = 288.0
+margin_bottom = 277.0
+focus_mode = 0
+custom_colors/font_color_hover = Color( 0.133333, 0.658824, 0.129412, 1 )
+custom_fonts/font = SubResource( 9 )
+enabled_focus_mode = 0
+text = "Samba"
+flat = true
 
 [node name="BackButton" type="Button" parent="."]
 margin_right = 32.0
@@ -129,7 +201,6 @@ icon_align = 1
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
 volume_db = -30.0
-autoplay = true
 mix_target = 1
 
 [node name="SettingsLanguageContainer" type="VBoxContainer" parent="."]
@@ -241,6 +312,10 @@ enabled_focus_mode = 0
 [connection signal="pressed" from="MainContainer/ControlsLabel" to="." method="_on_ControlsLabel_pressed"]
 [connection signal="pressed" from="MainContainer/VideoLabel" to="." method="_on_VideoLabel_pressed"]
 [connection signal="value_changed" from="SettingsAudioContainer/MusicVolumeSlider" to="." method="_on_MusicVolumeSlider_value_changed"]
+[connection signal="pressed" from="SettingsAudioContainer/Forro" to="." method="_on_Forro_pressed"]
+[connection signal="pressed" from="SettingsAudioContainer/CountryMusic" to="." method="_on_CountryMusic_pressed"]
+[connection signal="pressed" from="SettingsAudioContainer/RockAndRoll" to="." method="_on_RockAndRoll_pressed"]
+[connection signal="pressed" from="SettingsAudioContainer/Samba" to="." method="_on_Samba_pressed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]
 [connection signal="pressed" from="SettingsVideoContainer/HBoxContainer/FullScreenLabel" to="." method="_on_FullScreenLabel_pressed"]
 [connection signal="pressed" from="SettingsVideoContainer/HBoxContainer/CheckBox" to="." method="_on_CheckBox_pressed"]

@@ -4,6 +4,7 @@ const truck = preload("res://Scenes/MainTruck.tscn")
 
 
 func _ready():
+	MusicController.play_music()
 	randomize()
 
 
