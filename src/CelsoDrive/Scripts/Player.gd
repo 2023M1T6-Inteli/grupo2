@@ -46,5 +46,6 @@ func _physics_process(delta):
 	velocity = move_and_slide(velocity * walkSpeed)
 
 
+# Move o personagem para fora de casa
 func _on_Exit_body_entered(body):
 	return get_tree().change_scene("res://Scenes/OutsideHouse.tscn")
