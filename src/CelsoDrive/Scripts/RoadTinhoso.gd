@@ -7,12 +7,20 @@ const enemy = preload("res://Scenes/EnemyCar.tscn")
 var spawnPositions
 var finishedDialog = false
 onready var dialog
+var language
 
 
 func _ready():
-	dialog = Dialogic.start("minigame-tinhoso-tutorial")
-	dialog.connect("dialogic_signal", self, "dialog_listener")
-	add_child(dialog)
+	language = Global.selectedLanguage
+	# Elementos em inglês
+	if language == 1:
+		dialog = Dialogic.start("minigame-tinhoso-tutorial-en")
+		dialog.connect("dialogic_signal", self, "dialog_listener")
+		add_child(dialog)
+	else:
+		dialog = Dialogic.start("minigame-tinhoso-tutorial")
+		dialog.connect("dialogic_signal", self, "dialog_listener")
+		add_child(dialog)
 	spawnPositions = $spawn_carros/spawn_positions.get_children()
 
 
@@ -44,9 +52,14 @@ func _on_Timer_timeout():
 		car_spawn()
 		Global.points += 1
 	if Global.pausedGame == true:
-		dialog = Dialogic.start("moral-minigame")
-		dialog.connect("dialogic_signal", self, "dialog_listener")
-		add_child(dialog)
+		if language == 1:
+			dialog = Dialogic.start("moral-minigame-en")
+			dialog.connect("dialogic_signal", self, "dialog_listener")
+			add_child(dialog)
+		else:
+			dialog = Dialogic.start("moral-minigame")
+			dialog.connect("dialogic_signal", self, "dialog_listener")
+			add_child(dialog)
 		$spawn_carros/Timer.stop()
 		Global.energy -= 1
 
