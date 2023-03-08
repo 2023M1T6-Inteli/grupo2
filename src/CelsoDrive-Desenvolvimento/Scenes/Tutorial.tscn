@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=2]
+[gd_scene load_steps=53 format=2]
 
 [ext_resource path="res://Assets/Tilesets/Modern_Exteriors_Complete_Tileset.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -15,7 +15,6 @@
 [ext_resource path="res://Assets/Items/tecla_e_pressionada.png" type="Texture" id=13]
 [ext_resource path="res://Assets/Fonts/CompassPro.ttf" type="DynamicFontData" id=14]
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=15]
-
 
 [sub_resource type="TileSet" id=1]
 0/name = "Modern_Exteriors_Complete_Tileset.png 0"
@@ -1069,6 +1068,14 @@ font_data = ExtResource( 14 )
 [sub_resource type="RectangleShape2D" id=36]
 extents = Vector2( 51.75, 184 )
 
+[sub_resource type="SpriteFrames" id=37]
+animations = [ {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
 [node name="Tutorial" type="Node2D"]
 position = Vector2( 11, 0 )
 script = ExtResource( 7 )
@@ -1161,5 +1168,10 @@ position = Vector2( 593.25, 184 )
 shape = SubResource( 36 )
 
 [node name="HUD" parent="." instance=ExtResource( 15 )]
+
+[node name="InteractKey" type="AnimatedSprite" parent="."]
+position = Vector2( 550, 212 )
+scale = Vector2( 0.4, 0.4 )
+frames = SubResource( 37 )
 
 [connection signal="body_entered" from="NextSceneArea" to="." method="_on_NextSceneArea_body_entered"]

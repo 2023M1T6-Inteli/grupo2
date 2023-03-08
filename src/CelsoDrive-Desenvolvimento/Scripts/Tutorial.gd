@@ -1,14 +1,23 @@
 extends Node2D
 
 
-onready var dialog
+onready var dialog # Variável utilizada para carregar os diálogos
+onready var language = Global.selectedLanguage # Carrega informações da variável global de idioma
 
 
 func _ready():
-	# Inicia diálogo introdutório e adiciona-o como nó filho
-	dialog = Dialogic.start("intro")
-	dialog.connect("dialogic_signal", self, "dialog_listener")
-	add_child(dialog)
+	# Traduz elementos da tela atual para inglês
+	if language == 1:
+		$InteractLabel.text = "Interact"
+		# Inicia diálogo introdutório (em inglês) e adiciona-o como nó filho
+		dialog = Dialogic.start("intro-en")
+		dialog.connect("dialogic_signal", self, "dialog_listener")
+		add_child(dialog)
+	else:
+		# Inicia diálogo introdutório (em port.) e adiciona-o como nó filho
+		dialog = Dialogic.start("intro")
+		dialog.connect("dialogic_signal", self, "dialog_listener")
+		add_child(dialog)
 
 
 func _process(delta):
@@ -30,9 +39,15 @@ func dialog_listener(string):
 
 # Aciona diálogo com tinhoso quando o personagem entra na Area2D
 func _on_NextSceneArea_body_entered(body):
-	dialog = Dialogic.start("tinhoso-1")
-	dialog.connect("dialogic_signal", self, "dialog_listener")
-	add_child(dialog)
+	# Seleciona o diálogo de acordo com o idioma do jogo
+	if language == 1:
+		dialog = Dialogic.start("tinhoso-1-en")
+		dialog.connect("dialogic_signal", self, "dialog_listener")
+		add_child(dialog)
+	else:
+		dialog = Dialogic.start("tinhoso-1")
+		dialog.connect("dialogic_signal", self, "dialog_listener")
+		add_child(dialog)
 
 
 # Altera animação das setas de acordo com a tecla pressionada
