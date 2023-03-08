@@ -1,5 +1,11 @@
 extends Node2D
 
+var language # Variável que será sempre atualizada de acordo com o script global
+
+
+func _process(delta):
+	language = Global.selectedLanguage
+
 
 # Retorna para a tela do menu inicial
 func _on_BackButton_pressed():
@@ -69,3 +75,12 @@ func _on_Samba_pressed():
 
 func _on_LanguageEnLabel_pressed():
 	Global.selectedLanguage = 1
+	if language != 1:
+		$SettingsLabel.text = "Settings"
+		$MainContainer/AudioLabel.text = "Audio"
+		$MainContainer/LanguageLabel.text = "Language"
+		$MainContainer/ControlsLabel.text = "Controls"
+		$MainContainer/VideoLabel.text = "Video"
+		$SettingsAudioContainer/MusicVolumeLabel.text = "Music Volume"
+		$SettingsAudioContainer/MusicalGenreLabel.text = "Favorite Musical Genre"
+		$SettingsVideoContainer/HBoxContainer/FullScreenButton.text = "Full Screen"

@@ -205,6 +205,7 @@ volume_db = -30.0
 mix_target = 1
 
 [node name="SettingsLanguageContainer" type="VBoxContainer" parent="."]
+visible = false
 margin_left = 240.0
 margin_right = 528.0
 margin_bottom = 368.0
@@ -218,7 +219,7 @@ focus_mode = 0
 custom_colors/font_color_hover = Color( 0.133333, 0.658824, 0.129412, 1 )
 custom_fonts/font = SubResource( 5 )
 enabled_focus_mode = 0
-text = "Português"
+text = "Português (BR)"
 flat = true
 
 [node name="LanguageEnLabel" type="Button" parent="SettingsLanguageContainer"]
@@ -229,7 +230,7 @@ focus_mode = 0
 custom_colors/font_color_hover = Color( 0.133333, 0.658824, 0.129412, 1 )
 custom_fonts/font = SubResource( 5 )
 enabled_focus_mode = 0
-text = "Inglês"
+text = "English"
 flat = true
 
 [node name="LanguageEsLabel" type="Label" parent="SettingsLanguageContainer"]
@@ -237,7 +238,7 @@ margin_top = 203.0
 margin_right = 288.0
 margin_bottom = 222.0
 custom_fonts/font = SubResource( 5 )
-text = "Espanhol"
+text = "Español"
 align = 1
 
 [node name="Label" type="Label" parent="SettingsLanguageContainer"]
@@ -277,7 +278,6 @@ align = 1
 valign = 1
 
 [node name="SettingsVideoContainer" type="VBoxContainer" parent="."]
-visible = false
 margin_left = 240.0
 margin_right = 528.0
 margin_bottom = 368.0
@@ -288,7 +288,7 @@ margin_top = 171.0
 margin_right = 288.0
 margin_bottom = 196.0
 
-[node name="FullScreenLabel" type="Button" parent="SettingsVideoContainer/HBoxContainer"]
+[node name="FullScreenButton" type="Button" parent="SettingsVideoContainer/HBoxContainer"]
 margin_right = 95.0
 margin_bottom = 25.0
 focus_mode = 0
@@ -298,7 +298,7 @@ enabled_focus_mode = 0
 text = "Tela Cheia"
 flat = true
 
-[node name="CheckBox" type="CheckBox" parent="SettingsVideoContainer/HBoxContainer"]
+[node name="FullScreenCheckBox" type="CheckBox" parent="SettingsVideoContainer/HBoxContainer"]
 margin_left = 99.0
 margin_right = 123.0
 margin_bottom = 25.0
@@ -316,5 +316,5 @@ enabled_focus_mode = 0
 [connection signal="pressed" from="SettingsAudioContainer/Samba" to="." method="_on_Samba_pressed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]
 [connection signal="pressed" from="SettingsLanguageContainer/LanguageEnLabel" to="." method="_on_LanguageEnLabel_pressed"]
-[connection signal="pressed" from="SettingsVideoContainer/HBoxContainer/FullScreenLabel" to="." method="_on_FullScreenLabel_pressed"]
-[connection signal="pressed" from="SettingsVideoContainer/HBoxContainer/CheckBox" to="." method="_on_CheckBox_pressed"]
+[connection signal="pressed" from="SettingsVideoContainer/HBoxContainer/FullScreenButton" to="." method="_on_FullScreenLabel_pressed"]
+[connection signal="pressed" from="SettingsVideoContainer/HBoxContainer/FullScreenCheckBox" to="." method="_on_CheckBox_pressed"]
