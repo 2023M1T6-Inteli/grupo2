@@ -32,8 +32,8 @@ func _on_LanguageLabel_pressed():
 	$SettingsLanguageContainer.visible = true
 	$SettingsControlsContainer.visible = false
 	$SettingsVideoContainer.visible = false
-#
-#
+
+
 func _on_ControlsLabel_pressed():
 	# Torna visível o container de controles e esconde os demais
 	$SettingsAudioContainer.visible = false
