@@ -104,7 +104,6 @@ text = "Vídeo"
 flat = true
 
 [node name="SettingsAudioContainer" type="VBoxContainer" parent="."]
-visible = false
 margin_left = 240.0
 margin_right = 528.0
 margin_bottom = 368.0
@@ -278,6 +277,7 @@ align = 1
 valign = 1
 
 [node name="SettingsVideoContainer" type="VBoxContainer" parent="."]
+visible = false
 margin_left = 240.0
 margin_right = 528.0
 margin_bottom = 368.0
