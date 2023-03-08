@@ -65,3 +65,7 @@ func _on_RockAndRoll_pressed():
 func _on_Samba_pressed():
 	Global.selectedMusic = 3
 	MusicController.play_music()
+
+
+func _on_LanguageEnLabel_pressed():
+	Global.selectedLanguage = 1

@@ -1,9 +1,16 @@
 extends Node2D
 
 const truck = preload("res://Scenes/MainTruck.tscn")
+var language = Global.selectedLanguage
 
 
 func _ready():
+	# Elementos em inglês
+	if language == 1:
+		$TitleLabel.text = "Celso Drive"
+		$PlayButton.text = "Play"
+		$ConfigButton.text = "Settings"
+		$CreditsButton.text = "Credits"
 	MusicController.play_music()
 	randomize()
 

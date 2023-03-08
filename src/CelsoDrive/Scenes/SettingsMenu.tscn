@@ -104,6 +104,7 @@ text = "Vídeo"
 flat = true
 
 [node name="SettingsAudioContainer" type="VBoxContainer" parent="."]
+visible = false
 margin_left = 240.0
 margin_right = 528.0
 margin_bottom = 368.0
@@ -204,17 +205,15 @@ volume_db = -30.0
 mix_target = 1
 
 [node name="SettingsLanguageContainer" type="VBoxContainer" parent="."]
-visible = false
 margin_left = 240.0
 margin_right = 528.0
 margin_bottom = 368.0
 alignment = 1
 
 [node name="LanguagePortLabel" type="Button" parent="SettingsLanguageContainer"]
-visible = false
-margin_top = 157.0
+margin_top = 145.0
 margin_right = 288.0
-margin_bottom = 182.0
+margin_bottom = 170.0
 focus_mode = 0
 custom_colors/font_color_hover = Color( 0.133333, 0.658824, 0.129412, 1 )
 custom_fonts/font = SubResource( 5 )
@@ -223,10 +222,9 @@ text = "Português"
 flat = true
 
 [node name="LanguageEnLabel" type="Button" parent="SettingsLanguageContainer"]
-visible = false
-margin_top = 171.0
+margin_top = 174.0
 margin_right = 288.0
-margin_bottom = 196.0
+margin_bottom = 199.0
 focus_mode = 0
 custom_colors/font_color_hover = Color( 0.133333, 0.658824, 0.129412, 1 )
 custom_fonts/font = SubResource( 5 )
@@ -235,7 +233,6 @@ text = "Inglês"
 flat = true
 
 [node name="LanguageEsLabel" type="Label" parent="SettingsLanguageContainer"]
-visible = false
 margin_top = 203.0
 margin_right = 288.0
 margin_bottom = 222.0
@@ -244,9 +241,10 @@ text = "Espanhol"
 align = 1
 
 [node name="Label" type="Label" parent="SettingsLanguageContainer"]
-margin_top = 160.0
+visible = false
+margin_top = 200.0
 margin_right = 288.0
-margin_bottom = 208.0
+margin_bottom = 248.0
 custom_colors/font_color = Color( 0.917647, 1, 0.0352941, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 7 )
@@ -317,5 +315,6 @@ enabled_focus_mode = 0
 [connection signal="pressed" from="SettingsAudioContainer/RockAndRoll" to="." method="_on_RockAndRoll_pressed"]
 [connection signal="pressed" from="SettingsAudioContainer/Samba" to="." method="_on_Samba_pressed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]
+[connection signal="pressed" from="SettingsLanguageContainer/LanguageEnLabel" to="." method="_on_LanguageEnLabel_pressed"]
 [connection signal="pressed" from="SettingsVideoContainer/HBoxContainer/FullScreenLabel" to="." method="_on_FullScreenLabel_pressed"]
 [connection signal="pressed" from="SettingsVideoContainer/HBoxContainer/CheckBox" to="." method="_on_CheckBox_pressed"]
