@@ -2,13 +2,22 @@ extends Node2D
 
 
 onready var dialog
+var language
 
 
 func _ready():
-	# Inicia diálogo introdutório e adiciona-o como nó filho
-	dialog = Dialogic.start("intro")
-	dialog.connect("dialogic_signal", self, "dialog_listener")
-	add_child(dialog)
+	language = Global.selectedLanguage
+	# Elementos em inglês
+	if language == 1:
+		$InteractLabel.text = "Interact"
+		# Inicia diálogo introdutório (em inglês) e adiciona-o como nó filho
+		dialog = Dialogic.start("intro-en")
+		dialog.connect("dialogic_signal", self, "dialog_listener")
+		add_child(dialog)
+	else:
+		dialog = Dialogic.start("intro")
+		dialog.connect("dialogic_signal", self, "dialog_listener")
+		add_child(dialog)
 
 
 func _process(delta):
@@ -30,9 +39,14 @@ func dialog_listener(string):
 
 # Aciona diálogo com tinhoso quando o personagem entra na Area2D
 func _on_NextSceneArea_body_entered(body):
-	dialog = Dialogic.start("tinhoso-1")
-	dialog.connect("dialogic_signal", self, "dialog_listener")
-	add_child(dialog)
+	if language == 1:
+		dialog = Dialogic.start("tinhoso-1-en")
+		dialog.connect("dialogic_signal", self, "dialog_listener")
+		add_child(dialog)
+	else:
+		dialog = Dialogic.start("tinhoso-1")
+		dialog.connect("dialogic_signal", self, "dialog_listener")
+		add_child(dialog)
 
 
 # Altera animação das setas de acordo com a tecla pressionada
