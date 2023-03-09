@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-export var walkSpeed = 50  # Rapidez do movimento
+export var walkSpeed = 100  # Rapidez do movimento
 var velocity = Vector2.ZERO  # Vetor responsável pela movimentação do personagem
 var inputDirection = Vector2(0, 0)  # Vetor atualizado de acordo com as teclas pressionadas
 onready var screenSize = get_viewport_rect().size  # Tamanho da tela
