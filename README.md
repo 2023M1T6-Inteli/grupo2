@@ -4,28 +4,43 @@
 <a href= "https://www.inteli.edu.br/"><img src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
-# PlayVC
+# Celso Drive 🚛
 
-## Integrantes: <a href="https://www.linkedin.com/in/victor-marques-profile/">Victor Gabriel Marques</a>, <a href="https://www.linkedin.com/in/gabriel-farias-alves/">Gabriel Farias Alves</a>, <a href="https://www.linkedin.com/in/rafael-coutinho2004/">Rafael Cauã Coutinho Montenegro</a>, <a href="https://www.linkedin.com/in/henrique-ottoboni-magalh%C3%A3es-77b950264/">Henrique Ottoboni Magalhães</a>, <a href="https://www.linkedin.com/in/davi-arantes-308949264/">Davi Arantes</a>, <a href="https://www.linkedin.com/in/caio-kakunaka-235754264">Caio Enoki Kakunaka</a>, <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-santos-872753264/">João Paulo Santos</a>
+## PlayVC
+
+## Integrantes
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><a href="https://www.linkedin.com/in/victor-marques-profile/"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/86068797?v=4" width="100px;" alt=""/><br><sub><b>Victor M.</b></sub></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/gabriel-farias-alves/"><img style="border-radius: 50%;" src="https://media.licdn.com/dms/image/D5603AQHNYWy5HO9VDw/profile-displayphoto-shrink_800_800/0/1666369397380?e=2147483647&v=beta&t=zrSpyiGUp42RXypj049sCHPFJwqQEHCz3VEPSztcA5o" width="100px;" alt=""/><br><sub><b> Gabriel F.</b></sub></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/rafael-coutinho2004/"><img style="border-radius: 50%;" src="https://media.licdn.com/dms/image/D4D03AQHmLtvlUWXv5Q/profile-displayphoto-shrink_800_800/0/1674154004110?e=2147483647&v=beta&t=LiQl4N323LrXm2gogw8VB32gGcLGNE9cKdSlKp1US_c" width="100px;" alt=""/><br><sub><b>Rafael C.</b></sub></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/henrique-ottoboni-magalh%C3%A3es-77b950264/"><img style="border-radius: 50%;" src="https://media.licdn.com/dms/image/D4D03AQFpEYmWNhzKXA/profile-displayphoto-shrink_800_800/0/1675342628864?e=2147483647&v=beta&t=hpjnN6yJx_lOJUBRgbROt-_OgVAmW5M2Z08-R8S3ybk" width="100px;" alt=""/><br><sub><b>Henrique O.</b></sub></a></td>
+    </tr>
+  </table>
+</div>
+
+<div align="center">
+  <table>
+    <tr>
+    <td align="center"><a href="https://www.linkedin.com/in/davi-arantes-308949264/"><img style="border-radius: 50%;" src="https://ca.slack-edge.com/T02DWH2MXQR-U04L9SLTTPX-f4dae6001f00-512" width="100px;" alt=""/><br><sub><b>Davi A.</b></sub></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-santos-872753264/"><img style="border-radius: 50%;" src="https://media.licdn.com/dms/image/D4E03AQGSVonA5ccgGA/profile-displayphoto-shrink_800_800/0/1675344154580?e=2147483647&v=beta&t=FKFCBNRHJOo1At5l6BmMI_Fy1RGjaowu1VQlgTqgdHE" width="100px;" alt=""/><br><sub><b>João S.</b></sub></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/caio-kakunaka-235754264"><img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/86068797/217929712-a0bf23fc-760c-48a9-b424-3344cd90e7b0.jpg" height="100px;" width="100px;" alt=""/><br><sub><b>Caio E.</b></sub></a></td>
+    </tr>
+  </table>
+</div>
 
 ## Descrição
 
-📜 Descrição curta sobre o que seu projeto faz.
-<br><br>
-Meu projeto é um exemplo de como utilizar o github.
-<br><br>
+> 📜 O projeto foi desenvolvido no módulo 1 da turma de 2023.1 do Inteli - Instituto de Tecnologia e Liderança, pela equipe PlayVC. Sem pormenorizar, o projeto visa demonstrar, sobretudo aos motoristas que transportam os produtos do parceiro (Grupo Unipar), a importância das boas atitudes antes e durante o transporte, de modo a enfatizar que a direção começa em casa.
+
 <p align="center">
-<img src="https://pix4free.org/assets/library/2021-01-20/originals/game.jpg" alt="NOME DO JOGO" border="0">
-  Game by <a href="http://www.nyphotographic.com/">Nick Youngson</a> <a rel="license" href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> <a href="http://pix4free.org/">Pix4free</a>
+  <img src="https://user-images.githubusercontent.com/86068797/217979057-5ab4ce27-7bd6-44ff-b5f4-5926101ae9fd.gif" alt="Celso Drive" border="0">
+  Celso Drive by PlayVC
 </p>
 
-
-💡 De um a dois parágrafos sobre o que é seu projeto e o que ele faz.
-<br><br>
-Meu projeto ajuda estudantes inteli a configurarem seus githubs.
-<br><br>
 May the force be with you!
-<br><br>
 
 ## 🛠 Estrutura de pastas
 
@@ -45,7 +60,7 @@ May the force be with you!
 
 A pasta raiz contem dois arquivos que devem ser alterados:
 
-<b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre seu projeto. O mesmo que você está lendo agora.
+<b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre o projeto. O mesmo que você está lendo agora.
 
 Há também 4 pastas que seguem da seguinte forma:
 
@@ -59,11 +74,6 @@ Há também 4 pastas que seguem da seguinte forma:
 <b>src</b>: Nesta pasta irá todo o código fonte do jogo/sistema, pronto para para ser baixado e modificado.
 
 ## 🛠 Instalação
-
-<b>Android:</b>
-
-Faça o Download do JOGO.apk no seu celular.
-Execute o APK e siga as instruções de seu telefone.
 
 <b>Windows:</b>
 
@@ -87,20 +97,13 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 
 ## 🗃 Histórico de lançamentos
 
-A cada atualização os detalhes devem ser lançados aqui.
+A cada atualização os detalhes são lançados aqui.
 
-* 0.2.1 - 25/01/2022
-    * MUDANÇA: Atualização de docs (código do módulo permanece inalterado)
-* 0.2.0 - 15/01/2022
-    * MUDANÇA: Remove `setDefaultXYZ()`
-    * ADD: Adiciona `init()`
-* 0.1.1 - 11/01/2022
-    * CONSERTADO: Crash quando chama `baz()` (Obrigado @NomeDoContribuidorGeneroso!)
-* 0.1.0 - 10/01/2022
-    * O primeiro lançamento adequado
-    * MUDANÇA: Renomeia `foo()` para `bar()`
-* 0.0.1 - 01/01/2022
-    * Trabalho em andamento
+* 0.2.1 - 24/02/2023
+    * Criação de dois novos mapas (visão externa e interna da casa), criação da primeira tela do menu de opções e adição dos botões de crédito e de opções no menu inicial.
+    * Correção do GDD.
+* 0.1.0 - 10/02/2023
+    * Lançamento da primeira versão (artefato) -> mecânica básica de movimentação, câmera e sons
 
 ## 📋 Licença/License
 

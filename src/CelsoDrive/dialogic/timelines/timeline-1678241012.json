@@ -1,0 +1,93 @@
+{
+	"events": [
+		{
+			"animation": "2-fade_in_up.gd",
+			"animation_length": 3,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 100
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Celso..."
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Maybe that wasn't a good attitude... Did you notice anything strange with the weight of the truck?"
+		},
+		{
+			"animation": "2-fade_in_up.gd",
+			"animation_length": 1.5,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1677975634.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 100
+		},
+		{
+			"character": "character-1677975634.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I noticed it was hard to steer, it felt too heavy"
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yeah... As the load wasn't checked, you drove the truck with a much heavier weight than acceptable..."
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "As a result, movement was reduced, causing accidents and reducing points."
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Well, but we learned a lesson from this: it is always necessary to check that the transported product does not exceed the truck's ideal load, OK?"
+		},
+		{
+			"emit_signal": "finishedMoral",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1678241012.json",
+		"name": "moral-minigame-en"
+	}
+}

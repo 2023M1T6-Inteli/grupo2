@@ -1,0 +1,93 @@
+{
+	"events": [
+		{
+			"animation": "2-fade_in_up.gd",
+			"animation_length": 3,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Celso..."
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Talvez essa não tenha sido uma boa atitude... Notou algo de estranho com com o peso do caminhão?"
+		},
+		{
+			"animation": "2-fade_in_up.gd",
+			"animation_length": 1.5,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1677975634.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1677975634.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Notei que estava difícil de dirigir, parecia pesado demais"
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Pois é... Como a carga não foi verificada, você dirigiu o caminhão com um peso muito maior do que o aceitável..."
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Por conta disso, a movimentação foi reduzida, causando acidentes e diminuindo o acréscimo de pontos."
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Bom, mas tiramos um aprendizado com isso: é necessário sempre verificar se o produto transportado não ultrapassa a carga ideal do caminhão, Ok?"
+		},
+		{
+			"emit_signal": "finishedMoral",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1678194956.json",
+		"name": "moral-minigame"
+	}
+}

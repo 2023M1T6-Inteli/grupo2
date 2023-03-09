@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Tilesets/bg.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
+
+[node name="Cidade" type="Node2D"]
+__meta__ = {
+"_edit_horizontal_guides_": [  ]
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = -544.0
+margin_top = -400.0
+margin_right = 672.0
+margin_bottom = 368.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
+remote_path = NodePath("../../Camera2D")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+limit_left = -535
+limit_top = -400
+limit_right = 665
+limit_bottom = 360
+editor_draw_limits = true

@@ -1,0 +1,21 @@
+{
+	"color": "#ff7b1414",
+	"description": "",
+	"display_name": "Tinhoso",
+	"display_name_bool": true,
+	"id": "character-1677975462.json",
+	"mirror_portraits": true,
+	"name": "tinhoso",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://Assets/NPC/tinhoso.png"
+		}
+	],
+	"scale": 267,
+	"theme": "theme-1677966809.cfg"
+}
