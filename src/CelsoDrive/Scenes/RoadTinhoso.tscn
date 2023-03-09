@@ -214,6 +214,7 @@ position = Vector2( 62.9511, 0 )
 position = Vector2( 94.4267, 0 )
 
 [node name="Timer" type="Timer" parent="spawn_carros"]
+wait_time = 5.0
 autostart = true
 
 [node name="HUD" parent="." instance=ExtResource( 5 )]

@@ -45,13 +45,14 @@ func _process(delta):
 
 func cars_timer():
 	# Cria timer para spawn dos carros
-	yield(get_tree().create_timer(2.0), "timeout")
+	yield(get_tree().create_timer(1.0), "timeout")
 	queue_free()
 
 
 func _on_Timer_timeout():
 	# Carrega os carros se o diálogo tiver acabado e o jogo não estiver pausado
 	if finishedDialog and Global.pausedGame == false:
+		car_spawn()
 		car_spawn()
 		car_spawn()
 		# Incrementa pontuação
