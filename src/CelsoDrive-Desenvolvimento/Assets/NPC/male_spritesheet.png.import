@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/celso_animation1.png-8f0aa0f66c4306b69ed4f5a9953d660d.stex"
+path="res://.import/male_spritesheet.png-91e9f02fb6d14afa18728cb3efb354e5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Scenes/celso_animation1.png"
-dest_files=[ "res://.import/celso_animation1.png-8f0aa0f66c4306b69ed4f5a9953d660d.stex" ]
+source_file="res://Assets/NPC/male_spritesheet.png"
+dest_files=[ "res://.import/male_spritesheet.png-91e9f02fb6d14afa18728cb3efb354e5.stex" ]
 
 [params]
 
