@@ -4,7 +4,6 @@
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=27]
-extents = Vector2( 10.5, 10.5 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "IdleDown"
@@ -107,7 +106,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=9]
 resource_name = "RunLeft"
-length = 1.1
+length = 1.2
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -220,15 +219,6 @@ start_node = "Idle"
 collision_mask = 4
 script = ExtResource( 2 )
 
-[node name="Sprite" type="Sprite" parent="."]
-scale = Vector2( 0.925926, 0.666667 )
-texture = ExtResource( 1 )
-centered = false
-offset = Vector2( 0, -4 )
-hframes = 9
-vframes = 6
-frame = 9
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 13.5, 11.5 )
 shape = SubResource( 27 )
@@ -251,3 +241,12 @@ active = true
 parameters/playback = SubResource( 14 )
 parameters/Idle/blend_position = Vector2( 0, 0 )
 parameters/Run/blend_position = Vector2( 0, 0 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.925926, 0.666667 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 0, -4 )
+hframes = 9
+vframes = 6
+frame = 9
