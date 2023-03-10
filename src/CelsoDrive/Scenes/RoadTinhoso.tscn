@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Scripts/Truck.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/RoadTinhoso.gd" type="Script" id=2]
@@ -6,6 +6,10 @@
 [ext_resource path="res://Assets/Player/truck.png" type="Texture" id=4]
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/GameOver.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Assets/Items/seta_esquerda_pressionada.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Items/seta_esquerda.png" type="Texture" id=8]
+[ext_resource path="res://Assets/Items/seta_direita_pressionada.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Items/seta_direita.png" type="Texture" id=10]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Modern_Exteriors_Complete_Tileset.png 0"
@@ -138,6 +142,32 @@ font_path = "res://Assets/Fonts/CompassPro.ttf"
 size = 30
 font_data = SubResource( 8 )
 
+[sub_resource type="SpriteFrames" id=10]
+animations = [ {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ) ],
+"loop": true,
+"name": "pressed",
+"speed": 5.0
+} ]
+
+[sub_resource type="SpriteFrames" id=11]
+animations = [ {
+"frames": [ ExtResource( 10 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "pressed",
+"speed": 5.0
+} ]
+
 [node name="Road" type="Node2D"]
 pause_mode = 1
 script = ExtResource( 2 )
@@ -244,6 +274,16 @@ margin_bottom = 146.0
 custom_fonts/font = SubResource( 9 )
 align = 1
 valign = 1
+
+[node name="LeftSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 40, 328 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 10 )
+
+[node name="RigthSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 69, 328 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 11 )
 
 [connection signal="timeout" from="ReadyTimer" to="." method="_on_ReadyTimer_timeout"]
 [connection signal="timeout" from="SpawnCarros/SpawnCarTimer" to="." method="_on_SpawnCarTimer_timeout"]

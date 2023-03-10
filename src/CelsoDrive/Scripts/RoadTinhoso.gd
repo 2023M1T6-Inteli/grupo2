@@ -57,6 +57,16 @@ func _process(delta):
 			$Road.position.y = -8
 		else:
 			$Road.position.y += backgroundSpeed
+	
+	# Muda animação das setas de acordo com as teclas pressionadas
+	if Input.is_action_pressed("ui_left"):
+		$LeftSprite.play("pressed")
+	else:
+		$LeftSprite.play("default")
+	if Input.is_action_pressed("ui_right"):
+		$RigthSprite.play("pressed")
+	else:
+		$RigthSprite.play("default")
 
 
 func cars_timer():
