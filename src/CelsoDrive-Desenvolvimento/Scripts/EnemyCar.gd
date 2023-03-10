@@ -1,4 +1,4 @@
-extends KinematicBody2D
+extends Area2D
 
 var carVelocity = Global.gameBaseSpeed
 
@@ -11,6 +11,5 @@ func _physics_process(delta):
 	position.y += carVelocity
 
 
-func _process(delta):
-	pass
-
+func _on_EnemyCar_body_entered(body):
+	Global.pausedGame = true
