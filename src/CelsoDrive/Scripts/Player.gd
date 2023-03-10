@@ -25,13 +25,12 @@ func _physics_process(delta):
 		# Envia dados do input, os quais tornam-se animações
 		animationTree.set("parameters/Idle/blend_position", inputDirection)
 		animationTree.set("parameters/Run/blend_position", inputDirection)
-		
 		# Roda animação do personagem andando
 		animationState.travel("Run")
 		velocity = inputDirection
 	else:
 		# Se o vetor inputDirection for 0, siginifica que não há movimentação -> Idle
-		animationState.travel("idle")
+		animationState.travel("Idle")
 		velocity = Vector2.ZERO
 
 	# Restringe a movimentação do personagem de acordo com o tamanho da tela
