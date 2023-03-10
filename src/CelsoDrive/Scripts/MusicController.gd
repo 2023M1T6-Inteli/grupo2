@@ -1,6 +1,5 @@
 extends Node2D
 
-
 # Carrega AudioStreamPlayers da tela como variáveis
 onready var forroAudio = $ForroAudio
 onready var sertanejoAudio = $SertanejoAudio

@@ -3,7 +3,7 @@ extends Node2D
 var velocity = Vector2.ZERO  # Vetor responsável pela movimentação do caminhão
 var inputDirection = Vector2(0, 0)  # Vetor atualizado de acordo com as teclas pressionadas
 var backgroundSpeed = Global.gameBaseSpeed * 0.9 # Velocidade com que o background se move (90% da velocidade dos carros)
-const enemy = preload("res://Scenes/EnemyCar.tscn") # Carrega cena dos carros inimigos
+const ENEMY = preload("res://Scenes/EnemyCar.tscn") # Carrega cena dos carros inimigos
 var spawnPositions # Variável que carregará as posições de spawn
 var finishedDialog = false # Indica o status do diálogo. true = finalizado e false = em andamento
 onready var dialog = Global.selectedLanguage
@@ -80,6 +80,6 @@ func _on_SpawnCarTimer_timeout():
 # Randomiza aparecimento dos carros
 func car_spawn():
 	var randomIndex = randi() % spawnPositions.size()
-	var enemyCar = enemy.instance()	
+	var enemyCar = ENEMY.instance()	
 	enemyCar.global_position = spawnPositions[randomIndex].global_position
 	add_child(enemyCar)

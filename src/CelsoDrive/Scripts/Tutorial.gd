@@ -1,6 +1,5 @@
 extends Node2D
 
-
 onready var dialog # Variável utilizada para carregar os diálogos
 onready var language = Global.selectedLanguage # Carrega informações da variável global de idioma
 

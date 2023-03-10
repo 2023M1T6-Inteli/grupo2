@@ -9,10 +9,6 @@ onready var animationTree = $AnimationTree # Árvore de animações do personage
 onready var animationState = animationTree.get("parameters/playback") 
 
 
-func _ready():
-	pass
-
-
 func _physics_process(delta):
 	# Processa e salva inputs na horizontal e na vertical
 	if inputDirection.y == 0:
