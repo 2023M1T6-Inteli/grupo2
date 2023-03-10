@@ -1,10 +1,8 @@
 extends Control
 
+# CENA EM DESENVOLVIMENTO. NÃO FOI USADA NO ARTEFATO.
 
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-	
 
+# Abre tela de configurações
 func _on_ConfigButton_pressed():
 	get_tree().change_scene("res://Scenes/SettingsMenu.tscn")

@@ -29,7 +29,6 @@ func _physics_process(delta):
 		# Envia dados do input, os quais tornam-se animações
 		animationTree.set("parameters/Idle/blend_position", inputDirection)
 		animationTree.set("parameters/Run/blend_position", inputDirection)
-		
 		# Roda animação do personagem andando
 		animationState.travel("Run")
 		velocity = inputDirection

@@ -1251,7 +1251,7 @@ __meta__ = {
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="TutorialNpc"]
 position = Vector2( 98.1593, 332.948 )
-scale = Vector2( 144.785, 104.046 )
+scale = Vector2( 100, 100 )
 frames = SubResource( 42 )
 animation = "RunRight"
 frame = 2
