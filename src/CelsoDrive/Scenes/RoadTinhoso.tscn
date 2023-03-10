@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Scripts/Truck.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/RoadTinhoso.gd" type="Script" id=2]
@@ -131,6 +131,13 @@ extents = Vector2( 69, 372 )
 [sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 12, 18.5447 )
 
+[sub_resource type="DynamicFontData" id=8]
+font_path = "res://Assets/Fonts/CompassPro.ttf"
+
+[sub_resource type="DynamicFont" id=9]
+size = 30
+font_data = SubResource( 8 )
+
 [node name="Road" type="Node2D"]
 pause_mode = 1
 script = ExtResource( 2 )
@@ -139,9 +146,6 @@ __meta__ = {
 }
 
 [node name="ReadyTimer" type="Timer" parent="."]
-wait_time = 6.0
-one_shot = true
-autostart = true
 
 [node name="Road" type="TileMap" parent="."]
 position = Vector2( 0, -8 )
@@ -226,6 +230,20 @@ position = Vector2( 94.4267, 0 )
 
 [node name="GameOver" parent="." instance=ExtResource( 6 )]
 visible = false
+
+[node name="Label" type="Label" parent="."]
+visible = false
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 297.0
+margin_top = 132.0
+margin_right = 337.0
+margin_bottom = 146.0
+custom_fonts/font = SubResource( 9 )
+align = 1
+valign = 1
 
 [connection signal="timeout" from="ReadyTimer" to="." method="_on_ReadyTimer_timeout"]
 [connection signal="timeout" from="SpawnCarros/SpawnCarTimer" to="." method="_on_SpawnCarTimer_timeout"]

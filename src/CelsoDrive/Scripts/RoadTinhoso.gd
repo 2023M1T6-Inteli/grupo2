@@ -8,6 +8,7 @@ var spawnPositions # Variável que carregará as posições de spawn
 var finishedDialog = false # Indica o status do diálogo. true = finalizado e false = em andamento
 onready var dialog = Global.selectedLanguage
 onready var language = Global.selectedLanguage # Carrega informações da variável global de idioma
+var time = 10 # Variável para o cronômetro
 
 
 func _ready():
@@ -23,18 +24,28 @@ func _ready():
 	
 	# Posições de spawn dos carros
 	spawnPositions = $SpawnCarros/SpawnPositions.get_children()
+	randomize()
 
 
-# Após o tempo de adaptação do jogador, habilita timer de spawn
+# Cronômetro do jogo. Após finalizar, inicia o spawn dos carros
 func _on_ReadyTimer_timeout():
-	$SpawnCarros/SpawnCarTimer.start()
+	if time >= 0:
+		$Label.text = String(time)
+		time -= 1
+	else:
+		$ReadyTimer.stop()
+		$Label.visible = false
+		$SpawnCarros/SpawnCarTimer.start()
 
 
 func dialog_listener(string):
 	match string:
 		# Verifica se os diálogos acabaram
 		"finishedDialog":
-			finishedDialog = true;
+			finishedDialog = true
+			$ReadyTimer.start() # Inicia cronômetro
+			$Label.visible = true # Mostra label do cronômetro
+		
 		"finishedMoral":
 			$GameOver.visible = true
 
