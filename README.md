@@ -117,6 +117,8 @@ A cada atualização os detalhes são lançados aqui.
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/Spidus/Teste_Final_1">MODELO GIT INTELI</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.yggbrasil.com.br/vr">INTELI, VICTOR BRUNO ALEXANDER ROSETTI DE QUIROZ</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
 
-## 🎓 Referências
+## 🎓 Referências & Créditos
 
-Aqui estão as referências usadas no projeto.
+> 🤖 [Documentação do Godot](https://docs.godotengine.org/pt_BR/latest/about/index.html) <br>
+🏠 [Modern Exteriors](https://limezu.itch.io/moderninteriors) e [Modern Interiors](https://limezu.itch.io/moderninteriors) <br>
+📻 [Forró](https://www.youtube.com/watch?v=IGgg8PajPN8), [Samba](https://www.youtube.com/watch?v=CoAP1ZjOD_Q), [Sertanejo](https://www.youtube.com/watch?v=9MoDQTe10vs) e [Rock](https://www.youtube.com/watch?v=fh-o8Bxc3Ys)
