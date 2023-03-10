@@ -11,7 +11,6 @@ func _ready():
 		$PlayButton.text = "Play"
 		$ConfigButton.text = "Settings"
 		$CreditsButton.text = "Credits"
-	MusicController.play_music() # Reproduz música
 	randomize()
 
 

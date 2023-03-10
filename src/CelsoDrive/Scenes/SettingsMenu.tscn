@@ -104,6 +104,7 @@ text = "Vídeo"
 flat = true
 
 [node name="SettingsAudioContainer" type="VBoxContainer" parent="."]
+visible = false
 margin_left = 240.0
 margin_right = 528.0
 margin_bottom = 368.0
@@ -204,7 +205,6 @@ volume_db = -30.0
 mix_target = 1
 
 [node name="SettingsLanguageContainer" type="VBoxContainer" parent="."]
-visible = false
 margin_left = 240.0
 margin_right = 528.0
 margin_bottom = 368.0
@@ -315,6 +315,7 @@ enabled_focus_mode = 0
 [connection signal="pressed" from="SettingsAudioContainer/RockAndRoll" to="." method="_on_RockAndRoll_pressed"]
 [connection signal="pressed" from="SettingsAudioContainer/Samba" to="." method="_on_Samba_pressed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]
+[connection signal="pressed" from="SettingsLanguageContainer/LanguagePortLabel" to="." method="_on_LanguagePortLabel_pressed"]
 [connection signal="pressed" from="SettingsLanguageContainer/LanguageEnLabel" to="." method="_on_LanguageEnLabel_pressed"]
 [connection signal="pressed" from="SettingsVideoContainer/HBoxContainer/FullScreenButton" to="." method="_on_FullScreenLabel_pressed"]
 [connection signal="pressed" from="SettingsVideoContainer/HBoxContainer/FullScreenCheckBox" to="." method="_on_CheckBox_pressed"]
