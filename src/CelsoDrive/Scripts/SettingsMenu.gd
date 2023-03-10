@@ -116,4 +116,4 @@ func _on_LanguageEnLabel_pressed():
 func _on_LanguagePortLabel_pressed():
 	# Retorna idioma para português
 	Global.selectedLanguage = 0
-	get_tree().reload_current_scene()
+	return get_tree().reload_current_scene()
