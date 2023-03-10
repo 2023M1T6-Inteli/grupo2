@@ -4,7 +4,7 @@
 <a href= "https://www.inteli.edu.br/"><img src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
-# Celso Drive 🚛
+# Celso Caminhões 🚛
 
 ## PlayVC
 
@@ -36,8 +36,8 @@
 > 📜 O projeto foi desenvolvido no módulo 1 da turma de 2023.1 do Inteli - Instituto de Tecnologia e Liderança, pela equipe PlayVC. Sem pormenorizar, o projeto visa demonstrar, sobretudo aos motoristas que transportam os produtos do parceiro (Grupo Unipar), a importância das boas atitudes antes e durante o transporte, de modo a enfatizar que a direção começa em casa.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/86068797/217979057-5ab4ce27-7bd6-44ff-b5f4-5926101ae9fd.gif" alt="Celso Drive" border="0">
-  Celso Drive by PlayVC
+  <img src="https://user-images.githubusercontent.com/86068797/224431233-6509adbc-dc0e-4afe-8924-876063d6fd5a.png" alt="Celso Drive">
+  Celso Caminhões by PlayVC
 </p>
 
 May the force be with you!
