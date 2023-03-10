@@ -22,7 +22,12 @@ func _ready():
 		add_child(dialog)
 	
 	# Posições de spawn dos carros
-	spawnPositions = $spawn_carros/spawn_positions.get_children()
+	spawnPositions = $SpawnCarros/SpawnPositions.get_children()
+
+
+# Após o tempo de adaptação do jogador, habilita timer de spawn
+func _on_ReadyTimer_timeout():
+	$SpawnCarros/SpawnCarTimer.start()
 
 
 func dialog_listener(string):
@@ -49,7 +54,7 @@ func cars_timer():
 	queue_free()
 
 
-func _on_Timer_timeout():
+func _on_SpawnCarTimer_timeout():
 	# Carrega os carros se o diálogo tiver acabado e o jogo não estiver pausado
 	if finishedDialog and Global.pausedGame == false:
 		car_spawn()
@@ -60,6 +65,7 @@ func _on_Timer_timeout():
 	
 	# Diálogos de gameover de acordo com o idioma
 	if Global.pausedGame == true:
+		$SpawnCarros/SpawnCarTimer.stop()
 		if language == 1:
 			dialog = Dialogic.start("moral-minigame-en")
 			dialog.connect("dialogic_signal", self, "dialog_listener")
@@ -68,7 +74,6 @@ func _on_Timer_timeout():
 			dialog = Dialogic.start("moral-minigame")
 			dialog.connect("dialogic_signal", self, "dialog_listener")
 			add_child(dialog)
-		$spawn_carros/Timer.stop()
 		Global.energy -= 1 # Diminui energia
 
 
