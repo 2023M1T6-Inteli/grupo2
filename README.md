@@ -99,8 +99,17 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 
 A cada atualização os detalhes são lançados aqui.
 
+* 0.3.0 - 10/03/2023
+    * Remodelação das telas de menu inicial e menu de configurações;
+    * Adição de funcionalidades à tela de configurações - controle do volume da música, seleção de estilo musical favorito, seleção de idioma, informações sobre os controles do jogo e configurações de tela cheia;
+    * Tela de tutorial interativa;
+    * Finalização e implantação do personagem principal - Celso;
+    * Criação dos diálogos do jogo em português, inglês e espanhol;
+    * Criação do primeiro minigame com diálogos, cronômetro e tutorial;
+    * Desenvolvimento da HUD com a barra de energia e a pontuação do jogador;
+    * Atualização do GDD com os testes iniciais.
 * 0.2.1 - 24/02/2023
-    * Criação de dois novos mapas (visão externa e interna da casa), criação da primeira tela do menu de opções e adição dos botões de crédito e de opções no menu inicial.
+    * Criação de dois novos mapas (visão externa e interna da casa), criação da primeira tela do menu de opções e adição dos botões de crédito e de opções no menu inicial;
     * Correção do GDD.
 * 0.1.0 - 10/02/2023
     * Lançamento da primeira versão (artefato) -> mecânica básica de movimentação, câmera e sons
