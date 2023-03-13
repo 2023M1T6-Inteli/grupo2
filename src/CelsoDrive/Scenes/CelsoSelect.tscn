@@ -1,0 +1,69 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Assets/Background/celso_select.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Fonts/CompassPro.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Assets/Player/celso01.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Player/celso03.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Player/celso04.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Player/celso02.png" type="Texture" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 45
+font_data = ExtResource( 2 )
+
+[node name="CelsoSelect" type="Control"]
+
+[node name="BG" type="TextureRect" parent="."]
+margin_left = -3.0
+margin_right = 673.0
+margin_bottom = 381.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="TitleLabel" type="Label" parent="."]
+margin_left = 56.0
+margin_top = 2.0
+margin_right = 585.0
+margin_bottom = 55.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 4
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 1 )
+text = "ESCOLHA SEU PERSONAGEM"
+align = 1
+valign = 1
+
+[node name="Celso01" type="TextureButton" parent="."]
+margin_left = 231.0
+margin_top = 52.0
+margin_right = 422.0
+margin_bottom = 275.0
+texture_normal = ExtResource( 3 )
+expand = true
+
+[node name="Celso02" type="TextureButton" parent="."]
+visible = false
+margin_left = 231.0
+margin_top = 52.0
+margin_right = 422.0
+margin_bottom = 275.0
+texture_normal = ExtResource( 6 )
+expand = true
+
+[node name="Celso03" type="TextureButton" parent="."]
+visible = false
+margin_left = 231.0
+margin_top = 52.0
+margin_right = 422.0
+margin_bottom = 275.0
+texture_normal = ExtResource( 4 )
+expand = true
+
+[node name="Celso04" type="TextureButton" parent="."]
+visible = false
+margin_left = 231.0
+margin_top = 52.0
+margin_right = 422.0
+margin_bottom = 275.0
+texture_normal = ExtResource( 5 )
+expand = true
