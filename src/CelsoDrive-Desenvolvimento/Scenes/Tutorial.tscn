@@ -1,4 +1,4 @@
-[gd_scene load_steps=52 format=2]
+[gd_scene load_steps=70 format=2]
 
 [ext_resource path="res://Assets/Tilesets/Modern_Exteriors_Complete_Tileset.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -15,7 +15,8 @@
 [ext_resource path="res://Assets/Items/tecla_e_pressionada.png" type="Texture" id=13]
 [ext_resource path="res://Assets/Fonts/CompassPro.ttf" type="DynamicFontData" id=14]
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=15]
-
+[ext_resource path="res://Assets/NPC/cat_sprite_sheet.png" type="Texture" id=16]
+[ext_resource path="res://Assets/NPC/male_spritesheet.png" type="Texture" id=17]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Modern_Exteriors_Complete_Tileset.png 0"
@@ -1069,6 +1070,80 @@ font_data = ExtResource( 14 )
 [sub_resource type="RectangleShape2D" id=36]
 extents = Vector2( 51.75, 184 )
 
+[sub_resource type="SpriteFrames" id=37]
+animations = [ {
+"frames": [ ExtResource( 5 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="AtlasTexture" id=39]
+atlas = ExtResource( 17 )
+region = Rect2( 0, 64, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=40]
+atlas = ExtResource( 17 )
+region = Rect2( 16, 64, 16, 32 )
+
+[sub_resource type="AtlasTexture" id=41]
+atlas = ExtResource( 17 )
+region = Rect2( 32, 64, 16, 32 )
+
+[sub_resource type="SpriteFrames" id=42]
+animations = [ {
+"frames": [ SubResource( 39 ), SubResource( 40 ), SubResource( 41 ) ],
+"loop": true,
+"name": "RunRight",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=43]
+extents = Vector2( 942.333, 961.852 )
+
+[sub_resource type="AtlasTexture" id=50]
+atlas = ExtResource( 16 )
+region = Rect2( 0, 140, 32, 35 )
+
+[sub_resource type="AtlasTexture" id=51]
+atlas = ExtResource( 16 )
+region = Rect2( 32, 140, 32, 35 )
+
+[sub_resource type="AtlasTexture" id=52]
+atlas = ExtResource( 16 )
+region = Rect2( 64, 140, 32, 35 )
+
+[sub_resource type="AtlasTexture" id=53]
+atlas = ExtResource( 16 )
+region = Rect2( 96, 140, 32, 35 )
+
+[sub_resource type="AtlasTexture" id=54]
+atlas = ExtResource( 16 )
+region = Rect2( 128, 140, 32, 35 )
+
+[sub_resource type="AtlasTexture" id=55]
+atlas = ExtResource( 16 )
+region = Rect2( 160, 140, 32, 35 )
+
+[sub_resource type="AtlasTexture" id=56]
+atlas = ExtResource( 16 )
+region = Rect2( 192, 140, 32, 35 )
+
+[sub_resource type="AtlasTexture" id=57]
+atlas = ExtResource( 16 )
+region = Rect2( 224, 140, 32, 35 )
+
+[sub_resource type="SpriteFrames" id=49]
+animations = [ {
+"frames": [ SubResource( 50 ), SubResource( 51 ), SubResource( 52 ), SubResource( 53 ), SubResource( 54 ), SubResource( 55 ), SubResource( 56 ), SubResource( 57 ) ],
+"loop": true,
+"name": "RunRight",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=58]
+extents = Vector2( 5.75, 3.75 )
+
 [node name="Tutorial" type="Node2D"]
 position = Vector2( 11, 0 )
 script = ExtResource( 7 )
@@ -1161,5 +1236,45 @@ position = Vector2( 593.25, 184 )
 shape = SubResource( 36 )
 
 [node name="HUD" parent="." instance=ExtResource( 15 )]
+
+[node name="InteractKey" type="AnimatedSprite" parent="."]
+position = Vector2( 550, 212 )
+scale = Vector2( 0.4, 0.4 )
+frames = SubResource( 37 )
+
+[node name="TutorialNpc" type="KinematicBody2D" parent="."]
+position = Vector2( -273, 229 )
+scale = Vector2( 0.0127344, 0.0135156 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="TutorialNpc"]
+position = Vector2( 98.1593, 332.948 )
+scale = Vector2( 100, 100 )
+frames = SubResource( 42 )
+animation = "RunRight"
+frame = 2
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TutorialNpc"]
+position = Vector2( 157.061, -295.954 )
+scale = Vector2( 1, 0.999999 )
+shape = SubResource( 43 )
+
+[node name="TutorialNpcCat" type="KinematicBody2D" parent="."]
+position = Vector2( -123, 17 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="TutorialNpcCat"]
+position = Vector2( -68, 230 )
+frames = SubResource( 49 )
+animation = "RunRight"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TutorialNpcCat"]
+position = Vector2( -68, 227 )
+shape = SubResource( 58 )
 
 [connection signal="body_entered" from="NextSceneArea" to="." method="_on_NextSceneArea_body_entered"]

@@ -1,8 +1,8 @@
 extends Node2D
 
-
 onready var dialog # Variável utilizada para carregar os diálogos
 onready var language = Global.selectedLanguage # Carrega informações da variável global de idioma
+var finishedDialog = false # Variável que contém valor do sinal ao finalizar dialogo
 
 
 func _ready():
@@ -23,6 +23,7 @@ func _ready():
 func _process(delta):
 	# Verifica, a cada frame, as teclas pressionadas
 	key_pressed()
+	move_npc()
 
 
 # Recebe e trata os sinais do nó de diálogo
@@ -35,6 +36,10 @@ func dialog_listener(string):
 		# Adiciona na lista de escolhas a decisão boa de recusar a corrida do tinhoso
 		"refused":
 			Global.choices.append(0);
+		
+		# Quando o sinal for emitido, a variável finishedDialog recebe true
+		"finishedDialog":
+			finishedDialog = true;
 
 
 # Aciona diálogo com tinhoso quando o personagem entra na Area2D
@@ -72,3 +77,13 @@ func key_pressed():
 		$InteractKeySprite.play("pressed")
 	else:
 		$InteractKeySprite.play("default")
+
+
+# Move NPCs horizontalmente
+func move_npc():
+	# Condições para ativar animação -> impede que continue se movendo após sair da tela
+	if finishedDialog and $TutorialNpc.position.x < 700:
+		$TutorialNpc.position.x += 2
+		$TutorialNpc/AnimatedSprite.play("RunRight")
+		$TutorialNpcCat.position.x += 2
+		$TutorialNpcCat/AnimatedSprite.play("RunRight")

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Sertanejo.mp3-cf152c7f74ace2d950221331c9c00c15.mp3str"
+
+[deps]
+
+source_file="res://Assets/Music/Sertanejo.mp3"
+dest_files=[ "res://.import/Sertanejo.mp3-cf152c7f74ace2d950221331c9c00c15.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

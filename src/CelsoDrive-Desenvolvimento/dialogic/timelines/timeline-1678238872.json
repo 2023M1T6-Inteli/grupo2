@@ -1,0 +1,107 @@
+{
+	"events": [
+		{
+			"animation": "2-fade_in_up.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Road brother, I hope you are ready for your next trip..."
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "My name is Roberta and I will accompany you on this journey."
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Our client is UNIPAR and we have a very important mission…"
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Deliver a very delicate load without any accidents."
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "So going forward you may face some obstacles…"
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "But, always keep in mind: your actions here define much more than just your score."
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Do you want me to walk you through your tutorial?"
+		},
+		{
+			"choice": "Yes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "With the arrow keys on your keyboard you control the character around the city..."
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "With the \"e\" key, you can interact with objects and people."
+		},
+		{
+			"choice": "No",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1678238872.json",
+		"name": "intro-en"
+	}
+}

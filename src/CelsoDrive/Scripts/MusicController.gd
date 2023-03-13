@@ -1,12 +1,14 @@
 extends Node2D
 
-
 # Carrega AudioStreamPlayers da tela como variáveis
 onready var forroAudio = $ForroAudio
 onready var sertanejoAudio = $SertanejoAudio
 onready var rockAudio = $RockAudio
 onready var sambaAudio = $SambaAudio
 
+
+func _ready():
+	play_music() # Reproduz música
 
 func play_music():
 	# Reproduz o áudio do forró
