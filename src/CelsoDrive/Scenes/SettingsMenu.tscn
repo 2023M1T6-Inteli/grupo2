@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Assets/Fonts/CompassPro.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Scripts/SettingsMenu.gd" type="Script" id=2]
-[ext_resource path="res://Assets/Background/inicio_opcoes.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Background/main_settings.png" type="Texture" id=4]
 [ext_resource path="res://Assets/Items/voltar.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Items/teclas_1.jpg" type="Texture" id=6]
 

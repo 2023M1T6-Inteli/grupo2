@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/inicio_opcoes.png-04d85b5d48ec8242a803e68ad520f5e9.stex"
+path="res://.import/next.png-73053e125e33d8e7d3457d77df41c116.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Background/inicio_opcoes.png"
-dest_files=[ "res://.import/inicio_opcoes.png-04d85b5d48ec8242a803e68ad520f5e9.stex" ]
+source_file="res://Assets/Items/next.png"
+dest_files=[ "res://.import/next.png-73053e125e33d8e7d3457d77df41c116.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
