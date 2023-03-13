@@ -1,0 +1,136 @@
+{
+	"events": [
+		{
+			"animation": "2-fade_in_up.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1677975462.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 100
+		},
+		{
+			"character": "character-1677975462.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Cough cough... Celsão! Glad you arrived!"
+		},
+		{
+			"character": "character-1677975462.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I have a delivery service for you... It has some special conditions"
+		},
+		{
+			"character": "character-1677975462.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "I'll pay you double the amount..."
+		},
+		{
+			"character": "character-1677975462.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "But... As I need it urgently, I won't have time to weigh the load and do the delivery checklist..."
+		},
+		{
+			"character": "character-1677975462.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Well, but that's the minus. Tell me Celsão, are we going to make some money?"
+		},
+		{
+			"animation": "2-fade_in_up.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1677975634.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 100
+		},
+		{
+			"character": "character-1677975634.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "What do you think of this proposal? Looks like there's a lot of money at stake!!"
+		},
+		{
+			"choice": "Accept",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1,
+			"waiting_skippable": true
+		},
+		{
+			"emit_signal": "acepted",
+			"event_id": "dialogic_040"
+		},
+		{
+			"change_scene": "res://Scenes/RoadTinhoso.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"choice": "Refuse",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_023",
+			"hide_dialogbox": true,
+			"wait_seconds": 1
+		},
+		{
+			"emit_signal": "refused",
+			"event_id": "dialogic_040"
+		},
+		{
+			"change_scene": "res://Scenes/OutsideHouse.tscn",
+			"event_id": "dialogic_041"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1678239705.json",
+		"name": "tinhoso-1-en"
+	}
+}

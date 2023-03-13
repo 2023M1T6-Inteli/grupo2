@@ -106,7 +106,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id=9]
 resource_name = "RunLeft"
-length = 1.1
+length = 1.2
 loop = true
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
@@ -219,17 +219,8 @@ start_node = "Idle"
 collision_mask = 4
 script = ExtResource( 2 )
 
-[node name="Sprite" type="Sprite" parent="."]
-scale = Vector2( 0.925926, 0.666667 )
-texture = ExtResource( 1 )
-centered = false
-offset = Vector2( 0, -4 )
-hframes = 9
-vframes = 6
-frame = 9
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 13, 10 )
+position = Vector2( 13.5, 11.5 )
 shape = SubResource( 27 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -248,5 +239,14 @@ tree_root = SubResource( 13 )
 anim_player = NodePath("../AnimationPlayer")
 active = true
 parameters/playback = SubResource( 14 )
-parameters/Idle/blend_position = Vector2( 0, 0 )
+parameters/Idle/blend_position = Vector2( 0.00633919, -0.543103 )
 parameters/Run/blend_position = Vector2( 0, 0 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.925926, 0.666667 )
+texture = ExtResource( 1 )
+centered = false
+offset = Vector2( 0, -4 )
+hframes = 9
+vframes = 6
+frame = 9

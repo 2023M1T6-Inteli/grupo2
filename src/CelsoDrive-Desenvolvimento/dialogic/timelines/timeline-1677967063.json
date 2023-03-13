@@ -95,6 +95,10 @@
 			"event_id": "dialogic_013"
 		},
 		{
+			"emit_signal": "finishedDialogue",
+			"event_id": "dialogic_040"
+		},
+		{
 			"event_id": "dialogic_022",
 			"transition_duration": 2
 		}

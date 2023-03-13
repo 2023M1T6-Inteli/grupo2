@@ -1,8 +1,7 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Assets/Fonts/CompassPro.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Scripts/SettingsMenu.gd" type="Script" id=2]
-[ext_resource path="res://Assets/Music/Forró Estilizado.mp3" type="AudioStream" id=3]
 [ext_resource path="res://Assets/Background/inicio_opcoes.png" type="Texture" id=4]
 [ext_resource path="res://Assets/Items/voltar.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Items/teclas_1.jpg" type="Texture" id=6]
@@ -198,11 +197,6 @@ icon = ExtResource( 5 )
 flat = true
 icon_align = 1
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 3 )
-volume_db = -30.0
-mix_target = 1
-
 [node name="SettingsLanguageContainer" type="VBoxContainer" parent="."]
 visible = false
 margin_left = 240.0
@@ -315,6 +309,7 @@ enabled_focus_mode = 0
 [connection signal="pressed" from="SettingsAudioContainer/RockAndRoll" to="." method="_on_RockAndRoll_pressed"]
 [connection signal="pressed" from="SettingsAudioContainer/Samba" to="." method="_on_Samba_pressed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]
+[connection signal="pressed" from="SettingsLanguageContainer/LanguagePortLabel" to="." method="_on_LanguagePortLabel_pressed"]
 [connection signal="pressed" from="SettingsLanguageContainer/LanguageEnLabel" to="." method="_on_LanguageEnLabel_pressed"]
 [connection signal="pressed" from="SettingsVideoContainer/HBoxContainer/FullScreenButton" to="." method="_on_FullScreenLabel_pressed"]
 [connection signal="pressed" from="SettingsVideoContainer/HBoxContainer/FullScreenCheckBox" to="." method="_on_CheckBox_pressed"]

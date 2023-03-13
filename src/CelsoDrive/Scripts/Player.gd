@@ -1,16 +1,12 @@
 extends KinematicBody2D
 
-export var walkSpeed = 50  # Rapidez do movimento
+export var walkSpeed = 100  # Rapidez do movimento
 var velocity = Vector2.ZERO  # Vetor responsável pela movimentação do personagem
 var inputDirection = Vector2(0, 0)  # Vetor atualizado de acordo com as teclas pressionadas
 onready var screenSize = get_viewport_rect().size  # Tamanho da tela
 onready var animationTree = $AnimationTree # Árvore de animações do personagem
 # Define animation state de acordo com animationTree
 onready var animationState = animationTree.get("parameters/playback") 
-
-
-func _ready():
-	pass
 
 
 func _physics_process(delta):
@@ -29,13 +25,12 @@ func _physics_process(delta):
 		# Envia dados do input, os quais tornam-se animações
 		animationTree.set("parameters/Idle/blend_position", inputDirection)
 		animationTree.set("parameters/Run/blend_position", inputDirection)
-		
 		# Roda animação do personagem andando
 		animationState.travel("Run")
 		velocity = inputDirection
 	else:
 		# Se o vetor inputDirection for 0, siginifica que não há movimentação -> Idle
-		animationState.travel("idle")
+		animationState.travel("Idle")
 		velocity = Vector2.ZERO
 
 	# Restringe a movimentação do personagem de acordo com o tamanho da tela

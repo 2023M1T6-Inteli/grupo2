@@ -1674,7 +1674,6 @@ shape = SubResource( 4 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 64, 208 )
-walkSpeed = 100
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
 remote_path = NodePath("../../Camera2D")
