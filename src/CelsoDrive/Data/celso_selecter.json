@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "name": "Celso 01",
+      "avatar": "celso01.png",
+      "spritesheet": "spritesheet-celso-01"
+    },
+    {
+      "id": 2,
+      "name": "Celso 02",
+      "avatar": "celso02.png",
+      "spritesheet": "spritesheet-celso-02"
+    },
+    {
+      "id": 3,
+      "name": "Celso 03",
+      "avatar": "celso03.png",
+      "spritesheet": "spritesheet-celso-03"
+    },
+    {
+      "id": 4,
+      "name": "Celso 04",
+      "avatar": "celso04.png",
+      "spritesheet": "spritesheet-celso-04"
+    },
+    {
+      "id": 5,
+      "name": "Celso 05",
+      "avatar": "celso05.png",
+      "spritesheet": "spritesheet-celso-05"
+    },
+    {
+      "id": 6,
+      "name": "Celso 06",
+      "avatar": "celso06.png",
+      "spritesheet": "spritesheet-celso-06"
+    }
+  ]
