@@ -1,9 +1,7 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=9 format=2]
 
-[ext_resource path="res://Scripts/Estrada.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Player/truck.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Tilesets/Modern_Exteriors_Complete_Tileset.png" type="Texture" id=3]
-[ext_resource path="res://Scripts/Caminhao.gd" type="Script" id=4]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Modern_Exteriors_Complete_Tileset.png 0"
@@ -133,7 +131,6 @@ extents = Vector2( 12.956, 28.495 )
 extents = Vector2( 16, 18.5447 )
 
 [node name="Road" type="Node2D"]
-script = ExtResource( 1 )
 __meta__ = {
 "_edit_horizontal_guides_": [  ]
 }
@@ -176,7 +173,6 @@ shape = SubResource( 4 )
 
 [node name="truck" type="KinematicBody2D" parent="."]
 position = Vector2( 0, 8 )
-script = ExtResource( 4 )
 
 [node name="sprite_truck" type="Sprite" parent="truck"]
 position = Vector2( 304, 312 )

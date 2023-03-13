@@ -7,7 +7,6 @@ var moveSpeed = 300 # Velocidade com que o caminhão se move lateralmente
 func _ready():
 	pass
 
-
 func _physics_process(delta):	
 	# Bloqueia o movimento para cima / baixo
 	if inputDirection.y == 0:
@@ -22,8 +21,6 @@ func _physics_process(delta):
 		velocity = Vector2.ZERO
 		
 	velocity = move_and_slide(velocity * moveSpeed)
-	
-
 
 func _on_area_truck_body_entered(body):
 	print("bateu")
