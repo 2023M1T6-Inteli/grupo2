@@ -9,7 +9,7 @@ var selectedMusic = 0 # O = forró, 1 = sertanejo, 2 = rock e 3 = samba
 var selectedLanguage = 0 # 0 = português, 1 = inglês e 2 = espanhol
 
 #Variáveis para controlar debuffs
-var alcohol = false # se ele escolher o álcool na geladeira -> true
-var sleep = true # se ele não escolher dormir -> false
-var mutedPhone = true # se ele não mutar -> false
-var goodFood = true # se ele escolher a comida ruim -> false
+var alcohol = false # caso true, sofrerá debuff de álcool
+var sleep = true # caso false, sofrerá debuff de sono
+var mutedPhone = true # caso false, sofrerá debuff de notificação na tela
+var goodFood = true # caso false, sofrerá debuff de energia reduzindo mais rapidamente

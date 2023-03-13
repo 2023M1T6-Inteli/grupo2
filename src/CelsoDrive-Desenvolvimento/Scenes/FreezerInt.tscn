@@ -23,3 +23,6 @@ margin_left = 233.0
 margin_top = 71.0
 margin_right = 266.0
 margin_bottom = 105.0
+
+[connection signal="pressed" from="Button51" to="." method="_on_Button51_pressed"]
+[connection signal="pressed" from="ButtonJuice" to="." method="_on_ButtonJuice_pressed"]
