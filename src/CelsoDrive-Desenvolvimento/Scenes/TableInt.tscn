@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Assets/Items/prato nao saudavel.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Items/prato saudavel.png" type="Texture" id=2]
-[ext_resource path="res://Scenes/TableInt.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/TableInt.gd" type="Script" id=3]
 
 [node name="TableInt" type="CanvasLayer"]
 script = ExtResource( 3 )
