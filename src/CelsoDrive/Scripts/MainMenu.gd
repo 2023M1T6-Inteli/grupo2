@@ -16,7 +16,7 @@ func _ready():
 
 # Direciona para a visão exterior da casa
 func _on_PlayButton_pressed():
-	return get_tree().change_scene("res://Scenes/Tutorial.tscn")
+	return get_tree().change_scene("res://Scenes/CelsoSelect.tscn")
 
 
 # Direciona para o menu de opções
