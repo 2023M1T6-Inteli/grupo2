@@ -104,5 +104,9 @@ margin_right = 234.0
 margin_bottom = 227.0
 color = Color( 0.133333, 0.278431, 0.298039, 1 )
 
+[connection signal="pressed" from="Celso01" to="." method="_on_Celso01_pressed"]
+[connection signal="pressed" from="Celso02" to="." method="_on_Celso02_pressed"]
+[connection signal="pressed" from="Celso03" to="." method="_on_Celso03_pressed"]
+[connection signal="pressed" from="Celso04" to="." method="_on_Celso04_pressed"]
 [connection signal="pressed" from="Next" to="." method="_on_Next_pressed"]
 [connection signal="pressed" from="Previous" to="." method="_on_Previous_pressed"]

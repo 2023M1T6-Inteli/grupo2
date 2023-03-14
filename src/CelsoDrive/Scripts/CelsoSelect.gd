@@ -76,3 +76,27 @@ func _on_Previous_pressed():
 	if $NextColorRect.visible == true:
 		$NextColorRect.visible = false
 	decrease()
+
+
+# Seleciona versão 1 do Celso
+func _on_Celso01_pressed():
+	Global.playerDir = celso1
+	go_to_tutorial()
+
+
+# Seleciona versão 2 do Celso
+func _on_Celso02_pressed():
+	Global.playerDir = celso2
+	go_to_tutorial()
+
+
+# Seleciona versão 3 do Celso
+func _on_Celso03_pressed():
+	Global.playerDir = celso3
+	go_to_tutorial()
+
+
+# Seleciona versão 4 do Celso
+func _on_Celso04_pressed():
+	Global.playerDir = celso4
+	go_to_tutorial()
