@@ -18,3 +18,12 @@ func _on_FreezerArea_body_exited(body):
 	# Ao sair da área da geladeira esconde o comando para interagir e a cena da geladeira (caso esteja aberta)
 	$FreezerArea/FreezerE.visible = false
 	$FreezerArea/Freezer.visible = false
+
+func _on_TableArea_body_entered(body):
+	# Ao entrar na área da mesa exibe o comando para interagir
+	$TableArea/TableE.visible = true
+	
+
+func _on_TableArea_body_exited(body):
+	# Ao sair da área da mesa esconde o comando para interagir e a cena da mesa (caso esteja aberta)
+	$TableArea/TableE.visible = false

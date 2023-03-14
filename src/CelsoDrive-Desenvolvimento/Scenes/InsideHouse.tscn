@@ -2372,6 +2372,22 @@ texture = ExtResource( 11 )
 [node name="Freezer" parent="FreezerArea" instance=ExtResource( 9 )]
 visible = false
 
+[node name="TableArea" type="Area2D" parent="."]
+position = Vector2( 0, 2 )
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TableArea"]
+position = Vector2( 104, 312 )
+shape = SubResource( 76 )
+
+[node name="TableE" type="Sprite" parent="TableArea"]
+visible = false
+position = Vector2( 104, 334 )
+scale = Vector2( 0.5, 0.59375 )
+texture = ExtResource( 11 )
+
 [connection signal="body_entered" from="Exit" to="Player" method="_on_Exit_body_entered"]
 [connection signal="body_entered" from="FreezerArea" to="." method="_on_FreezerArea_body_entered"]
 [connection signal="body_exited" from="FreezerArea" to="." method="_on_FreezerArea_body_exited"]
+[connection signal="body_entered" from="TableArea" to="." method="_on_TableArea_body_entered"]
+[connection signal="body_exited" from="TableArea" to="." method="_on_TableArea_body_exited"]
