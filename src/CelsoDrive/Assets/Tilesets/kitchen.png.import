@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/voltar.png-55c32eb128ec5302bf21f6a000ad7eab.stex"
+path="res://.import/kitchen.png-0ef43b7bcff79ef3f298cf8b2c1b480e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Items/voltar.png"
-dest_files=[ "res://.import/voltar.png-55c32eb128ec5302bf21f6a000ad7eab.stex" ]
+source_file="res://assets/tilesets/kitchen.png"
+dest_files=[ "res://.import/kitchen.png-0ef43b7bcff79ef3f298cf8b2c1b480e.stex" ]
 
 [params]
 

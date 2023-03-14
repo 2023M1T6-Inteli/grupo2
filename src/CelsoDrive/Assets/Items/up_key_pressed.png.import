@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cozinha.png-7b836343bd6345097a7999010a62b53f.stex"
+path="res://.import/up_key_pressed.png-8ecb056247ba8a29df8643e05e6808cd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tilesets/cozinha.png"
-dest_files=[ "res://.import/cozinha.png-7b836343bd6345097a7999010a62b53f.stex" ]
+source_file="res://assets/items/up_key_pressed.png"
+dest_files=[ "res://.import/up_key_pressed.png-8ecb056247ba8a29df8643e05e6808cd.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

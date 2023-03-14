@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/quarto.png-f683e9b54b8fcf5deb8f90fc6ca1ac19.stex"
+path="res://.import/living_room.png-29acd5bb6939a3ae0026e052e23999fe.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tilesets/quarto.png"
-dest_files=[ "res://.import/quarto.png-f683e9b54b8fcf5deb8f90fc6ca1ac19.stex" ]
+source_file="res://assets/tilesets/living_room.png"
+dest_files=[ "res://.import/living_room.png-29acd5bb6939a3ae0026e052e23999fe.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

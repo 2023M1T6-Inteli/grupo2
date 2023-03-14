@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/seta_esquerda_pressionada.png-4a6d6c7728c21453f6725eea66a44eda.stex"
+path="res://.import/truck2.png-0a8d289efc1e0b2670a8eb271c5fcf2b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Items/seta_esquerda_pressionada.png"
-dest_files=[ "res://.import/seta_esquerda_pressionada.png-4a6d6c7728c21453f6725eea66a44eda.stex" ]
+source_file="res://assets/items/truck2.png"
+dest_files=[ "res://.import/truck2.png-0a8d289efc1e0b2670a8eb271c5fcf2b.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

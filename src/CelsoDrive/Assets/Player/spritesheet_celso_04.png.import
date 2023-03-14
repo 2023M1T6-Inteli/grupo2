@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spritesheet_celso_04.png-d0bf7824b3bf64d9ab5c758b84953dee.stex"
+path="res://.import/spritesheet_celso_04.png-96bc0ecc5f73c2d1f5a5da8a9afb6958.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/spritesheet_celso_04.png"
-dest_files=[ "res://.import/spritesheet_celso_04.png-d0bf7824b3bf64d9ab5c758b84953dee.stex" ]
+source_file="res://assets/player/spritesheet_celso_04.png"
+dest_files=[ "res://.import/spritesheet_celso_04.png-96bc0ecc5f73c2d1f5a5da8a9afb6958.stex" ]
 
 [params]
 

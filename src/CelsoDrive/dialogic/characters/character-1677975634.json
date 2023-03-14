@@ -13,7 +13,7 @@
 	"portraits": [
 		{
 			"name": "Default",
-			"path": "res://Assets/Player/celso_ampliado.png"
+			"path": "res://assets/player/big_celso0.png"
 		}
 	],
 	"scale": 267,

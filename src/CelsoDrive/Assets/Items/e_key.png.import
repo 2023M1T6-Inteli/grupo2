@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/celso_ampliado.png-6ff9a799d0981bd75b0c11090718bfee.stex"
+path="res://.import/e_key.png-0707bc8c0e6c954471f1d59bf847f925.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/celso_ampliado.png"
-dest_files=[ "res://.import/celso_ampliado.png-6ff9a799d0981bd75b0c11090718bfee.stex" ]
+source_file="res://assets/items/e_key.png"
+dest_files=[ "res://.import/e_key.png-0707bc8c0e6c954471f1d59bf847f925.stex" ]
 
 [params]
 

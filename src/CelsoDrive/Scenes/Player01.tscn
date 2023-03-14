@@ -1,7 +1,7 @@
 [gd_scene load_steps=27 format=2]
 
-[ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Player/spritesheet_celso_01.png" type="Texture" id=2]
+[ext_resource path="res://scripts/Player.gd" type="Script" id=1]
+[ext_resource path="res://assets/player/spritesheet_celso_01.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=27]
 extents = Vector2( 10.5, 12 )

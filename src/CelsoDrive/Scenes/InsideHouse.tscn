@@ -1,13 +1,13 @@
 [gd_scene load_steps=72 format=2]
 
-[ext_resource path="res://Assets/Tilesets/estrutura_interior.png" type="Texture" id=1]
-[ext_resource path="res://Scenes/Player01.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Assets/Tilesets/cozinha.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Tilesets/quarto.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Tilesets/sala.png" type="Texture" id=5]
-[ext_resource path="res://Assets/Tilesets/14_Basement_Shadowless.png" type="Texture" id=6]
-[ext_resource path="res://Assets/Tilesets/banheiro.png" type="Texture" id=7]
-[ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=8]
+[ext_resource path="res://assets/tilesets/interior_structure.png" type="Texture" id=1]
+[ext_resource path="res://scenes/Player01.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/tilesets/kitchen.png" type="Texture" id=3]
+[ext_resource path="res://assets/tilesets/room.png" type="Texture" id=4]
+[ext_resource path="res://assets/tilesets/living_room.png" type="Texture" id=5]
+[ext_resource path="res://assets/tilesets/14_Basement_Shadowless.png" type="Texture" id=6]
+[ext_resource path="res://assets/tilesets/restroom.png" type="Texture" id=7]
+[ext_resource path="res://scenes/HUD.tscn" type="PackedScene" id=8]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Room_Builder_16x16.png 0"

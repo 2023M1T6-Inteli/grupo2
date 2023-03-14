@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/teclas_1.jpg-8f1f6ef9f71431b2e043fb3a6dd4d090.stex"
+path="res://.import/down_key.png-23390fb457e69e0724da76553168b718.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Items/teclas_1.jpg"
-dest_files=[ "res://.import/teclas_1.jpg-8f1f6ef9f71431b2e043fb3a6dd4d090.stex" ]
+source_file="res://assets/items/down_key.png"
+dest_files=[ "res://.import/down_key.png-23390fb457e69e0724da76553168b718.stex" ]
 
 [params]
 

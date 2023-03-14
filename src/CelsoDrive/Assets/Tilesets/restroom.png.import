@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bg_menu.png-c9a824933d09e150473d4ef5805315c1.stex"
+path="res://.import/restroom.png-d859919cd2a7db1714be5a9cfce67e23.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/bg_menu.png"
-dest_files=[ "res://.import/bg_menu.png-c9a824933d09e150473d4ef5805315c1.stex" ]
+source_file="res://assets/tilesets/restroom.png"
+dest_files=[ "res://.import/restroom.png-d859919cd2a7db1714be5a9cfce67e23.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

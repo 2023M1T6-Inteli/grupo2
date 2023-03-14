@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/celso_animation1.png-326b0340bdd14563a7a7202f85b62ab7.stex"
+path="res://.import/e_key_pressed.png-a33be410e8ac1e157572640e8c771957.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/celso_animation1.png"
-dest_files=[ "res://.import/celso_animation1.png-326b0340bdd14563a7a7202f85b62ab7.stex" ]
+source_file="res://assets/items/e_key_pressed.png"
+dest_files=[ "res://.import/e_key_pressed.png-a33be410e8ac1e157572640e8c771957.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

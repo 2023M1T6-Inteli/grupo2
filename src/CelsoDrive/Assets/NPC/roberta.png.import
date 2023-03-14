@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/roberta.png-10ba8b0f70bdf78dd4258648e6be45b5.stex"
+path="res://.import/roberta.png-1536c703766ce11e6da02558678b656b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/NPC/roberta.png"
-dest_files=[ "res://.import/roberta.png-10ba8b0f70bdf78dd4258648e6be45b5.stex" ]
+source_file="res://assets/npc/roberta.png"
+dest_files=[ "res://.import/roberta.png-1536c703766ce11e6da02558678b656b.stex" ]
 
 [params]
 

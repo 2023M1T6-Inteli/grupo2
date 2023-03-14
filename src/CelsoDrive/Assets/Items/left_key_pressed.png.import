@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/caminhao.png-37a15d3ec6d5426184a5c65825bb1b86.stex"
+path="res://.import/left_key_pressed.png-056db214f3b37a2f7cb539376c7e3603.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Items/caminhao.png"
-dest_files=[ "res://.import/caminhao.png-37a15d3ec6d5426184a5c65825bb1b86.stex" ]
+source_file="res://assets/items/left_key_pressed.png"
+dest_files=[ "res://.import/left_key_pressed.png-056db214f3b37a2f7cb539376c7e3603.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

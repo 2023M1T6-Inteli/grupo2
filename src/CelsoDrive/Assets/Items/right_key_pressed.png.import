@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/seta_cima_pressionada.png-e6fa8799c3f945a5a4a367c78a86e55f.stex"
+path="res://.import/right_key_pressed.png-e149362cf03787ae8035eb1eae878266.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Items/seta_cima_pressionada.png"
-dest_files=[ "res://.import/seta_cima_pressionada.png-e6fa8799c3f945a5a4a367c78a86e55f.stex" ]
+source_file="res://assets/items/right_key_pressed.png"
+dest_files=[ "res://.import/right_key_pressed.png-e149362cf03787ae8035eb1eae878266.stex" ]
 
 [params]
 

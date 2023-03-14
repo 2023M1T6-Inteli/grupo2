@@ -1,10 +1,10 @@
 [gd_scene load_steps=36 format=2]
 
-[ext_resource path="res://Scenes/Player01.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Scripts/OutsideHouse.gd" type="Script" id=2]
-[ext_resource path="res://Assets/Tilesets/exterior.png" type="Texture" id=3]
-[ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Assets/Items/seta_baixo.png" type="Texture" id=5]
+[ext_resource path="res://scenes/Player01.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scripts/OutsideHouse.gd" type="Script" id=2]
+[ext_resource path="res://assets/tilesets/exterior.png" type="Texture" id=3]
+[ext_resource path="res://scenes/HUD.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/items/down_key.png" type="Texture" id=5]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Modern_Exteriors_Complete_Tileset.png 0"

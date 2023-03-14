@@ -2,12 +2,12 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/Sertanejo.mp3-cf152c7f74ace2d950221331c9c00c15.mp3str"
+path="res://.import/Sertanejo.mp3-aeb246e02f591699746afed9e40442e6.mp3str"
 
 [deps]
 
-source_file="res://Assets/Music/Sertanejo.mp3"
-dest_files=[ "res://.import/Sertanejo.mp3-cf152c7f74ace2d950221331c9c00c15.mp3str" ]
+source_file="res://assets/music/Sertanejo.mp3"
+dest_files=[ "res://.import/Sertanejo.mp3-aeb246e02f591699746afed9e40442e6.mp3str" ]
 
 [params]
 

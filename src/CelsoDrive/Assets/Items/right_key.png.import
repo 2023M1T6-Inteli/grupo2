@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sala.png-21f6c8e0698cea38263080f3b38cc2e6.stex"
+path="res://.import/right_key.png-3986f030a6f5e5b1c01710f3851aa934.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tilesets/sala.png"
-dest_files=[ "res://.import/sala.png-21f6c8e0698cea38263080f3b38cc2e6.stex" ]
+source_file="res://assets/items/right_key.png"
+dest_files=[ "res://.import/right_key.png-3986f030a6f5e5b1c01710f3851aa934.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

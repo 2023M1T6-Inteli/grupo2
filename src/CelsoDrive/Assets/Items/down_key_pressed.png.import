@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/seta_direita.png-88577474a6b1587191cad49fa88ccc8f.stex"
+path="res://.import/down_key_pressed.png-f459234fa279d21ca108f25caea63b97.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Items/seta_direita.png"
-dest_files=[ "res://.import/seta_direita.png-88577474a6b1587191cad49fa88ccc8f.stex" ]
+source_file="res://assets/items/down_key_pressed.png"
+dest_files=[ "res://.import/down_key_pressed.png-f459234fa279d21ca108f25caea63b97.stex" ]
 
 [params]
 
