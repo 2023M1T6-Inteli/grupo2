@@ -9,7 +9,7 @@
 [ext_resource path="res://Assets/Tilesets/banheiro.png" type="Texture" id=7]
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scenes/FreezerInt.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Scenes/InsideHouse.gd" type="Script" id=10]
+[ext_resource path="res://Scripts/InsideHouse.gd" type="Script" id=10]
 [ext_resource path="res://Assets/Items/e_interact_green.png" type="Texture" id=11]
 
 [sub_resource type="TileSet" id=1]
@@ -2369,7 +2369,7 @@ position = Vector2( 32, 259 )
 scale = Vector2( 0.5, 0.59375 )
 texture = ExtResource( 11 )
 
-[node name="Freezer" parent="." instance=ExtResource( 9 )]
+[node name="Freezer" parent="FreezerArea" instance=ExtResource( 9 )]
 visible = false
 
 [connection signal="body_entered" from="Exit" to="Player" method="_on_Exit_body_entered"]
