@@ -1,10 +1,10 @@
-extends Node2D
+extends CanvasLayer
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
 
-# Caso o usuário escolha o suco -> mantém alcohol como false
+# Caso o usuário escolha o suco -> muda alcohol para false
 func _on_ButtonJuice_pressed():
 	Global.alcohol = false;
 

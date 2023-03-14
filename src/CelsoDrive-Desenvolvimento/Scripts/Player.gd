@@ -7,11 +7,10 @@ onready var screenSize = get_viewport_rect().size  # Tamanho da tela
 onready var animationTree = $AnimationTree # Árvore de animações do personagem
 # Define animation state de acordo com animationTree
 onready var animationState = animationTree.get("parameters/playback") 
-
+var isAtFreezerArea = false; # controla se o jogador está na área de interação com a geladeira
 
 func _ready():
 	pass
-
 
 func _physics_process(delta):
 	# Processa e salva inputs na horizontal e na vertical
@@ -43,7 +42,6 @@ func _physics_process(delta):
 	
 	# Movimenta o personagem de acordo com o vetor velocity vezes a rapidez do movimento
 	velocity = move_and_slide(velocity * walkSpeed)
-
 
 # Move o personagem para fora de casa
 func _on_Exit_body_entered(body):

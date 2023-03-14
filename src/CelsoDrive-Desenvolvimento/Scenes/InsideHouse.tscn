@@ -1,4 +1,4 @@
-[gd_scene load_steps=72 format=2]
+[gd_scene load_steps=76 format=2]
 
 [ext_resource path="res://Assets/Tilesets/estrutura_interior.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -8,6 +8,9 @@
 [ext_resource path="res://Assets/Tilesets/14_Basement_Shadowless.png" type="Texture" id=6]
 [ext_resource path="res://Assets/Tilesets/banheiro.png" type="Texture" id=7]
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/FreezerInt.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/InsideHouse.gd" type="Script" id=10]
+[ext_resource path="res://Assets/Items/e_interact_green.png" type="Texture" id=11]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Room_Builder_16x16.png 0"
@@ -2279,7 +2282,11 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 [sub_resource type="RectangleShape2D" id=75]
 extents = Vector2( 24, 8 )
 
+[sub_resource type="RectangleShape2D" id=76]
+extents = Vector2( 27, 4 )
+
 [node name="CasaInterior" type="Node2D"]
+script = ExtResource( 10 )
 
 [node name="Floor" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
@@ -2338,6 +2345,7 @@ tile_data = PoolIntArray( 22, 1, 0, 24, 5, 0, 34, 2, 0, 38, 6, 0, 65558, 3, 0, 6
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 304, 336 )
+walkSpeed = 100
 
 [node name="Exit" type="Area2D" parent="."]
 
@@ -2347,4 +2355,23 @@ shape = SubResource( 75 )
 
 [node name="HUD" parent="." instance=ExtResource( 8 )]
 
+[node name="FreezerArea" type="Area2D" parent="."]
+position = Vector2( 0, 1 )
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FreezerArea"]
+position = Vector2( 37, 288 )
+shape = SubResource( 76 )
+
+[node name="FreezerE" type="Sprite" parent="FreezerArea"]
+visible = false
+position = Vector2( 32, 259 )
+scale = Vector2( 0.5, 0.59375 )
+texture = ExtResource( 11 )
+
+[node name="Freezer" parent="." instance=ExtResource( 9 )]
+visible = false
+
 [connection signal="body_entered" from="Exit" to="Player" method="_on_Exit_body_entered"]
+[connection signal="body_entered" from="FreezerArea" to="." method="_on_FreezerArea_body_entered"]
+[connection signal="body_exited" from="FreezerArea" to="." method="_on_FreezerArea_body_exited"]
