@@ -12,4 +12,4 @@ var selectedLanguage = 0 # 0 = português, 1 = inglês e 2 = espanhol
 var alcohol = false # caso true, sofrerá debuff de álcool
 var sleep = true # caso false, sofrerá debuff de sono
 var mutedPhone = true # caso false, sofrerá debuff de notificação na tela
-var goodFood = true # caso false, sofrerá debuff de energia reduzindo mais rapidamente
+var healthyFood = true # caso false, sofrerá debuff de energia reduzindo mais rapidamente
