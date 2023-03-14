@@ -69,3 +69,40 @@ margin_right = 422.0
 margin_bottom = 275.0
 texture_normal = ExtResource( 5 )
 expand = true
+
+[node name="Next" type="Button" parent="."]
+margin_left = 416.0
+margin_top = 144.0
+margin_right = 456.0
+margin_bottom = 217.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+
+[node name="Previous" type="Button" parent="."]
+margin_left = 187.0
+margin_top = 144.0
+margin_right = 227.0
+margin_bottom = 217.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
+
+[node name="NextColorRect" type="ColorRect" parent="."]
+visible = false
+margin_left = 400.0
+margin_top = 60.0
+margin_right = 586.0
+margin_bottom = 228.0
+color = Color( 0.133333, 0.278431, 0.298039, 1 )
+
+[node name="PreviousColorRect" type="ColorRect" parent="."]
+visible = false
+margin_left = 48.0
+margin_top = 59.0
+margin_right = 234.0
+margin_bottom = 227.0
+color = Color( 0.133333, 0.278431, 0.298039, 1 )
+
+[connection signal="pressed" from="Next" to="." method="_on_Next_pressed"]
+[connection signal="pressed" from="Previous" to="." method="_on_Previous_pressed"]
