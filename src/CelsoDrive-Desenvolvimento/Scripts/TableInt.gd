@@ -4,10 +4,13 @@ extends CanvasLayer
 func _ready():
 	pass # Replace with function body.
 
-# Caso o usuário escolha a comida saudável -> healthyFood = true
+# Caso o usuário escolha a comida saudável -> healthyFood = true e esconde a cena
 func _on_HealthyButton_pressed():
 	Global.healthyFood = true
+	visible = false
+	
 
-# Caso o usuário escolha a comida não saudável -> healthyFood = false
+# Caso o usuário escolha a comida não saudável -> healthyFood = false e esconde a cena
 func _on_NotHealthyButton_pressed():
 	Global.healthyFood = false
+	visible = false;
