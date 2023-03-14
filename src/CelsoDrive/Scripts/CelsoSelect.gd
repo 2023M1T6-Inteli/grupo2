@@ -5,10 +5,11 @@ onready var celso1 = preload("res://Scenes/Player01.tscn")
 onready var celso2 = preload("res://Scenes/Player02.tscn")
 onready var celso3 = preload("res://Scenes/Player03.tscn")
 onready var celso4 = preload("res://Scenes/Player04.tscn")
-var currentCelso = 1 # "Index" para o aparecimento dos personagens na tela
+var currentCelso := 1 # "Index" para o aparecimento dos personagens na tela
 
 
 func _process(delta):
+	# Verifica, constantemente, qual Celso exibir
 	show_current_celso()
 
 
@@ -17,6 +18,7 @@ func go_to_tutorial():
 	return get_tree().change_scene("res://Scenes/Tutorial.tscn")
 
 
+# Carrega sprite dinamicamente de acordo com o index
 func show_current_celso():
 	if currentCelso == 1:
 		$Celso01.visible = true
