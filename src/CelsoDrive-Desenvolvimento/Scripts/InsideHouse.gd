@@ -12,6 +12,10 @@ func _process(delta):
 	# Verifica se o jogador apertou a tecla E (interação) dentro da área da mesa, caso positivo, mostra a cena da mesa
 	if(Input.is_action_pressed("interagir") && $TableArea/TableE.visible == true):
 		$TableArea/Table.visible = true;
+		
+	# Verifica se o jogador apertou a tecla E (interação) dentro da área do telefone, caso positivo, mostra a cena do telefone
+	if(Input.is_action_pressed("interagir") && $PhoneArea/PhoneE.visible == true):
+		$PhoneArea/Phone.visible = true;
 
 func _on_FreezerArea_body_entered(body):
 	# Ao entrar na área da geladeira exibe o comando para interagir
@@ -30,3 +34,12 @@ func _on_TableArea_body_exited(body):
 	# Ao sair da área da mesa esconde o comando para interagir e a cena da mesa (caso esteja aberta)
 	$TableArea/TableE.visible = false
 	$TableArea/Table.visible = false
+
+func _on_PhoneArea_body_entered(body):
+	# Ao entrar na área do telefone exibe o comando para interagir
+	$PhoneArea/PhoneE.visible = true
+
+func _on_PhoneArea_body_exited(body):
+	# Ao sair da área do telefone esconde o comando para interagir e a cena do telefone (caso esteja aberta)
+	$PhoneArea/PhoneE.visible = false
+	$PhoneArea/Phone.visible = false
