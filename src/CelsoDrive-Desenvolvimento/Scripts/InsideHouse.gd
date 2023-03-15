@@ -16,6 +16,10 @@ func _process(delta):
 	# Verifica se o jogador apertou a tecla E (interação) dentro da área do telefone, caso positivo, mostra a cena do telefone
 	if(Input.is_action_pressed("interagir") && $PhoneArea/PhoneE.visible == true):
 		$PhoneArea/Phone.visible = true;
+	
+	# Verifica se o jogador apertou a tecla E (interação) dentro da área da cama, caso positivo, mostra a cena da cama
+	if(Input.is_action_pressed("interagir") && $SleepArea/SleepE.visible == true):
+		$SleepArea/Sleep.visible = true;
 
 func _on_FreezerArea_body_entered(body):
 	# Ao entrar na área da geladeira exibe o comando para interagir
@@ -43,3 +47,12 @@ func _on_PhoneArea_body_exited(body):
 	# Ao sair da área do telefone esconde o comando para interagir e a cena do telefone (caso esteja aberta)
 	$PhoneArea/PhoneE.visible = false
 	$PhoneArea/Phone.visible = false
+
+func _on_SleepArea_body_entered(body):
+	# Ao entrar na área da cama exibe o comando para interagir
+	$SleepArea/SleepE.visible = true
+
+func _on_SleepArea_body_exited(body):
+	# Ao sair da área da cama esconde o comando para interagir e a cena da cama (caso esteja aberta)
+	$SleepArea/SleepE.visible = false
+	$SleepArea/Sleep.visible = false

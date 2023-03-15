@@ -1,4 +1,4 @@
-[gd_scene load_steps=78 format=2]
+[gd_scene load_steps=79 format=2]
 
 [ext_resource path="res://Assets/Tilesets/estrutura_interior.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://Assets/Items/e_interact_green.png" type="Texture" id=11]
 [ext_resource path="res://Scenes/TableInt.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Scenes/PhoneInt.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scenes/SleepInt.tscn" type="PackedScene" id=14]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Room_Builder_16x16.png 0"
@@ -2408,6 +2409,23 @@ texture = ExtResource( 11 )
 [node name="Phone" parent="PhoneArea" instance=ExtResource( 13 )]
 visible = false
 
+[node name="SleepArea" type="Area2D" parent="."]
+position = Vector2( 0, 8 )
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SleepArea"]
+position = Vector2( 38, 181 )
+shape = SubResource( 76 )
+
+[node name="SleepE" type="Sprite" parent="SleepArea"]
+visible = false
+position = Vector2( 32, 149 )
+scale = Vector2( 0.5, 0.59375 )
+texture = ExtResource( 11 )
+
+[node name="Sleep" parent="SleepArea" instance=ExtResource( 14 )]
+visible = false
+
 [connection signal="body_entered" from="Exit" to="Player" method="_on_Exit_body_entered"]
 [connection signal="body_entered" from="FreezerArea" to="." method="_on_FreezerArea_body_entered"]
 [connection signal="body_exited" from="FreezerArea" to="." method="_on_FreezerArea_body_exited"]
@@ -2415,3 +2433,5 @@ visible = false
 [connection signal="body_exited" from="TableArea" to="." method="_on_TableArea_body_exited"]
 [connection signal="body_entered" from="PhoneArea" to="." method="_on_PhoneArea_body_entered"]
 [connection signal="body_exited" from="PhoneArea" to="." method="_on_PhoneArea_body_exited"]
+[connection signal="body_entered" from="SleepArea" to="." method="_on_SleepArea_body_entered"]
+[connection signal="body_exited" from="SleepArea" to="." method="_on_SleepArea_body_exited"]
