@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/SleepInt.gd" type="Script" id=1]
+
+[node name="Sleep" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -7.0
+margin_top = -5.0
+margin_right = 648.0
+margin_bottom = 376.0
+color = Color( 0, 0, 0, 0.627451 )
+
+[node name="Yes" type="Button" parent="."]
+margin_left = 226.0
+margin_top = 154.0
+margin_right = 412.0
+margin_bottom = 198.0
+text = "SIM"
+
+[node name="No" type="Button" parent="."]
+margin_left = 226.0
+margin_top = 221.0
+margin_right = 412.0
+margin_bottom = 265.0
+text = "NÂO"
+
+[connection signal="pressed" from="Yes" to="." method="_on_Yes_pressed"]
+[connection signal="pressed" from="No" to="." method="_on_No_pressed"]
