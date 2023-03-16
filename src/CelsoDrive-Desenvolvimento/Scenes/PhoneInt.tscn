@@ -35,8 +35,10 @@ margin_bottom = 304.0
 text = "NÂO"
 
 [node name="CloseScene" type="TextureButton" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
+margin_left = 598.0
+margin_top = 17.0
+margin_right = 638.0
+margin_bottom = 57.0
 texture_normal = ExtResource( 3 )
 texture_hover = ExtResource( 4 )
 
