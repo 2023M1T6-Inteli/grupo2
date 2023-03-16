@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/free_overview.png-49b69aac0a659c525cc8e42ba1ff5855.stex"
+path="res://.import/free_overview.png-771bf7b7f71648c7146bdafb3927bab5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tilesets/free_overview.png"
-dest_files=[ "res://.import/free_overview.png-49b69aac0a659c525cc8e42ba1ff5855.stex" ]
+source_file="res://assets/tilesets/free_overview.png"
+dest_files=[ "res://.import/free_overview.png-771bf7b7f71648c7146bdafb3927bab5.stex" ]
 
 [params]
 

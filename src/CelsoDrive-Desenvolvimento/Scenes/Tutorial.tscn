@@ -1182,6 +1182,7 @@ editor_draw_limits = true
 [node name="Houses" type="TileMap" parent="."]
 tile_set = SubResource( 3 )
 cell_size = Vector2( 16, 16 )
+collision_layer = 4
 format = 1
 tile_data = PoolIntArray( -655355, 0, 0, 13, 1, 0, 65537, 3, 0, 65539, 3, 0, 65552, 2, 0, 131084, 9, 0, 262148, 8, 0, 393217, 12, 0, 393218, 11, 0, 458764, 5, 0, 458781, 13, 0, 458789, 5, 0, 524300, 7, 0, 524325, 6, 0, 983049, 4, 0, 983074, 4, 0 )
 
