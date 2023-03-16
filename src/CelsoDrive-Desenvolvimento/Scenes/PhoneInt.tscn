@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scripts/PhoneInt.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Items/phone.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Items/close.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Items/close_hover.png" type="Texture" id=4]
 
 [node name="Phone" type="CanvasLayer"]
 script = ExtResource( 1 )
@@ -32,5 +34,12 @@ margin_right = 410.0
 margin_bottom = 304.0
 text = "NÂO"
 
+[node name="CloseScene" type="TextureButton" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+
 [connection signal="pressed" from="Yes" to="." method="_on_Yes_pressed"]
 [connection signal="pressed" from="No" to="." method="_on_No_pressed"]
+[connection signal="pressed" from="CloseScene" to="." method="_on_CloseScene_pressed"]

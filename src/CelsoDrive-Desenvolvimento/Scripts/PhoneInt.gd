@@ -13,3 +13,7 @@ func _on_Yes_pressed():
 func _on_No_pressed():
 	Global.mutedPhone = true
 	visible = false
+
+# Botão para fechar a interação
+func _on_CloseScene_pressed():
+	visible = false
