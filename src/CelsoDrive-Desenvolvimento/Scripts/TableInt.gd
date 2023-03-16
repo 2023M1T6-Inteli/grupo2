@@ -14,3 +14,7 @@ func _on_HealthyButton_pressed():
 func _on_NotHealthyButton_pressed():
 	Global.healthyFood = false
 	visible = false;
+
+# Botão para fechar a interação
+func _on_CloseButton_pressed():
+	visible = false
