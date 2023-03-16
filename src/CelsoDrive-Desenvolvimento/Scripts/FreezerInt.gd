@@ -13,3 +13,7 @@ func _on_ButtonJuice_pressed():
 func _on_Button51_pressed():
 	Global.alcohol = true
 	visible = false
+
+# Botão para fechar interação
+func _on_CloseScene_pressed():
+	visible = false
