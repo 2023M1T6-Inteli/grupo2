@@ -13,3 +13,7 @@ func _on_Yes_pressed():
 func _on_No_pressed():
 	Global.sleep = false
 	visible = false
+
+# Botão para fechar interação
+func _on_CloseButton_pressed():
+	visible = false

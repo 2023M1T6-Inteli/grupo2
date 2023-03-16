@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scripts/SleepInt.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Items/close_hover.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Items/close.png" type="Texture" id=3]
 
 [node name="Sleep" type="CanvasLayer"]
 script = ExtResource( 1 )
@@ -26,5 +28,12 @@ margin_right = 412.0
 margin_bottom = 265.0
 text = "NÂO"
 
+[node name="CloseButton" type="TextureButton" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 2 )
+
 [connection signal="pressed" from="Yes" to="." method="_on_Yes_pressed"]
 [connection signal="pressed" from="No" to="." method="_on_No_pressed"]
+[connection signal="pressed" from="CloseButton" to="." method="_on_CloseButton_pressed"]
