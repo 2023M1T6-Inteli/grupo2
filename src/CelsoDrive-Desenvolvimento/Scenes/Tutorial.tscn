@@ -15,8 +15,11 @@
 [ext_resource path="res://Assets/Items/tecla_e_pressionada.png" type="Texture" id=13]
 [ext_resource path="res://Assets/Fonts/CompassPro.ttf" type="DynamicFontData" id=14]
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=15]
+<<<<<<< HEAD
+=======
 [ext_resource path="res://Assets/NPC/cat_sprite_sheet.png" type="Texture" id=16]
 [ext_resource path="res://Assets/NPC/male_spritesheet.png" type="Texture" id=17]
+>>>>>>> 2e4f7f3c9a8263ad7d09ee34eb0abb675f889ff5
 
 [sub_resource type="TileSet" id=1]
 0/name = "Modern_Exteriors_Complete_Tileset.png 0"
