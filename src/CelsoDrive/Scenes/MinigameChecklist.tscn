@@ -1,0 +1,98 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scripts/MinigameChecklist.gd" type="Script" id=2]
+
+[sub_resource type="Curve2D" id=1]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 78, 96, 0, 0, 0, 0, 243, 136, 0, 0, 0, 0, 81, 215, 0, 0, 0, 0, 251, 260, 0, 0, 0, 0, 22, 278, 0, 0, 0, 0, 59, 125, 0, 0, 0, 0, 39, 31, 0, 0, 0, 0, 253, 50, 0, 0, 0, 0, 294, 190, 0, 0, 0, 0, 270, 320, 0, 0, 0, 0, 127, 332, 0, 0, 0, 0, 86, 310, 0, 0, 0, 0, 59, 347, 0, 0, 0, 0, 96, 151, 0, 0, 0, 0, 209, 200, 0, 0, 0, 0, 149, 63, 0, 0, 0, 0, 265, 12 )
+}
+
+[node name="MinigameChecklist" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 640.0
+margin_bottom = 368.0
+color = Color( 0.0705882, 0.160784, 0.00784314, 0.913725 )
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+margin_right = 320.0
+margin_bottom = 368.0
+color = Color( 1, 1, 1, 0.686275 )
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource( 1 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2( 78, 96 )
+rotation = 0.237836
+
+[node name="PathFollow2D2" type="PathFollow2D" parent="Path2D"]
+position = Vector2( 78, 96 )
+rotation = 0.237836
+
+[node name="PathFollow2D3" type="PathFollow2D" parent="Path2D"]
+position = Vector2( 78, 96 )
+rotation = 0.237836
+
+[node name="ItemsTimer" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+autostart = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 321.0
+margin_top = 20.0
+margin_right = 638.0
+margin_bottom = 367.0
+custom_constants/separation = 17
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+visible = false
+margin_right = 317.0
+margin_bottom = 14.0
+text = "ESTOU AQUI PORRAAAAAAA"
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
+visible = false
+margin_top = 31.0
+margin_right = 317.0
+margin_bottom = 45.0
+text = "ESTOU AQUI PORRAAAAAAA 2"
+
+[node name="Label3" type="Label" parent="VBoxContainer"]
+visible = false
+margin_top = 62.0
+margin_right = 317.0
+margin_bottom = 76.0
+text = "ESTOU AQUI PORRAAAAAAA 3"
+
+[node name="Label4" type="Label" parent="VBoxContainer"]
+visible = false
+margin_top = 62.0
+margin_right = 317.0
+margin_bottom = 76.0
+text = "ESTOU AQUI PORRAAAAAAA"
+
+[node name="Label5" type="Label" parent="VBoxContainer"]
+visible = false
+margin_top = 62.0
+margin_right = 317.0
+margin_bottom = 76.0
+text = "ESTOU AQUI PORRAAAAAAA"
+
+[node name="Label6" type="Label" parent="VBoxContainer"]
+visible = false
+margin_top = 62.0
+margin_right = 317.0
+margin_bottom = 76.0
+text = "ESTOU AQUI PORRAAAAAAA"
+
+[node name="Label7" type="Label" parent="VBoxContainer"]
+visible = false
+margin_top = 62.0
+margin_right = 317.0
+margin_bottom = 76.0
+text = "ESTOU AQUI PORRAAAAAAA"
+
+[connection signal="timeout" from="ItemsTimer" to="." method="_on_ItemsTimer_timeout"]
