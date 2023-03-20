@@ -10,5 +10,5 @@ func _ready():
 	add_child(spawnPlayer)
 
 # Move o personagem para dentro de casa
-func _on_CelsoHouse_body_entered(body):
+func _on_CelsoHouse_body_entered(_body):
 	return get_tree().change_scene("res://Scenes/InsideHouse.tscn")

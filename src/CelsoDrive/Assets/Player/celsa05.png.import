@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/celsa05.png-722b36188ca07c1eedcbf6747bc0b74e.stex"
+path="res://.import/celsa05.png-ef73747f90e5bbe818c58bd4773bc143.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/player/celsa05.png"
-dest_files=[ "res://.import/celsa05.png-722b36188ca07c1eedcbf6747bc0b74e.stex" ]
+source_file="res://Assets/player/celsa05.png"
+dest_files=[ "res://.import/celsa05.png-ef73747f90e5bbe818c58bd4773bc143.stex" ]
 
 [params]
 

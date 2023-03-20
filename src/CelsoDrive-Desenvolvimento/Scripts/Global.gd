@@ -7,6 +7,8 @@ var energy := 4 # Valor da barra de energia, usada na HUD
 var pausedGame = false # Variável de parada para o minigame do tinhoso
 var selectedMusic = 0 # O = forró, 1 = sertanejo, 2 = rock e 3 = samba
 var selectedLanguage = 0 # 0 = português, 1 = inglês e 2 = espanhol
+var playerDir = "res://Scenes/Player01.tscn" # Caminho da cena do personagem selecionado
+var playerPosition : Vector2# Posição de Spawn do personagem em cada cena
 
 #Variáveis para controlar debuffs
 var alcohol = false # caso true, sofrerá debuff de álcool

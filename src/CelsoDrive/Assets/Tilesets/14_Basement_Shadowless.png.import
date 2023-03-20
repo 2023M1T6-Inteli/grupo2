@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/14_Basement_Shadowless.png-a0f8254d4c2bfb9c543fa75fcdb73d70.stex"
+path="res://.import/14_Basement_Shadowless.png-ea73e32457a6d4847ddc160bba4f321d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets/14_Basement_Shadowless.png"
-dest_files=[ "res://.import/14_Basement_Shadowless.png-a0f8254d4c2bfb9c543fa75fcdb73d70.stex" ]
+source_file="res://Assets/tilesets/14_Basement_Shadowless.png"
+dest_files=[ "res://.import/14_Basement_Shadowless.png-ea73e32457a6d4847ddc160bba4f321d.stex" ]
 
 [params]
 

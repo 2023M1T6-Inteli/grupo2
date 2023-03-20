@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Assets/Items/frame.png" type="Texture" id=1]
-[ext_resource path="res://Assets/Items/close.png" type="Texture" id=2]
-[ext_resource path="res://Assets/Items/close_hover.png" type="Texture" id=3]
+[ext_resource path="res://Assets/items/frame.png" type="Texture" id=1]
+[ext_resource path="res://Assets/items/close.png" type="Texture" id=2]
+[ext_resource path="res://Assets/items/close_hover.png" type="Texture" id=3]
 [ext_resource path="res://Scripts/GameOver.gd" type="Script" id=4]
 
 [sub_resource type="DynamicFontData" id=1]

@@ -7,11 +7,7 @@ var velocity = Vector2.ZERO  # Vetor responsável pela movimentação do caminh�
 var inputDirection = Vector2(0, 0)  # Vetor atualizado de acordo com as teclas pressionadas
 
 
-func _ready():
-	pass
-
-
-func _physics_process(delta):
+func _physics_process(_delta):
 	# Processa e salva inputs na horizontal
 	inputDirection.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
 	

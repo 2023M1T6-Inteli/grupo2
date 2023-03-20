@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Celular do celsão.png-2154269b3f3d91ab8213b0a38c723607.stex"
+path="res://.import/Celular do celsão.png-cc5159f4bd03fc42d4c7fdd6fce2d7dc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Items/Celular do celsão.png"
-dest_files=[ "res://.import/Celular do celsão.png-2154269b3f3d91ab8213b0a38c723607.stex" ]
+source_file="res://Assets/items/Celular do celsão.png"
+dest_files=[ "res://.import/Celular do celsão.png-cc5159f4bd03fc42d4c7fdd6fce2d7dc.stex" ]
 
 [params]
 

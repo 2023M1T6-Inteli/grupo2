@@ -1,12 +1,11 @@
 [gd_scene load_steps=79 format=2]
 
-[ext_resource path="res://Assets/Tilesets/estrutura_interior.png" type="Texture" id=1]
-[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Assets/Tilesets/cozinha.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Tilesets/quarto.png" type="Texture" id=4]
-[ext_resource path="res://Assets/Tilesets/sala.png" type="Texture" id=5]
+[ext_resource path="res://Assets/Tilesets/interior_structure.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Tilesets/kitchen.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Tilesets/room.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Tilesets/living_room.png" type="Texture" id=5]
 [ext_resource path="res://Assets/Tilesets/14_Basement_Shadowless.png" type="Texture" id=6]
-[ext_resource path="res://Assets/Tilesets/banheiro.png" type="Texture" id=7]
+[ext_resource path="res://Assets/Tilesets/restroom.png" type="Texture" id=7]
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scenes/FreezerInt.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Scripts/InsideHouse.gd" type="Script" id=10]
@@ -2286,9 +2285,12 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 extents = Vector2( 24, 8 )
 
 [sub_resource type="RectangleShape2D" id=76]
-extents = Vector2( 27, 4 )
+extents = Vector2( 21.25, 4 )
 
-[node name="CasaInterior" type="Node2D"]
+[sub_resource type="RectangleShape2D" id=77]
+extents = Vector2( 1.625, 18.25 )
+
+[node name="InsideHouse" type="Node2D"]
 script = ExtResource( 10 )
 
 [node name="Floor" type="TileMap" parent="."]
@@ -2346,14 +2348,10 @@ cell_size = Vector2( 16, 16 )
 format = 1
 tile_data = PoolIntArray( 22, 1, 0, 24, 5, 0, 34, 2, 0, 38, 6, 0, 65558, 3, 0, 65565, 0, 0, 327703, 4, 0 )
 
-[node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 304, 336 )
-walkSpeed = 100
-
 [node name="Exit" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Exit"]
-position = Vector2( 312, 368 )
+position = Vector2( 312, 373 )
 shape = SubResource( 75 )
 
 [node name="HUD" parent="." instance=ExtResource( 8 )]
@@ -2397,7 +2395,7 @@ position = Vector2( 0, 4 )
 collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PhoneArea"]
-position = Vector2( 99, 163 )
+position = Vector2( 101.5, 162 )
 shape = SubResource( 76 )
 
 [node name="PhoneE" type="Sprite" parent="PhoneArea"]
@@ -2414,7 +2412,7 @@ position = Vector2( 0, 8 )
 collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="SleepArea"]
-position = Vector2( 38, 181 )
+position = Vector2( 36.75, 181 )
 shape = SubResource( 76 )
 
 [node name="SleepE" type="Sprite" parent="SleepArea"]
@@ -2426,7 +2424,11 @@ texture = ExtResource( 11 )
 [node name="Sleep" parent="SleepArea" instance=ExtResource( 14 )]
 visible = false
 
-[connection signal="body_entered" from="Exit" to="Player" method="_on_Exit_body_entered"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="SleepArea"]
+position = Vector2( 53.375, 156.25 )
+shape = SubResource( 77 )
+
+[connection signal="body_entered" from="Exit" to="." method="_on_Exit_body_entered"]
 [connection signal="body_entered" from="FreezerArea" to="." method="_on_FreezerArea_body_entered"]
 [connection signal="body_exited" from="FreezerArea" to="." method="_on_FreezerArea_body_exited"]
 [connection signal="body_entered" from="TableArea" to="." method="_on_TableArea_body_entered"]

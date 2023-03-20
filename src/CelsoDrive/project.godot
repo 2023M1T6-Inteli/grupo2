@@ -81,7 +81,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Celso Caminhões"
-run/main_scene="res://scenes/MainMenu.tscn"
+run/main_scene="res://Scenes/MainMenu.tscn"
 
 [audio]
 
@@ -89,8 +89,8 @@ default_bus_layout=""
 
 [autoload]
 
-Global="*res://scripts/Global.gd"
-MusicController="*res://scenes/MusicController.tscn"
+Global="*res://Scripts/Global.gd"
+MusicController="*res://Scenes/MusicController.tscn"
 
 [display]
 

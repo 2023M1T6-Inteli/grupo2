@@ -27,7 +27,7 @@ func _ready():
 		add_child(dialog)
 
 
-func _process(delta):
+func _process(_delta):
 	# Verifica, a cada frame, as teclas pressionadas
 	key_pressed()
 	move_npc()
@@ -50,7 +50,7 @@ func dialog_listener(string):
 
 
 # Aciona diálogo com tinhoso quando o personagem entra na Area2D
-func _on_NextSceneArea_body_entered(body):
+func _on_NextSceneArea_body_entered(_body):
 	# Seleciona o diálogo de acordo com o idioma do jogo
 	if language == 1:
 		dialog = Dialogic.start("tinhoso-1-en")

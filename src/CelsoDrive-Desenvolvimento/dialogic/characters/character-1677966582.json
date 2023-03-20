@@ -13,7 +13,7 @@
 	"portraits": [
 		{
 			"name": "Default",
-			"path": "res://Assets/NPC/roberta.png"
+			"path": "res://assets/npc/roberta.png"
 		}
 	],
 	"scale": 10,

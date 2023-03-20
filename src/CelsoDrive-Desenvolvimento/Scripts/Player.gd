@@ -1,18 +1,15 @@
 extends KinematicBody2D
 
-export var walkSpeed = 50  # Rapidez do movimento
+export var walkSpeed = 100  # Rapidez do movimento
 var velocity = Vector2.ZERO  # Vetor responsável pela movimentação do personagem
 var inputDirection = Vector2(0, 0)  # Vetor atualizado de acordo com as teclas pressionadas
 onready var screenSize = get_viewport_rect().size  # Tamanho da tela
 onready var animationTree = $AnimationTree # Árvore de animações do personagem
 # Define animation state de acordo com animationTree
 onready var animationState = animationTree.get("parameters/playback") 
-var isAtFreezerArea = false; # controla se o jogador está na área de interação com a geladeira
 
-func _ready():
-	pass
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	# Processa e salva inputs na horizontal e na vertical
 	if inputDirection.y == 0:
 		inputDirection.x = (
@@ -33,7 +30,7 @@ func _physics_process(delta):
 		velocity = inputDirection
 	else:
 		# Se o vetor inputDirection for 0, siginifica que não há movimentação -> Idle
-		animationState.travel("idle")
+		animationState.travel("Idle")
 		velocity = Vector2.ZERO
 
 	# Restringe a movimentação do personagem de acordo com o tamanho da tela
@@ -42,7 +39,3 @@ func _physics_process(delta):
 	
 	# Movimenta o personagem de acordo com o vetor velocity vezes a rapidez do movimento
 	velocity = move_and_slide(velocity * walkSpeed)
-
-# Move o personagem para fora de casa
-func _on_Exit_body_entered(body):
-	return get_tree().change_scene("res://Scenes/OutsideHouse.tscn")
