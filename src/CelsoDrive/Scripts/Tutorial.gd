@@ -94,3 +94,11 @@ func move_npc():
 		$TutorialNpc/AnimatedSprite.play("RunRight")
 		$TutorialNpcCat.position.x += 2
 		$TutorialNpcCat/AnimatedSprite.play("RunRight")
+
+
+func _on_Area2D_body_entered(_body):
+	$Houses/Area2D/EInteract.visible = true
+
+
+func _on_Area2D_body_exited(_body):
+	$Houses/Area2D/EInteract.visible = false
