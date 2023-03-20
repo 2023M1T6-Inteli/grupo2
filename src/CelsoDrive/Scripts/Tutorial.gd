@@ -128,5 +128,5 @@ func _on_TinhosoSceneArea_body_entered(_body):
 
 
 # Esconde a tecla E quando sai para longe do tinhoso
-func _on_TinhosoSceneArea_body_exited(body):
+func _on_TinhosoSceneArea_body_exited(_body):
 	$TinhosoSceneArea/EInteract.visible = false
