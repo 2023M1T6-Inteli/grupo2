@@ -4,7 +4,7 @@
 <a href= "https://www.inteli.edu.br/"><img src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
-# Celso Drive 🚛
+# Celso Caminhões 🚛
 
 ## PlayVC
 
@@ -33,11 +33,11 @@
 
 ## Descrição
 
-> 📜 O projeto foi desenvolvido no módulo 1 da turma de 2023.1 do Inteli - Instituto de Tecnologia e Liderança, pela equipe PlayVC. Sem pormenorizar, o projeto visa demonstrar, sobretudo aos motoristas que transportam os produtos do parceiro (Grupo Unipar), a importância das boas atitudes antes e durante o transporte, de modo a enfatizar que a direção começa em casa.
+> 📜 O projeto foi desenvolvido no módulo 1 da turma de 2023.1 do Inteli - Instituto de Tecnologia e Liderança, pela equipe PlayVC. Sem pormenorizar, o projeto visa demonstrar, sobretudo aos motoristas que transportam os produtos do parceiro (Grupo Unipar), a importância das boas atitudes antes e durante o transporte, de modo a enfatizar que o processo da direção de um veículo começa antes de sair de casa.
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/86068797/217979057-5ab4ce27-7bd6-44ff-b5f4-5926101ae9fd.gif" alt="Celso Drive" border="0">
-  Celso Drive by PlayVC
+  <img src="https://user-images.githubusercontent.com/86068797/224431233-6509adbc-dc0e-4afe-8924-876063d6fd5a.png" alt="Celso Drive">
+  Celso Caminhões by PlayVC
 </p>
 
 May the force be with you!
@@ -45,11 +45,10 @@ May the force be with you!
 ## 🛠 Estrutura de pastas
 
 -Raiz<br>
-|<br>
 |-->docs<br>
 |-->documentos<br>
   &emsp;|-->antigos<br>
-  &emsp;|GDD.docx ou Documentação.docx<br>
+  &emsp;|GDD.docx e GDD.pdf<br>
 |-->executáveis<br>
   &emsp;|-->windows<br>
   &emsp;|-->android<br>
@@ -64,14 +63,14 @@ A pasta raiz contem dois arquivos que devem ser alterados:
 
 Há também 4 pastas que seguem da seguinte forma:
 
-<b>docs</b>: Aqui serão colocados os arquivos compilados em HTML do jogo.
-<b>documentos</b>: Aqui estarão todos os documentos do projeto, mas principalmente o <b>GDD (Game Design Document)/Documentação do Sistema</b>. Há uma pasta <b>antigos</b> onde estarão todas as versões antigas da documentação.
+<b>docs</b>: Local onde ficam os arquivos compilados em HTML do jogo.
+<b>documentos</b>: Aqui ficam todos os documentos do projeto, mas principalmente o <b>GDD (Game Design Document)/Documentação do Sistema</b>. Há uma pasta <b>antigos</b> onde estão todas as versões antigas da documentação.
 
-<b>executáveis</b>: Aqui estarão todos os executáveis do jogo, prontos para rodar. Há no mínimo 3 pastas, uma para binários <b>Windows</b>, uma para binários <b>android</b> e uma para a <b>Web/HTML</b>
+<b>executáveis</b>: Aqui ficam todos os executáveis do jogo, prontos para rodar. Há no mínimo 3 pastas, uma para binários <b>Windows</b>, uma para binários <b>android</b> e uma para a <b>Web/HTML</b>
 
 <b>imagens</b>: Algumas imagens do jogo/sistema e logos prontos para serem utilizados e visualizados.
 
-<b>src</b>: Nesta pasta irá todo o código fonte do jogo/sistema, pronto para para ser baixado e modificado.
+<b>src</b>: Nesta pasta fica todo o código fonte do jogo/sistema, pronto para para ser baixado e modificado.
 
 ## 🛠 Instalação
 
@@ -99,8 +98,17 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 
 A cada atualização os detalhes são lançados aqui.
 
+* 0.3.0 - 10/03/2023
+    * Remodelação das telas de menu inicial e menu de configurações;
+    * Adição de funcionalidades à tela de configurações - controle do volume da música, seleção de estilo musical favorito, seleção de idioma, informações sobre os controles do jogo e configurações de tela cheia;
+    * Tela de tutorial interativa;
+    * Finalização e implantação do personagem principal - Celso;
+    * Criação dos diálogos do jogo em português, inglês e espanhol;
+    * Criação do primeiro minigame com diálogos, cronômetro e tutorial;
+    * Desenvolvimento da HUD com a barra de energia e a pontuação do jogador;
+    * Atualização do GDD com os testes iniciais.
 * 0.2.1 - 24/02/2023
-    * Criação de dois novos mapas (visão externa e interna da casa), criação da primeira tela do menu de opções e adição dos botões de crédito e de opções no menu inicial.
+    * Criação de dois novos mapas (visão externa e interna da casa), criação da primeira tela do menu de opções e adição dos botões de crédito e de opções no menu inicial;
     * Correção do GDD.
 * 0.1.0 - 10/02/2023
     * Lançamento da primeira versão (artefato) -> mecânica básica de movimentação, câmera e sons
@@ -109,6 +117,8 @@ A cada atualização os detalhes são lançados aqui.
 
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/Spidus/Teste_Final_1">MODELO GIT INTELI</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.yggbrasil.com.br/vr">INTELI, VICTOR BRUNO ALEXANDER ROSETTI DE QUIROZ</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
 
-## 🎓 Referências
+## 🎓 Referências & Créditos
 
-Aqui estão as referências usadas no projeto.
+> 🤖 [Documentação do Godot](https://docs.godotengine.org/pt_BR/latest/about/index.html) <br>
+🏠 [Modern Exteriors](https://limezu.itch.io/moderninteriors) e [Modern Interiors](https://limezu.itch.io/moderninteriors) <br>
+📻 [Forró](https://www.youtube.com/watch?v=IGgg8PajPN8), [Samba](https://www.youtube.com/watch?v=CoAP1ZjOD_Q), [Sertanejo](https://www.youtube.com/watch?v=9MoDQTe10vs) e [Rock](https://www.youtube.com/watch?v=fh-o8Bxc3Ys)

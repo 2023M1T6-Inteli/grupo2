@@ -2,14 +2,14 @@
 
 [ext_resource path="res://Scripts/Truck.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/RoadTinhoso.gd" type="Script" id=2]
-[ext_resource path="res://Assets/Tilesets/Modern_Exteriors_Complete_Tileset.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Player/truck.png" type="Texture" id=4]
+[ext_resource path="res://Assets/tilesets/Modern_Exteriors_Complete_Tileset.png" type="Texture" id=3]
+[ext_resource path="res://Assets/player/truck.png" type="Texture" id=4]
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/GameOver.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Assets/Items/seta_esquerda_pressionada.png" type="Texture" id=7]
-[ext_resource path="res://Assets/Items/seta_esquerda.png" type="Texture" id=8]
-[ext_resource path="res://Assets/Items/seta_direita_pressionada.png" type="Texture" id=9]
-[ext_resource path="res://Assets/Items/seta_direita.png" type="Texture" id=10]
+[ext_resource path="res://Assets/items/left_key_pressed.png" type="Texture" id=7]
+[ext_resource path="res://Assets/items/left_key.png" type="Texture" id=8]
+[ext_resource path="res://Assets/items/right_key_pressed.png" type="Texture" id=9]
+[ext_resource path="res://Assets/items/right_key.png" type="Texture" id=10]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Modern_Exteriors_Complete_Tileset.png 0"

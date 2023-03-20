@@ -1,11 +1,18 @@
 extends Node2D
 
-
 onready var dialog # Variável utilizada para carregar os diálogos
 onready var language = Global.selectedLanguage # Carrega informações da variável global de idioma
-var finisheDialogue = false # Variável contém valor da emissão sinal ao finalizar dialogo
+var finishedDialog = false # Variável que contém valor do sinal ao finalizar dialogo
+
 
 func _ready():
+	# Define posição do personagem
+	Global.playerPosition = Vector2(79, 304)
+	
+	# Instancia cena para mostrar o personagem
+	var spawnPlayer = load("res://Scenes/SpawnPlayer.tscn").instance()
+	add_child(spawnPlayer)
+	
 	# Traduz elementos da tela atual para inglês
 	if language == 1:
 		$InteractLabel.text = "Interact"
@@ -20,10 +27,12 @@ func _ready():
 		add_child(dialog)
 
 
-func _process(delta):
+func _process(_delta):
 	# Verifica, a cada frame, as teclas pressionadas
 	key_pressed()
-	tutorial_npc()
+	move_npc()
+
+
 # Recebe e trata os sinais do nó de diálogo
 func dialog_listener(string):
 	match string:
@@ -34,13 +43,14 @@ func dialog_listener(string):
 		# Adiciona na lista de escolhas a decisão boa de recusar a corrida do tinhoso
 		"refused":
 			Global.choices.append(0);
-		# Quando diálogo é finalizado 
-		"finishedDialogue":
-			finisheDialogue = true
+		
+		# Quando o sinal for emitido, a variável finishedDialog recebe true
+		"finishedDialog":
+			finishedDialog = true;
 
 
 # Aciona diálogo com tinhoso quando o personagem entra na Area2D
-func _on_NextSceneArea_body_entered(body):
+func _on_NextSceneArea_body_entered(_body):
 	# Seleciona o diálogo de acordo com o idioma do jogo
 	if language == 1:
 		dialog = Dialogic.start("tinhoso-1-en")
@@ -74,21 +84,13 @@ func key_pressed():
 		$InteractKeySprite.play("pressed")
 	else:
 		$InteractKeySprite.play("default")
-		
-func tutorial_npc():
-	# Condições para ativar animação
-	if finisheDialogue == true and $TutorialNpc.position.x < 700:
-		# Captura signal emitidido no fim do dialogo 
-		# impede que se mova eternamente, de acordo com position
-		$TutorialNpc.position.x += 1 
-		$TutorialNpc/AnimatedSprite.play("RunRight")
-		$TutorialNpcCat.position.x += 1
-		$TutorialNpcCat/AnimatedSprite.play("RunRight")
-		
-		
 
-		
-		
-		
-		#ativa movimentação do npc em direção ao tinhoso
-		
+
+# Move NPCs horizontalmente
+func move_npc():
+	# Condições para ativar animação -> impede que continue se movendo após sair da tela
+	if finishedDialog and $TutorialNpc.position.x < 700:
+		$TutorialNpc.position.x += 2
+		$TutorialNpc/AnimatedSprite.play("RunRight")
+		$TutorialNpcCat.position.x += 2
+		$TutorialNpcCat/AnimatedSprite.play("RunRight")
