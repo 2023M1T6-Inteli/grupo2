@@ -1,4 +1,4 @@
-[gd_scene load_steps=71 format=2]
+[gd_scene load_steps=74 format=2]
 
 [ext_resource path="res://Assets/tilesets/Modern_Exteriors_Complete_Tileset.png" type="Texture" id=1]
 [ext_resource path="res://Assets/items/e_interact.png" type="Texture" id=2]
@@ -17,6 +17,9 @@
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Assets/npc/cat_spritesheet.png" type="Texture" id=16]
 [ext_resource path="res://Assets/npc/male_spritesheet.png" type="Texture" id=17]
+[ext_resource path="res://Scenes/Message.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Assets/Items/close_hover.png" type="Texture" id=19]
+[ext_resource path="res://Assets/Items/close.png" type="Texture" id=20]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Modern_Exteriors_Complete_Tileset.png 0"
@@ -1292,6 +1295,18 @@ shape = SubResource( 58 )
 position = Vector2( 117, 304 )
 remote_path = NodePath("../Camera2D")
 
+[node name="Message" parent="." instance=ExtResource( 18 )]
+visible = false
+
+[node name="CloseMessageButton" type="TextureButton" parent="Message"]
+margin_left = 588.0
+margin_top = 38.0
+margin_right = 613.0
+margin_bottom = 67.0
+texture_normal = ExtResource( 20 )
+texture_hover = ExtResource( 19 )
+
 [connection signal="body_entered" from="Houses/Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Houses/Area2D" to="." method="_on_Area2D_body_exited"]
 [connection signal="body_entered" from="NextSceneArea" to="." method="_on_NextSceneArea_body_entered"]
+[connection signal="pressed" from="Message/CloseMessageButton" to="." method="_on_CloseMessageButton_pressed"]

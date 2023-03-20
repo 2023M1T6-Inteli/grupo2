@@ -31,6 +31,11 @@ func _process(_delta):
 	# Verifica, a cada frame, as teclas pressionadas
 	key_pressed()
 	move_npc()
+	
+	if $Houses/Area2D/EInteract.visible == true && Input.is_action_just_pressed("interagir"):
+		dialog = Dialogic.start("tutorial-house")
+		dialog.connect("dialogic_signal", self, "dialog_listener")
+		add_child(dialog)
 
 
 # Recebe e trata os sinais do nó de diálogo
@@ -47,6 +52,9 @@ func dialog_listener(string):
 		# Quando o sinal for emitido, a variável finishedDialog recebe true
 		"finishedDialog":
 			finishedDialog = true;
+			
+		"interacted":
+			$Message.visible = true;
 
 
 # Aciona diálogo com tinhoso quando o personagem entra na Area2D
@@ -102,3 +110,7 @@ func _on_Area2D_body_entered(_body):
 
 func _on_Area2D_body_exited(_body):
 	$Houses/Area2D/EInteract.visible = false
+
+
+func _on_CloseMessageButton_pressed():
+	$Message.visible = false;
