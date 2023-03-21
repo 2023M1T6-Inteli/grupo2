@@ -1,7 +1,6 @@
 extends CanvasLayer
 
-
-func _process(delta):
+func _process(_delta):
 	# Verifica, a cada frame, o nível de energia
 	update_energy_bar(Global.energy)
 	

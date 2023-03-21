@@ -3,7 +3,20 @@ extends Node2D
 var language # Variável que será sempre atualizada de acordo com o script global
 
 
-func _process(delta):
+func _ready():
+	# Traduz elementos da tela atual para inglês
+	if Global.selectedLanguage == 1:
+		$SettingsLabel.text = "Settings"
+		$MainContainer/AudioLabel.text = "Audio"
+		$MainContainer/LanguageLabel.text = "Language"
+		$MainContainer/ControlsLabel.text = "Controls"
+		$MainContainer/VideoLabel.text = "Video"
+		$SettingsAudioContainer/MusicVolumeLabel.text = "Music Volume"
+		$SettingsAudioContainer/MusicalGenreLabel.text = "Favorite Musical Genre"
+		$SettingsVideoContainer/HBoxContainer/FullScreenButton.text = "Full Screen"
+
+
+func _process(_delta):
 	# Verifica, a cada frame, qual a linguagem selecionada
 	language = Global.selectedLanguage
 
@@ -98,3 +111,9 @@ func _on_LanguageEnLabel_pressed():
 		$SettingsAudioContainer/MusicVolumeLabel.text = "Music Volume"
 		$SettingsAudioContainer/MusicalGenreLabel.text = "Favorite Musical Genre"
 		$SettingsVideoContainer/HBoxContainer/FullScreenButton.text = "Full Screen"
+
+
+func _on_LanguagePortLabel_pressed():
+	# Retorna idioma para português
+	Global.selectedLanguage = 0
+	return get_tree().reload_current_scene()

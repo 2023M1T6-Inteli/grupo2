@@ -50,7 +50,7 @@ func dialog_listener(string):
 			$GameOver.visible = true
 
 
-func _process(delta):
+func _process(_delta):
 	# Move background
 	if Global.pausedGame == false:
 		if($Road.position.y + backgroundSpeed > 360): 

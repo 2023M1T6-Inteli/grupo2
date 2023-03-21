@@ -1,14 +1,10 @@
 extends KinematicBody2D
 
-const MAX_SPEED = 400 # Define velocidade máxima do caminhão
-const acceleration = 200  # Define aceleração do caminhão
-const FRICTION  = 100 # Valor de parada, responsável pela tração do caminhão 
+const MAX_SPEED = 150 # Define velocidade máxima do caminhão
+const ACCELERATION = 80  # Define aceleração do caminhão
+const FRICTION  = 300 # Valor de parada, responsável pela tração do caminhão 
 var velocity = Vector2.ZERO  # Vetor responsável pela movimentação do caminhão
 var inputDirection = Vector2(0, 0)  # Vetor atualizado de acordo com as teclas pressionadas
-
-
-func _ready():
-	pass
 
 
 func _physics_process(delta):
@@ -17,7 +13,7 @@ func _physics_process(delta):
 	
 	if inputDirection != Vector2.ZERO:
 		# Calula o vetor velocidade considerando a velocidade máxima e a aceleração
-		velocity = velocity.move_toward(inputDirection * MAX_SPEED, acceleration * delta)
+		velocity = velocity.move_toward(inputDirection * MAX_SPEED, ACCELERATION * delta)
 	else: 
 		# Responsável por desacelerar o caminhão de forma gradativa e pela movimentação fluída
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)

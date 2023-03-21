@@ -9,7 +9,7 @@ onready var animationTree = $AnimationTree # Árvore de animações do personage
 onready var animationState = animationTree.get("parameters/playback") 
 
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	# Processa e salva inputs na horizontal e na vertical
 	if inputDirection.y == 0:
 		inputDirection.x = (
@@ -39,8 +39,3 @@ func _physics_process(delta):
 	
 	# Movimenta o personagem de acordo com o vetor velocity vezes a rapidez do movimento
 	velocity = move_and_slide(velocity * walkSpeed)
-
-
-# Move o personagem para fora de casa
-func _on_Exit_body_entered(body):
-	return get_tree().change_scene("res://Scenes/OutsideHouse.tscn")

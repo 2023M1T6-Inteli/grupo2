@@ -95,7 +95,7 @@
 			"event_id": "dialogic_013"
 		},
 		{
-			"emit_signal": "finishedDialogue",
+			"emit_signal": "finishedDialog",
 			"event_id": "dialogic_040"
 		},
 		{

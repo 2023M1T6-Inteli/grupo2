@@ -1,6 +1,6 @@
 extends Node2D
 
-const truck = preload("res://Scenes/MainTruck.tscn") # Carrega cena dos caminhões
+const TRUCK = preload("res://Scenes/MainTruck.tscn") # Carrega cena dos caminhões
 var language = Global.selectedLanguage # Carrega informações da variável global de idioma
 
 
@@ -11,13 +11,12 @@ func _ready():
 		$PlayButton.text = "Play"
 		$ConfigButton.text = "Settings"
 		$CreditsButton.text = "Credits"
-	MusicController.play_music() # Reproduz música
 	randomize()
 
 
 # Direciona para a visão exterior da casa
 func _on_PlayButton_pressed():
-	return get_tree().change_scene("res://Scenes/Tutorial.tscn")
+	return get_tree().change_scene("res://Scenes/CelsoSelect.tscn")
 
 
 # Direciona para o menu de opções
@@ -29,8 +28,8 @@ func _on_ConfigButton_pressed():
 func _on_TruckTimer_timeout():
 	$PathLeft/PathFollow2D.offset = randi()
 	$PathRight/PathFollow2D.offset = randi()
-	var newTruckLeft = truck.instance()
-	var newTruckRight = truck.instance()
+	var newTruckLeft = TRUCK.instance()
+	var newTruckRight = TRUCK.instance()
 	add_child(newTruckLeft)
 	add_child(newTruckRight)
 	newTruckLeft.position = $PathLeft/PathFollow2D.position

@@ -16,7 +16,7 @@ func _ready():
 		$SettingsVideoContainer/HBoxContainer/FullScreenButton.text = "Full Screen"
 
 
-func _process(delta):
+func _process(_delta):
 	# Verifica, a cada frame, qual a linguagem selecionada
 	language = Global.selectedLanguage
 

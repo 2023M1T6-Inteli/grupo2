@@ -2,12 +2,12 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/Samba.mp3-453197d9b2683be091fe3b11b77f6c36.mp3str"
+path="res://.import/Samba.mp3-3006b83b4bfcd3010a9745697245506e.mp3str"
 
 [deps]
 
-source_file="res://Assets/Music/Samba.mp3"
-dest_files=[ "res://.import/Samba.mp3-453197d9b2683be091fe3b11b77f6c36.mp3str" ]
+source_file="res://Assets/music/Samba.mp3"
+dest_files=[ "res://.import/Samba.mp3-3006b83b4bfcd3010a9745697245506e.mp3str" ]
 
 [params]
 
