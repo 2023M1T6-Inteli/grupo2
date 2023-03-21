@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/e_key.png-6675813da4e0a30a15dbbd29c343694a.stex"
+path="res://.import/caminhao .png-cb89e35bde4c68aed6da4a0bc631f1a0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Items/e_key.png"
-dest_files=[ "res://.import/e_key.png-6675813da4e0a30a15dbbd29c343694a.stex" ]
+source_file="res://Assets/Items/caminhao .png"
+dest_files=[ "res://.import/caminhao .png-cb89e35bde4c68aed6da4a0bc631f1a0.stex" ]
 
 [params]
 

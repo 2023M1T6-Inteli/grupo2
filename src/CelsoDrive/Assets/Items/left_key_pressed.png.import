@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/left_key_pressed.png-84dc08ea7b9fb65e4f05177e68141e45.stex"
+path="res://.import/left_key_pressed.png-39b42a7b35d273c7b96e214c97b23c99.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/items/left_key_pressed.png"
-dest_files=[ "res://.import/left_key_pressed.png-84dc08ea7b9fb65e4f05177e68141e45.stex" ]
+source_file="res://Assets/Items/left_key_pressed.png"
+dest_files=[ "res://.import/left_key_pressed.png-39b42a7b35d273c7b96e214c97b23c99.stex" ]
 
 [params]
 

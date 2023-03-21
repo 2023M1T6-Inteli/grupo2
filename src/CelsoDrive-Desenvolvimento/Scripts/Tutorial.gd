@@ -4,7 +4,6 @@ onready var dialog # Variável utilizada para carregar os diálogos
 onready var language = Global.selectedLanguage # Carrega informações da variável global de idioma
 var finishedDialog = false # Variável que contém valor do sinal ao finalizar dialogo
 
-
 func _ready():
 	# Define posição do personagem
 	Global.playerPosition = Vector2(79, 304)
@@ -71,6 +70,7 @@ func dialog_listener(string):
 		# Exibe tela com mensagem no celular após o diálogo de interação com a casa
 		"interacted":
 			$Message.visible = true;
+			
 
 
 # Altera animação das setas de acordo com a tecla pressionada
@@ -96,7 +96,7 @@ func key_pressed():
 	else:
 		$InteractKeySprite.play("default")
 
-
+	
 # Move NPCs horizontalmente
 func move_npc():
 	# Condições para ativar animação -> impede que continue se movendo após sair da tela

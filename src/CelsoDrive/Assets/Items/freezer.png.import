@@ -2,15 +2,24 @@
 
 importer="texture"
 type="StreamTexture"
+<<<<<<< HEAD:src/CelsoDrive/Assets/Items/freeze.png.import
+path="res://.import/freeze.png-cf0fe19011c1ec6d79ee27148e021ca1.stex"
+=======
 path="res://.import/freezer.png-9c4909419376eea1d34d730e38496f97.stex"
+>>>>>>> d261111e361edeb3ebd931e8ccf5e2515fb671c7:src/CelsoDrive/Assets/Items/freezer.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
+<<<<<<< HEAD:src/CelsoDrive/Assets/Items/freeze.png.import
+source_file="res://Assets/Items/freeze.png"
+dest_files=[ "res://.import/freeze.png-cf0fe19011c1ec6d79ee27148e021ca1.stex" ]
+=======
 source_file="res://Assets/items/freezer.png"
 dest_files=[ "res://.import/freezer.png-9c4909419376eea1d34d730e38496f97.stex" ]
+>>>>>>> d261111e361edeb3ebd931e8ccf5e2515fb671c7:src/CelsoDrive/Assets/Items/freezer.png.import
 
 [params]
 
