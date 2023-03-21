@@ -1094,7 +1094,7 @@ animations = [ {
 "frames": [ SubResource( 62 ), SubResource( 63 ), SubResource( 64 ) ],
 "loop": true,
 "name": "default",
-"speed": 5.0
+"speed": 2.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=61]
@@ -1272,7 +1272,7 @@ collision_layer = 2
 position = Vector2( 30, -46.6667 )
 scale = Vector2( 2.91666, 2.73062 )
 frames = SubResource( 65 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TinhosoSceneArea/TinhosoNPC"]
