@@ -1316,6 +1316,7 @@ position = Vector2( -68, 227 )
 shape = SubResource( 58 )
 
 [node name="Message" parent="." instance=ExtResource( 18 )]
+visible = false
 
 [node name="CloseMessageButton" type="TextureButton" parent="Message"]
 margin_left = 588.0
