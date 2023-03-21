@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tinhas.png-753f855182ca46df71e1cd637b45dc8d.stex"
+path="res://.import/celular_do_celso-sheet.png-653d732aeaf3c3a922076eefed163cf1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/NPC/tinhas.png"
-dest_files=[ "res://.import/tinhas.png-753f855182ca46df71e1cd637b45dc8d.stex" ]
+source_file="res://Assets/Items/celular_do_celso-sheet.png"
+dest_files=[ "res://.import/celular_do_celso-sheet.png-653d732aeaf3c3a922076eefed163cf1.stex" ]
 
 [params]
 
