@@ -18,8 +18,8 @@
 [ext_resource path="res://Assets/npc/cat_spritesheet.png" type="Texture" id=16]
 [ext_resource path="res://Assets/npc/male_spritesheet.png" type="Texture" id=17]
 [ext_resource path="res://Scenes/Message.tscn" type="PackedScene" id=18]
-[ext_resource path="res://Assets/Items/close_hover.png" type="Texture" id=19]
-[ext_resource path="res://Assets/Items/close.png" type="Texture" id=20]
+[ext_resource path="res://Assets/items/close.png" type="Texture" id=19]
+[ext_resource path="res://Assets/items/close_hover.png" type="Texture" id=20]
 [ext_resource path="res://Assets/npc/tinhosoInGame.png" type="Texture" id=21]
 
 [sub_resource type="TileSet" id=1]
@@ -1272,6 +1272,7 @@ collision_layer = 2
 position = Vector2( 30, -46.6667 )
 scale = Vector2( 2.91666, 2.73062 )
 frames = SubResource( 65 )
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TinhosoSceneArea/TinhosoNPC"]
@@ -1315,15 +1316,14 @@ position = Vector2( -68, 227 )
 shape = SubResource( 58 )
 
 [node name="Message" parent="." instance=ExtResource( 18 )]
-visible = false
 
 [node name="CloseMessageButton" type="TextureButton" parent="Message"]
 margin_left = 588.0
 margin_top = 38.0
 margin_right = 613.0
 margin_bottom = 67.0
-texture_normal = ExtResource( 20 )
-texture_hover = ExtResource( 19 )
+texture_normal = ExtResource( 19 )
+texture_hover = ExtResource( 20 )
 
 [connection signal="body_entered" from="Houses/Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Houses/Area2D" to="." method="_on_Area2D_body_exited"]
