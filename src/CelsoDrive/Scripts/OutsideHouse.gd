@@ -2,6 +2,7 @@ extends Node2D
 
 
 func _ready():
+	Global.phase = 1
 	# Define posição do personagem
 	Global.playerPosition = Vector2(64, 208)
 	
@@ -9,6 +10,8 @@ func _ready():
 	var spawnPlayer = load("res://Scenes/SpawnPlayer.tscn").instance()
 	add_child(spawnPlayer)
 
+
 # Move o personagem para dentro de casa
 func _on_CelsoHouse_body_entered(_body):
+	Global.phase = 2
 	return get_tree().change_scene("res://Scenes/InsideHouse.tscn")

@@ -2,6 +2,7 @@ extends Node2D
 
 
 func _ready():
+	Global.phase = 2
 	# Define posição do personagem
 	Global.playerPosition = Vector2(304, 336)
 	
@@ -11,6 +12,7 @@ func _ready():
 
 
 func _on_Exit_body_entered(_body):
+	Global.phase = 1
 	return get_tree().change_scene("res://Scenes/OutsideHouse.tscn")
 
 
