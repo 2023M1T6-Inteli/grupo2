@@ -13,6 +13,8 @@ var phase : int # Variável para identificar a fase atual
 var insideHouseDialog := false # Variável de controle para não repetir o diálogo inicial na casa
 var interactedFreezer := false # Variável de controle para não repetir a interação da geladeira
 var interactedTable := false # Variável de controle para não repetir a interação da mesa
+var interactedPhone := false # Variável de controle para não repetir a interação do celular
+var interactedBed := false # Variável de controle para não repetir a interação da cama
 
 #Variáveis para controlar debuffs
 var alcohol : bool # caso true, sofrerá debuff de álcool

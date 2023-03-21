@@ -45,8 +45,9 @@ func _process(_delta):
 	# Mostra o celular se o jogador apertar a tecla "E" dentro da área
 	if Input.is_action_pressed("interagir") and $PhoneArea/PhoneE.visible == true:
 		$PhoneArea/Phone.visible = true
-		dialog = Dialogic.start("phone")
-		add_child(dialog)
+		if Global.interactedPhone == false:
+			dialog = Dialogic.start("phone")
+			add_child(dialog)
 
 	# Mostra a cama se o jogador apertar a tecla "E" dentro da área
 	if Input.is_action_pressed("interagir") and $SleepArea/SleepE.visible == true:

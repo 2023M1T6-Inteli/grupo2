@@ -4,13 +4,13 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Você sempre pode voltar aqui para recarregar as suas energias"
+			"text": "Você sempre pode voltar aqui para recarregar as suas energias..."
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Está ficando tarde. Acho que é um bom momento pra dormir. O que acha?"
+			"text": "Está ficando tarde. Deseja dormir?"
 		},
 		{
 			"event_id": "dialogic_022",
