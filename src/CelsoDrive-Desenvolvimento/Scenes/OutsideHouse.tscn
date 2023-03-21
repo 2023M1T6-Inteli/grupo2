@@ -1644,10 +1644,10 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=34]
-extents = Vector2( 66.25, 32 )
+extents = Vector2( 68.5, 33 )
 
 [sub_resource type="RectangleShape2D" id=35]
-extents = Vector2( 65.5, 30 )
+extents = Vector2( 63.9375, 28.75 )
 
 [node name="OutsideHouse" type="Node2D"]
 script = ExtResource( 2 )
@@ -1702,7 +1702,7 @@ remote_path = NodePath("../Camera2D")
 collision_layer = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Truck"]
-position = Vector2( -42.75, 326 )
+position = Vector2( -43.5, 332 )
 shape = SubResource( 34 )
 
 [node name="Einteract" type="Sprite" parent="Truck"]
@@ -1715,13 +1715,13 @@ texture = ExtResource( 6 )
 collision_layer = 4
 
 [node name="Sprite" type="Sprite" parent="Truck/TruckCollision"]
-position = Vector2( -49, 330 )
+position = Vector2( -52, 341 )
 scale = Vector2( 1.56667, 1.8375 )
 texture = ExtResource( 1 )
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Truck/TruckCollision"]
-position = Vector2( -43, 326 )
+position = Vector2( -47.9375, 335 )
 shape = SubResource( 35 )
 
 [connection signal="body_entered" from="House/CelsoHouse" to="." method="_on_CelsoHouse_body_entered"]
