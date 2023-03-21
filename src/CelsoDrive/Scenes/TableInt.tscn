@@ -6,7 +6,6 @@
 [ext_resource path="res://Assets/Items/close.png" type="Texture" id=4]
 [ext_resource path="res://Assets/Items/close_hover.png" type="Texture" id=5]
 
-
 [node name="TableInt" type="CanvasLayer"]
 script = ExtResource( 3 )
 

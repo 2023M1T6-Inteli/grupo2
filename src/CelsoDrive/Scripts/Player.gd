@@ -9,6 +9,21 @@ onready var animationTree = $AnimationTree # Árvore de animações do personage
 onready var animationState = animationTree.get("parameters/playback") 
 
 
+func _ready():
+	# Limita a câmera de acordo com o nível 1
+	if Global.phase == 1:
+		$Camera2D.limit_bottom = 368
+		$Camera2D.limit_top = 0
+		$Camera2D.limit_left = -100
+		$Camera2D.limit_right = 640
+	# Limita a câmera de acordo com o nível 2
+	elif Global.phase == 2:
+		$Camera2D.limit_bottom = 368
+		$Camera2D.limit_top = 0
+		$Camera2D.limit_left = 0
+		$Camera2D.limit_right = 640
+
+
 func _physics_process(_delta):
 	# Processa e salva inputs na horizontal e na vertical
 	if inputDirection.y == 0:

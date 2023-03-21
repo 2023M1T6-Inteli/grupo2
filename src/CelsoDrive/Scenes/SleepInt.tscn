@@ -1,8 +1,17 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scripts/SleepInt.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Items/close_hover.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Items/close.png" type="Texture" id=3]
+[ext_resource path="res://Assets/fonts/CompassPro.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 20
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 20
+font_data = ExtResource( 4 )
 
 [node name="Sleep" type="CanvasLayer"]
 script = ExtResource( 1 )
@@ -14,19 +23,25 @@ margin_right = 648.0
 margin_bottom = 376.0
 color = Color( 0, 0, 0, 0.627451 )
 
-[node name="Yes" type="Button" parent="."]
-margin_left = 226.0
-margin_top = 154.0
-margin_right = 412.0
-margin_bottom = 198.0
-text = "SIM"
+[node name="SleepNow" type="Button" parent="."]
+margin_left = 225.0
+margin_top = 135.0
+margin_right = 411.0
+margin_bottom = 179.0
+custom_colors/font_color_hover = Color( 0.345098, 0.823529, 0.0980392, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Dormir agora"
+flat = true
 
-[node name="No" type="Button" parent="."]
-margin_left = 226.0
-margin_top = 221.0
-margin_right = 412.0
-margin_bottom = 265.0
-text = "NÂO"
+[node name="SleepAfter" type="Button" parent="."]
+margin_left = 225.0
+margin_top = 197.0
+margin_right = 411.0
+margin_bottom = 241.0
+custom_colors/font_color_hover = Color( 0.345098, 0.823529, 0.0980392, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "Voltar depois"
+flat = true
 
 [node name="CloseButton" type="TextureButton" parent="."]
 margin_left = 588.0
@@ -36,6 +51,6 @@ margin_bottom = 67.0
 texture_normal = ExtResource( 3 )
 texture_hover = ExtResource( 2 )
 
-[connection signal="pressed" from="Yes" to="." method="_on_Yes_pressed"]
-[connection signal="pressed" from="No" to="." method="_on_No_pressed"]
+[connection signal="pressed" from="SleepNow" to="." method="_on_SleepNow_pressed"]
+[connection signal="pressed" from="SleepAfter" to="." method="_on_SleepAfter_pressed"]
 [connection signal="pressed" from="CloseButton" to="." method="_on_CloseButton_pressed"]

@@ -1,9 +1,29 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Scripts/PhoneInt.gd" type="Script" id=1]
-[ext_resource path="res://Assets/Items/phone.png" type="Texture" id=2]
+[ext_resource path="res://Assets/items/phone_disable.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Items/close.png" type="Texture" id=3]
 [ext_resource path="res://Assets/Items/close_hover.png" type="Texture" id=4]
+[ext_resource path="res://Assets/fonts/CompassPro.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://Assets/items/phone_activated.png" type="Texture" id=6]
+[ext_resource path="res://Assets/music/vibrate.wav" type="AudioStream" id=7]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "false",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "true",
+"speed": 5.0
+} ]
+
+[sub_resource type="DynamicFont" id=1]
+size = 19
+font_data = ExtResource( 5 )
 
 [node name="Phone" type="CanvasLayer"]
 script = ExtResource( 1 )
@@ -15,24 +35,32 @@ margin_right = 646.0
 margin_bottom = 375.0
 color = Color( 0, 0, 0, 0.627451 )
 
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 318, 105 )
-scale = Vector2( 0.239297, 0.229125 )
-texture = ExtResource( 2 )
+[node name="Sprite" type="AnimatedSprite" parent="."]
+position = Vector2( 314.5, 190.5 )
+scale = Vector2( 0.3, 0.3 )
+frames = SubResource( 2 )
+animation = "true"
 
-[node name="Yes" type="Button" parent="."]
-margin_left = 233.0
-margin_top = 191.0
-margin_right = 410.0
-margin_bottom = 237.0
-text = "SIM"
+[node name="OptionsButtonUI" type="Button" parent="Sprite"]
+margin_left = -145.0
+margin_top = -222.0
+margin_right = 172.0
+margin_bottom = 202.0
+focus_mode = 0
+enabled_focus_mode = 0
+flat = true
 
-[node name="No" type="Button" parent="."]
-margin_left = 233.0
-margin_top = 258.0
-margin_right = 410.0
-margin_bottom = 304.0
-text = "NÂO"
+[node name="OptionButton" type="Button" parent="."]
+margin_left = 232.0
+margin_top = 278.0
+margin_right = 409.0
+margin_bottom = 324.0
+focus_mode = 0
+custom_colors/font_color_hover = Color( 0.345098, 0.823529, 0.0980392, 1 )
+custom_fonts/font = SubResource( 1 )
+enabled_focus_mode = 0
+text = "Ativar Silencioso"
+flat = true
 
 [node name="CloseScene" type="TextureButton" parent="."]
 margin_left = 588.0
@@ -42,6 +70,9 @@ margin_bottom = 67.0
 texture_normal = ExtResource( 3 )
 texture_hover = ExtResource( 4 )
 
-[connection signal="pressed" from="Yes" to="." method="_on_Yes_pressed"]
-[connection signal="pressed" from="No" to="." method="_on_No_pressed"]
+[node name="Vibrate" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 7 )
+
+[connection signal="pressed" from="Sprite/OptionsButtonUI" to="." method="_on_OptionsButtonUI_pressed"]
+[connection signal="pressed" from="OptionButton" to="." method="_on_OptionButton_pressed"]
 [connection signal="pressed" from="CloseScene" to="." method="_on_CloseScene_pressed"]
