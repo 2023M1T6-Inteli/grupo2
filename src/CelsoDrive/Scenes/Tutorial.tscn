@@ -1,6 +1,6 @@
 [gd_scene load_steps=79 format=2]
 
-[ext_resource path="res://Assets/tilesets/Modern_Exteriors_Complete_Tileset.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Tilesets/Modern_Exteriors_Complete_Tileset.png" type="Texture" id=1]
 [ext_resource path="res://Assets/items/e_interact.png" type="Texture" id=2]
 [ext_resource path="res://Assets/items/up_key.png" type="Texture" id=3]
 [ext_resource path="res://Assets/items/left_key.png" type="Texture" id=4]
@@ -20,7 +20,7 @@
 [ext_resource path="res://Scenes/Message.tscn" type="PackedScene" id=18]
 [ext_resource path="res://Assets/Items/close_hover.png" type="Texture" id=19]
 [ext_resource path="res://Assets/Items/close.png" type="Texture" id=20]
-[ext_resource path="res://Assets/NPC/tinhosoInGame.png" type="Texture" id=21]
+[ext_resource path="res://Assets/npc/tinhosoInGame.png" type="Texture" id=21]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Modern_Exteriors_Complete_Tileset.png 0"
@@ -1077,21 +1077,21 @@ font_data = ExtResource( 14 )
 [sub_resource type="RectangleShape2D" id=36]
 extents = Vector2( 28, 22 )
 
-[sub_resource type="AtlasTexture" id=62]
+[sub_resource type="AtlasTexture" id=77]
 atlas = ExtResource( 21 )
 region = Rect2( 0, 0, 30, 43 )
 
-[sub_resource type="AtlasTexture" id=63]
+[sub_resource type="AtlasTexture" id=78]
 atlas = ExtResource( 21 )
 region = Rect2( 30, 0, 30, 43 )
 
-[sub_resource type="AtlasTexture" id=64]
+[sub_resource type="AtlasTexture" id=79]
 atlas = ExtResource( 21 )
 region = Rect2( 60, 0, 30, 43 )
 
 [sub_resource type="SpriteFrames" id=65]
 animations = [ {
-"frames": [ SubResource( 62 ), SubResource( 63 ), SubResource( 64 ) ],
+"frames": [ SubResource( 77 ), SubResource( 78 ), SubResource( 79 ) ],
 "loop": true,
 "name": "default",
 "speed": 2.0
@@ -1100,21 +1100,21 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=61]
 extents = Vector2( 38, 49.5 )
 
-[sub_resource type="AtlasTexture" id=39]
+[sub_resource type="AtlasTexture" id=66]
 atlas = ExtResource( 17 )
 region = Rect2( 0, 64, 16, 32 )
 
-[sub_resource type="AtlasTexture" id=40]
+[sub_resource type="AtlasTexture" id=67]
 atlas = ExtResource( 17 )
 region = Rect2( 16, 64, 16, 32 )
 
-[sub_resource type="AtlasTexture" id=41]
+[sub_resource type="AtlasTexture" id=68]
 atlas = ExtResource( 17 )
 region = Rect2( 32, 64, 16, 32 )
 
 [sub_resource type="SpriteFrames" id=42]
 animations = [ {
-"frames": [ SubResource( 39 ), SubResource( 40 ), SubResource( 41 ) ],
+"frames": [ SubResource( 66 ), SubResource( 67 ), SubResource( 68 ) ],
 "loop": true,
 "name": "RunRight",
 "speed": 5.0
@@ -1123,41 +1123,41 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=43]
 extents = Vector2( 942.333, 961.852 )
 
-[sub_resource type="AtlasTexture" id=50]
+[sub_resource type="AtlasTexture" id=69]
 atlas = ExtResource( 16 )
-region = Rect2( 0, 140, 32, 35 )
+region = Rect2( 0, 128, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=51]
+[sub_resource type="AtlasTexture" id=70]
 atlas = ExtResource( 16 )
-region = Rect2( 32, 140, 32, 35 )
+region = Rect2( 32, 128, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=52]
+[sub_resource type="AtlasTexture" id=71]
 atlas = ExtResource( 16 )
-region = Rect2( 64, 140, 32, 35 )
+region = Rect2( 64, 128, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=53]
+[sub_resource type="AtlasTexture" id=72]
 atlas = ExtResource( 16 )
-region = Rect2( 96, 140, 32, 35 )
+region = Rect2( 96, 128, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=54]
+[sub_resource type="AtlasTexture" id=73]
 atlas = ExtResource( 16 )
-region = Rect2( 128, 140, 32, 35 )
+region = Rect2( 128, 128, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=55]
+[sub_resource type="AtlasTexture" id=74]
 atlas = ExtResource( 16 )
-region = Rect2( 160, 140, 32, 35 )
+region = Rect2( 160, 128, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=56]
+[sub_resource type="AtlasTexture" id=75]
 atlas = ExtResource( 16 )
-region = Rect2( 192, 140, 32, 35 )
+region = Rect2( 192, 128, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=57]
+[sub_resource type="AtlasTexture" id=76]
 atlas = ExtResource( 16 )
-region = Rect2( 224, 140, 32, 35 )
+region = Rect2( 224, 128, 32, 32 )
 
 [sub_resource type="SpriteFrames" id=49]
 animations = [ {
-"frames": [ SubResource( 50 ), SubResource( 51 ), SubResource( 52 ), SubResource( 53 ), SubResource( 54 ), SubResource( 55 ), SubResource( 56 ), SubResource( 57 ) ],
+"frames": [ SubResource( 69 ), SubResource( 70 ), SubResource( 71 ), SubResource( 72 ), SubResource( 73 ), SubResource( 74 ), SubResource( 75 ), SubResource( 76 ) ],
 "loop": true,
 "name": "RunRight",
 "speed": 5.0
@@ -1272,7 +1272,6 @@ collision_layer = 2
 position = Vector2( 30, -46.6667 )
 scale = Vector2( 2.91666, 2.73062 )
 frames = SubResource( 65 )
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TinhosoSceneArea/TinhosoNPC"]
@@ -1293,7 +1292,6 @@ position = Vector2( 98.1593, 332.948 )
 scale = Vector2( 100, 100 )
 frames = SubResource( 42 )
 animation = "RunRight"
-frame = 2
 flip_h = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TutorialNpc"]

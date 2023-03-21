@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Modern_Exteriors_Complete_Tileset.png-2b91f564e9df98cbd7d602e0c6fe3e17.stex"
+path="res://.import/Modern_Exteriors_Complete_Tileset.png-95278106edfffee3497b16453a845a05.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/tilesets/Modern_Exteriors_Complete_Tileset.png"
-dest_files=[ "res://.import/Modern_Exteriors_Complete_Tileset.png-2b91f564e9df98cbd7d602e0c6fe3e17.stex" ]
+source_file="res://Assets/Tilesets/Modern_Exteriors_Complete_Tileset.png"
+dest_files=[ "res://.import/Modern_Exteriors_Complete_Tileset.png-95278106edfffee3497b16453a845a05.stex" ]
 
 [params]
 
