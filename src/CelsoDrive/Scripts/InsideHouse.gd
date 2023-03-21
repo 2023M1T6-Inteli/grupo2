@@ -1,5 +1,7 @@
 extends Node2D
 
+onready var dialog # Variável utilizada para carregar os diálogos
+
 
 func _ready():
 	Global.phase = 2
@@ -9,29 +11,45 @@ func _ready():
 	# Instancia cena para mostrar o personagem
 	var spawnPlayer = load("res://Scenes/SpawnPlayer.tscn").instance()
 	add_child(spawnPlayer)
+	
+	# Diálogo inicial da cena
+	if Global.insideHouseDialog == false:
+		dialog = Dialogic.start("level-2")
+		dialog.connect("dialogic_signal", self, "dialog_listener")
+		add_child(dialog)
+		Global.insideHouseDialog = true
 
 
 func _on_Exit_body_entered(_body):
+	# Direciona o personagem para fora de casa
 	Global.phase = 1
 	return get_tree().change_scene("res://Scenes/OutsideHouse.tscn")
 
 
 func _process(_delta):
 	# Verifica se o jogador apertou a tecla E (interação) dentro da área da geladeira, caso positivo, mostra a cena da geladeira
-	if(Input.is_action_pressed("interagir") && $FreezerArea/FreezerE.visible == true):
-		$FreezerArea/Freezer.visible = true;
-		
+	if(Input.is_action_pressed("interagir") and $FreezerArea/FreezerE.visible == true):
+		$FreezerArea/Freezer.visible = true
+		dialog = Dialogic.start("freeze")
+		add_child(dialog)
+
 	# Verifica se o jogador apertou a tecla E (interação) dentro da área da mesa, caso positivo, mostra a cena da mesa
-	if(Input.is_action_pressed("interagir") && $TableArea/TableE.visible == true):
-		$TableArea/Table.visible = true;
-		
+	if(Input.is_action_pressed("interagir") and $TableArea/TableE.visible == true):
+		$TableArea/Table.visible = true
+		dialog = Dialogic.start("table")
+		add_child(dialog)
+
 	# Verifica se o jogador apertou a tecla E (interação) dentro da área do telefone, caso positivo, mostra a cena do telefone
-	if(Input.is_action_pressed("interagir") && $PhoneArea/PhoneE.visible == true):
-		$PhoneArea/Phone.visible = true;
-	
+	if(Input.is_action_pressed("interagir") and $PhoneArea/PhoneE.visible == true):
+		$PhoneArea/Phone.visible = true
+		dialog = Dialogic.start("phone")
+		add_child(dialog)
+
 	# Verifica se o jogador apertou a tecla E (interação) dentro da área da cama, caso positivo, mostra a cena da cama
-	if(Input.is_action_pressed("interagir") && $SleepArea/SleepE.visible == true):
-		$SleepArea/Sleep.visible = true;
+	if(Input.is_action_pressed("interagir") and $SleepArea/SleepE.visible == true):
+		$SleepArea/Sleep.visible = true
+		dialog = Dialogic.start("bed")
+		add_child(dialog)
 
 
 func _on_FreezerArea_body_entered(_body):

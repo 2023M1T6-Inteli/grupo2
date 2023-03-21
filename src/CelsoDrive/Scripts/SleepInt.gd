@@ -3,12 +3,12 @@ extends CanvasLayer
 
 # Caso o jogador escolha dormir -> sleep = true e esconde a cena
 func _on_Yes_pressed():
-	Global.sleep = true
+	Global.slept = true
 	visible = false
 
 # Caso o jogador escolha não dormir -> sleep = false e esconde a cena
 func _on_No_pressed():
-	Global.sleep = false
+	Global.slept = false
 	visible = false
 
 # Botão para fechar interação
