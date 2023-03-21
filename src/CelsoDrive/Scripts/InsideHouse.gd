@@ -52,8 +52,9 @@ func _process(_delta):
 	# Mostra a cama se o jogador apertar a tecla "E" dentro da área
 	if Input.is_action_pressed("interagir") and $SleepArea/SleepE.visible == true:
 		$SleepArea/Sleep.visible = true
-		dialog = Dialogic.start("bed")
-		add_child(dialog)
+		if Global.interactedBed == false:
+			dialog = Dialogic.start("bed")
+			add_child(dialog)
 
 
 func _on_FreezerArea_body_entered(_body):
