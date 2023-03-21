@@ -97,7 +97,17 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 ## 🗃 Histórico de lançamentos
 
 A cada atualização os detalhes são lançados aqui.
-
+* 0.6.1 - 20/03/2023
+    * Cena do RunGame;
+    * Diálogos das interações;
+    * Melhoria das interações - layout e programação;
+    * Transição de cena da casa para o minigame; 
+    * Debuff de controle trocado.
+* 0.5.0 - 16/03/2023
+    * Interação básica com as partes da casa;
+    * Desenvolvimento da mecânica básica do minigame do checklist.
+* 0.4.0 - 13/03/2023
+    * Seleção de personagens (tela de seleção e spritesheets).
 * 0.3.0 - 10/03/2023
     * Remodelação das telas de menu inicial e menu de configurações;
     * Adição de funcionalidades à tela de configurações - controle do volume da música, seleção de estilo musical favorito, seleção de idioma, informações sobre os controles do jogo e configurações de tela cheia;
