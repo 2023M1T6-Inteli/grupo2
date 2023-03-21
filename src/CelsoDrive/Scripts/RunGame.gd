@@ -12,6 +12,7 @@ var time = 10 # Variável para o cronômetro
 
 
 func _ready():
+	Global.pausedGame = false
 	if Global.alcohol:
 		# Diálogo explicativo do debuff de álcool
 		dialog = Dialogic.start("debuff-alcool")
