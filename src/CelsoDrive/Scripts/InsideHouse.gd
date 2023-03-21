@@ -4,7 +4,7 @@ onready var dialog # Variável utilizada para carregar os diálogos
 
 
 func _ready():
-	Global.phase = 2
+	Global.level = 2
 	# Define posição do personagem
 	Global.playerPosition = Vector2(304, 336)
 	
@@ -22,7 +22,8 @@ func _ready():
 
 func _on_Exit_body_entered(_body):
 	# Direciona o personagem para fora de casa
-	Global.phase = 1
+	Global.level = 1
+	Global.visibleTruck = true
 	return get_tree().change_scene("res://Scenes/OutsideHouse.tscn")
 
 

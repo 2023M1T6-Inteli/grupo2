@@ -40,10 +40,13 @@ func dialog_listener(string):
 func _on_ReadyTimer_timeout():
 	if time >= 0:
 		$Label.text = String(time)
+		$Label.visible = true
+		$Label2.visible = true
 		time -= 1
 	else:
 		$ReadyTimer.stop()
 		$Label.visible = false
+		$Label2.visible = false
 		$SpawnCarros/SpawnCarTimer.start()
 
 
@@ -83,6 +86,7 @@ func _on_SpawnCarTimer_timeout():
 	if Global.pausedGame == true:
 		$SpawnCarros/SpawnCarTimer.stop()
 		Global.energy -= 1 # Diminui energia
+		$GameOver.visible = true
 
 
 # Randomiza aparecimento dos carros
@@ -91,3 +95,9 @@ func car_spawn():
 	var enemyCar = ENEMY.instance()	
 	enemyCar.global_position = spawnPositions[randomIndex].global_position
 	add_child(enemyCar)
+	enemyCar.connect("colide", self, "on_colide")
+
+
+# Se o caminhão bater em algum carro, significa que estava na faixa errada
+func on_colide():
+	$GameOver/ObsLabel.text = "Você colidiu pois \nultrapassou a faixa."

@@ -9,12 +9,13 @@ var selectedMusic := 0 # O = forró, 1 = sertanejo, 2 = rock e 3 = samba
 var selectedLanguage := 0 # 0 = português, 1 = inglês e 2 = espanhol
 var playerDir = "res://Scenes/Player01.tscn" # Caminho da cena do personagem selecionado
 var playerPosition : Vector2 # Posição de Spawn do personagem em cada cena
-var phase : int # Variável para identificar a fase atual
+var level : int # Variável para identificar a fase atual
 var insideHouseDialog := false # Variável de controle para não repetir o diálogo inicial na casa
 var interactedFreezer := false # Variável de controle para não repetir a interação da geladeira
 var interactedTable := false # Variável de controle para não repetir a interação da mesa
 var interactedPhone := false # Variável de controle para não repetir a interação do celular
 var interactedBed := false # Variável de controle para não repetir a interação da cama
+var visibleTruck := false
 
 #Variáveis para controlar debuffs
 var alcohol : bool # caso true, sofrerá debuff de álcool

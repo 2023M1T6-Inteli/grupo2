@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/living_room.png-6cc9ed604fe626e594709ca9384c38c1.stex"
+path="res://.import/living_room.png-767f6ccd9b86274faad1415034b3301e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tilesets/living_room.png"
-dest_files=[ "res://.import/living_room.png-6cc9ed604fe626e594709ca9384c38c1.stex" ]
+source_file="res://Assets/tilesets/living_room.png"
+dest_files=[ "res://.import/living_room.png-767f6ccd9b86274faad1415034b3301e.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/interior_structure.png-d8b20f3f80664f4baf914630da381e09.stex"
+path="res://.import/interior_structure.png-677e08e02a15a93cde2566b372ba3e8c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Tilesets/interior_structure.png"
-dest_files=[ "res://.import/interior_structure.png-d8b20f3f80664f4baf914630da381e09.stex" ]
+source_file="res://Assets/tilesets/interior_structure.png"
+dest_files=[ "res://.import/interior_structure.png-677e08e02a15a93cde2566b372ba3e8c.stex" ]
 
 [params]
 
