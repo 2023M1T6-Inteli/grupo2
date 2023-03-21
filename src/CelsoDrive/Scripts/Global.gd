@@ -11,6 +11,8 @@ var playerDir = "res://Scenes/Player01.tscn" # Caminho da cena do personagem sel
 var playerPosition : Vector2 # Posição de Spawn do personagem em cada cena
 var phase : int # Variável para identificar a fase atual
 var insideHouseDialog := false # Variável de controle para não repetir o diálogo inicial na casa
+var interactedFreezer := false # Variável de controle para não repetir a interação da geladeira
+var interactedTable := false # Variável de controle para não repetir a interação da mesa
 
 #Variáveis para controlar debuffs
 var alcohol : bool # caso true, sofrerá debuff de álcool

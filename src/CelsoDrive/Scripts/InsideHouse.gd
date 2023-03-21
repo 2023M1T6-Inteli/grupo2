@@ -27,70 +27,75 @@ func _on_Exit_body_entered(_body):
 
 
 func _process(_delta):
-	# Verifica se o jogador apertou a tecla E (interação) dentro da área da geladeira, caso positivo, mostra a cena da geladeira
-	if(Input.is_action_pressed("interagir") and $FreezerArea/FreezerE.visible == true):
-		$FreezerArea/Freezer.visible = true
-		dialog = Dialogic.start("freeze")
-		add_child(dialog)
+	# Mostra a geladeira se o jogador apertar a tecla "E" dentro da área
+	if Input.is_action_pressed("interagir") and $FreezerArea/FreezerE.visible == true:
+		# Só mostra a tela se o usuário nunca tiver interagido, de acordo com a variável de controle
+		if Global.interactedFreezer == false:
+			$FreezerArea/Freezer.visible = true
+			dialog = Dialogic.start("freeze")
+			add_child(dialog)
 
-	# Verifica se o jogador apertou a tecla E (interação) dentro da área da mesa, caso positivo, mostra a cena da mesa
-	if(Input.is_action_pressed("interagir") and $TableArea/TableE.visible == true):
-		$TableArea/Table.visible = true
-		dialog = Dialogic.start("table")
-		add_child(dialog)
+	# Mostra a mesa se o jogador apertar a tecla "E" dentro da área
+	if Input.is_action_pressed("interagir") and $TableArea/TableE.visible == true:
+		if Global.interactedTable == false:
+			$TableArea/Table.visible = true
+			dialog = Dialogic.start("table")
+			add_child(dialog)
 
-	# Verifica se o jogador apertou a tecla E (interação) dentro da área do telefone, caso positivo, mostra a cena do telefone
-	if(Input.is_action_pressed("interagir") and $PhoneArea/PhoneE.visible == true):
+	# Mostra o celular se o jogador apertar a tecla "E" dentro da área
+	if Input.is_action_pressed("interagir") and $PhoneArea/PhoneE.visible == true:
 		$PhoneArea/Phone.visible = true
 		dialog = Dialogic.start("phone")
 		add_child(dialog)
 
-	# Verifica se o jogador apertou a tecla E (interação) dentro da área da cama, caso positivo, mostra a cena da cama
-	if(Input.is_action_pressed("interagir") and $SleepArea/SleepE.visible == true):
+	# Mostra a cama se o jogador apertar a tecla "E" dentro da área
+	if Input.is_action_pressed("interagir") and $SleepArea/SleepE.visible == true:
 		$SleepArea/Sleep.visible = true
 		dialog = Dialogic.start("bed")
 		add_child(dialog)
 
 
 func _on_FreezerArea_body_entered(_body):
-	# Ao entrar na área da geladeira exibe o comando para interagir
-	$FreezerArea/FreezerE.visible = true
+	# Exibe a tecla para interagir na área da geladeira
+	if Global.interactedFreezer == false:
+		$FreezerArea/FreezerE.visible = true
 
 
 func _on_FreezerArea_body_exited(_body):
-	# Ao sair da área da geladeira esconde o comando para interagir e a cena da geladeira (caso esteja aberta)
+	# Ao sair da área da geladeira esconde a tecla e a cena
 	$FreezerArea/FreezerE.visible = false
 	$FreezerArea/Freezer.visible = false
 
 
 func _on_TableArea_body_entered(_body):
-	# Ao entrar na área da mesa exibe o comando para interagir
-	$TableArea/TableE.visible = true
+	# Exibe a tecla para interagir na área da mesa
+	if Global.interactedTable == false:
+		$TableArea/TableE.visible = true
 
 
 func _on_TableArea_body_exited(_body):
-	# Ao sair da área da mesa esconde o comando para interagir e a cena da mesa (caso esteja aberta)
+	# Ao sair da área da mesa esconde a tecla e a cena
 	$TableArea/TableE.visible = false
 	$TableArea/Table.visible = false
 
 
 func _on_PhoneArea_body_entered(_body):
-	# Ao entrar na área do telefone exibe o comando para interagir
+	# Exibe a tecla para interagir na área do celular
 	$PhoneArea/PhoneE.visible = true
 
 
 func _on_PhoneArea_body_exited(_body):
-	# Ao sair da área do telefone esconde o comando para interagir e a cena do telefone (caso esteja aberta)
+	# Ao sair da área da área do celular esconde a tecla e a cena
 	$PhoneArea/PhoneE.visible = false
 	$PhoneArea/Phone.visible = false
 
 
 func _on_SleepArea_body_entered(_body):
-	# Ao entrar na área da cama exibe o comando para interagir
+	# Exibe a tecla de interagir na área da cama
 	$SleepArea/SleepE.visible = true
 
 
 func _on_SleepArea_body_exited(_body):
-	# Ao sair da área da cama esconde o comando para interagir e a cena da cama (caso esteja aberta)
+	# Ao sair da área da cama esconde a tecla e a cena
 	$SleepArea/SleepE.visible = false
 	$SleepArea/Sleep.visible = false
