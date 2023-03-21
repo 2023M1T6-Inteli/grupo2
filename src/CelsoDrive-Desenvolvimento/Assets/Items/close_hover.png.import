@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/close_hover.png-c4cd0d952a07606fe630b7a56b63f4c5.stex"
+path="res://.import/close_hover.png-39070558040b4e573b1c43f0e95c05a6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/items/close_hover.png"
-dest_files=[ "res://.import/close_hover.png-c4cd0d952a07606fe630b7a56b63f4c5.stex" ]
+source_file="res://Assets/Items/close_hover.png"
+dest_files=[ "res://.import/close_hover.png-39070558040b4e573b1c43f0e95c05a6.stex" ]
 
 [params]
 

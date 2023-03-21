@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bg_button.png-c92d188b33cc191504c764064382e046.stex"
+path="res://.import/bg_button.png-01639bfcafb1aad6579d42bdef327e9a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/items/bg_button.png"
-dest_files=[ "res://.import/bg_button.png-c92d188b33cc191504c764064382e046.stex" ]
+source_file="res://Assets/Items/bg_button.png"
+dest_files=[ "res://.import/bg_button.png-01639bfcafb1aad6579d42bdef327e9a.stex" ]
 
 [params]
 
