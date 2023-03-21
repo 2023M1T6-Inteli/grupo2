@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/celso01.png-ebe469f7e3f780c67da92024086628be.stex"
+path="res://.import/celso01.png-b269f706bc70c7f892b63cf84bd0f631.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/player/celso01.png"
-dest_files=[ "res://.import/celso01.png-ebe469f7e3f780c67da92024086628be.stex" ]
+source_file="res://Assets/Player/celso01.png"
+dest_files=[ "res://.import/celso01.png-b269f706bc70c7f892b63cf84bd0f631.stex" ]
 
 [params]
 

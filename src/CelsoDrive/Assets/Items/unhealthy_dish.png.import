@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/unhealthy_dish.png-a9ddf472b591218fbd7231b4a23a6fa1.stex"
+path="res://.import/unhealthy_dish.png-b5787d794b6172ec8c6df80cc0eca8e5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/items/unhealthy_dish.png"
-dest_files=[ "res://.import/unhealthy_dish.png-a9ddf472b591218fbd7231b4a23a6fa1.stex" ]
+source_file="res://Assets/Items/unhealthy_dish.png"
+dest_files=[ "res://.import/unhealthy_dish.png-b5787d794b6172ec8c6df80cc0eca8e5.stex" ]
 
 [params]
 
