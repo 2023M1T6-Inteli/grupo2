@@ -2,9 +2,12 @@ extends Area2D
 
 signal exploded(currentContent, currentPosition)
 var content: String
+var initialPosition
+var value
 
 
 func _ready():
+	initialPosition = global_position
 	$Content.text = content
 
 

@@ -5,9 +5,15 @@ const CHECK_ITEM = preload("res://Scenes/CheckItem.tscn") # Cena do check item
 var clipboardElement = 0 # Index para adicionar elementos na prancheta
 onready var cont = 0 # Variável para controle do spawn dos itens
 onready var spawnPositions = $SpawnItems/SpawnPositions.get_children()
-var positiveItemsList = ["Dormir bem", "Fazer \nPausas", "Beber água",
-						"Desativar\nnotificações", "Comer bem", "Usar Cinto",
-						"Conversar", "Escutar forró", "Sambar"]
+
+# Conteúdos dos itens
+var itemsList = ["Dormir Bem", "Beber água", "Usar Cinto", "Fazer \nPausas", "Mexer no\nCelular",
+				"Comer bem", "Não dormir", "Beber \nálcool"]
+
+# Associação entre os itens e seus valores - true é um item bom e false um item ruim
+var itemsdictValues = {"Dormir Bem": true, "Beber água": true, "Usar Cinto": true,
+				"Fazer \nPausas": true, "Mexer no\nCelular": false,
+				"Comer bem": true, "Não dormir": false, "Beber \nálcool": false}
 
 
 func _ready():
@@ -17,16 +23,16 @@ func _ready():
 
 # Função responsável por spawnar os itens na tela
 func add_item(itemPosition):
-	if len(positiveItemsList):
+	if len(itemsList):
 		var newItem = CHECK_ITEM.instance()
 		newItem.global_position = itemPosition
-		var randomIndex = randi() % positiveItemsList.size()
-		newItem.content = positiveItemsList[randomIndex]
+		var randomIndex = randi() % itemsList.size()
+		newItem.content = itemsList[randomIndex]
 		add_child(newItem)
 		newItem.connect("exploded", self, "_on_exploded")
 		
 		# Remove conteúdo que já foi utilizado, para não repetir
-		positiveItemsList.remove(randomIndex)
+		itemsList.remove(randomIndex)
 
 
 # Adiciona 5 itens na tela
@@ -54,3 +60,10 @@ func _on_exploded(currentContent, currentPosition):
 		clipboardElement += 1
 	
 		add_item(currentPosition) # Adiciona um novo item no mesmo lugar do que foi clicado
+
+
+func _on_ConfirmButton_pressed():
+	var values = []
+	for item in $Clipboard/VBoxContainer.get_children():
+		values.append(itemsdictValues[String(item.get_children()[1].text)])
+	print(values)
