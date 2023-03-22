@@ -1259,7 +1259,7 @@ shape = SubResource( 36 )
 [node name="EInteract" type="Sprite" parent="TinhosoSceneArea"]
 visible = false
 modulate = Color( 1, 1, 1, 0.627451 )
-position = Vector2( 536, 165 )
+position = Vector2( 536, 148 )
 scale = Vector2( 0.5, 0.6 )
 texture = ExtResource( 2 )
 
