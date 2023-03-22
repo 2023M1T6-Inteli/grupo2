@@ -11,7 +11,7 @@ size = 15
 font_data = SubResource( 3 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 33, 17 )
+extents = Vector2( 40, 26 )
 
 [node name="CheckItem" type="Area2D"]
 script = ExtResource( 1 )
@@ -38,7 +38,7 @@ align = 1
 valign = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 52, 44 )
+position = Vector2( 51, 45 )
 shape = SubResource( 2 )
 
 [connection signal="pressed" from="Check" to="." method="_on_Check_pressed"]

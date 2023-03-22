@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Assets/items/clipboard_extend.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/MinigameChecklist.gd" type="Script" id=2]
@@ -8,6 +8,17 @@
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 30
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFontData" id=2]
+font_path = "res://Assets/fonts/CompassPro.ttf"
+
+[sub_resource type="DynamicFont" id=3]
+size = 18
+font_data = SubResource( 2 )
 
 [node name="MinigameChecklist" type="Node2D"]
 script = ExtResource( 2 )
@@ -142,6 +153,20 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 1 )
 valign = 1
 
+[node name="GameOverLabel" type="Label" parent="Clipboard"]
+visible = false
+margin_left = 42.0
+margin_top = 164.0
+margin_right = 242.0
+margin_bottom = 193.0
+custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+custom_fonts/font = SubResource( 4 )
+text = "ESCOLHAS RUINS"
+
 [node name="ItemsTimer" type="Timer" parent="."]
 wait_time = 0.5
 autostart = true
@@ -171,4 +196,18 @@ position = Vector2( -36.7216, 17.4286 )
 [node name="6" type="Position2D" parent="SpawnItems/SpawnPositions"]
 position = Vector2( -104.919, 13.0714 )
 
+[node name="ConfirmButton" type="Button" parent="."]
+margin_left = 425.0
+margin_top = 328.0
+margin_right = 561.0
+margin_bottom = 348.0
+focus_mode = 0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0.0627451, 0.780392, 0.141176, 1 )
+custom_fonts/font = SubResource( 3 )
+enabled_focus_mode = 0
+text = "Verificar"
+flat = true
+
 [connection signal="timeout" from="ItemsTimer" to="." method="_on_ItemsTimer_timeout"]
+[connection signal="pressed" from="ConfirmButton" to="." method="_on_ConfirmButton_pressed"]
