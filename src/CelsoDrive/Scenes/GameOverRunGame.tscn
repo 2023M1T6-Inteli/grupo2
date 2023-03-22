@@ -33,7 +33,6 @@ texture = ExtResource( 1 )
 expand = true
 
 [node name="GameOverLabel" type="Label" parent="."]
-visible = false
 anchor_left = 0.5
 anchor_right = 0.5
 margin_left = -136.0
