@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Assets/fonts/CompassPro.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Assets/background/main_background.png" type="Texture" id=2]
@@ -8,19 +8,13 @@
 size = 25
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFontData" id=3]
-font_path = "res://Assets/Fonts/CompassPro.ttf"
-
 [sub_resource type="DynamicFont" id=4]
 size = 25
-font_data = SubResource( 3 )
-
-[sub_resource type="DynamicFontData" id=5]
-font_path = "res://Assets/Fonts/CompassPro.ttf"
+font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=6]
 size = 25
-font_data = SubResource( 5 )
+font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=9]
 size = 55

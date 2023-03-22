@@ -2,8 +2,8 @@
 
 [ext_resource path="res://Scripts/PhoneInt.gd" type="Script" id=1]
 [ext_resource path="res://Assets/items/phone_disable.png" type="Texture" id=2]
-[ext_resource path="res://Assets/Items/close.png" type="Texture" id=3]
-[ext_resource path="res://Assets/Items/close_hover.png" type="Texture" id=4]
+[ext_resource path="res://Assets/items/close.png" type="Texture" id=3]
+[ext_resource path="res://Assets/items/close_hover.png" type="Texture" id=4]
 [ext_resource path="res://Assets/fonts/CompassPro.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://Assets/items/phone_activated.png" type="Texture" id=6]
 [ext_resource path="res://Assets/music/vibrate.wav" type="AudioStream" id=7]

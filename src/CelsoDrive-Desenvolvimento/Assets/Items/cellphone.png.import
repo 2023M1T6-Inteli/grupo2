@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cellphone.png-b173ce4444159030977d49a441de1e4c.stex"
+path="res://.import/cellphone.png-9854e452852e0762c2a18ddd144cf6ae.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Items/cellphone.png"
-dest_files=[ "res://.import/cellphone.png-b173ce4444159030977d49a441de1e4c.stex" ]
+source_file="res://Assets/items/cellphone.png"
+dest_files=[ "res://.import/cellphone.png-9854e452852e0762c2a18ddd144cf6ae.stex" ]
 
 [params]
 
