@@ -15,25 +15,42 @@ func _ready():
 	Input.set_custom_mouse_cursor(arrowCrosshair) # Altera cursor do mouse
 
 
+# Função responsável por spawnar os itens na tela
+func add_item(itemPosition):
+	if len(positiveItemsList):
+		var newItem = CHECK_ITEM.instance()
+		newItem.global_position = itemPosition
+		var randomIndex = randi() % positiveItemsList.size()
+		newItem.content = positiveItemsList[randomIndex]
+		add_child(newItem)
+		newItem.connect("exploded", self, "_on_exploded")
+		
+		# Remove conteúdo que já foi utilizado, para não repetir
+		positiveItemsList.remove(randomIndex)
+
+
+# Adiciona 5 itens na tela
 func _on_ItemsTimer_timeout():
 	if cont < 5:
-		if len(positiveItemsList):
-			var indexSpawn = cont
-			var newItem = CHECK_ITEM.instance()
-			newItem.global_position = spawnPositions[indexSpawn].global_position
-			var randomIndex = randi() % positiveItemsList.size()
-			newItem.content = positiveItemsList[randomIndex]
-			add_child(newItem)
-			positiveItemsList.remove(randomIndex)
-			newItem.connect("exploded", self, "_on_exploded")
-			cont += 1
+		var indexSpawn = cont
+		add_item(spawnPositions[indexSpawn].global_position)
+		cont += 1
+	else:
+		$ItemsTimer.stop()
 
 
+# Recebe e trata o sinal de quando o item foi clicado
 func _on_exploded(currentContent, currentPosition):	
 	if clipboardElement < 5:
-		# Atualiza labels da prancheta quando o check item é destruído
+		# Pega o item que será editado do VBoxContainer de acordo com o index clipboardElement
 		var elements = $Clipboard/VBoxContainer.get_children()
 		var element = elements[clipboardElement]
-		element.get_children()[1].text = currentContent
+		
+		# Adiciona conteúdo do item na label da prancheta
+		element.get_children()[1].text = currentContent 
 		element.visible = true
+		
+		# Incrementa o index dos itens da prancheta
 		clipboardElement += 1
+	
+		add_item(currentPosition) # Adiciona um novo item no mesmo lugar do que foi clicado

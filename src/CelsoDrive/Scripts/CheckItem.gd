@@ -10,4 +10,4 @@ func _ready():
 
 func _on_Check_pressed():
 	emit_signal("exploded", String($Content.text), global_position)
-	hide()
+	queue_free()
