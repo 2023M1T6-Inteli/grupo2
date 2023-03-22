@@ -5,12 +5,9 @@
 [ext_resource path="res://Assets/background/main_settings.png" type="Texture" id=3]
 [ext_resource path="res://Assets/items/check_in_clipboard.png" type="Texture" id=4]
 [ext_resource path="res://Assets/fonts/CompassPro.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://Scenes/GameOverChecklist.tscn" type="PackedScene" id=6]
 
 [sub_resource type="DynamicFont" id=1]
-font_data = ExtResource( 5 )
-
-[sub_resource type="DynamicFont" id=4]
-size = 30
 font_data = ExtResource( 5 )
 
 [sub_resource type="DynamicFontData" id=2]
@@ -49,7 +46,7 @@ margin_bottom = 33.0
 
 [node name="TextureRect" type="TextureRect" parent="Clipboard/VBoxContainer/HBoxContainer"]
 margin_right = 33.0
-margin_bottom = 32.0
+margin_bottom = 33.0
 rect_min_size = Vector2( 33, 32 )
 texture = ExtResource( 4 )
 expand = true
@@ -153,20 +150,6 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 1 )
 valign = 1
 
-[node name="GameOverLabel" type="Label" parent="Clipboard"]
-visible = false
-margin_left = 42.0
-margin_top = 164.0
-margin_right = 242.0
-margin_bottom = 193.0
-custom_colors/font_color = Color( 1, 0, 0, 1 )
-custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
-custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
-custom_constants/shadow_offset_x = 2
-custom_constants/shadow_offset_y = 2
-custom_fonts/font = SubResource( 4 )
-text = "ESCOLHAS RUINS"
-
 [node name="ItemsTimer" type="Timer" parent="."]
 wait_time = 0.5
 autostart = true
@@ -182,10 +165,10 @@ scale = Vector2( 1.52499, 9.18033 )
 position = Vector2( -173.116, 13.9429 )
 
 [node name="2" type="Position2D" parent="SpawnItems/SpawnPositions"]
-position = Vector2( -104.919, 29.6286 )
+position = Vector2( -104.919, 25.2714 )
 
 [node name="3" type="Position2D" parent="SpawnItems/SpawnPositions"]
-position = Vector2( -43.9347, 36.6 )
+position = Vector2( -41.9675, 35.7286 )
 
 [node name="4" type="Position2D" parent="SpawnItems/SpawnPositions"]
 position = Vector2( -167.87, 34.8571 )
@@ -194,20 +177,24 @@ position = Vector2( -167.87, 34.8571 )
 position = Vector2( -36.7216, 17.4286 )
 
 [node name="6" type="Position2D" parent="SpawnItems/SpawnPositions"]
-position = Vector2( -104.919, 13.0714 )
+position = Vector2( -104.919, 11.3286 )
 
 [node name="ConfirmButton" type="Button" parent="."]
+visible = false
 margin_left = 425.0
-margin_top = 328.0
+margin_top = 323.0
 margin_right = 561.0
-margin_bottom = 348.0
+margin_bottom = 347.0
 focus_mode = 0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_colors/font_color_hover = Color( 0.0627451, 0.780392, 0.141176, 1 )
 custom_fonts/font = SubResource( 3 )
 enabled_focus_mode = 0
-text = "Verificar"
+text = "Validar Escolhas"
 flat = true
+
+[node name="GameOver" parent="." instance=ExtResource( 6 )]
+visible = false
 
 [connection signal="timeout" from="ItemsTimer" to="." method="_on_ItemsTimer_timeout"]
 [connection signal="pressed" from="ConfirmButton" to="." method="_on_ConfirmButton_pressed"]

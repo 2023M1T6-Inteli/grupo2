@@ -6,7 +6,7 @@ var backgroundSpeed = Global.gameBaseSpeed * 0.9 # Velocidade com que o backgrou
 const ENEMY = preload("res://Scenes/EnemyCar.tscn") # Carrega cena dos carros inimigos
 var spawnPositions # Variável que carregará as posições de spawn
 var finishedDialog = false # Indica o status do diálogo. true = finalizado e false = em andamento
-onready var dialog = Global.selectedLanguage
+onready var dialog
 onready var language = Global.selectedLanguage # Carrega informações da variável global de idioma
 var time = 10 # Variável para o cronômetro
 
@@ -42,7 +42,7 @@ func _on_ReadyTimer_timeout():
 	if time >= 0:
 		$Label.text = String(time)
 		$Label.visible = true
-		$Label2.visible = true
+		$Label2.visible = not $Label2.visible
 		time -= 1
 	else:
 		$ReadyTimer.stop()

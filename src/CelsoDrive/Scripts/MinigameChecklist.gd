@@ -5,6 +5,7 @@ const CHECK_ITEM = preload("res://Scenes/CheckItem.tscn") # Cena do check item
 var clipboardElement = 0 # Index para adicionar elementos na prancheta
 onready var cont = 0 # Variável para controle do spawn dos itens
 onready var spawnPositions = $SpawnItems/SpawnPositions.get_children()
+onready var dialog # Variável utilizada para carregar os diálogos
 
 # Conteúdos dos itens
 var itemsList = ["Dormir Bem", "Beber água", "Usar Cinto", "Fazer \nPausas", "Mexer no\nCelular",
@@ -60,10 +61,21 @@ func _on_exploded(currentContent, currentPosition):
 		clipboardElement += 1
 	
 		add_item(currentPosition) # Adiciona um novo item no mesmo lugar do que foi clicado
+		
+	if clipboardElement >= 5:
+		$ConfirmButton.visible = true
 
 
 func _on_ConfirmButton_pressed():
 	var values = []
 	for item in $Clipboard/VBoxContainer.get_children():
 		values.append(itemsdictValues[String(item.get_children()[1].text)])
-	print(values)
+		
+	if false in values:
+		dialog = Dialogic.start("gameover-check")
+		add_child(dialog)
+		$GameOver.visible = true
+	
+	else:
+		return get_tree().change_scene("res://Scenes/RunGame.tscn")
+	
