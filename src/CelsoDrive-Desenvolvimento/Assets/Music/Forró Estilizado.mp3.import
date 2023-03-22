@@ -2,12 +2,12 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/Forró Estilizado.mp3-82dde2720f702b68cd0557b372c92669.mp3str"
+path="res://.import/Forró Estilizado.mp3-957eba477ec85dd0dbc2e9c528f56bb5.mp3str"
 
 [deps]
 
-source_file="res://Assets/Music/Forró Estilizado.mp3"
-dest_files=[ "res://.import/Forró Estilizado.mp3-82dde2720f702b68cd0557b372c92669.mp3str" ]
+source_file="res://Assets/music/Forró Estilizado.mp3"
+dest_files=[ "res://.import/Forró Estilizado.mp3-957eba477ec85dd0dbc2e9c528f56bb5.mp3str" ]
 
 [params]
 

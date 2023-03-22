@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Scripts/Truck.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/RoadTinhoso.gd" type="Script" id=2]
-[ext_resource path="res://Assets/tilesets/Modern_Exteriors_Complete_Tileset.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Tilesets/Modern_Exteriors_Complete_Tileset.png" type="Texture" id=3]
 [ext_resource path="res://Assets/player/truck.png" type="Texture" id=4]
 [ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/GameOver.tscn" type="PackedScene" id=6]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Assets/items/left_key.png" type="Texture" id=8]
 [ext_resource path="res://Assets/items/right_key_pressed.png" type="Texture" id=9]
 [ext_resource path="res://Assets/items/right_key.png" type="Texture" id=10]
+[ext_resource path="res://Assets/fonts/CompassPro.ttf" type="DynamicFontData" id=11]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Modern_Exteriors_Complete_Tileset.png 0"
@@ -135,12 +136,9 @@ extents = Vector2( 69, 372 )
 [sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 12, 18.5447 )
 
-[sub_resource type="DynamicFontData" id=8]
-font_path = "res://Assets/Fonts/CompassPro.ttf"
-
 [sub_resource type="DynamicFont" id=9]
 size = 30
-font_data = SubResource( 8 )
+font_data = ExtResource( 11 )
 
 [sub_resource type="SpriteFrames" id=10]
 animations = [ {

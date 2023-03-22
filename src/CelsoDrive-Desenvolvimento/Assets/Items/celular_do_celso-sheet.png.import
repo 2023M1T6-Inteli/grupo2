@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/celular_do_celso-sheet.png-653d732aeaf3c3a922076eefed163cf1.stex"
+path="res://.import/celular_do_celso-sheet.png-55e12b05311a4bc429d56c50cdf13156.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Items/celular_do_celso-sheet.png"
-dest_files=[ "res://.import/celular_do_celso-sheet.png-653d732aeaf3c3a922076eefed163cf1.stex" ]
+source_file="res://Assets/items/celular_do_celso-sheet.png"
+dest_files=[ "res://.import/celular_do_celso-sheet.png-55e12b05311a4bc429d56c50cdf13156.stex" ]
 
 [params]
 

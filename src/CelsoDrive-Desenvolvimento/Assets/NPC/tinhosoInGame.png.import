@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tinhosoInGame.png-4bd5229ef0e3b43264bbc0c5635834f6.stex"
+path="res://.import/tinhosoInGame.png-b7a34a4e42fac685a448b4f1151e7222.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/NPC/tinhosoInGame.png"
-dest_files=[ "res://.import/tinhosoInGame.png-4bd5229ef0e3b43264bbc0c5635834f6.stex" ]
+source_file="res://Assets/npc/tinhosoInGame.png"
+dest_files=[ "res://.import/tinhosoInGame.png-b7a34a4e42fac685a448b4f1151e7222.stex" ]
 
 [params]
 

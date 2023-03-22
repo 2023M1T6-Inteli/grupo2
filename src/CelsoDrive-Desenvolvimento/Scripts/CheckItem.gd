@@ -1,7 +1,13 @@
 extends Area2D
 
-signal exploded
+signal exploded(currentContent, currentPosition)
+var content: String
 
 
-func _on_AnimatedSprite_pressed():
-	emit_signal("exploded")
+func _ready():
+	$Content.text = content
+
+
+func _on_Check_pressed():
+	emit_signal("exploded", String($Content.text), global_position)
+	queue_free()
