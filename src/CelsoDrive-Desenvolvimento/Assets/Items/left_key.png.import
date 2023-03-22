@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/left_key.png-3c5d09f776be479083d084eabb585d0d.stex"
+path="res://.import/left_key.png-660a04a234a9ec52fc7e0320ebb2b1e4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/items/left_key.png"
-dest_files=[ "res://.import/left_key.png-3c5d09f776be479083d084eabb585d0d.stex" ]
+source_file="res://Assets/Items/left_key.png"
+dest_files=[ "res://.import/left_key.png-660a04a234a9ec52fc7e0320ebb2b1e4.stex" ]
 
 [params]
 

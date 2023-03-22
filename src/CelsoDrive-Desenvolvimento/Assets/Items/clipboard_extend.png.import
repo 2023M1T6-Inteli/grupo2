@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/clipboard_extend.png-fbf008d47851589ee868c91d2abcb03c.stex"
+path="res://.import/clipboard_extend.png-1fcc5e21bf485a4c362544055886a79f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/items/clipboard_extend.png"
-dest_files=[ "res://.import/clipboard_extend.png-fbf008d47851589ee868c91d2abcb03c.stex" ]
+source_file="res://Assets/Items/clipboard_extend.png"
+dest_files=[ "res://.import/clipboard_extend.png-1fcc5e21bf485a4c362544055886a79f.stex" ]
 
 [params]
 
