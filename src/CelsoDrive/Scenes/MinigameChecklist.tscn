@@ -23,6 +23,7 @@ script = ExtResource( 2 )
 [node name="TextureRect" type="TextureRect" parent="."]
 margin_right = 640.0
 margin_bottom = 368.0
+mouse_default_cursor_shape = 1
 texture = ExtResource( 3 )
 
 [node name="Clipboard" type="TextureRect" parent="."]

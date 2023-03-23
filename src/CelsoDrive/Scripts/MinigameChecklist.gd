@@ -19,7 +19,7 @@ var itemsdictValues = {"Dormir Bem": true, "Beber água": true, "Usar Cinto": tr
 
 func _ready():
 	randomize()
-	Input.set_custom_mouse_cursor(arrowCrosshair) # Altera cursor do mouse
+	Input.set_custom_mouse_cursor(arrowCrosshair, 1) # Altera cursor do mouse
 
 
 # Função responsável por spawnar os itens na tela
@@ -70,12 +70,14 @@ func _on_ConfirmButton_pressed():
 	var values = []
 	for item in $Clipboard/VBoxContainer.get_children():
 		values.append(itemsdictValues[String(item.get_children()[1].text)])
-		
+	
+	# Verifica se há algum item negativo na lista, retornando Game Over em caso positivo
 	if false in values:
 		dialog = Dialogic.start("gameover-check")
 		add_child(dialog)
 		$GameOver.visible = true
 	
+	# Direciona para tela de feedback caso tudo esteja certo
 	else:
-		return get_tree().change_scene("res://Scenes/RunGame.tscn")
+		return get_tree().change_scene("res://Scenes/SuccessChecklist.tscn")
 	
