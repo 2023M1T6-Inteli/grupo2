@@ -13,6 +13,7 @@ var finishedDialog = false # Indica o status do diálogo. true = finalizado e fa
 onready var dialog # Variável utilizada para carregar os diálogos
 onready var language = Global.selectedLanguage # Carrega informações da variável global de idioma
 var time = 5 # Variável para o cronômetro
+var phoneDebuffTime = 0 # Variável de controle para o tempo de exibição do debuff
 
 
 func _ready():
@@ -24,6 +25,9 @@ func _ready():
 		add_child(dialog)
 	else:
 		$ReadyTimer.start()
+	
+	if Global.mutedPhone == false:
+		$PhoneDebuff/PhoneTimer.start()
 
 	$truck.maxSpeed = 300
 	$truck.acceleration = 280
@@ -122,8 +126,25 @@ func obstacle_spawn():
 # Se o caminhão bater em algum carro, significa que estava na faixa errada
 func on_colide():
 	$GameOver/ObsLabel.text = "Você colidiu pois \nestava na faixa \nerrada"
+	if $PhoneDebuff.visible:
+		$GameOver/ObsLabel.text = "Você colidiu pois \nse distraiu com\no celular"
 
 
 # Função executada caso o caminhão bata em algum obstáculo
 func on_colide_obstacle():
 	$GameOver/ObsLabel.text = "Você colidiu com um \nobjeto na sua pista.\nPara casos assim,\ntente executar um\ndesvio emergencial\nmais rápido"
+	if $PhoneDebuff.visible:
+		$GameOver/ObsLabel.text = "Você colidiu pois \nse distraiu com\no celular"
+
+
+func _on_PhoneTimer_timeout():
+	if Global.pausedGame == false:
+		$PhoneDebuff/Controller.start()
+		$PhoneDebuff.visible = true
+		$PhoneDebuff/AnimatedSprite.play("default")
+		$PhoneDebuff/Vibrate.play()
+
+
+func _on_Controller_timeout():
+	$PhoneDebuff.visible = false
+	$PhoneDebuff/Vibrate.stop()

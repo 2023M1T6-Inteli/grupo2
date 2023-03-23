@@ -143,6 +143,7 @@ custom_fonts/font = SubResource( 2 )
 text = "Celso Sério"
 
 [node name="Celso05" type="TextureButton" parent="."]
+visible = false
 margin_left = 231.0
 margin_top = 52.0
 margin_right = 408.0
@@ -159,6 +160,7 @@ custom_fonts/font = SubResource( 2 )
 text = "Celsa"
 
 [node name="Celso06" type="TextureButton" parent="."]
+visible = false
 margin_left = 249.0
 margin_top = 78.0
 margin_right = 389.0
@@ -168,9 +170,9 @@ expand = true
 
 [node name="Label" type="Label" parent="Celso06"]
 margin_left = 57.0
-margin_top = 241.0
+margin_top = 237.0
 margin_right = 88.0
-margin_bottom = 256.0
+margin_bottom = 252.0
 custom_fonts/font = SubResource( 2 )
 text = "Celsa"
 

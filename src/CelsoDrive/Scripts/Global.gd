@@ -20,5 +20,5 @@ var visibleTruck := false
 #Variáveis para controlar debuffs
 var alcohol : bool # caso true, sofrerá debuff de álcool
 var slept : bool # caso false, sofrerá debuff de sono
-var mutedPhone : bool # caso false, sofrerá debuff de notificação na tela
+var mutedPhone : bool = false # caso false, sofrerá debuff de notificação na tela
 var healthyFood : bool # caso false, sofrerá debuff de energia reduzindo mais rapidamente

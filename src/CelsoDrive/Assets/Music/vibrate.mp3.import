@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/vibrate.mp3-9affaedc5c47fe25411fbcabd1771d5c.mp3str"
+
+[deps]
+
+source_file="res://Assets/music/vibrate.mp3"
+dest_files=[ "res://.import/vibrate.mp3-9affaedc5c47fe25411fbcabd1771d5c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

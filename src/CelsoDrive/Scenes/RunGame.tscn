@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Scripts/Truck.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/RunGame.gd" type="Script" id=2]
@@ -11,6 +11,8 @@
 [ext_resource path="res://Assets/items/right_key_pressed.png" type="Texture" id=9]
 [ext_resource path="res://Assets/items/right_key.png" type="Texture" id=10]
 [ext_resource path="res://Assets/fonts/CompassPro.ttf" type="DynamicFontData" id=11]
+[ext_resource path="res://Assets/debuffs/spritesheet_phone.png" type="Texture" id=12]
+[ext_resource path="res://Assets/music/vibrate.mp3" type="AudioStream" id=13]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Modern_Exteriors_Complete_Tileset.png 0"
@@ -166,6 +168,29 @@ animations = [ {
 "speed": 5.0
 } ]
 
+[sub_resource type="AtlasTexture" id=12]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 0, 0, 1280, 1280 )
+
+[sub_resource type="AtlasTexture" id=13]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 0, 1280, 1280, 1280 )
+
+[sub_resource type="AtlasTexture" id=14]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 0, 2560, 1280, 1280 )
+
+[sub_resource type="SpriteFrames" id=15]
+animations = [ {
+"frames": [ SubResource( 12 ), SubResource( 13 ), SubResource( 14 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
 [node name="RoadRunGame" type="Node2D"]
 pause_mode = 1
 script = ExtResource( 2 )
@@ -309,5 +334,30 @@ frames = SubResource( 11 )
 [node name="SpawnTimer" type="Timer" parent="."]
 wait_time = 1.5
 
+[node name="PhoneDebuff" type="CanvasLayer" parent="."]
+visible = false
+
+[node name="PhoneTimer" type="Timer" parent="PhoneDebuff"]
+wait_time = 30.0
+
+[node name="ColorRect" type="ColorRect" parent="PhoneDebuff"]
+margin_right = 640.0
+margin_bottom = 368.0
+color = Color( 0, 0, 0, 0.862745 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="PhoneDebuff"]
+position = Vector2( 312, 184 )
+scale = Vector2( 0.25, 0.25 )
+frames = SubResource( 15 )
+frame = 2
+
+[node name="Vibrate" type="AudioStreamPlayer2D" parent="PhoneDebuff"]
+stream = ExtResource( 13 )
+
+[node name="Controller" type="Timer" parent="PhoneDebuff"]
+wait_time = 5.0
+
 [connection signal="timeout" from="ReadyTimer" to="." method="_on_ReadyTimer_timeout"]
 [connection signal="timeout" from="SpawnTimer" to="." method="_on_SpawnTimer_timeout"]
+[connection signal="timeout" from="PhoneDebuff/PhoneTimer" to="." method="_on_PhoneTimer_timeout"]
+[connection signal="timeout" from="PhoneDebuff/Controller" to="." method="_on_Controller_timeout"]
