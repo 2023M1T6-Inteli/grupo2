@@ -6,10 +6,14 @@ onready var celso2 = "res://Scenes/Player02.tscn"
 onready var celso3 = "res://Scenes/Player03.tscn"
 onready var celso4 = "res://Scenes/Player04.tscn"
 onready var celso5 = "res://Scenes/Player05.tscn"
+onready var celso6 = "res://Scenes/Player06.tscn"
+onready var celso7 = "res://Scenes/Player07.tscn"
 var currentCelso := 1 # "Index" para o aparecimento dos personagens na tela
 
 
 func _process(_delta):
+	$BG.visible = true
+	$TitleLabel.visible = true
 	# Verifica, constantemente, qual Celso exibir
 	show_current_celso()
 
@@ -27,35 +31,61 @@ func show_current_celso():
 		$Celso03.visible = false
 		$Celso04.visible = false
 		$Celso05.visible = false
+		$Celso06.visible = false
+		$Celso07.visible = false
 	elif currentCelso == 2:
 		$Celso01.visible = false
 		$Celso02.visible = true
 		$Celso03.visible = false
 		$Celso04.visible = false
 		$Celso05.visible = false
+		$Celso06.visible = false
+		$Celso07.visible = false
 	elif currentCelso == 3:
 		$Celso01.visible = false
 		$Celso02.visible = false
 		$Celso03.visible = true
 		$Celso04.visible = false
 		$Celso05.visible = false
+		$Celso06.visible = false
+		$Celso07.visible = false
 	elif currentCelso == 4:
 		$Celso01.visible = false
 		$Celso02.visible = false
 		$Celso03.visible = false
 		$Celso04.visible = true
 		$Celso05.visible = false
+		$Celso06.visible = false
+		$Celso07.visible = false
 	elif currentCelso == 5:
 		$Celso01.visible = false
 		$Celso02.visible = false
 		$Celso03.visible = false
 		$Celso04.visible = false
 		$Celso05.visible = true
+		$Celso06.visible = false
+		$Celso07.visible = false
+	elif currentCelso == 6:
+		$Celso01.visible = false
+		$Celso02.visible = false
+		$Celso03.visible = false
+		$Celso04.visible = false
+		$Celso05.visible = false
+		$Celso06.visible = true
+		$Celso07.visible = false
+	elif currentCelso == 7:
+		$Celso01.visible = false
+		$Celso02.visible = false
+		$Celso03.visible = false
+		$Celso04.visible = false
+		$Celso05.visible = false
+		$Celso06.visible = false
+		$Celso07.visible = true
 
 
 # Incrementa o index do personagem selecionado
 func increase():
-	if currentCelso < 5:
+	if currentCelso < 7:
 		currentCelso += 1
 		
 
@@ -67,7 +97,7 @@ func decrease():
 
 func _on_Next_pressed():
 	# Some com o botão de próximo quando chega no último celso, com uma color rect por cima
-	if currentCelso == 4:
+	if currentCelso == 6:
 		$NextColorRect.visible = true
 	
 	# Exibe, caso necessário, o botão de voltar, o qual
@@ -116,4 +146,16 @@ func _on_Celso04_pressed():
 # Seleciona versão 5 do Celso
 func _on_Celso05_pressed():
 	Global.playerDir = celso5
+	go_to_tutorial()
+
+
+# Seleciona versão 6 do Celso
+func _on_Celso06_pressed():
+	Global.playerDir = celso6
+	go_to_tutorial()
+
+
+# Seleciona versão 7 do Celso
+func _on_Celso07_pressed():
+	Global.playerDir = celso7
 	go_to_tutorial()
