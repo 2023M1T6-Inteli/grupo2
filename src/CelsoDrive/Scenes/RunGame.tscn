@@ -338,7 +338,7 @@ wait_time = 1.5
 visible = false
 
 [node name="PhoneTimer" type="Timer" parent="PhoneDebuff"]
-wait_time = 10.0
+wait_time = 20.0
 
 [node name="ColorRect" type="ColorRect" parent="PhoneDebuff"]
 margin_right = 640.0
