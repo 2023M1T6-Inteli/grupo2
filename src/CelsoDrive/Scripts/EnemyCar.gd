@@ -5,9 +5,9 @@ signal colide
 onready var carTypes = $CarSprite.frames.get_animation_names()
 
 
-func _proccess():
+func _ready():
 	randomize()
-	$CarSprite.animation.play(carTypes[randi() % 3])
+	$CarSprite.animation = carTypes[randi() % 3]
 
 
 func _physics_process(_delta):
