@@ -2,6 +2,12 @@ extends Area2D
 
 var carSpeed = Global.gameBaseSpeed # Rapidez do movimento
 signal colide
+onready var carTypes = $CarSprite.frames.get_animation_names()
+
+
+func _proccess():
+	randomize()
+	$CarSprite.animation.play(carTypes[randi() % 3])
 
 
 func _physics_process(_delta):
@@ -13,3 +19,4 @@ func _on_EnemyCar_body_entered(_body):
 	# Emite "sinal" de pause quando colide com o caminhão
 	Global.pausedGame = true
 	emit_signal("colide")
+	print(carTypes)

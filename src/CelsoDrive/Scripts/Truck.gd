@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 var maxSpeed := 150 # Define velocidade máxima do caminhão
 var acceleration := 80  # Define aceleração do caminhão
-var friction := 300 # Valor de parada, responsável pela tração do caminhão 
+var friction := 500 # Valor de parada, responsável pela tração do caminhão 
 var velocity := Vector2.ZERO  # Vetor responsável pela movimentação do caminhão
 var inputDirection := Vector2(0, 0)  # Vetor atualizado de acordo com as teclas pressionadas
 

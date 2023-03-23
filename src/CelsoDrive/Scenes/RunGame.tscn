@@ -134,10 +134,10 @@
 extents = Vector2( 69, 372 )
 
 [sub_resource type="RectangleShape2D" id=7]
-extents = Vector2( 13.4091, 19.1611 )
+extents = Vector2( 12.2727, 21.6334 )
 
 [sub_resource type="DynamicFont" id=9]
-size = 30
+size = 20
 font_data = ExtResource( 11 )
 
 [sub_resource type="SpriteFrames" id=10]
@@ -198,6 +198,7 @@ format = 1
 tile_data = PoolIntArray( -2293760, 536870912, 0, -2293752, 536870912, 0, -2293696, 536870912, 0, -2293688, 536870912, 0, -1966076, 536870912, 0, -1966069, 536870912, 0, -1966012, 536870912, 0, -1966005, 536870912, 0, -1703936, 536870912, 0, -1703872, 536870912, 0, -1638392, 536870912, 0, -1638328, 536870912, 0, -1376252, 536870912, 0, -1376245, 536870912, 0, -1376188, 536870912, 0, -1376181, 536870912, 0, -1114112, 536870912, 0, -1114048, 536870912, 0, -983032, 536870912, 0, -982968, 536870912, 0, -786428, 536870912, 0, -786364, 536870912, 0, 720896, 536870912, 0, 720904, 536870912, 0, 720960, 536870912, 0, 720968, 536870912, 0, 1048580, 536870912, 0, 1048587, 536870912, 0, 1048644, 536870912, 0, 1048651, 536870912, 0, 1310720, 536870912, 0, 1310784, 536870912, 0, 1376264, 536870912, 0, 1376328, 536870912, 0, 1638404, 536870912, 0, 1638411, 536870912, 0, 1638468, 536870912, 0, 1638475, 536870912, 0, 1900544, 536870912, 0, 1900608, 536870912, 0, 2031624, 536870912, 0, 2031688, 536870912, 0, 2228228, 536870912, 0, 2228292, 536870912, 0 )
 
 [node name="Margin" type="StaticBody2D" parent="."]
+collision_layer = 4
 
 [node name="collision_left" type="CollisionShape2D" parent="Margin"]
 position = Vector2( 60.1676, -4 )
@@ -215,14 +216,14 @@ collision_mask = 4
 script = ExtResource( 1 )
 
 [node name="collision_truck" type="CollisionShape2D" parent="truck"]
-position = Vector2( 305.75, 311.003 )
+position = Vector2( 306.5, 307.003 )
 scale = Vector2( 1.1, 1.618 )
 shape = SubResource( 7 )
 
 [node name="sprite_truck" type="Sprite" parent="truck"]
-position = Vector2( 306, 312 )
+position = Vector2( 306, 308.198 )
 rotation = 3.14159
-scale = Vector2( 0.125447, 0.0955797 )
+scale = Vector2( 0.125, 0.106099 )
 texture = ExtResource( 4 )
 
 [node name="SpawnCarros" type="Node2D" parent="."]
@@ -243,8 +244,24 @@ position = Vector2( -31.4755, 0 )
 
 [node name="track2" type="Position2D" parent="SpawnCarros/SpawnPositions"]
 
-[node name="SpawnCarTimer" type="Timer" parent="SpawnCarros"]
-wait_time = 0.5
+[node name="SpawnObstacles" type="Node2D" parent="."]
+position = Vector2( 0, -88 )
+
+[node name="SpawnPositions" type="Node2D" parent="SpawnObstacles"]
+position = Vector2( 312, 16 )
+scale = Vector2( 1.52499, 9.18033 )
+
+[node name="p1" type="Position2D" parent="SpawnObstacles/SpawnPositions"]
+position = Vector2( 26.2297, 0 )
+
+[node name="p2" type="Position2D" parent="SpawnObstacles/SpawnPositions"]
+position = Vector2( 52.4594, 0 )
+
+[node name="p3" type="Position2D" parent="SpawnObstacles/SpawnPositions"]
+position = Vector2( 78.6891, 0 )
+
+[node name="p4" type="Position2D" parent="SpawnObstacles/SpawnPositions"]
+position = Vector2( 104.919, 0 )
 
 [node name="HUD" parent="." instance=ExtResource( 5 )]
 
@@ -266,17 +283,16 @@ align = 1
 valign = 1
 
 [node name="Label2" type="Label" parent="."]
-visible = false
 anchor_left = 1.0
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-margin_left = 233.0
+margin_left = 164.0
 margin_top = 155.0
-margin_right = 393.0
+margin_right = 461.0
 margin_bottom = 184.0
 custom_fonts/font = SubResource( 9 )
-text = "Movimente-se!"
+text = "Movimente-se com as setas do teclado"
 align = 1
 valign = 1
 
@@ -290,5 +306,8 @@ position = Vector2( 69, 328 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 
+[node name="SpawnTimer" type="Timer" parent="."]
+wait_time = 1.5
+
 [connection signal="timeout" from="ReadyTimer" to="." method="_on_ReadyTimer_timeout"]
-[connection signal="timeout" from="SpawnCarros/SpawnCarTimer" to="." method="_on_SpawnCarTimer_timeout"]
+[connection signal="timeout" from="SpawnTimer" to="." method="_on_SpawnTimer_timeout"]

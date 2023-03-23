@@ -4,11 +4,15 @@ var velocity = Vector2.ZERO  # Vetor responsável pela movimentação do caminh�
 var inputDirection = Vector2(0, 0)  # Vetor atualizado de acordo com as teclas pressionadas
 var backgroundSpeed = Global.gameBaseSpeed * 0.9 # Velocidade com que o background se move (90% da velocidade dos carros)
 const ENEMY = preload("res://Scenes/EnemyCar.tscn") # Carrega cena dos carros inimigos
+const CONE = preload("res://Scenes/ConeObstacle.tscn") # Carrega cena dos cones
+const TIRE = preload("res://Scenes/TireObstacle.tscn") # Carrega cena dos pneus
+const TRUNK = preload("res://Scenes/TrunkObstacle.tscn") # Carrega cena dos troncos
 var spawnPositions # Variável que carregará as posições de spawn
+var spawnPositionsObstacles # Variável que carregará as posições de spawn dos obstáculos
 var finishedDialog = false # Indica o status do diálogo. true = finalizado e false = em andamento
-onready var dialog
+onready var dialog # Variável utilizada para carregar os diálogos
 onready var language = Global.selectedLanguage # Carrega informações da variável global de idioma
-var time = 10 # Variável para o cronômetro
+var time = 5 # Variável para o cronômetro
 
 
 func _ready():
@@ -23,9 +27,10 @@ func _ready():
 
 	$truck.maxSpeed = 300
 	$truck.acceleration = 280
-	$truck.friction = 250
+	$truck.friction = 150
 	# Posições de spawn dos carros
 	spawnPositions = $SpawnCarros/SpawnPositions.get_children()
+	spawnPositionsObstacles = $SpawnObstacles/SpawnPositions.get_children()
 	randomize()
 
 
@@ -48,7 +53,7 @@ func _on_ReadyTimer_timeout():
 		$ReadyTimer.stop()
 		$Label.visible = false
 		$Label2.visible = false
-		$SpawnCarros/SpawnCarTimer.start()
+		$SpawnTimer.start()
 
 
 func _process(_delta):
@@ -76,16 +81,18 @@ func cars_timer():
 	queue_free()
 
 
-func _on_SpawnCarTimer_timeout():
-	# Carrega os carros se o diálogo tiver acabado e o jogo não estiver pausado
+func _on_SpawnTimer_timeout():
+	# Carrega os carros e os obstáculos se o diálogo tiver acabado e o jogo não estiver pausado
 	if Global.pausedGame == false:
+		car_spawn()
+		obstacle_spawn()
 		car_spawn()
 		# Incrementa pontuação
 		Global.points += 1
 	
-	# Diálogos de gameover de acordo com o idioma
+	# Gameover
 	if Global.pausedGame == true:
-		$SpawnCarros/SpawnCarTimer.stop()
+		$SpawnTimer.stop()
 		Global.energy -= 1 # Diminui energia
 		$GameOver.visible = true
 
@@ -99,6 +106,24 @@ func car_spawn():
 	enemyCar.connect("colide", self, "on_colide")
 
 
+# Randomiza aparecimento dos obstáculos
+func obstacle_spawn():
+	# Carrega tipo de obstáculo aleatoriamente
+	var obstacles = [TRUNK, CONE, TIRE]
+	var randomObstacle = randi() % 3
+	
+	var randomIndex = randi() % spawnPositionsObstacles.size()
+	var newObstacle = obstacles[randomObstacle].instance()	
+	newObstacle.global_position = spawnPositionsObstacles[randomIndex].global_position
+	add_child(newObstacle)
+	newObstacle.connect("colide", self, "on_colide_obstacle")
+
+
 # Se o caminhão bater em algum carro, significa que estava na faixa errada
 func on_colide():
-	$GameOver/ObsLabel.text = "Você colidiu pois \nultrapassou a faixa."
+	$GameOver/ObsLabel.text = "Você colidiu pois \nestava na faixa \nerrada"
+
+
+# Função executada caso o caminhão bata em algum obstáculo
+func on_colide_obstacle():
+	$GameOver/ObsLabel.text = "Você colidiu com um \nobjeto na sua pista.\nPara casos assim,\ntente executar um\ndesvio emergencial\nmais rápido"
