@@ -30,9 +30,9 @@ texture_pressed = ExtResource( 3 )
 expand = true
 
 [node name="Content" type="Label" parent="."]
-margin_left = 18.0
+margin_left = 15.0
 margin_top = 26.0
-margin_right = 86.0
+margin_right = 90.0
 margin_bottom = 62.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 4 )
