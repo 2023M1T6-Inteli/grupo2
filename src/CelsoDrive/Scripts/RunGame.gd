@@ -137,6 +137,7 @@ func on_colide_obstacle():
 		$GameOver/ObsLabel.text = "Você colidiu pois \nse distraiu com\no celular"
 
 
+# Exibe debuff da notificação do celular
 func _on_PhoneTimer_timeout():
 	if Global.pausedGame == false:
 		$PhoneDebuff/Controller.start()
@@ -145,6 +146,7 @@ func _on_PhoneTimer_timeout():
 		$PhoneDebuff/Vibrate.play()
 
 
+# Após 5 segundos, esconde debuff da notificação do celular
 func _on_Controller_timeout():
 	$PhoneDebuff.visible = false
 	$PhoneDebuff/Vibrate.stop()
