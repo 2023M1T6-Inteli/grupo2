@@ -91,6 +91,7 @@ default_bus_layout=""
 
 Global="*res://Scripts/Global.gd"
 MusicController="*res://Scenes/MusicController.tscn"
+Pause="*res://Scenes/Pause.tscn"
 
 [display]
 
