@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/clipboard.png-4339bfa16045cc3a48ea0234e8638241.stex"
+path="res://.import/clipboard.png-72c106c2c2c6e214929214e7f51e7cc8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/items/clipboard.png"
-dest_files=[ "res://.import/clipboard.png-4339bfa16045cc3a48ea0234e8638241.stex" ]
+source_file="res://Assets/Items/clipboard.png"
+dest_files=[ "res://.import/clipboard.png-72c106c2c2c6e214929214e7f51e7cc8.stex" ]
 
 [params]
 

@@ -11,7 +11,9 @@ onready var dialog # Variável utilizada para carregar os diálogos
 var itemsList = ["Dormir bem", "Beber água", "Usar cinto", "Fazer \npausas", "Mexer no\ncelular",
 				"Comer bem", "Não dormir", "Beber \nálcool", "Conferir \nfreios",
 				"Dirigir\nsem comer", "Não conferir\nos pneus", "Não conferir\nos freios", 
-				"Entender a \ncarga", "Desconhecer\na carga"]
+				"Entender a \ncarga", "Desconhecer\na carga", "Verificar \nfaróis",
+				"Verificar \nóleo", "Conferir \ncarga max.", "Verificar \nas setas",
+				"Usar \nchinelo", "Não usar \ncinto", "Usar calçados\nfirmes"]
 
 # Associação entre os itens e seus valores - true é um item bom e false um item ruim
 var itemsdictValues = {"Dormir bem": true, "Beber água": true, "Usar cinto": true,
@@ -19,7 +21,11 @@ var itemsdictValues = {"Dormir bem": true, "Beber água": true, "Usar cinto": tr
 				"Comer bem": true, "Não dormir": false, "Beber \nálcool": false,
 				"Conferir \nfreios": true, "Dirigir\nsem comer": false,
 				"Não conferir\nos pneus": false, "Não conferir\nos freios": false,
-				"Entender a \ncarga": true, "Desconhecer\na carga": false}
+				"Entender a \ncarga": true, "Desconhecer\na carga": false,
+				"Verificar \nfaróis": true, "Verificar \nóleo": true,
+				"Conferir \ncarga max.": true, "Verificar \nas setas": true,
+				"Usar \nchinelo": false, "Não usar \ncinto": false,
+				"Usar calçados\nfirmes": true}
 
 
 func _ready():
