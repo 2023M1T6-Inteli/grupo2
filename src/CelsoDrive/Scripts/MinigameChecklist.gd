@@ -13,7 +13,8 @@ var itemsList = ["Dormir bem", "Beber água", "Usar cinto", "Fazer \npausas", "M
 				"Dirigir\nsem comer", "Não conferir\nos pneus", "Não conferir\nos freios", 
 				"Entender a \ncarga", "Desconhecer\na carga", "Verificar \nfaróis",
 				"Verificar \nóleo", "Conferir \ncarga max.", "Verificar \nas setas",
-				"Usar \nchinelo", "Não usar \ncinto", "Usar calçados\nfirmes"]
+				"Usar \nchinelo", "Não usar \ncinto", "Usar calçado\nfirme",
+				"Levar \nextintor", "Conferir \nfiltro de ar"]
 
 # Associação entre os itens e seus valores - true é um item bom e false um item ruim
 var itemsdictValues = {"Dormir bem": true, "Beber água": true, "Usar cinto": true,
@@ -25,7 +26,8 @@ var itemsdictValues = {"Dormir bem": true, "Beber água": true, "Usar cinto": tr
 				"Verificar \nfaróis": true, "Verificar \nóleo": true,
 				"Conferir \ncarga max.": true, "Verificar \nas setas": true,
 				"Usar \nchinelo": false, "Não usar \ncinto": false,
-				"Usar calçados\nfirmes": true}
+				"Usar calçados\nfirmes": true, "Levar \nextintor": true,
+				"Conferir \nfiltro de ar": true}
 
 
 func _ready():
