@@ -57,13 +57,14 @@ May the force be with you!
 |-->src<br>
 |readme.md<br>
 
-A pasta raiz contem dois arquivos que devem ser alterados:
+A pasta raiz contém um arquivo principal:
 
 <b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre o projeto. O mesmo que você está lendo agora.
 
-Há também 4 pastas que seguem da seguinte forma:
+Há também 5 pastas que seguem da seguinte forma:
 
 <b>docs</b>: Local onde ficam os arquivos compilados em HTML do jogo.
+
 <b>documentos</b>: Aqui ficam todos os documentos do projeto, mas principalmente o <b>GDD (Game Design Document)/Documentação do Sistema</b>. Há uma pasta <b>antigos</b> onde estão todas as versões antigas da documentação.
 
 <b>executáveis</b>: Aqui ficam todos os executáveis do jogo, prontos para rodar. Há no mínimo 3 pastas, uma para binários <b>Windows</b>, uma para binários <b>android</b> e uma para a <b>Web/HTML</b>
