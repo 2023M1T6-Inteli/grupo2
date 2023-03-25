@@ -15,7 +15,7 @@
     <tr>
       <td align="center"><a href="https://www.linkedin.com/in/victor-marques-profile/"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/86068797?v=4" width="100px;" alt=""/><br><sub><b>Victor M.</b></sub></a></td>
       <td align="center"><a href="https://www.linkedin.com/in/gabriel-farias-alves/"><img style="border-radius: 50%;" src="https://media.licdn.com/dms/image/D5603AQHNYWy5HO9VDw/profile-displayphoto-shrink_800_800/0/1666369397380?e=2147483647&v=beta&t=zrSpyiGUp42RXypj049sCHPFJwqQEHCz3VEPSztcA5o" width="100px;" alt=""/><br><sub><b> Gabriel F.</b></sub></a></td>
-      <td align="center"><a href="https://www.linkedin.com/in/rafael-coutinho2004/"><img style="border-radius: 50%;" src="https://media.licdn.com/dms/image/D4D03AQHmLtvlUWXv5Q/profile-displayphoto-shrink_800_800/0/1674154004110?e=2147483647&v=beta&t=LiQl4N323LrXm2gogw8VB32gGcLGNE9cKdSlKp1US_c" width="100px;" alt=""/><br><sub><b>Rafael C.</b></sub></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/rafael-coutinho2004/"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/70056727?v=4" width="100px;" alt=""/><br><sub><b>Rafael C.</b></sub></a></td>
       <td align="center"><a href="https://www.linkedin.com/in/henrique-ottoboni-magalh%C3%A3es-77b950264/"><img style="border-radius: 50%;" src="https://media.licdn.com/dms/image/D4D03AQFpEYmWNhzKXA/profile-displayphoto-shrink_800_800/0/1675342628864?e=2147483647&v=beta&t=hpjnN6yJx_lOJUBRgbROt-_OgVAmW5M2Z08-R8S3ybk" width="100px;" alt=""/><br><sub><b>Henrique O.</b></sub></a></td>
     </tr>
   </table>
