@@ -2,7 +2,7 @@ extends Node2D
 
 var velocity = Vector2.ZERO  # Vetor responsável pela movimentação do caminhão
 var inputDirection = Vector2(0, 0)  # Vetor atualizado de acordo com as teclas pressionadas
-var backgroundSpeed = Global.gameBaseSpeed * 0.9 # Velocidade com que o background se move (90% da velocidade dos carros)
+var backgroundSpeed = Global.gameBaseSpeed * 0.6 # Velocidade com que o background se move (90% da velocidade dos carros)
 const ENEMY = preload("res://Scenes/EnemyCar.tscn") # Carrega cena dos carros inimigos
 const CONE = preload("res://Scenes/ConeObstacle.tscn") # Carrega cena dos cones
 const TIRE = preload("res://Scenes/TireObstacle.tscn") # Carrega cena dos pneus
@@ -58,15 +58,15 @@ func _on_ReadyTimer_timeout():
 		$Label.visible = false
 		$Label2.visible = false
 		$SpawnTimer.start()
+		$SpawnObstacleTimer.start()
 
 
-func _process(_delta):
+func _process(delta):
 	# Move background
-	if Global.pausedGame == false:
-		if($Road.position.y + backgroundSpeed > 360): 
-			$Road.position.y = -8
-		else:
-			$Road.position.y += backgroundSpeed
+	$Road/ParallaxLayer.motion_offset.y += 250 * delta
+	
+	if Global.pausedGame:
+		$Road/ParallaxLayer.motion_offset.y = 0
 	
 	# Muda animação das setas de acordo com as teclas pressionadas
 	if Input.is_action_pressed("ui_left"):
@@ -86,10 +86,8 @@ func cars_timer():
 
 
 func _on_SpawnTimer_timeout():
-	# Carrega os carros e os obstáculos se o diálogo tiver acabado e o jogo não estiver pausado
+	# Carrega os carros se o diálogo tiver acabado e o jogo não estiver pausado
 	if Global.pausedGame == false:
-		car_spawn()
-		obstacle_spawn()
 		car_spawn()
 		# Incrementa pontuação
 		Global.points += 1
@@ -97,6 +95,22 @@ func _on_SpawnTimer_timeout():
 	# Gameover
 	if Global.pausedGame == true:
 		$SpawnTimer.stop()
+		$SpawnObstacleTimer.stop()
+		Global.energy -= 1 # Diminui energia
+		$GameOver.visible = true
+
+
+func _on_SpawnObstacleTimer_timeout():
+	# Carrega os obstáculos se o diálogo tiver acabado e o jogo não estiver pausado
+	if Global.pausedGame == false:
+		obstacle_spawn()
+		# Incrementa pontuação
+		Global.points += 1
+	
+	# Gameover
+	if Global.pausedGame == true:
+		$SpawnTimer.stop()
+		$SpawnObstacleTimer.stop()
 		Global.energy -= 1 # Diminui energia
 		$GameOver.visible = true
 
