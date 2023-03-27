@@ -9,6 +9,7 @@ onready var celso5 = "res://Scenes/Player05.tscn"
 onready var celso6 = "res://Scenes/Player06.tscn"
 onready var celso7 = "res://Scenes/Player07.tscn"
 onready var celso8 = "res://Scenes/Player08.tscn"
+onready var celso9 = "res://Scenes/Player09.tscn"
 var currentCelso := 1 # "Index" para o aparecimento dos personagens na tela
 
 
@@ -35,6 +36,7 @@ func show_current_celso():
 		$Celso06.visible = false
 		$Celso07.visible = false
 		$Celso08.visible = false
+		$Celso09.visible = false
 	elif currentCelso == 2:
 		$Celso01.visible = false
 		$Celso02.visible = true
@@ -44,6 +46,7 @@ func show_current_celso():
 		$Celso06.visible = false
 		$Celso07.visible = false
 		$Celso08.visible = false
+		$Celso09.visible = false
 	elif currentCelso == 3:
 		$Celso01.visible = false
 		$Celso02.visible = false
@@ -53,6 +56,7 @@ func show_current_celso():
 		$Celso06.visible = false
 		$Celso07.visible = false
 		$Celso08.visible = false
+		$Celso09.visible = false
 	elif currentCelso == 4:
 		$Celso01.visible = false
 		$Celso02.visible = false
@@ -62,6 +66,7 @@ func show_current_celso():
 		$Celso06.visible = false
 		$Celso07.visible = false
 		$Celso08.visible = false
+		$Celso09.visible = false
 	elif currentCelso == 5:
 		$Celso01.visible = false
 		$Celso02.visible = false
@@ -71,6 +76,7 @@ func show_current_celso():
 		$Celso06.visible = false
 		$Celso07.visible = false
 		$Celso08.visible = false
+		$Celso09.visible = false
 	elif currentCelso == 6:
 		$Celso01.visible = false
 		$Celso02.visible = false
@@ -80,6 +86,7 @@ func show_current_celso():
 		$Celso06.visible = true
 		$Celso07.visible = false
 		$Celso08.visible = false
+		$Celso09.visible = false
 	elif currentCelso == 7:
 		$Celso01.visible = false
 		$Celso02.visible = false
@@ -89,6 +96,7 @@ func show_current_celso():
 		$Celso06.visible = false
 		$Celso07.visible = true
 		$Celso08.visible = false
+		$Celso09.visible = false
 	elif currentCelso == 8:
 		$Celso01.visible = false
 		$Celso02.visible = false
@@ -98,11 +106,22 @@ func show_current_celso():
 		$Celso06.visible = false
 		$Celso07.visible = false
 		$Celso08.visible = true
+		$Celso09.visible = false
+	elif currentCelso == 9:
+		$Celso01.visible = false
+		$Celso02.visible = false
+		$Celso03.visible = false
+		$Celso04.visible = false
+		$Celso05.visible = false
+		$Celso06.visible = false
+		$Celso07.visible = false
+		$Celso08.visible = false
+		$Celso09.visible = true
 
 
 # Incrementa o index do personagem selecionado
 func increase():
-	if currentCelso < 8:
+	if currentCelso < 9:
 		currentCelso += 1
 		
 
@@ -114,7 +133,7 @@ func decrease():
 
 func _on_Next_pressed():
 	# Some com o botão de próximo quando chega no último celso, com uma color rect por cima
-	if currentCelso == 7:
+	if currentCelso == 8:
 		$NextColorRect.visible = true
 	
 	# Exibe, caso necessário, o botão de voltar, o qual
@@ -181,4 +200,10 @@ func _on_Celso07_pressed():
 # Seleciona versão 8 do Celso
 func _on_Celso08_pressed():
 	Global.playerDir = celso8
+	go_to_tutorial()
+
+
+# Seleciona versão 9 do Celso
+func _on_Celso09_pressed():
+	Global.playerDir = celso9
 	go_to_tutorial()
