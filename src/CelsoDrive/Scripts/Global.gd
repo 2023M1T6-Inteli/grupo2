@@ -17,7 +17,7 @@ var interactedPhone := false # Variável de controle para não repetir a intera�
 var interactedBed := false # Variável de controle para não repetir a interação da cama
 var visibleTruck := false
 
-#Variáveis para controlar debuffs
+# Variáveis para controlar debuffs
 var alcohol : bool # caso true, sofrerá debuff de álcool
 var slept : bool # caso false, sofrerá debuff de sono
 var mutedPhone : bool = false # caso false, sofrerá debuff de notificação na tela
