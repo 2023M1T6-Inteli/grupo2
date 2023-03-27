@@ -36,3 +36,7 @@ func _on_TruckTimer_timeout():
 	newTruckRight.position = $PathRight/PathFollow2D.position
 	newTruckLeft.linear_velocity = Vector2(0, rand_range(newTruckLeft.minSpeed, newTruckLeft.maxSpeed))
 	newTruckRight.linear_velocity = Vector2(0, rand_range(newTruckRight.minSpeed, newTruckRight.maxSpeed))
+
+
+func _on_CreditsButton_pressed():
+	return get_tree().change_scene("res://Scenes/Credits.tscn")
