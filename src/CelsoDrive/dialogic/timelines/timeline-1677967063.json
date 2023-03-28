@@ -85,6 +85,56 @@
 			"text": "Já com a tecla \"e\", você pode interagir com os objetos e com as pessoas."
 		},
 		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Para pausar o jogo a qualquer momento, basta apertar o botão \"esc\" do seu teclado."
+		},
+		{
+			"emit_signal": "coin-intro",
+			"event_id": "dialogic_040"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Na parte superior esquerda da sua tela você pode verificar a sua pontuação."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Quanto mais tempo você passar dirigindo sem nenhum acidente, maior a sua pontuação."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Você também pode ganhar mais moedas realizando as tarefas do jogo."
+		},
+		{
+			"emit_signal": "energy-intro",
+			"event_id": "dialogic_040"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Do lado direito fica a sua barra de energia."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Quanto mais tempo acordado você fica, mais a sua energia diminui."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Caso ela zere, você só pode continuar jogando se for em casa dormir, ou se fizer uma pausa. Neste caso, a sua energia não será carregada por completo."
+		},
+		{
 			"choice": "Não",
 			"condition": "",
 			"definition": "",

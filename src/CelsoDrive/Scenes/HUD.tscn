@@ -44,11 +44,23 @@ font_data = ExtResource( 8 )
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource( 6 )
 
+[node name="ColorRectEnergy" type="ColorRect" parent="."]
+visible = false
+margin_right = 640.0
+margin_bottom = 368.0
+color = Color( 0, 0, 0, 0.862745 )
+
 [node name="EnergySprite" type="AnimatedSprite" parent="."]
-position = Vector2( 598, 18 )
-scale = Vector2( 0.2, 0.2 )
+position = Vector2( 600, 16 )
+scale = Vector2( 0.27907, 0.307692 )
 frames = SubResource( 1 )
 animation = "4"
+
+[node name="ColorRectCoin" type="ColorRect" parent="."]
+visible = false
+margin_right = 640.0
+margin_bottom = 368.0
+color = Color( 0, 0, 0, 0.862745 )
 
 [node name="Coin" type="Sprite" parent="."]
 position = Vector2( 26, 20 )

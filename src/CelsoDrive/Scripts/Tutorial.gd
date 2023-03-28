@@ -71,7 +71,10 @@ func dialog_listener(string):
 		
 		# Quando o sinal for emitido, a variável finishedDialog recebe true
 		"finishedDialog":
-			finishedDialog = true;
+			finishedDialog = true
+			$HUD/Coin.visible = true
+			$HUD/CoinLabel.visible = true
+			$HUD/ColorRectEnergy.visible = false
 		
 		# Exibe tela com mensagem no celular após o diálogo de interação com a casa
 		"interacted":
@@ -81,7 +84,15 @@ func dialog_listener(string):
 				$Message.visible = true
 			else:
 				$Message.visible = true;
-
+				
+		"coin-intro":
+			$HUD/ColorRectCoin.visible = true
+		
+		"energy-intro":
+			$HUD/ColorRectCoin.visible = false
+			$HUD/ColorRectEnergy.visible = true
+			$HUD/Coin.visible = false
+			$HUD/CoinLabel.visible = false
 
 # Altera animação das setas de acordo com a tecla pressionada
 func key_pressed():
