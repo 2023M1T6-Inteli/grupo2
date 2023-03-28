@@ -2407,9 +2407,8 @@ position = Vector2( 37, 288 )
 shape = SubResource( 76 )
 
 [node name="FreezerE" type="Sprite" parent="FreezerArea"]
-visible = false
 position = Vector2( 32, 259 )
-scale = Vector2( 0.5, 0.59375 )
+scale = Vector2( 0.4, 0.5 )
 texture = ExtResource( 2 )
 
 [node name="Freezer" parent="FreezerArea" instance=ExtResource( 9 )]
@@ -2424,9 +2423,8 @@ position = Vector2( 104, 312 )
 shape = SubResource( 76 )
 
 [node name="TableE" type="Sprite" parent="TableArea"]
-visible = false
 position = Vector2( 104, 334 )
-scale = Vector2( 0.5, 0.59375 )
+scale = Vector2( 0.4, 0.5 )
 texture = ExtResource( 2 )
 
 [node name="Table" parent="TableArea" instance=ExtResource( 12 )]
@@ -2441,9 +2439,8 @@ position = Vector2( 101.5, 162 )
 shape = SubResource( 76 )
 
 [node name="PhoneE" type="Sprite" parent="PhoneArea"]
-visible = false
 position = Vector2( 96, 129 )
-scale = Vector2( 0.5, 0.59375 )
+scale = Vector2( 0.4, 0.5 )
 texture = ExtResource( 2 )
 
 [node name="Phone" parent="PhoneArea" instance=ExtResource( 13 )]
@@ -2458,9 +2455,8 @@ position = Vector2( 36.75, 181 )
 shape = SubResource( 76 )
 
 [node name="SleepE" type="Sprite" parent="SleepArea"]
-visible = false
 position = Vector2( 32, 149 )
-scale = Vector2( 0.5, 0.59375 )
+scale = Vector2( 0.4, 0.5 )
 texture = ExtResource( 2 )
 
 [node name="Sleep" parent="SleepArea" instance=ExtResource( 14 )]
