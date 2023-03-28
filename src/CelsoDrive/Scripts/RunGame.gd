@@ -17,6 +17,8 @@ var phoneDebuffTime = 0 # Variável de controle para o tempo de exibição do de
 
 
 func _ready():
+	$"/root/PauseScene/VBoxContainer/BreakButton".visible = true
+	
 	Global.pausedGame = false
 	if Global.alcohol:
 		# Diálogo explicativo do debuff de álcool

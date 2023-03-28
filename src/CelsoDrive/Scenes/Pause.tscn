@@ -21,17 +21,22 @@ margin_left = -322.5
 margin_top = -184.5
 margin_right = 322.5
 margin_bottom = 184.5
-color = Color( 0, 0, 0, 0.784314 )
+color = Color( 0, 0, 0, 0.960784 )
 
-[node name="ContinueButton" type="Button" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -65.5
-margin_top = -17.5
-margin_right = 65.5
-margin_bottom = 17.5
+[node name="HUD" parent="." instance=ExtResource( 2 )]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 192.0
+margin_top = 64.0
+margin_right = 448.0
+margin_bottom = 304.0
+custom_constants/separation = 20
+alignment = 1
+
+[node name="ContinueButton" type="Button" parent="VBoxContainer"]
+margin_top = 55.0
+margin_right = 256.0
+margin_bottom = 85.0
 focus_mode = 0
 custom_colors/font_color_hover = Color( 0.133333, 0.658824, 0.129412, 1 )
 custom_fonts/font = SubResource( 1 )
@@ -39,15 +44,33 @@ enabled_focus_mode = 0
 text = "CONTINUAR"
 flat = true
 
-[node name="Home" type="Button" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -108.0
-margin_top = 36.0
-margin_right = 108.0
-margin_bottom = 71.0
+[node name="BreakButton" type="Button" parent="VBoxContainer"]
+visible = false
+margin_top = 80.0
+margin_right = 256.0
+margin_bottom = 110.0
+focus_mode = 0
+custom_colors/font_color_hover = Color( 0.133333, 0.658824, 0.129412, 1 )
+custom_fonts/font = SubResource( 1 )
+enabled_focus_mode = 0
+text = "FAZER UMA PAUSA"
+flat = true
+
+[node name="MainMenuButton" type="Button" parent="VBoxContainer"]
+margin_top = 105.0
+margin_right = 256.0
+margin_bottom = 135.0
+focus_mode = 0
+custom_colors/font_color_hover = Color( 0.133333, 0.658824, 0.129412, 1 )
+custom_fonts/font = SubResource( 1 )
+enabled_focus_mode = 0
+text = "MENU INCIAL"
+flat = true
+
+[node name="Home" type="Button" parent="VBoxContainer"]
+margin_top = 155.0
+margin_right = 256.0
+margin_bottom = 185.0
 focus_mode = 0
 custom_colors/font_color_hover = Color( 0.133333, 0.658824, 0.129412, 1 )
 custom_fonts/font = SubResource( 1 )
@@ -55,7 +78,7 @@ enabled_focus_mode = 0
 text = "IR PARA CASA"
 flat = true
 
-[node name="HUD" parent="." instance=ExtResource( 2 )]
-
-[connection signal="pressed" from="ContinueButton" to="." method="_on_ContinueButton_pressed"]
-[connection signal="pressed" from="Home" to="." method="_on_Home_pressed"]
+[connection signal="pressed" from="VBoxContainer/ContinueButton" to="." method="_on_ContinueButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/BreakButton" to="." method="_on_BreakButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/MainMenuButton" to="." method="_on_MainMenuButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/Home" to="." method="_on_Home_pressed"]
