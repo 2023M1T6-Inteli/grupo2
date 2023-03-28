@@ -1,0 +1,34 @@
+{
+	"events": [
+		{
+			"block_input": true,
+			"event_id": "dialogic_050",
+			"wait_time": 0
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "When clicking on an item, it will be destroyed and noted on the clipboard."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "To complete the game, select 5 items and validate your choices. Let's go?"
+		},
+		{
+			"emit_signal": "check-finished",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1680020400.json",
+		"name": "tutorial-checklist-2-en"
+	}
+}

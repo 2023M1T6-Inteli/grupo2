@@ -17,6 +17,20 @@ margin_right = 40.0
 margin_bottom = 40.0
 texture = ExtResource( 1 )
 
+[node name="Label-en" type="Label" parent="."]
+visible = false
+margin_left = 40.0
+margin_top = 118.0
+margin_right = 595.0
+margin_bottom = 247.0
+custom_fonts/font = SubResource( 1 )
+text = "Before starting a trip, it is necessary to validate the check-list!
+
+Some of the things you should always check are: truck condition
+(tires, headlights, etc), load limit and, of course, your physical and mental state!"
+align = 1
+autowrap = true
+
 [node name="Label" type="Label" parent="."]
 margin_left = 40.0
 margin_top = 118.0

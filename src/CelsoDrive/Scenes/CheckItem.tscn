@@ -36,7 +36,8 @@ margin_right = 90.0
 margin_bottom = 62.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 4 )
-text = "Usar Cinto"
+text = "Boa noite
+de sono"
 align = 1
 valign = 1
 

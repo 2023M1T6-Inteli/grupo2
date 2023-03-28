@@ -33,6 +33,42 @@ var itemsdictValues = {"Dormir bem": true, "Beber água": true, "Usar cinto": tr
 func _ready():
 	randomize()
 	Input.set_custom_mouse_cursor(arrowCrosshair, 1) # Altera cursor do mouse
+	# Traduz textos para inglês	
+	if Global.selectedLanguage == 1:
+		$CheckItemTutorial/Content.text = "good night's \nsleep"
+		
+		if Global.checklistTutorial == false:
+			$ColorRect.visible = true
+			dialog = Dialogic.start("tutorial-checklist-en")
+			dialog.connect("dialogic_signal", self, "dialog_listener")
+			add_child(dialog)
+		else:
+			$ItemsTimer.start()
+		
+		itemsList = ["Be well\nrested", "Drink water", "Wear Seat\nbelts", "Take\nbreaks",
+					"Use your\ncellphone","Be well\nfed", "Be sleep\ndeprived", "Drink \nalcohol",
+					"Check \nbrakes","Drive without\nnourishment", "Forget to\ncheck tires",
+					"Forget to\ncheck brakes", "Undestand\ncargo", "Overlook\ncargo",
+					"Check \nheadlights", "Check \noil", "check \nmax. cargo", "Check tail\n lights",
+					"Wear \nslippers", "Don't wear \nseat belts", "Wear steady\nfootwear",
+					"Carry fire\nextinguisher", "Check air\nfilter"]
+					
+		itemsdictValues = {"Be well\nrested": true, "Drink water": true, "Wear Seat\nbelts": true,
+				"Take\nbreaks": true, "Use your\ncellphone": false,
+				"Be well\nfed": true, "Be sleep\ndeprived": false, "Drink \nalcohol": false,
+				"Check \nbrakes": true, "Drive without\nnourishment": false,
+				"Forget to\ncheck tires": false, "Forget to\ncheck brakes": false,
+				"Undestand\ncargo": true, "Overlook\ncargo": false,
+				"Check \nheadlights": true, "Check \noil": true,
+				"check \nmax. cargo": true, "Check tail\n lights": true,
+				"Wear \nslippers": false, "Don't wear \nseat belts": false,
+				"Wear steady\nfootwear": true, "Carry fire\nextinguisher": true,
+				"Check air\nfilter": true}
+	else:
+		if Global.checklistTutorial == false:
+			dialog = Dialogic.start("tutorial-checklist")
+			dialog.connect("dialogic_signal", self, "dialog_listener")
+			add_child(dialog)
 
 
 # Função responsável por spawnar os itens na tela
@@ -77,6 +113,8 @@ func _on_exploded(currentContent, currentPosition):
 		
 	if clipboardElement >= 5:
 		$ConfirmButton.visible = true
+		if Global.selectedLanguage == 1:
+			$ConfirmButton.text = "Validate Choices"
 
 
 func _on_ConfirmButton_pressed():
@@ -86,11 +124,39 @@ func _on_ConfirmButton_pressed():
 	
 	# Verifica se há algum item negativo na lista, retornando Game Over em caso positivo
 	if false in values:
-		dialog = Dialogic.start("gameover-check")
-		add_child(dialog)
+		if Global.selectedLanguage == 1:
+			dialog = Dialogic.start("gameover-check-en")
+			add_child(dialog)
+		else:
+			dialog = Dialogic.start("gameover-check")
+			add_child(dialog)
 		$GameOver.visible = true
+		Global.checklistTutorial = true
 	
 	# Direciona para tela de feedback caso tudo esteja certo
 	else:
+		Global.checklistTutorial = true
 		return get_tree().change_scene("res://Scenes/SuccessChecklist.tscn")
-	
+
+
+func dialog_listener(sinal):
+	match sinal:
+		"check":
+			$CheckItemTutorial.visible = true
+		"check-finished":
+			$ClipboardTutorial.queue_free()
+			$ColorRect.visible = false
+			$ItemsTimer.start()
+
+
+func _on_CheckItemTutorial_exploded(_currentContent, _currentPosition):
+	$ClipboardTutorial.visible = true
+	if Global.selectedLanguage == 1:
+		dialog = Dialogic.start("tutorial-checklist-2-en")
+		dialog.connect("dialogic_signal", self, "dialog_listener")
+		add_child(dialog)
+		$ClipboardTutorial/VBoxContainer/HBoxContainer/Label.text = "Good night's\nsleep"
+	else:
+		dialog = Dialogic.start("tutorial-checklist-2")
+		dialog.connect("dialogic_signal", self, "dialog_listener")
+		add_child(dialog)

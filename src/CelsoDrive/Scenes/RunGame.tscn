@@ -15,7 +15,7 @@
 [ext_resource path="res://Assets/music/vibrate.mp3" type="AudioStream" id=13]
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 58.3101, 204.133 )
+extents = Vector2( 58.3101, 208 )
 
 [sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 12.2727, 21.6334 )
@@ -83,7 +83,7 @@ __meta__ = {
 [node name="Road" type="ParallaxBackground" parent="."]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="Road"]
-motion_mirroring = Vector2( 0, 368 )
+motion_mirroring = Vector2( 0, 450 )
 
 [node name="Sprite" type="Sprite" parent="Road/ParallaxLayer"]
 position = Vector2( 320, 186 )
@@ -101,7 +101,7 @@ scale = Vector2( 1.01979, 1 )
 shape = SubResource( 4 )
 
 [node name="collision_right" type="CollisionShape2D" parent="Margin"]
-position = Vector2( 577, 171.867 )
+position = Vector2( 577, 168 )
 scale = Vector2( 1.08043, 1 )
 shape = SubResource( 4 )
 

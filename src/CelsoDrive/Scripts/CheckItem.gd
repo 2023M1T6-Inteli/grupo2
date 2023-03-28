@@ -1,7 +1,7 @@
 extends Area2D
 
 signal exploded(currentContent, currentPosition)
-var content: String
+var content: String = "Boa noite\nde sono"
 var initialPosition
 var value
 
