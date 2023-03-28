@@ -47,17 +47,3 @@ margin_right = 206.474
 margin_bottom = -8.34244
 custom_fonts/font = SubResource( 1 )
 text = "Dirigir doido? Só de saudades!"
-
-[node name="MessageBox3" type="Sprite" parent="."]
-visible = false
-position = Vector2( 318, 220 )
-scale = Vector2( 0.420545, 0.362823 )
-texture = ExtResource( 1 )
-
-[node name="Label" type="Label" parent="MessageBox3"]
-margin_left = -206.526
-margin_top = -41.3424
-margin_right = 206.474
-margin_bottom = -8.34244
-custom_fonts/font = SubResource( 1 )
-text = "Dirigir doido? Só de saudades!"

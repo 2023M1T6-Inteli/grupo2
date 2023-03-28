@@ -36,9 +36,14 @@ func _process(_delta):
 	
 	# Inicia interação com a casa
 	if $Houses/Area2D/EInteract.visible == true && Input.is_action_just_pressed("interagir"):
-		dialog = Dialogic.start("tutorial-house")
-		dialog.connect("dialogic_signal", self, "dialog_listener")
-		add_child(dialog)
+		if Global.selectedLanguage == 1:
+			dialog = Dialogic.start("tutorial-house-en")
+			dialog.connect("dialogic_signal", self, "dialog_listener")
+			add_child(dialog)
+		else:
+			dialog = Dialogic.start("tutorial-house")
+			dialog.connect("dialogic_signal", self, "dialog_listener")
+			add_child(dialog)
 		
 		
 	if $TinhosoSceneArea/EInteract.visible == true and Input.is_action_just_pressed("interagir"):
@@ -70,7 +75,12 @@ func dialog_listener(string):
 		
 		# Exibe tela com mensagem no celular após o diálogo de interação com a casa
 		"interacted":
-			$Message.visible = true;
+			if Global.selectedLanguage == 1:
+				$Message/MessageBox/Label.text = "Take care on this journey."
+				$Message/MessageBox2/Label.text = "Drunk driving? only if it's love"
+				$Message.visible = true
+			else:
+				$Message.visible = true;
 
 
 # Altera animação das setas de acordo com a tecla pressionada
