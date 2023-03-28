@@ -5,6 +5,7 @@ var language = Global.selectedLanguage # Carrega informações da variável glob
 
 
 func _ready():
+	PauseScene.isMainMenu = true
 	# Traduz elementos da tela atual para inglês
 	if language == 1:
 		$TitleLabel.text = "Celso Drive"
@@ -16,6 +17,7 @@ func _ready():
 
 # Direciona para a visão exterior da casa
 func _on_PlayButton_pressed():
+	PauseScene.isMainMenu = false
 	return get_tree().change_scene("res://Scenes/CelsoSelect.tscn")
 
 

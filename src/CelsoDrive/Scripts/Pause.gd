@@ -1,15 +1,20 @@
 extends CanvasLayer
 
 
+var isMainMenu = false
+
+
 func _ready():
-	show_pause(false) # Não exibe a tela logo no início
+	if isMainMenu == false:
+		show_pause(false) # Não exibe a tela logo no início
 
 
 func _input(event):
-	# Pausa o jogo quando a tecla esc é pressionada
-	if event.is_action_pressed("ui_cancel"):
-		show_pause(!get_tree().paused)
-		get_tree().paused = not get_tree().paused
+	if isMainMenu == false:
+		# Pausa o jogo quando a tecla esc é pressionada
+		if event.is_action_pressed("ui_cancel"):
+			show_pause(!get_tree().paused)
+			get_tree().paused = not get_tree().paused
 
 
 # Mostra tela de pause

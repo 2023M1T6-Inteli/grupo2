@@ -8,7 +8,6 @@ var finishedDialog = false # Variável que contém valor do sinal ao finalizar d
 func _ready():
 	# Define posição do personagem
 	Global.playerPosition = Vector2(79, 304)
-	
 	# Instancia cena para mostrar o personagem
 	var spawnPlayer = load("res://Scenes/SpawnPlayer.tscn").instance()
 	add_child(spawnPlayer)
