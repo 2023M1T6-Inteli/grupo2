@@ -43,6 +43,7 @@ func _ready():
 			dialog.connect("dialogic_signal", self, "dialog_listener")
 			add_child(dialog)
 		else:
+			$ColorRect.visible = false
 			$ItemsTimer.start()
 		
 		itemsList = ["Be well\nrested", "Drink water", "Wear Seat\nbelts", "Take\nbreaks",
@@ -66,9 +67,13 @@ func _ready():
 				"Check air\nfilter": true}
 	else:
 		if Global.checklistTutorial == false:
+			$ColorRect.visible = true
 			dialog = Dialogic.start("tutorial-checklist")
 			dialog.connect("dialogic_signal", self, "dialog_listener")
 			add_child(dialog)
+		else:
+			$ColorRect.visible = false
+			$ItemsTimer.start()
 
 
 # Função responsável por spawnar os itens na tela

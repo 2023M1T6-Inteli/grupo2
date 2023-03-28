@@ -198,7 +198,6 @@ flat = true
 visible = false
 
 [node name="ColorRect" type="ColorRect" parent="."]
-visible = false
 margin_right = 640.0
 margin_bottom = 368.0
 color = Color( 0, 0, 0, 0.705882 )
