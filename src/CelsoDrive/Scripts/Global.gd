@@ -6,7 +6,7 @@ var choices := [] # Array que recebe os dados de cada escolha. 1 = ruim, 0 = boa
 var energy := 2 # Valor da barra de energia, usada na HUD
 var pausedGame = false # Variável de parada para o minigame do tinhoso
 var selectedMusic := 0 # O = forró, 1 = sertanejo, 2 = rock e 3 = samba
-var selectedLanguage := 0 # 0 = português, 1 = inglês e 2 = espanhol
+var selectedLanguage := 1 # 0 = português, 1 = inglês e 2 = espanhol
 var playerDir = "res://Scenes/Player01.tscn" # Caminho da cena do personagem selecionado
 var playerPosition : Vector2 # Posição de Spawn do personagem em cada cena
 var level : int # Variável para identificar a fase atual

@@ -3,10 +3,16 @@ extends CanvasLayer
 
 # Carrega texto do botão de acordo com o valor da variável mutedPhone
 func _process(_delta):
-	if Global.mutedPhone:
-		$OptionButton.text = "Desativar Silencioso"
+	if Global.selectedLanguage == 1:
+		if Global.mutedPhone:
+			$OptionButton.text = "Disable Silent"
+		else:
+			$OptionButton.text = "Enable Silent"
 	else:
-		$OptionButton.text = "Ativar Silencioso"
+		if Global.mutedPhone:
+			$OptionButton.text = "Desativar Silencioso"
+		else:
+			$OptionButton.text = "Ativar Silencioso"
 
 
 # Botão para fechar a interação

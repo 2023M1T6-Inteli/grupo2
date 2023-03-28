@@ -14,9 +14,14 @@ func _ready():
 	
 	# Diálogo inicial da cena
 	if Global.insideHouseDialog == false:
-		dialog = Dialogic.start("level-2")
-		dialog.connect("dialogic_signal", self, "dialog_listener")
-		add_child(dialog)
+		if Global.selectedLanguage == 1:
+			dialog = Dialogic.start("level-2-en")
+			add_child(dialog)
+		else:
+			dialog = Dialogic.start("level-2")
+			add_child(dialog)
+		
+		# Muda estado da variável global, informando que o usuário já entrou na casa
 		Global.insideHouseDialog = true
 
 
@@ -33,28 +38,44 @@ func _process(_delta):
 		# Só mostra a tela se o usuário nunca tiver interagido, de acordo com a variável de controle
 		if Global.interactedFreezer == false:
 			$FreezerArea/Freezer.visible = true
-			dialog = Dialogic.start("freeze")
+			if Global.selectedLanguage == 1:
+				dialog = Dialogic.start("freezer-en")
+			else:
+				dialog = Dialogic.start("freezer")
 			add_child(dialog)
 
 	# Mostra a mesa se o jogador apertar a tecla "E" dentro da área
 	if Input.is_action_pressed("interagir") and $TableArea/TableE.visible == true:
 		if Global.interactedTable == false:
 			$TableArea/Table.visible = true
-			dialog = Dialogic.start("table")
+			if Global.selectedLanguage == 1:
+				dialog = Dialogic.start("table-en")
+			else:
+				dialog = Dialogic.start("table")
 			add_child(dialog)
 
 	# Mostra o celular se o jogador apertar a tecla "E" dentro da área
 	if Input.is_action_pressed("interagir") and $PhoneArea/PhoneE.visible == true:
 		$PhoneArea/Phone.visible = true
 		if Global.interactedPhone == false:
-			dialog = Dialogic.start("phone")
+			if Global.selectedLanguage == 1:
+				dialog = Dialogic.start("phone-en")
+			else:
+				dialog = Dialogic.start("phone")
 			add_child(dialog)
 
 	# Mostra a cama se o jogador apertar a tecla "E" dentro da área
 	if Input.is_action_pressed("interagir") and $SleepArea/SleepE.visible == true:
 		$SleepArea/Sleep.visible = true
 		if Global.interactedBed == false:
-			dialog = Dialogic.start("bed")
+			if Global.selectedLanguage == 1:
+				dialog = Dialogic.start("bed-en")
+				$SleepArea/Sleep/SleepAfter.text = "Sleep After"
+				$SleepArea/Sleep/SleepNow.text = "Sleep Now"
+			else:
+				dialog = Dialogic.start("bed")
+				$SleepArea/Sleep/SleepAfter.text = "Dormir Depois"
+				$SleepArea/Sleep/SleepNow.text = "Dormir Agora"
 			add_child(dialog)
 
 

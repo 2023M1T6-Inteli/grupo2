@@ -4,13 +4,13 @@
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Bateu uma sede! Escolha algo para beber."
+			"text": "You can always come back here to recharge your batteries..."
 		},
 		{
 			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Para isso, basta clicar, com o botão direito do mouse, sobre a bebida desejada."
+			"text": "It's getting late. Do you want to sleep?"
 		},
 		{
 			"event_id": "dialogic_022",
@@ -19,7 +19,7 @@
 	],
 	"metadata": {
 		"dialogic-version": "1.4.5",
-		"file": "timeline-1679368195.json",
-		"name": "freezer"
+		"file": "timeline-1679962836.json",
+		"name": "bed-en"
 	}
 }
