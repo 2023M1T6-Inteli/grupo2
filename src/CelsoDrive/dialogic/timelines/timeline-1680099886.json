@@ -18,43 +18,43 @@
 				"4": false
 			},
 			"type": 0,
-			"z_index": 0
+			"z_index": 100
 		},
 		{
 			"character": "character-1677966582.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": ""
+			"text": "Hola hermano(a) de la carretera, espero que estés listo(a) para tu próximo viaje..."
 		},
 		{
 			"character": "character-1677966582.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": ""
+			"text": "Mi nombre es Roberta y te acompañaré en este viaje."
 		},
 		{
 			"character": "character-1677966582.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": ""
+			"text": "Nuestro cliente es UNIPAR y tenemos una misión muy importante..."
 		},
 		{
 			"character": "character-1677966582.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": ""
+			"text": "Entregar una carga muy delicada, sin que ocurra ningún accidente."
 		},
 		{
 			"character": "character-1677966582.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": ""
+			"text": "Entonces, en el futuro puedes enfrentar algunos obstáculos…"
 		},
 		{
 			"character": "character-1677966582.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": ""
+			"text": "Pero recuerda siempre: tus acciones aqui, definen mucho más que tu pontuación"
 		},
 		{
 			"character": "character-1677966582.json",
@@ -63,10 +63,10 @@
 
 			],
 			"portrait": "",
-			"question": ""
+			"question": "¿Quieres que te acompañe en tu tutorial?"
 		},
 		{
-			"choice": "",
+			"choice": "Sí",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -76,66 +76,66 @@
 			"character": "character-1677966582.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": ""
+			"text": "Con las flechas de tu teclado controlas al personaje por la ciudad..."
 		},
 		{
 			"character": "character-1677966582.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": ""
+			"text": "Ya con la tecla \"e\", puede interactuar con los objetos y con las personas."
 		},
 		{
 			"character": "character-1677966582.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": ""
+			"text": "Para pausar el juego en cualquier momento, simplemente presione el botón \"esc\" de su teclado."
 		},
 		{
-			"emit_signal": "",
+			"emit_signal": "coin-intro",
 			"event_id": "dialogic_040"
 		},
 		{
-			"character": "character-1677966582.json",
+			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": ""
+			"text": "En la parte superior izquierda de tu pantalla puedes verificar tu puntuación."
 		},
 		{
-			"character": "character-1677966582.json",
+			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": ""
+			"text": "Cuantos más tiempo pases conduciendo sin ningún accidente, mayor será tu puntuación."
 		},
 		{
-			"character": "character-1677966582.json",
+			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": ""
+			"text": "También puedes ganar más monedas realizando las tareas en el juego."
 		},
 		{
-			"emit_signal": "",
+			"emit_signal": "energy-intro",
 			"event_id": "dialogic_040"
 		},
 		{
-			"character": "character-1677966582.json",
+			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": ""
+			"text": "En el lado derecho está tu barra de energía."
 		},
 		{
-			"character": "character-1677966582.json",
+			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": ""
+			"text": "Cuanto más tiempo esté despierto, más disminuirá su energía."
 		},
 		{
-			"character": "character-1677966582.json",
+			"character": "",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": ""
+			"text": "Si se agota, solo podrás seguir jugando si vas a casa a dormir o si haces una pausa. En este caso, tu energía no se cargará por completo."
 		},
 		{
-			"choice": "",
+			"choice": "No",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
@@ -145,12 +145,12 @@
 			"event_id": "dialogic_013"
 		},
 		{
-			"emit_signal": "",
+			"emit_signal": "finishedDialog",
 			"event_id": "dialogic_040"
 		},
 		{
 			"event_id": "dialogic_022",
-			"transition_duration": 1
+			"transition_duration": 2
 		}
 	],
 	"metadata": {
