@@ -1,0 +1,161 @@
+{
+	"events": [
+		{
+			"animation": "2-fade_in_up.gd",
+			"animation_length": 1,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 100
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hola hermano(a) de la carretera, espero que estés listo(a) para tu próximo viaje..."
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Mi nombre es Roberta y te acompañaré en este viaje."
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Nuestro cliente es UNIPAR y tenemos una misión muy importante..."
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Entregar una carga muy delicada, sin que ocurra ningún accidente."
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Entonces, en el futuro puedes enfrentar algunos obstáculos…"
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Pero recuerda siempre: tus acciones aqui, definen mucho más que tu pontuación"
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "¿Quieres que te acompañe en tu tutorial?"
+		},
+		{
+			"choice": "Sí",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Con las flechas de tu teclado controlas al personaje por la ciudad..."
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ya con la tecla \"e\", puede interactuar con los objetos y con las personas."
+		},
+		{
+			"character": "character-1677966582.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Para pausar el juego en cualquier momento, simplemente presione el botón \"esc\" de su teclado."
+		},
+		{
+			"emit_signal": "coin-intro",
+			"event_id": "dialogic_040"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "En la parte superior izquierda de tu pantalla puedes verificar tu puntuación."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Cuantos más tiempo pases conduciendo sin ningún accidente, mayor será tu puntuación."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "También puedes ganar más monedas realizando las tareas en el juego."
+		},
+		{
+			"emit_signal": "energy-intro",
+			"event_id": "dialogic_040"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "En el lado derecho está tu barra de energía."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Cuanto más tiempo esté despierto, más disminuirá su energía."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Si se agota, solo podrás seguir jugando si vas a casa a dormir o si haces una pausa. En este caso, tu energía no se cargará por completo."
+		},
+		{
+			"choice": "No",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"emit_signal": "finishedDialog",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 2
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1680099886.json",
+		"name": "intro-es"
+	}
+}
