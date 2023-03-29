@@ -3,7 +3,7 @@ extends Node
 var gameBaseSpeed := 5 # Rapidez base utilizada nos minigames
 var points := 0 # Variável utilizada para a pontuação do jogo
 var choices := [] # Array que recebe os dados de cada escolha. 1 = ruim, 0 = boa
-var energy := 2 # Valor da barra de energia, usada na HUD
+var energy := 4 # Valor da barra de energia, usada na HUD
 var pausedGame = false # Variável de parada para o minigame do tinhoso
 var selectedMusic := 0 # O = forró, 1 = sertanejo, 2 = rock e 3 = samba
 var selectedLanguage := 0 # 0 = português, 1 = inglês e 2 = espanhol
@@ -23,3 +23,26 @@ var alcohol : bool # caso true, sofrerá debuff de álcool
 var slept : bool # caso false, sofrerá debuff de sono
 var mutedPhone : bool = false # caso false, sofrerá debuff de notificação na tela
 var healthyFood : bool # caso false, sofrerá debuff de energia reduzindo mais rapidamente
+
+var timer = Timer.new() # tempo para controlar a barra de energia
+var waitTime = 100 # Tempo de espera entre cada timeout
+
+
+# Cria e conecta o timer quando inicia o jogo
+func _ready():
+	timer.connect("timeout", self, "on_timer_timeout")
+	create_timer()
+
+
+# Diminui a barra de energia e recria o timer
+func on_timer_timeout():
+	energy -= 1
+	remove_child(timer)
+	create_timer()
+
+
+# Função para criar e adicionar o timer como filho
+func create_timer():
+	timer.wait_time = waitTime
+	add_child(timer)
+	timer.start()
