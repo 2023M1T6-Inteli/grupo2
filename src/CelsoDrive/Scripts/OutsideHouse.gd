@@ -2,6 +2,8 @@ extends Node2D
 
 
 func _ready():
+	if Global.energy <= 0:
+		$"/root/Global".pause_scene()
 	Global.level = 1
 	# Define posição do personagem
 	Global.playerPosition = Vector2(64, 208)

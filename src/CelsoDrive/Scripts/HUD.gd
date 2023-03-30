@@ -3,7 +3,6 @@ extends CanvasLayer
 func _process(_delta):
 	# Verifica, a cada frame, o nível de energia
 	update_energy_bar(Global.energy)
-	
 	# Mostra a pontuação na label
 	$CoinLabel.text = String(Global.points)
 
@@ -20,4 +19,6 @@ func update_energy_bar(value: int):
 		1:
 			$EnergySprite.play("1")
 		0:
+			$EnergySprite.play("0")
+		-1:
 			$EnergySprite.play("0")

@@ -12,7 +12,7 @@ func _ready():
 func _input(event):
 	if isMainMenu == false:
 		# Pausa o jogo quando a tecla esc é pressionada
-		if event.is_action_pressed("ui_cancel"):
+		if event.is_action_pressed("ui_cancel") and Global.energy > 0:
 			show_pause(!get_tree().paused)
 			get_tree().paused = not get_tree().paused
 
@@ -21,6 +21,13 @@ func _input(event):
 func show_pause(isVisible):
 	for node in get_children():
 		node.visible = isVisible
+		if node == $VBoxContainer/Label:
+			node.visible = false
+	if Global.energy <= 0:
+		$VBoxContainer/Label.visible = true
+		$VBoxContainer/Home.text = "RECARREGAR ENERGIA"
+		$VBoxContainer/ContinueButton.hide()
+		$VBoxContainer/MainMenuButton.hide()
 
 
 # Retorna a execução do jogo
@@ -34,7 +41,7 @@ func _on_Home_pressed():
 	show_pause(false)
 	get_tree().paused = false
 	$VBoxContainer/BreakButton.hide()
-	return get_tree().change_scene("res://Scenes/OutsideHouse.tscn")
+	return get_tree().change_scene("res://Scenes/InsideHouse.tscn")
 
 
 # Direciona para o menu
