@@ -19,6 +19,13 @@ func _ready():
 		dialog = Dialogic.start("intro-en")
 		dialog.connect("dialogic_signal", self, "dialog_listener")
 		add_child(dialog)
+	# Traduz elementos da tela atual para espanhol
+	elif language == 2:
+		$InteractLabel.text = "Interact"
+		# Inicia diálogo introdutório (em espanhol) e adiciona-o como nó filho
+		dialog = Dialogic.start("intro-es")
+		dialog.connect("dialogic_signal", self, "dialog_listener")
+		add_child(dialog)
 	else:
 		# Inicia diálogo introdutório (em port.) e adiciona-o como nó filho
 		dialog = Dialogic.start("intro")
@@ -37,6 +44,10 @@ func _process(_delta):
 	if $Houses/Area2D/EInteract.visible == true && Input.is_action_just_pressed("interagir"):
 		if Global.selectedLanguage == 1:
 			dialog = Dialogic.start("tutorial-house-en")
+			dialog.connect("dialogic_signal", self, "dialog_listener")
+			add_child(dialog)
+		elif Global.selectedLanguage == 2:
+			dialog = Dialogic.start("tutorial-house-es")
 			dialog.connect("dialogic_signal", self, "dialog_listener")
 			add_child(dialog)
 		else:
