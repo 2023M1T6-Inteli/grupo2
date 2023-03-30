@@ -27,6 +27,7 @@ func _on_OptionButton_pressed():
 	$Vibrate.play()
 	Global.interactedPhone = true
 
+
 func _on_OptionsButtonUI_pressed():
 	Global.mutedPhone = !Global.mutedPhone
 	$Sprite.play(String(!Global.mutedPhone).to_lower())

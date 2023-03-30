@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://Scripts/Truck.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/RunGame.gd" type="Script" id=2]
@@ -13,6 +13,55 @@
 [ext_resource path="res://Assets/fonts/CompassPro.ttf" type="DynamicFontData" id=11]
 [ext_resource path="res://Assets/debuffs/spritesheet_phone.png" type="Texture" id=12]
 [ext_resource path="res://Assets/music/vibrate.mp3" type="AudioStream" id=13]
+[ext_resource path="res://Assets/items/radio_spritesheet.png" type="Texture" id=14]
+
+[sub_resource type="AtlasTexture" id=16]
+atlas = ExtResource( 14 )
+region = Rect2( 0, 0, 65, 66 )
+
+[sub_resource type="AtlasTexture" id=18]
+atlas = ExtResource( 14 )
+region = Rect2( 0, 66, 65, 66 )
+
+[sub_resource type="AtlasTexture" id=19]
+atlas = ExtResource( 14 )
+region = Rect2( 65, 66, 65, 66 )
+
+[sub_resource type="AtlasTexture" id=20]
+atlas = ExtResource( 14 )
+region = Rect2( 0, 132, 65, 66 )
+
+[sub_resource type="AtlasTexture" id=21]
+atlas = ExtResource( 14 )
+region = Rect2( 65, 132, 65, 66 )
+
+[sub_resource type="SpriteFrames" id=22]
+animations = [ {
+"frames": [ SubResource( 16 ) ],
+"loop": true,
+"name": "radio1",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 18 ) ],
+"loop": true,
+"name": "radio2",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 19 ) ],
+"loop": true,
+"name": "radio3",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 20 ) ],
+"loop": true,
+"name": "radio4",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 21 ) ],
+"loop": true,
+"name": "radio5",
+"speed": 5.0
+} ]
 
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 58.3101, 208 )
@@ -91,6 +140,11 @@ scale = Vector2( 1, 1.03333 )
 texture = ExtResource( 3 )
 
 [node name="ReadyTimer" type="Timer" parent="."]
+
+[node name="RadioSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 568, 301 )
+frames = SubResource( 22 )
+animation = "radio1"
 
 [node name="Margin" type="StaticBody2D" parent="."]
 collision_layer = 4

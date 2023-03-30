@@ -14,6 +14,8 @@ onready var dialog # Variável utilizada para carregar os diálogos
 onready var language = Global.selectedLanguage # Carrega informações da variável global de idioma
 var time = 5 # Variável para o cronômetro
 var phoneDebuffTime = 0 # Variável de controle para o tempo de exibição do debuff
+onready var radioAnimations = $RadioSprite.frames.get_animation_names() # lista de animações do rádio
+var count = 0 # Variável para mudar animação do rádio
 
 
 func _ready():
@@ -79,6 +81,14 @@ func _process(delta):
 		$RigthSprite.play("pressed")
 	else:
 		$RigthSprite.play("default")
+	
+	# Altera a música quando a tecla espaço é pressionada
+	if Input.is_action_just_pressed("ui_select"):
+		if count < 4:
+			count += 1
+			Global.selectedMusic = count
+			MusicController.play_music()
+			$RadioSprite.animation = radioAnimations[count]
 
 
 func cars_timer():
