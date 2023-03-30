@@ -202,7 +202,7 @@ scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 11 )
 
 [node name="SpawnTimer" type="Timer" parent="."]
-wait_time = 0.5
+wait_time = 1.5
 
 [node name="SpawnObstacleTimer" type="Timer" parent="."]
 

@@ -39,7 +39,15 @@ func on_timer_timeout():
 	energy -= 1
 	remove_child(timer)
 	create_timer()
+	
+	if energy == 0:
+		pause_scene()
 
+
+# Função para chamar a cena de pause
+func pause_scene():
+	PauseScene.show_pause(true)
+	get_tree().paused = true
 
 # Função para criar e adicionar o timer como filho
 func create_timer():

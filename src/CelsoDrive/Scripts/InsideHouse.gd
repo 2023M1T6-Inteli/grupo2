@@ -5,8 +5,16 @@ onready var dialog # Variável utilizada para carregar os diálogos
 
 func _ready():
 	Global.level = 2
-	# Define posição do personagem
-	Global.playerPosition = Vector2(304, 336)
+	# Define posição do personagem - se vier do pause (energy == 0), spawna na cama
+	
+	if Global.energy <= 0:
+		$Energy0Area.collision_mask = 1
+		$Energy0Area.collision_layer = 3
+		Global.playerPosition = Vector2(36.75, 181)
+	else:
+		$Energy0Area.collision_layer = 2
+		$Energy0Area.collision_mask = 2
+		Global.playerPosition = Vector2(304, 336)
 	
 	# Instancia cena para mostrar o personagem
 	var spawnPlayer = load("res://Scenes/SpawnPlayer.tscn").instance()
@@ -23,6 +31,11 @@ func _ready():
 		
 		# Muda estado da variável global, informando que o usuário já entrou na casa
 		Global.insideHouseDialog = true
+		
+	# Diálogo da energia esgotada
+	if Global.energy == 0:
+		dialog = Dialogic.start("energy-0")
+		add_child(dialog)
 
 
 func _on_Exit_body_entered(_body):
@@ -117,9 +130,17 @@ func _on_PhoneArea_body_exited(_body):
 func _on_SleepArea_body_entered(_body):
 	# Exibe a tecla de interagir na área da cama
 	$SleepArea/SleepE.visible = true
+	
+	if Global.energy > 0:
+		$Energy0Area.collision_mask = 2
+		$Energy0Area.collision_layer = 2
 
 
 func _on_SleepArea_body_exited(_body):
 	# Ao sair da área da cama esconde a tecla e a cena
 	$SleepArea/SleepE.visible = false
 	$SleepArea/Sleep.visible = false
+
+	if Global.energy > 0:
+		$Energy0Area.collision_mask = 2
+		$Energy0Area.collision_layer = 2

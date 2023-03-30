@@ -100,6 +100,7 @@ func _on_SpawnTimer_timeout():
 		$SpawnObstacleTimer.stop()
 		Global.energy -= 1 # Diminui energia
 		$GameOver.visible = true
+		$"/root/PauseScene/VBoxContainer/BreakButton".visible = false
 
 
 func _on_SpawnObstacleTimer_timeout():
