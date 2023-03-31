@@ -26,7 +26,7 @@ var itemsdictValues = {"Dormir bem": true, "Beber água": true, "Usar cinto": tr
 				"Verificar \nfaróis": true, "Verificar \nóleo": true,
 				"Conferir \ncarga max.": true, "Verificar \nas setas": true,
 				"Usar \nchinelo": false, "Não usar \ncinto": false,
-				"Usar calçados\nfirme": true, "Levar \nextintor": true,
+				"Usar calçado\nfirme": true, "Levar \nextintor": true,
 				"Conferir \nfiltro de ar": true}
 
 
