@@ -19,6 +19,13 @@ func _ready():
 		dialog = Dialogic.start("intro-en")
 		dialog.connect("dialogic_signal", self, "dialog_listener")
 		add_child(dialog)
+	# Traduz elementos da tela atual para espanhol
+	elif language == 2:
+		$InteractLabel.text = "Interact"
+		# Inicia diálogo introdutório (em espanhol) e adiciona-o como nó filho
+		dialog = Dialogic.start("intro-es")
+		dialog.connect("dialogic_signal", self, "dialog_listener")
+		add_child(dialog)
 	else:
 		# Inicia diálogo introdutório (em port.) e adiciona-o como nó filho
 		dialog = Dialogic.start("intro")
@@ -39,6 +46,10 @@ func _process(_delta):
 			dialog = Dialogic.start("tutorial-house-en")
 			dialog.connect("dialogic_signal", self, "dialog_listener")
 			add_child(dialog)
+		elif Global.selectedLanguage == 2:
+			dialog = Dialogic.start("tutorial-house-es")
+			dialog.connect("dialogic_signal", self, "dialog_listener")
+			add_child(dialog)
 		else:
 			dialog = Dialogic.start("tutorial-house")
 			dialog.connect("dialogic_signal", self, "dialog_listener")
@@ -51,6 +62,10 @@ func _process(_delta):
 			dialog = Dialogic.start("tinhoso-1-en")
 			dialog.connect("dialogic_signal", self, "dialog_listener")
 			add_child(dialog)
+		elif language == 2:
+			dialog = Dialogic.start("tinhoso-1-es")
+			dialog.connect("dialogic_signal", self, "dialog_listener")
+			add_child(dialog)	
 		else:
 			dialog = Dialogic.start("tinhoso-1")
 			dialog.connect("dialogic_signal", self, "dialog_listener")
@@ -80,8 +95,12 @@ func dialog_listener(string):
 		"interacted":
 			if Global.selectedLanguage == 1:
 				$Message/MessageBox/Label.text = "Take care on this journey."
-				$Message/MessageBox2/Label.text = "Drunk driving? only if it's love"
+				$Message/MessageBox2/Label.text = "Drunk driving?only if it's on love"
 				$Message.visible = true
+			elif Global.selectedLanguage == 2:
+				$Message/MessageBox/Label.text = "Cuídate en este viaje"
+				$Message/MessageBox2/Label.text = "¿Conducir ebrio?solo si es en amor"
+				$Message.visible = true	
 			else:
 				$Message.visible = true;
 				

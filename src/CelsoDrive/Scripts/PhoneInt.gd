@@ -8,6 +8,11 @@ func _process(_delta):
 			$OptionButton.text = "Disable Silent"
 		else:
 			$OptionButton.text = "Enable Silent"
+	elif Global.selectedLanguage == 2:
+		if Global.mutedPhone:
+			$OptionButton.text = "Desactivar Silencio"
+		else:
+			$OptionButton.text = "Habilitar Silencio"		
 	else:
 		if Global.mutedPhone:
 			$OptionButton.text = "Desativar Silencioso"

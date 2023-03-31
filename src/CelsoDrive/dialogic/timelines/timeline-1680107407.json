@@ -71,7 +71,7 @@
 			"z_index": 100
 		},
 		{
-			"character": "",
+			"character": "character-1677975634.json",
 			"event_id": "dialogic_010",
 			"options": [
 
@@ -120,6 +120,13 @@
 		{
 			"change_scene": "res://Scenes/OutsideHouse.tscn",
 			"event_id": "dialogic_041"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
 		}
 	],
 	"metadata": {

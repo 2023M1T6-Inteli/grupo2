@@ -196,9 +196,9 @@ margin_bottom = 368.0
 alignment = 1
 
 [node name="LanguagePortLabel" type="Button" parent="SettingsLanguageContainer"]
-margin_top = 145.0
+margin_top = 142.0
 margin_right = 288.0
-margin_bottom = 170.0
+margin_bottom = 167.0
 focus_mode = 0
 custom_colors/font_color_hover = Color( 0.133333, 0.658824, 0.129412, 1 )
 custom_fonts/font = SubResource( 5 )
@@ -207,9 +207,9 @@ text = "Português (BR)"
 flat = true
 
 [node name="LanguageEnLabel" type="Button" parent="SettingsLanguageContainer"]
-margin_top = 174.0
+margin_top = 171.0
 margin_right = 288.0
-margin_bottom = 199.0
+margin_bottom = 196.0
 focus_mode = 0
 custom_colors/font_color_hover = Color( 0.133333, 0.658824, 0.129412, 1 )
 custom_fonts/font = SubResource( 5 )
@@ -217,13 +217,16 @@ enabled_focus_mode = 0
 text = "English"
 flat = true
 
-[node name="LanguageEsLabel" type="Label" parent="SettingsLanguageContainer"]
-margin_top = 203.0
+[node name="LanguageEsLabel" type="Button" parent="SettingsLanguageContainer"]
+margin_top = 200.0
 margin_right = 288.0
-margin_bottom = 222.0
+margin_bottom = 225.0
+focus_mode = 0
+custom_colors/font_color_hover = Color( 0.133333, 0.658824, 0.129412, 1 )
 custom_fonts/font = SubResource( 5 )
+enabled_focus_mode = 0
 text = "Español"
-align = 1
+flat = true
 
 [node name="Label" type="Label" parent="SettingsLanguageContainer"]
 visible = false
@@ -302,5 +305,6 @@ enabled_focus_mode = 0
 [connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]
 [connection signal="pressed" from="SettingsLanguageContainer/LanguagePortLabel" to="." method="_on_LanguagePortLabel_pressed"]
 [connection signal="pressed" from="SettingsLanguageContainer/LanguageEnLabel" to="." method="_on_LanguageEnLabel_pressed"]
+[connection signal="pressed" from="SettingsLanguageContainer/LanguageEsLabel" to="." method="_on_LanguageEsLabel_pressed"]
 [connection signal="pressed" from="SettingsVideoContainer/HBoxContainer/FullScreenButton" to="." method="_on_FullScreenLabel_pressed"]
 [connection signal="pressed" from="SettingsVideoContainer/HBoxContainer/FullScreenCheckBox" to="." method="_on_CheckBox_pressed"]

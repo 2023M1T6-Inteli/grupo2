@@ -1,0 +1,34 @@
+{
+	"events": [
+		{
+			"block_input": true,
+			"event_id": "dialogic_050",
+			"wait_time": 0
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Al hacer clic en un elemento, éste se destruirá y se anotará en el portapapeles."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Para completar el juego, seleccione 5 elementos y valide sus elecciones. ¿Listo?"
+		},
+		{
+			"emit_signal": "check-finished",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1680201457.json",
+		"name": "tutorial-checklist-2-es"
+	}
+}
