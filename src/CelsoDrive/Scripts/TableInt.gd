@@ -6,6 +6,7 @@ func _on_HealthyButton_pressed():
 	Global.healthyFood = true
 	visible = false
 	Global.interactedTable = true
+	Global.achievements += 1
 
 
 # Caso o usuário escolha a comida não saudável -> healthyFood = false e esconde a cena

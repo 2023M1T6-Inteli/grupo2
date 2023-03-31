@@ -23,9 +23,10 @@ var alcohol : bool # caso true, sofrerá debuff de álcool
 var slept : bool # caso false, sofrerá debuff de sono
 var mutedPhone : bool = false # caso false, sofrerá debuff de notificação na tela
 var healthyFood : bool # caso false, sofrerá debuff de energia reduzindo mais rapidamente
+var achievements : int # quantidade de medalhas do jogador
 
 var timer = Timer.new() # tempo para controlar a barra de energia
-var waitTime = 100 # Tempo de espera entre cada timeout
+var waitTime = 120 # Tempo de espera entre cada timeout
 
 
 # Cria e conecta o timer quando inicia o jogo
@@ -48,6 +49,7 @@ func on_timer_timeout():
 func pause_scene():
 	PauseScene.show_pause(true)
 	get_tree().paused = true
+
 
 # Função para criar e adicionar o timer como filho
 func create_timer():

@@ -77,7 +77,7 @@ focus_mode = 0
 custom_colors/font_color_hover = Color( 0.133333, 0.658824, 0.129412, 1 )
 custom_fonts/font = SubResource( 1 )
 enabled_focus_mode = 0
-text = "MENU INCIAL"
+text = "NOVO JOGO"
 flat = true
 
 [node name="Home" type="Button" parent="VBoxContainer"]

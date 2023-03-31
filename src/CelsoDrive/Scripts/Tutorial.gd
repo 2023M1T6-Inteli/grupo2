@@ -82,6 +82,7 @@ func dialog_listener(string):
 		# Adiciona na lista de escolhas a decisão boa de recusar a corrida do tinhoso
 		"refused":
 			Global.choices.append(0);
+			Global.achievements += 1
 		
 		# Quando o sinal for emitido, a variável finishedDialog recebe true
 		"finishedDialog":

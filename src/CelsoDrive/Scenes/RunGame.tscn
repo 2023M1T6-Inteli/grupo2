@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://Scripts/Truck.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/RunGame.gd" type="Script" id=2]
@@ -13,9 +13,42 @@
 [ext_resource path="res://Assets/fonts/CompassPro.ttf" type="DynamicFontData" id=11]
 [ext_resource path="res://Assets/debuffs/spritesheet_phone.png" type="Texture" id=12]
 [ext_resource path="res://Assets/music/vibrate.mp3" type="AudioStream" id=13]
+[ext_resource path="res://Assets/items/radio_3.png" type="Texture" id=14]
+[ext_resource path="res://Assets/items/radio_2.png" type="Texture" id=15]
+[ext_resource path="res://Assets/items/radio_4.png" type="Texture" id=16]
+[ext_resource path="res://Assets/items/radio_1.png" type="Texture" id=17]
+[ext_resource path="res://Assets/items/radio_5.png" type="Texture" id=18]
+
+[sub_resource type="SpriteFrames" id=22]
+animations = [ {
+"frames": [ ExtResource( 17 ) ],
+"loop": true,
+"name": "radio1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 15 ) ],
+"loop": true,
+"name": "radio2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ) ],
+"loop": true,
+"name": "radio3",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 16 ) ],
+"loop": true,
+"name": "radio4",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 18 ) ],
+"loop": true,
+"name": "radio5",
+"speed": 5.0
+} ]
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 58.3101, 208 )
+extents = Vector2( 66.7703, 208 )
 
 [sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 12.2727, 21.6334 )
@@ -92,11 +125,16 @@ texture = ExtResource( 3 )
 
 [node name="ReadyTimer" type="Timer" parent="."]
 
+[node name="RadioSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 568, 301 )
+frames = SubResource( 22 )
+animation = "radio1"
+
 [node name="Margin" type="StaticBody2D" parent="."]
 collision_layer = 4
 
 [node name="collision_left" type="CollisionShape2D" parent="Margin"]
-position = Vector2( 64, 161.766 )
+position = Vector2( 67.9083, 161.766 )
 scale = Vector2( 1.01979, 1 )
 shape = SubResource( 4 )
 
