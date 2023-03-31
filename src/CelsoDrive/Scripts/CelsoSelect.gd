@@ -10,6 +10,12 @@ onready var celso6 = "res://Scenes/Player06.tscn"
 onready var celso7 = "res://Scenes/Player07.tscn"
 onready var celso8 = "res://Scenes/Player08.tscn"
 onready var celso9 = "res://Scenes/Player09.tscn"
+onready var celso10 = "res://Scenes/Player10.tscn"
+onready var celso11 = "res://Scenes/Player11.tscn"
+onready var celso12 = "res://Scenes/Player12.tscn"
+onready var celso13 = "res://Scenes/Player13.tscn"
+onready var celso14 = "res://Scenes/Player14.tscn"
+onready var celso15 = "res://Scenes/Player15.tscn"
 var currentCelso := 1 # "Index" para o aparecimento dos personagens na tela
 
 
@@ -37,6 +43,12 @@ func show_current_celso():
 		$Celso07.visible = false
 		$Celso08.visible = false
 		$Celso09.visible = false
+		$Celso10.visible = false
+		$Celso11.visible = false
+		$Celso12.visible = false
+		$Celso13.visible = false
+		$Celso14.visible = false
+		$Celso15.visible = false
 	elif currentCelso == 2:
 		$Celso01.visible = false
 		$Celso02.visible = true
@@ -47,6 +59,12 @@ func show_current_celso():
 		$Celso07.visible = false
 		$Celso08.visible = false
 		$Celso09.visible = false
+		$Celso10.visible = false
+		$Celso11.visible = false
+		$Celso12.visible = false
+		$Celso13.visible = false
+		$Celso14.visible = false
+		$Celso15.visible = false
 	elif currentCelso == 3:
 		$Celso01.visible = false
 		$Celso02.visible = false
@@ -57,6 +75,12 @@ func show_current_celso():
 		$Celso07.visible = false
 		$Celso08.visible = false
 		$Celso09.visible = false
+		$Celso10.visible = false
+		$Celso11.visible = false
+		$Celso12.visible = false
+		$Celso13.visible = false
+		$Celso14.visible = false
+		$Celso15.visible = false
 	elif currentCelso == 4:
 		$Celso01.visible = false
 		$Celso02.visible = false
@@ -67,6 +91,12 @@ func show_current_celso():
 		$Celso07.visible = false
 		$Celso08.visible = false
 		$Celso09.visible = false
+		$Celso10.visible = false
+		$Celso11.visible = false
+		$Celso12.visible = false
+		$Celso13.visible = false
+		$Celso14.visible = false
+		$Celso15.visible = false
 	elif currentCelso == 5:
 		$Celso01.visible = false
 		$Celso02.visible = false
@@ -77,6 +107,12 @@ func show_current_celso():
 		$Celso07.visible = false
 		$Celso08.visible = false
 		$Celso09.visible = false
+		$Celso10.visible = false
+		$Celso11.visible = false
+		$Celso12.visible = false
+		$Celso13.visible = false
+		$Celso14.visible = false
+		$Celso15.visible = false
 	elif currentCelso == 6:
 		$Celso01.visible = false
 		$Celso02.visible = false
@@ -87,6 +123,12 @@ func show_current_celso():
 		$Celso07.visible = false
 		$Celso08.visible = false
 		$Celso09.visible = false
+		$Celso10.visible = false
+		$Celso11.visible = false
+		$Celso12.visible = false
+		$Celso13.visible = false
+		$Celso14.visible = false
+		$Celso15.visible = false
 	elif currentCelso == 7:
 		$Celso01.visible = false
 		$Celso02.visible = false
@@ -97,6 +139,12 @@ func show_current_celso():
 		$Celso07.visible = true
 		$Celso08.visible = false
 		$Celso09.visible = false
+		$Celso10.visible = false
+		$Celso11.visible = false
+		$Celso12.visible = false
+		$Celso13.visible = false
+		$Celso14.visible = false
+		$Celso15.visible = false
 	elif currentCelso == 8:
 		$Celso01.visible = false
 		$Celso02.visible = false
@@ -107,6 +155,12 @@ func show_current_celso():
 		$Celso07.visible = false
 		$Celso08.visible = true
 		$Celso09.visible = false
+		$Celso10.visible = false
+		$Celso11.visible = false
+		$Celso12.visible = false
+		$Celso13.visible = false
+		$Celso14.visible = false
+		$Celso15.visible = false
 	elif currentCelso == 9:
 		$Celso01.visible = false
 		$Celso02.visible = false
@@ -117,11 +171,113 @@ func show_current_celso():
 		$Celso07.visible = false
 		$Celso08.visible = false
 		$Celso09.visible = true
+		$Celso10.visible = false
+		$Celso11.visible = false
+		$Celso12.visible = false
+		$Celso13.visible = false
+		$Celso14.visible = false
+		$Celso15.visible = false
+	elif currentCelso == 10:
+		$Celso01.visible = false
+		$Celso02.visible = false
+		$Celso03.visible = false
+		$Celso04.visible = false
+		$Celso05.visible = false
+		$Celso06.visible = false
+		$Celso07.visible = false
+		$Celso08.visible = false
+		$Celso09.visible = false
+		$Celso10.visible = true
+		$Celso11.visible = false
+		$Celso12.visible = false
+		$Celso13.visible = false
+		$Celso14.visible = false
+		$Celso15.visible = false
+	elif currentCelso == 11:
+		$Celso01.visible = false
+		$Celso02.visible = false
+		$Celso03.visible = false
+		$Celso04.visible = false
+		$Celso05.visible = false
+		$Celso06.visible = false
+		$Celso07.visible = false
+		$Celso08.visible = false
+		$Celso09.visible = false
+		$Celso10.visible = false
+		$Celso11.visible = true
+		$Celso12.visible = false
+		$Celso13.visible = false
+		$Celso14.visible = false
+		$Celso15.visible = false
+	elif currentCelso == 12:
+		$Celso01.visible = false
+		$Celso02.visible = false
+		$Celso03.visible = false
+		$Celso04.visible = false
+		$Celso05.visible = false
+		$Celso06.visible = false
+		$Celso07.visible = false
+		$Celso08.visible = false
+		$Celso09.visible = false
+		$Celso10.visible = false
+		$Celso11.visible = false
+		$Celso12.visible = true
+		$Celso13.visible = false
+		$Celso14.visible = false
+		$Celso15.visible = false
+	elif currentCelso == 13:
+		$Celso01.visible = false
+		$Celso02.visible = false
+		$Celso03.visible = false
+		$Celso04.visible = false
+		$Celso05.visible = false
+		$Celso06.visible = false
+		$Celso07.visible = false
+		$Celso08.visible = false
+		$Celso09.visible = false
+		$Celso10.visible = false
+		$Celso11.visible = false
+		$Celso12.visible = false
+		$Celso13.visible = true
+		$Celso14.visible = false
+		$Celso15.visible = false
+	elif currentCelso == 14:
+		$Celso01.visible = false
+		$Celso02.visible = false
+		$Celso03.visible = false
+		$Celso04.visible = false
+		$Celso05.visible = false
+		$Celso06.visible = false
+		$Celso07.visible = false
+		$Celso08.visible = false
+		$Celso09.visible = false
+		$Celso10.visible = false
+		$Celso11.visible = false
+		$Celso12.visible = false
+		$Celso13.visible = false
+		$Celso14.visible = true
+		$Celso15.visible = false
+	elif currentCelso == 15:
+		$Celso01.visible = false
+		$Celso02.visible = false
+		$Celso03.visible = false
+		$Celso04.visible = false
+		$Celso05.visible = false
+		$Celso06.visible = false
+		$Celso07.visible = false
+		$Celso08.visible = false
+		$Celso09.visible = false
+		$Celso10.visible = false
+		$Celso11.visible = false
+		$Celso12.visible = false
+		$Celso13.visible = false
+		$Celso14.visible = false
+		$Celso15.visible = true	
 
 
 # Incrementa o index do personagem selecionado
 func increase():
-	if currentCelso < 9:
+	if currentCelso < 15:
 		currentCelso += 1
 		
 
@@ -133,7 +289,7 @@ func decrease():
 
 func _on_Next_pressed():
 	# Some com o botão de próximo quando chega no último celso, com uma color rect por cima
-	if currentCelso == 8:
+	if currentCelso == 14:
 		$NextColorRect.visible = true
 	
 	# Exibe, caso necessário, o botão de voltar, o qual
@@ -206,4 +362,39 @@ func _on_Celso08_pressed():
 # Seleciona versão 9 do Celso
 func _on_Celso09_pressed():
 	Global.playerDir = celso9
+	go_to_tutorial()
+
+
+# Seleciona versão 10 do Celso
+func _on_Celso10_pressed():
+	Global.playerDir = celso10
+	go_to_tutorial()
+	
+
+# Seleciona versão 11 do Celso
+func _on_Celso11_pressed():
+	Global.playerDir = celso11
+	go_to_tutorial()
+	
+
+# Seleciona versão 12 do Celso
+func _on_Celso12_pressed():
+	Global.playerDir = celso12
+	go_to_tutorial()
+
+
+# Seleciona versão 13 do Celso
+func _on_Celso13_pressed():
+	Global.playerDir = celso13
+	go_to_tutorial()
+
+
+# Seleciona versão 14 do Celso
+func _on_Celso14_pressed():
+	Global.playerDir = celso14
+	go_to_tutorial()
+
+# Seleciona versão 15 do Celso
+func _on_Celso15_pressed():
+	Global.playerDir = celso15
 	go_to_tutorial()
