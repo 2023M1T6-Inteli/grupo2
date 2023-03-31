@@ -25,6 +25,9 @@ func _ready():
 		if Global.selectedLanguage == 1:
 			dialog = Dialogic.start("level-2-en")
 			add_child(dialog)
+		elif Global.selectedLanguage == 2:
+			dialog = Dialogic.start("level-2-es")
+			add_child(dialog)	
 		else:
 			dialog = Dialogic.start("level-2")
 			add_child(dialog)
@@ -53,6 +56,8 @@ func _process(_delta):
 			$FreezerArea/Freezer.visible = true
 			if Global.selectedLanguage == 1:
 				dialog = Dialogic.start("freezer-en")
+			elif Global.selectedLanguage == 2:
+				dialog = Dialogic.start("freezer-es")	
 			else:
 				dialog = Dialogic.start("freezer")
 			add_child(dialog)
@@ -63,6 +68,8 @@ func _process(_delta):
 			$TableArea/Table.visible = true
 			if Global.selectedLanguage == 1:
 				dialog = Dialogic.start("table-en")
+			if Global.selectedLanguage == 2:
+				dialog = Dialogic.start("table-es")	
 			else:
 				dialog = Dialogic.start("table")
 			add_child(dialog)
@@ -73,6 +80,8 @@ func _process(_delta):
 		if Global.interactedPhone == false:
 			if Global.selectedLanguage == 1:
 				dialog = Dialogic.start("phone-en")
+			elif Global.selectedLanguage == 2:
+				dialog = Dialogic.start("phone-es")	
 			else:
 				dialog = Dialogic.start("phone")
 			add_child(dialog)
@@ -85,10 +94,14 @@ func _process(_delta):
 				dialog = Dialogic.start("bed-en")
 				$SleepArea/Sleep/SleepAfter.text = "Sleep After"
 				$SleepArea/Sleep/SleepNow.text = "Sleep Now"
+			if Global.selectedLanguage == 2:
+				dialog = Dialogic.start("bed-es")
+				$SleepArea/Sleep/SleepAfter.text = "Dormir después"
+				$SleepArea/Sleep/SleepNow.text = "Dormir ahora"	
 			else:
 				dialog = Dialogic.start("bed")
-				$SleepArea/Sleep/SleepAfter.text = "Dormir Depois"
-				$SleepArea/Sleep/SleepNow.text = "Dormir Agora"
+				$SleepArea/Sleep/SleepAfter.text = "Dormir depois"
+				$SleepArea/Sleep/SleepNow.text = "Dormir agora"
 			add_child(dialog)
 
 

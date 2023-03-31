@@ -4,6 +4,8 @@ extends CanvasLayer
 func _ready():
 	if Global.selectedLanguage == 1:
 		$Button.text = "RESTART"
+	elif Global.selectedLanguage == 2:
+		$Button.text = "RECOMENZAR"	
 	else:
 		$Button.text = "RECOMEÇAR"
 

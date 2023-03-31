@@ -132,6 +132,9 @@ func _on_ConfirmButton_pressed():
 		if Global.selectedLanguage == 1:
 			dialog = Dialogic.start("gameover-check-en")
 			add_child(dialog)
+		elif Global.selectedLanguage == 2:
+			dialog = Dialogic.start("gameover-check-es")
+			add_child(dialog)	
 		else:
 			dialog = Dialogic.start("gameover-check")
 			add_child(dialog)
@@ -161,6 +164,11 @@ func _on_CheckItemTutorial_exploded(_currentContent, _currentPosition):
 		dialog.connect("dialogic_signal", self, "dialog_listener")
 		add_child(dialog)
 		$ClipboardTutorial/VBoxContainer/HBoxContainer/Label.text = "Good night's\nsleep"
+	if Global.selectedLanguage == 2:
+		dialog = Dialogic.start("tutorial-checklist-2-es")
+		dialog.connect("dialogic_signal", self, "dialog_listener")
+		add_child(dialog)
+		$ClipboardTutorial/VBoxContainer/HBoxContainer/Label.text = "Good night's\nsleep"	
 	else:
 		dialog = Dialogic.start("tutorial-checklist-2")
 		dialog.connect("dialogic_signal", self, "dialog_listener")

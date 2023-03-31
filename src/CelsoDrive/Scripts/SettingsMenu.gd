@@ -124,12 +124,12 @@ func _on_LanguageEsLabel_pressed():
 	Global.selectedLanguage = 2
 	
 	# Traduz elementos da tela atual para espanhol
-	if language != 1:
-		$SettingsLabel.text = "Settings"
-		$MainContainer/AudioLabel.text = "Audio"
-		$MainContainer/LanguageLabel.text = "Language"
-		$MainContainer/ControlsLabel.text = "Controls"
-		$MainContainer/VideoLabel.text = "Video"
-		$SettingsAudioContainer/MusicVolumeLabel.text = "Music Volume"
-		$SettingsAudioContainer/MusicalGenreLabel.text = "Favorite Musical Genre"
-		$SettingsVideoContainer/HBoxContainer/FullScreenButton.text = "Full Screen"
+	if language != 2:
+		$SettingsLabel.text = "Ajustes"
+		$MainContainer/AudioLabel.text = "Sonido"
+		$MainContainer/LanguageLabel.text = "Idioma"
+		$MainContainer/ControlsLabel.text = "Controles"
+		$MainContainer/VideoLabel.text = "Vídeo"
+		$SettingsAudioContainer/MusicVolumeLabel.text = "Volumen de la música"
+		$SettingsAudioContainer/MusicalGenreLabel.text = "Género musical favorito"
+		$SettingsVideoContainer/HBoxContainer/FullScreenButton.text = "Pantalla completa"

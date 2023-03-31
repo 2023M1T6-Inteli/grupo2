@@ -12,6 +12,12 @@ func _ready():
 		$PlayButton.text = "Play"
 		$ConfigButton.text = "Settings"
 		$CreditsButton.text = "Credits"
+	# Traduz elementos da tela atual para espanhol
+	if language == 2:
+		$TitleLabel.text = "Celso Camiones"
+		$PlayButton.text = "Jugar"
+		$ConfigButton.text = "Ajustes"
+		$CreditsButton.text = "Créditos"	
 	randomize()
 
 
