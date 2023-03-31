@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/radio_spritesheet.png-81a2422c4c7dcb26ce4b430295b6d4d1.stex"
+path="res://.import/radio_3.png-65bad8a59f0a9a20964dcbfd58f844db.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/items/radio_spritesheet.png"
-dest_files=[ "res://.import/radio_spritesheet.png-81a2422c4c7dcb26ce4b430295b6d4d1.stex" ]
+source_file="res://Assets/items/radio_3.png"
+dest_files=[ "res://.import/radio_3.png-65bad8a59f0a9a20964dcbfd58f844db.stex" ]
 
 [params]
 

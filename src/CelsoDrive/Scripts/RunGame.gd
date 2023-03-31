@@ -89,6 +89,11 @@ func _process(delta):
 			Global.selectedMusic = count
 			MusicController.play_music()
 			$RadioSprite.animation = radioAnimations[count]
+		else:
+			count = 0
+			Global.selectedMusic = count
+			MusicController.play_music()
+			$RadioSprite.animation = radioAnimations[count]
 
 
 func cars_timer():
