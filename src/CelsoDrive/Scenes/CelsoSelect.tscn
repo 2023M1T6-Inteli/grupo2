@@ -252,6 +252,7 @@ custom_fonts/font = SubResource( 2 )
 text = "Celso Amarelão"
 
 [node name="Celso11" type="TextureButton" parent="."]
+visible = false
 margin_left = 242.0
 margin_top = 64.0
 margin_right = 406.0

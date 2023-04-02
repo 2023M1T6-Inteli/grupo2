@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/credits.png-19086eaa8fa053425eb0508d98f3a78f.stex"
+path="res://.import/tinhoso_in_game.png-88d3a71e7665325a8e5ac980e3ced4d3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/background/credits.png"
-dest_files=[ "res://.import/credits.png-19086eaa8fa053425eb0508d98f3a78f.stex" ]
+source_file="res://Assets/npc/tinhoso_in_game.png"
+dest_files=[ "res://.import/tinhoso_in_game.png-88d3a71e7665325a8e5ac980e3ced4d3.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
