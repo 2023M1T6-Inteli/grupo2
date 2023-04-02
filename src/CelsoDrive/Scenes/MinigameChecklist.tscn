@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Assets/items/clipboard_extend.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/MinigameChecklist.gd" type="Script" id=2]
-[ext_resource path="res://Assets/background/main_settings.png" type="Texture" id=3]
+[ext_resource path="res://Assets/background/background.png" type="Texture" id=3]
 [ext_resource path="res://Assets/items/check_in_clipboard.png" type="Texture" id=4]
 [ext_resource path="res://Assets/fonts/CompassPro.ttf" type="DynamicFontData" id=5]
 [ext_resource path="res://Scenes/GameOverChecklist.tscn" type="PackedScene" id=6]
