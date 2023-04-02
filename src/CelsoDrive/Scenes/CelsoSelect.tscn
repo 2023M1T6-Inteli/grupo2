@@ -252,7 +252,6 @@ custom_fonts/font = SubResource( 2 )
 text = "Celso Amarelão"
 
 [node name="Celso11" type="TextureButton" parent="."]
-visible = false
 margin_left = 242.0
 margin_top = 64.0
 margin_right = 406.0
@@ -261,9 +260,9 @@ texture_normal = ExtResource( 14 )
 expand = true
 
 [node name="Label" type="Label" parent="Celso11"]
-margin_left = 39.0
+margin_left = 50.0
 margin_top = 251.0
-margin_right = 131.0
+margin_right = 112.0
 margin_bottom = 266.0
 custom_fonts/font = SubResource( 2 )
 text = "Celso-Man"
@@ -320,6 +319,7 @@ custom_fonts/font = SubResource( 2 )
 text = "Celsa princesa D"
 
 [node name="Celso15" type="TextureButton" parent="."]
+visible = false
 margin_left = 229.0
 margin_top = 52.0
 margin_right = 414.0
