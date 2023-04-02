@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Assets/background/celso_select.png" type="Texture" id=1]
 [ext_resource path="res://Assets/fonts/CompassPro.ttf" type="DynamicFontData" id=2]
@@ -12,6 +12,12 @@
 [ext_resource path="res://Assets/player/celso07.png" type="Texture" id=10]
 [ext_resource path="res://Assets/player/celso08.png" type="Texture" id=11]
 [ext_resource path="res://Assets/player/celso09.png" type="Texture" id=12]
+[ext_resource path="res://Assets/player/celso10.png" type="Texture" id=13]
+[ext_resource path="res://Assets/player/celso11.png" type="Texture" id=14]
+[ext_resource path="res://Assets/player/celso12.png" type="Texture" id=15]
+[ext_resource path="res://Assets/player/celso13.png" type="Texture" id=16]
+[ext_resource path="res://Assets/player/celso15.png" type="Texture" id=17]
+[ext_resource path="res://Assets/player/celso14.png" type="Texture" id=18]
 
 [sub_resource type="DynamicFont" id=1]
 size = 45
@@ -24,8 +30,7 @@ font_data = ExtResource( 2 )
 script = ExtResource( 7 )
 
 [node name="BG" type="TextureRect" parent="."]
-margin_left = -3.0
-margin_right = 665.0
+margin_right = 668.0
 margin_bottom = 380.0
 texture = ExtResource( 1 )
 expand = true
@@ -213,20 +218,121 @@ custom_fonts/font = SubResource( 2 )
 text = "Celso Cientista"
 
 [node name="Celso09" type="TextureButton" parent="."]
-margin_left = 238.0
-margin_top = 78.0
-margin_right = 395.0
-margin_bottom = 269.0
+visible = false
+margin_left = 235.0
+margin_top = 74.0
+margin_right = 397.0
+margin_bottom = 267.0
 texture_normal = ExtResource( 12 )
 expand = true
 
 [node name="Label" type="Label" parent="Celso09"]
-margin_left = 37.0
-margin_top = 237.0
-margin_right = 127.0
-margin_bottom = 252.0
+margin_left = 46.0
+margin_top = 241.0
+margin_right = 136.0
+margin_bottom = 256.0
 custom_fonts/font = SubResource( 2 )
 text = "Celso Elegante"
+
+[node name="Celso10" type="TextureButton" parent="."]
+visible = false
+margin_left = 230.0
+margin_top = 65.0
+margin_right = 401.0
+margin_bottom = 275.0
+texture_normal = ExtResource( 13 )
+expand = true
+
+[node name="Label" type="Label" parent="Celso10"]
+margin_left = 51.0
+margin_top = 250.0
+margin_right = 143.0
+margin_bottom = 265.0
+custom_fonts/font = SubResource( 2 )
+text = "Celso Amarelão"
+
+[node name="Celso11" type="TextureButton" parent="."]
+margin_left = 242.0
+margin_top = 64.0
+margin_right = 406.0
+margin_bottom = 277.0
+texture_normal = ExtResource( 14 )
+expand = true
+
+[node name="Label" type="Label" parent="Celso11"]
+margin_left = 39.0
+margin_top = 251.0
+margin_right = 131.0
+margin_bottom = 266.0
+custom_fonts/font = SubResource( 2 )
+text = "Celso-Man"
+
+[node name="Celso12" type="TextureButton" parent="."]
+visible = false
+margin_left = 228.0
+margin_top = 52.0
+margin_right = 412.0
+margin_bottom = 294.0
+texture_normal = ExtResource( 15 )
+expand = true
+
+[node name="Label" type="Label" parent="Celso12"]
+margin_left = 42.0
+margin_top = 263.0
+margin_right = 148.0
+margin_bottom = 278.0
+custom_fonts/font = SubResource( 2 )
+text = "Celso Marinheiro"
+
+[node name="Celso13" type="TextureButton" parent="."]
+visible = false
+margin_left = 235.0
+margin_top = 67.0
+margin_right = 402.0
+margin_bottom = 287.0
+texture_normal = ExtResource( 16 )
+expand = true
+
+[node name="Label" type="Label" parent="Celso13"]
+margin_left = 37.0
+margin_top = 248.0
+margin_right = 143.0
+margin_bottom = 263.0
+custom_fonts/font = SubResource( 2 )
+text = "Celsa princesa P"
+
+[node name="Celso14" type="TextureButton" parent="."]
+visible = false
+margin_left = 237.0
+margin_top = 67.0
+margin_right = 404.0
+margin_bottom = 287.0
+texture_normal = ExtResource( 18 )
+expand = true
+
+[node name="Label" type="Label" parent="Celso14"]
+margin_left = 35.0
+margin_top = 248.0
+margin_right = 141.0
+margin_bottom = 263.0
+custom_fonts/font = SubResource( 2 )
+text = "Celsa princesa D"
+
+[node name="Celso15" type="TextureButton" parent="."]
+margin_left = 229.0
+margin_top = 52.0
+margin_right = 414.0
+margin_bottom = 295.0
+texture_normal = ExtResource( 17 )
+expand = true
+
+[node name="Label" type="Label" parent="Celso15"]
+margin_left = 45.0
+margin_top = 263.0
+margin_right = 151.0
+margin_bottom = 278.0
+custom_fonts/font = SubResource( 2 )
+text = "Celso Encanador"
 
 [connection signal="pressed" from="Next" to="." method="_on_Next_pressed"]
 [connection signal="pressed" from="Previous" to="." method="_on_Previous_pressed"]
@@ -239,3 +345,9 @@ text = "Celso Elegante"
 [connection signal="pressed" from="Celso07" to="." method="_on_Celso07_pressed"]
 [connection signal="pressed" from="Celso08" to="." method="_on_Celso08_pressed"]
 [connection signal="pressed" from="Celso09" to="." method="_on_Celso09_pressed"]
+[connection signal="pressed" from="Celso10" to="." method="_on_Celso10_pressed"]
+[connection signal="pressed" from="Celso11" to="." method="_on_Celso11_pressed"]
+[connection signal="pressed" from="Celso12" to="." method="_on_Celso12_pressed"]
+[connection signal="pressed" from="Celso13" to="." method="_on_Celso13_pressed"]
+[connection signal="pressed" from="Celso14" to="." method="_on_Celso14_pressed"]
+[connection signal="pressed" from="Celso15" to="." method="_on_Celso15_pressed"]
