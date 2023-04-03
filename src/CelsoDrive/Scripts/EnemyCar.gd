@@ -19,4 +19,4 @@ func _on_EnemyCar_body_entered(_body):
 	# Emite "sinal" de pause quando colide com o caminhão
 	Global.pausedGame = true
 	emit_signal("colide")
-	print(carTypes)
+	$CarCrash.play()

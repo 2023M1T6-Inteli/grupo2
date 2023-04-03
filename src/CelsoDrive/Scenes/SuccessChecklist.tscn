@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scripts/SuccessChecklist.gd" type="Script" id=1]
+[ext_resource path="res://Assets/music/start_truck.mp3" type="AudioStream" id=2]
 [ext_resource path="res://Assets/fonts/CompassPro.ttf" type="DynamicFontData" id=5]
 
 [sub_resource type="DynamicFont" id=3]
@@ -30,7 +31,7 @@ Você está pronto para a sua próxima viagem."
 align = 1
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 2.0
+wait_time = 1.2
 autostart = true
 
 [node name="LoadingLabel" type="Label" parent="."]
@@ -40,5 +41,9 @@ margin_right = 634.0
 margin_bottom = 364.0
 custom_fonts/font = SubResource( 4 )
 text = "Carregando..."
+
+[node name="StartTruck" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+volume_db = -10.0
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
