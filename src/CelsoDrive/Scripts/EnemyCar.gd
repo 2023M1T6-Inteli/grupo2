@@ -20,3 +20,7 @@ func _on_EnemyCar_body_entered(_body):
 	Global.pausedGame = true
 	emit_signal("colide")
 	$CarCrash.play()
+
+
+func _on_VisibilityNotifier2D_screen_exited():
+	queue_free()

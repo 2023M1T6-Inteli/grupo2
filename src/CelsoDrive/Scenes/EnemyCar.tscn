@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Scripts/EnemyCar.gd" type="Script" id=1]
 [ext_resource path="res://Assets/enemies/green_car.png" type="Texture" id=2]
 [ext_resource path="res://Assets/enemies/blue_car.png" type="Texture" id=3]
 [ext_resource path="res://Assets/enemies/red_car.png" type="Texture" id=4]
 [ext_resource path="res://Assets/music/car_crash.wav" type="AudioStream" id=5]
+[ext_resource path="res://Assets/music/passing_car.wav" type="AudioStream" id=6]
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
@@ -48,4 +49,12 @@ shape = SubResource( 2 )
 stream = ExtResource( 5 )
 volume_db = -10.0
 
+[node name="PassingCar" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -30.0
+autoplay = true
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+
 [connection signal="body_entered" from="." to="." method="_on_EnemyCar_body_entered"]
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]
