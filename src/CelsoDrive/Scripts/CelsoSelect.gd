@@ -16,6 +16,8 @@ onready var celso12 = "res://Scenes/Player12.tscn"
 onready var celso13 = "res://Scenes/Player13.tscn"
 onready var celso14 = "res://Scenes/Player14.tscn"
 onready var celso15 = "res://Scenes/Player15.tscn"
+onready var celso16 = "res://Scenes/Player16.tscn"
+onready var celso17 = "res://Scenes/Player17.tscn"
 var currentCelso := 1 # "Index" para o aparecimento dos personagens na tela
 
 
@@ -49,6 +51,8 @@ func show_current_celso():
 		$Celso13.visible = false
 		$Celso14.visible = false
 		$Celso15.visible = false
+		$Celso16.visible = false
+		$Celso17.visible = false
 	elif currentCelso == 2:
 		$Celso01.visible = false
 		$Celso02.visible = true
@@ -65,6 +69,8 @@ func show_current_celso():
 		$Celso13.visible = false
 		$Celso14.visible = false
 		$Celso15.visible = false
+		$Celso16.visible = false
+		$Celso17.visible = false
 	elif currentCelso == 3:
 		$Celso01.visible = false
 		$Celso02.visible = false
@@ -81,6 +87,8 @@ func show_current_celso():
 		$Celso13.visible = false
 		$Celso14.visible = false
 		$Celso15.visible = false
+		$Celso16.visible = false
+		$Celso17.visible = false
 	elif currentCelso == 4:
 		$Celso01.visible = false
 		$Celso02.visible = false
@@ -97,6 +105,8 @@ func show_current_celso():
 		$Celso13.visible = false
 		$Celso14.visible = false
 		$Celso15.visible = false
+		$Celso16.visible = false
+		$Celso17.visible = false
 	elif currentCelso == 5:
 		$Celso01.visible = false
 		$Celso02.visible = false
@@ -113,6 +123,8 @@ func show_current_celso():
 		$Celso13.visible = false
 		$Celso14.visible = false
 		$Celso15.visible = false
+		$Celso16.visible = false
+		$Celso17.visible = false
 	elif currentCelso == 6:
 		$Celso01.visible = false
 		$Celso02.visible = false
@@ -129,6 +141,8 @@ func show_current_celso():
 		$Celso13.visible = false
 		$Celso14.visible = false
 		$Celso15.visible = false
+		$Celso16.visible = false
+		$Celso17.visible = false
 	elif currentCelso == 7:
 		$Celso01.visible = false
 		$Celso02.visible = false
@@ -145,6 +159,8 @@ func show_current_celso():
 		$Celso13.visible = false
 		$Celso14.visible = false
 		$Celso15.visible = false
+		$Celso16.visible = false
+		$Celso17.visible = false
 	elif currentCelso == 8:
 		$Celso01.visible = false
 		$Celso02.visible = false
@@ -161,6 +177,8 @@ func show_current_celso():
 		$Celso13.visible = false
 		$Celso14.visible = false
 		$Celso15.visible = false
+		$Celso16.visible = false
+		$Celso17.visible = false
 	elif currentCelso == 9:
 		$Celso01.visible = false
 		$Celso02.visible = false
@@ -177,6 +195,8 @@ func show_current_celso():
 		$Celso13.visible = false
 		$Celso14.visible = false
 		$Celso15.visible = false
+		$Celso16.visible = false
+		$Celso17.visible = false
 	elif currentCelso == 10:
 		$Celso01.visible = false
 		$Celso02.visible = false
@@ -193,6 +213,8 @@ func show_current_celso():
 		$Celso13.visible = false
 		$Celso14.visible = false
 		$Celso15.visible = false
+		$Celso16.visible = false
+		$Celso17.visible = false
 	elif currentCelso == 11:
 		$Celso01.visible = false
 		$Celso02.visible = false
@@ -209,6 +231,8 @@ func show_current_celso():
 		$Celso13.visible = false
 		$Celso14.visible = false
 		$Celso15.visible = false
+		$Celso16.visible = false
+		$Celso17.visible = false
 	elif currentCelso == 12:
 		$Celso01.visible = false
 		$Celso02.visible = false
@@ -225,6 +249,8 @@ func show_current_celso():
 		$Celso13.visible = false
 		$Celso14.visible = false
 		$Celso15.visible = false
+		$Celso16.visible = false
+		$Celso17.visible = false
 	elif currentCelso == 13:
 		$Celso01.visible = false
 		$Celso02.visible = false
@@ -241,6 +267,8 @@ func show_current_celso():
 		$Celso13.visible = true
 		$Celso14.visible = false
 		$Celso15.visible = false
+		$Celso16.visible = false
+		$Celso17.visible = false
 	elif currentCelso == 14:
 		$Celso01.visible = false
 		$Celso02.visible = false
@@ -257,6 +285,8 @@ func show_current_celso():
 		$Celso13.visible = false
 		$Celso14.visible = true
 		$Celso15.visible = false
+		$Celso16.visible = false
+		$Celso17.visible = false
 	elif currentCelso == 15:
 		$Celso01.visible = false
 		$Celso02.visible = false
@@ -272,12 +302,52 @@ func show_current_celso():
 		$Celso12.visible = false
 		$Celso13.visible = false
 		$Celso14.visible = false
-		$Celso15.visible = true	
+		$Celso15.visible = true
+		$Celso16.visible = false
+		$Celso17.visible = false
+	elif currentCelso == 16:
+		$Celso01.visible = false
+		$Celso02.visible = false
+		$Celso03.visible = false
+		$Celso04.visible = false
+		$Celso05.visible = false
+		$Celso06.visible = false
+		$Celso07.visible = false
+		$Celso08.visible = false
+		$Celso09.visible = false
+		$Celso10.visible = false
+		$Celso11.visible = false
+		$Celso12.visible = false
+		$Celso13.visible = false
+		$Celso14.visible = false
+		$Celso15.visible = false
+		$Celso16.visible = true
+		$Celso17.visible = false
+	elif currentCelso == 17:
+		$Celso01.visible = false
+		$Celso02.visible = false
+		$Celso03.visible = false
+		$Celso04.visible = false
+		$Celso05.visible = false
+		$Celso06.visible = false
+		$Celso07.visible = false
+		$Celso08.visible = false
+		$Celso09.visible = false
+		$Celso10.visible = false
+		$Celso11.visible = false
+		$Celso12.visible = false
+		$Celso13.visible = false
+		$Celso14.visible = false
+		$Celso15.visible = false
+		$Celso16.visible = false
+		$Celso17.visible = true
+		
+	
 
 
 # Incrementa o index do personagem selecionado
 func increase():
-	if currentCelso < 15:
+	if currentCelso < 17:
 		currentCelso += 1
 		
 
@@ -289,7 +359,7 @@ func decrease():
 
 func _on_Next_pressed():
 	# Some com o botão de próximo quando chega no último celso, com uma color rect por cima
-	if currentCelso == 14:
+	if currentCelso == 16:
 		$NextColorRect.visible = true
 	
 	# Exibe, caso necessário, o botão de voltar, o qual
@@ -394,7 +464,20 @@ func _on_Celso14_pressed():
 	Global.playerDir = celso14
 	go_to_tutorial()
 
+
 # Seleciona versão 15 do Celso
 func _on_Celso15_pressed():
 	Global.playerDir = celso15
+	go_to_tutorial()
+
+
+# Seleciona versão 16 do Celso
+func _on_Celso16_pressed():
+	Global.playerDir = celso16
+	go_to_tutorial()
+
+
+# Seleciona versão 17 do Celso
+func _on_Celso17_pressed():
+	Global.playerDir = celso17
 	go_to_tutorial()
