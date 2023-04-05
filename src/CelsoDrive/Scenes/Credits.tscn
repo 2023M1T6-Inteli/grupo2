@@ -15,49 +15,49 @@
 [ext_resource path="res://scenes/CreditsFabiana.tscn" type="PackedScene" id=13]
 [ext_resource path="res://scenes/CreditsInteli.tscn" type="PackedScene" id=14]
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="DynamicFont" id=3]
 size = 50
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFontData" id=2]
 font_path = "res://Assets/fonts/CompassPro.ttf"
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="DynamicFont" id=4]
 size = 20
 font_data = SubResource( 2 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="DynamicFont" id=5]
 size = 20
 font_data = ExtResource( 1 )
 
-[sub_resource type="RectangleShape2D" id=5]
+[sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 97, 10 )
 
-[sub_resource type="RectangleShape2D" id=6]
+[sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 89.25, 9 )
 
-[sub_resource type="RectangleShape2D" id=7]
+[sub_resource type="RectangleShape2D" id=8]
 extents = Vector2( 81, 10 )
 
-[sub_resource type="RectangleShape2D" id=8]
+[sub_resource type="RectangleShape2D" id=9]
 extents = Vector2( 73, 10 )
 
-[sub_resource type="RectangleShape2D" id=9]
+[sub_resource type="RectangleShape2D" id=10]
 extents = Vector2( 106.375, 10 )
 
-[sub_resource type="RectangleShape2D" id=10]
+[sub_resource type="RectangleShape2D" id=11]
 extents = Vector2( 85, 10 )
 
-[sub_resource type="RectangleShape2D" id=11]
+[sub_resource type="RectangleShape2D" id=12]
 extents = Vector2( 89, 8.75 )
 
-[sub_resource type="RectangleShape2D" id=12]
+[sub_resource type="RectangleShape2D" id=13]
 extents = Vector2( 113, 10 )
 
-[sub_resource type="RectangleShape2D" id=13]
+[sub_resource type="RectangleShape2D" id=14]
 extents = Vector2( 96, 25 )
 
-[node name="Credits" type="Node2D"]
+[node name="Node2D" type="Node2D"]
 script = ExtResource( 3 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -76,7 +76,7 @@ margin_bottom = 80.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 4
 custom_constants/shadow_offset_y = 4
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 3 )
 text = "CRÉDITOS"
 align = 1
 valign = 1
@@ -89,7 +89,7 @@ margin_bottom = 131.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 2
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Victor Gabriel Marques"
 align = 1
 
@@ -101,7 +101,7 @@ margin_bottom = 131.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 2
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Rafael Cauã C Montenegro"
 align = 1
 
@@ -113,7 +113,7 @@ margin_bottom = 195.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 2
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Davi Ferreira Arantes"
 align = 1
 
@@ -125,7 +125,7 @@ margin_bottom = 195.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 2
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Caio Enoki Kakunaka"
 align = 1
 
@@ -137,7 +137,7 @@ margin_bottom = 259.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 2
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Gabriel Farias Alves"
 align = 1
 
@@ -149,7 +149,7 @@ margin_bottom = 259.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 2
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "Henrique O Magalhães"
 align = 1
 
@@ -161,7 +161,7 @@ margin_bottom = 323.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 2
-custom_fonts/font = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
 text = "João Paulo Santos"
 
 [node name="BackButton" type="Button" parent="."]
@@ -181,14 +181,14 @@ margin_bottom = 324.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 2
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
 text = "Fabiana Martins De Oliveira"
 
 [node name="Area2DVictor" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DVictor"]
 position = Vector2( 160, 120 )
-shape = SubResource( 5 )
+shape = SubResource( 6 )
 
 [node name="CreditsVictor" parent="Area2DVictor" instance=ExtResource( 5 )]
 visible = false
@@ -200,7 +200,7 @@ visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DDavi"]
 position = Vector2( 150.75, 184 )
-shape = SubResource( 6 )
+shape = SubResource( 7 )
 
 [node name="Area2DGabriel" type="Area2D" parent="."]
 
@@ -209,13 +209,13 @@ visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DGabriel"]
 position = Vector2( 143, 248 )
-shape = SubResource( 7 )
+shape = SubResource( 8 )
 
 [node name="Area2DJoao" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DJoao"]
 position = Vector2( 135, 312 )
-shape = SubResource( 8 )
+shape = SubResource( 9 )
 
 [node name="CreditsJoao" parent="Area2DJoao" instance=ExtResource( 10 )]
 visible = false
@@ -224,7 +224,7 @@ visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DRafael"]
 position = Vector2( 485.625, 120 )
-shape = SubResource( 9 )
+shape = SubResource( 10 )
 
 [node name="CreditsRafael" parent="Area2DRafael" instance=ExtResource( 12 )]
 visible = false
@@ -236,7 +236,7 @@ visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DCaio"]
 position = Vector2( 467, 184 )
-shape = SubResource( 10 )
+shape = SubResource( 11 )
 
 [node name="Area2DHenrique" type="Area2D" parent="."]
 
@@ -245,7 +245,7 @@ visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DHenrique"]
 position = Vector2( 472, 248.75 )
-shape = SubResource( 11 )
+shape = SubResource( 12 )
 
 [node name="Area2DFabiana" type="Area2D" parent="."]
 
@@ -254,7 +254,7 @@ visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DFabiana"]
 position = Vector2( 495, 312 )
-shape = SubResource( 12 )
+shape = SubResource( 13 )
 
 [node name="Area2DCredits" type="Area2D" parent="."]
 
@@ -263,7 +263,7 @@ visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DCredits"]
 position = Vector2( 320, 57 )
-shape = SubResource( 13 )
+shape = SubResource( 14 )
 
 [node name="PlayerCredits" parent="." instance=ExtResource( 6 )]
 position = Vector2( 296, 256 )
