@@ -1,9 +1,19 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://Assets/fonts/CompassPro.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Assets/background/background.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Background/background.png" type="Texture" id=2]
 [ext_resource path="res://Scripts/Credits.gd" type="Script" id=3]
 [ext_resource path="res://Assets/items/previous.png" type="Texture" id=4]
+[ext_resource path="res://scenes/CreditsVictor.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/PlayerCredits.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/CreditsDavi.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/CreditsGabriel.tscn" type="PackedScene" id=8]
+[ext_resource path="res://scenes/CreditsCaio.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/CreditsJoao.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/CreditsHenrique.tscn" type="PackedScene" id=11]
+[ext_resource path="res://scenes/CreditsRafael.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/CreditsFabiana.tscn" type="PackedScene" id=13]
+[ext_resource path="res://scenes/CreditsInteli.tscn" type="PackedScene" id=14]
 
 [sub_resource type="DynamicFont" id=1]
 size = 50
@@ -15,6 +25,37 @@ font_path = "res://Assets/fonts/CompassPro.ttf"
 [sub_resource type="DynamicFont" id=3]
 size = 20
 font_data = SubResource( 2 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 20
+font_data = ExtResource( 1 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 97, 10 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 89.25, 9 )
+
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 81, 10 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 73, 10 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 106.375, 10 )
+
+[sub_resource type="RectangleShape2D" id=10]
+extents = Vector2( 85, 10 )
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 89, 8.75 )
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 113, 10 )
+
+[sub_resource type="RectangleShape2D" id=13]
+extents = Vector2( 96, 25 )
 
 [node name="Credits" type="Node2D"]
 script = ExtResource( 3 )
@@ -42,9 +83,9 @@ valign = 1
 
 [node name="VictorLabel" type="Label" parent="."]
 margin_left = 64.0
-margin_top = 120.0
+margin_top = 112.0
 margin_right = 256.0
-margin_bottom = 139.0
+margin_bottom = 131.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 2
@@ -54,9 +95,9 @@ align = 1
 
 [node name="RafaelLabel" type="Label" parent="."]
 margin_left = 384.0
-margin_top = 120.0
-margin_right = 592.0
-margin_bottom = 139.0
+margin_top = 112.0
+margin_right = 587.0
+margin_bottom = 131.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 2
@@ -66,9 +107,9 @@ align = 1
 
 [node name="DaviLabel" type="Label" parent="."]
 margin_left = 64.0
-margin_top = 182.0
-margin_right = 256.0
-margin_bottom = 201.0
+margin_top = 176.0
+margin_right = 241.0
+margin_bottom = 195.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 2
@@ -78,9 +119,9 @@ align = 1
 
 [node name="CaioLabel" type="Label" parent="."]
 margin_left = 384.0
-margin_top = 182.0
-margin_right = 592.0
-margin_bottom = 201.0
+margin_top = 176.0
+margin_right = 549.0
+margin_bottom = 195.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 2
@@ -90,9 +131,9 @@ align = 1
 
 [node name="GabrielLabel" type="Label" parent="."]
 margin_left = 64.0
-margin_top = 247.0
-margin_right = 256.0
-margin_bottom = 266.0
+margin_top = 240.0
+margin_right = 226.0
+margin_bottom = 259.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 2
@@ -102,9 +143,9 @@ align = 1
 
 [node name="HenriqueLabel" type="Label" parent="."]
 margin_left = 384.0
-margin_top = 247.0
-margin_right = 600.0
-margin_bottom = 266.0
+margin_top = 240.0
+margin_right = 559.0
+margin_bottom = 259.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 2
@@ -113,10 +154,10 @@ text = "Henrique O Magalhães"
 align = 1
 
 [node name="JoaoLabel" type="Label" parent="."]
-margin_left = 251.0
-margin_top = 311.0
-margin_right = 391.0
-margin_bottom = 330.0
+margin_left = 64.0
+margin_top = 304.0
+margin_right = 204.0
+margin_bottom = 323.0
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_offset_x = 2
 custom_constants/shadow_offset_y = 2
@@ -132,4 +173,117 @@ icon = ExtResource( 4 )
 flat = true
 icon_align = 1
 
+[node name="Label" type="Label" parent="."]
+margin_left = 384.0
+margin_top = 304.0
+margin_right = 606.0
+margin_bottom = 324.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+custom_fonts/font = SubResource( 4 )
+text = "Fabiana Martins De Oliveira"
+
+[node name="Area2DVictor" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DVictor"]
+position = Vector2( 160, 120 )
+shape = SubResource( 5 )
+
+[node name="CreditsVictor" parent="Area2DVictor" instance=ExtResource( 5 )]
+visible = false
+
+[node name="Area2DDavi" type="Area2D" parent="."]
+
+[node name="CreditsDavi" parent="Area2DDavi" instance=ExtResource( 7 )]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DDavi"]
+position = Vector2( 150.75, 184 )
+shape = SubResource( 6 )
+
+[node name="Area2DGabriel" type="Area2D" parent="."]
+
+[node name="CreditsGabriel" parent="Area2DGabriel" instance=ExtResource( 8 )]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DGabriel"]
+position = Vector2( 143, 248 )
+shape = SubResource( 7 )
+
+[node name="Area2DJoao" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DJoao"]
+position = Vector2( 135, 312 )
+shape = SubResource( 8 )
+
+[node name="CreditsJoao" parent="Area2DJoao" instance=ExtResource( 10 )]
+visible = false
+
+[node name="Area2DRafael" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DRafael"]
+position = Vector2( 485.625, 120 )
+shape = SubResource( 9 )
+
+[node name="CreditsRafael" parent="Area2DRafael" instance=ExtResource( 12 )]
+visible = false
+
+[node name="Area2DCaio" type="Area2D" parent="."]
+
+[node name="CreditsCaio" parent="Area2DCaio" instance=ExtResource( 9 )]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DCaio"]
+position = Vector2( 467, 184 )
+shape = SubResource( 10 )
+
+[node name="Area2DHenrique" type="Area2D" parent="."]
+
+[node name="CreditsHenrique" parent="Area2DHenrique" instance=ExtResource( 11 )]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DHenrique"]
+position = Vector2( 472, 248.75 )
+shape = SubResource( 11 )
+
+[node name="Area2DFabiana" type="Area2D" parent="."]
+
+[node name="CreditsFabiana" parent="Area2DFabiana" instance=ExtResource( 13 )]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DFabiana"]
+position = Vector2( 495, 312 )
+shape = SubResource( 12 )
+
+[node name="Area2DCredits" type="Area2D" parent="."]
+
+[node name="CreditsInteli" parent="Area2DCredits" instance=ExtResource( 14 )]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DCredits"]
+position = Vector2( 320, 57 )
+shape = SubResource( 13 )
+
+[node name="PlayerCredits" parent="." instance=ExtResource( 6 )]
+position = Vector2( 296, 256 )
+
 [connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]
+[connection signal="body_entered" from="Area2DVictor" to="." method="_on_Area2DVictor_body_entered"]
+[connection signal="body_exited" from="Area2DVictor" to="." method="_on_Area2DVictor_body_exited"]
+[connection signal="body_entered" from="Area2DDavi" to="." method="_on_Area2DDavi_body_entered"]
+[connection signal="body_exited" from="Area2DDavi" to="." method="_on_Area2DDavi_body_exited"]
+[connection signal="body_entered" from="Area2DGabriel" to="." method="_on_Area2DGabriel_body_entered"]
+[connection signal="body_exited" from="Area2DGabriel" to="." method="_on_Area2DGabriel_body_exited"]
+[connection signal="body_entered" from="Area2DJoao" to="." method="_on_Area2DJoao_body_entered"]
+[connection signal="body_exited" from="Area2DJoao" to="." method="_on_Area2DJoao_body_exited"]
+[connection signal="body_entered" from="Area2DRafael" to="." method="_on_Area2DRafael_body_entered"]
+[connection signal="body_exited" from="Area2DRafael" to="." method="_on_Area2DRafael_body_exited"]
+[connection signal="body_entered" from="Area2DCaio" to="." method="_on_Area2DCaio_body_entered"]
+[connection signal="body_exited" from="Area2DCaio" to="." method="_on_Area2DCaio_body_exited"]
+[connection signal="body_entered" from="Area2DHenrique" to="." method="_on_Area2DHenrique_body_entered"]
+[connection signal="body_exited" from="Area2DHenrique" to="." method="_on_Area2DHenrique_body_exited"]
+[connection signal="body_entered" from="Area2DFabiana" to="." method="_on_Area2DFabiana_body_entered"]
+[connection signal="body_exited" from="Area2DFabiana" to="." method="_on_Area2DFabiana_body_exited"]
+[connection signal="body_entered" from="Area2DCredits" to="." method="_on_Area2DCredits_body_entered"]
+[connection signal="body_exited" from="Area2DCredits" to="." method="_on_Area2DCredits_body_exited"]

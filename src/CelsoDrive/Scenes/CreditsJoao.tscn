@@ -1,0 +1,74 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/items/frame.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Player/celso02.png" type="Texture" id=2]
+[ext_resource path="res://Assets/fonts/CompassPro.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=2]
+size = 52
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 22
+font_data = ExtResource( 3 )
+
+[node name="CreditsJoao" type="CanvasLayer"]
+
+[node name="Frame" type="TextureRect" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -193.0
+margin_top = -176.0
+margin_right = 188.0
+margin_bottom = 176.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="NameLabel" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -152.0
+margin_top = 56.0
+margin_right = 142.0
+margin_bottom = 105.0
+custom_fonts/font = SubResource( 2 )
+text = "João Paulo"
+align = 1
+valign = 1
+
+[node name="Label" type="Label" parent="."]
+margin_left = 160.0
+margin_top = 112.0
+margin_right = 776.0
+margin_bottom = 184.0
+rect_scale = Vector2( 0.5, 0.9 )
+custom_fonts/font = SubResource( 3 )
+text = "João Paulo Santos, sou de São Paulo capital,
+sou uma pessoa muito
+entusiasmada e ao mesmo tempo analítica,
+tenho 18 anos e estou muito grato a unipar pela oportunidade."
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 160.0
+margin_top = 208.0
+margin_right = 475.0
+margin_bottom = 255.0
+rect_scale = Vector2( 0.5, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Para ele, o \"Celso Caminhões\"
+\"Vamos fazer a química acontecer.\"\""
+
+[node name="CelsoLabel" type="Label" parent="."]
+margin_left = 160.0
+margin_top = 272.0
+margin_right = 447.0
+margin_bottom = 294.0
+rect_scale = Vector2( 0.5, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Celso favorito: Celso sério "
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 312, 280 )
+texture = ExtResource( 2 )

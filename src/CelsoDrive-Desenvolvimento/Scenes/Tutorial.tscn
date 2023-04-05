@@ -1259,7 +1259,7 @@ shape = SubResource( 36 )
 [node name="EInteract" type="Sprite" parent="TinhosoSceneArea"]
 visible = false
 modulate = Color( 1, 1, 1, 0.627451 )
-position = Vector2( 536, 165 )
+position = Vector2( 536, 148 )
 scale = Vector2( 0.5, 0.6 )
 texture = ExtResource( 2 )
 
@@ -1272,7 +1272,6 @@ collision_layer = 2
 position = Vector2( 30, -46.6667 )
 scale = Vector2( 2.91666, 2.73062 )
 frames = SubResource( 65 )
-frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TinhosoSceneArea/TinhosoNPC"]
@@ -1301,13 +1300,13 @@ scale = Vector2( 1, 0.999999 )
 shape = SubResource( 43 )
 
 [node name="TutorialNpcCat" type="KinematicBody2D" parent="."]
-position = Vector2( -123, 17 )
+position = Vector2( -123, 22 )
 __meta__ = {
 "_edit_group_": true
 }
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="TutorialNpcCat"]
-position = Vector2( -68, 230 )
+position = Vector2( -68, 216 )
 frames = SubResource( 49 )
 animation = "RunRight"
 

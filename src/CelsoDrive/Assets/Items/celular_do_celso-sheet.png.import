@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/inputs.png-54b1fe8301ebb052f790ebe60d90ca04.stex"
+path="res://.import/celular_do_celso-sheet.png-653d732aeaf3c3a922076eefed163cf1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Background/inputs.png"
-dest_files=[ "res://.import/inputs.png-54b1fe8301ebb052f790ebe60d90ca04.stex" ]
+source_file="res://Assets/Items/celular_do_celso-sheet.png"
+dest_files=[ "res://.import/celular_do_celso-sheet.png-653d732aeaf3c3a922076eefed163cf1.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
