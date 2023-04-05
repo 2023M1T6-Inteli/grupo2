@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Assets/Player/celso03.png" type="Texture" id=1]
+[ext_resource path="res://Assets/player/celso03.png" type="Texture" id=1]
 [ext_resource path="res://Assets/items/frame.png" type="Texture" id=2]
 [ext_resource path="res://Assets/fonts/CompassPro.ttf" type="DynamicFontData" id=3]
 
