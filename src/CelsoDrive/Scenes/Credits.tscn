@@ -1,11 +1,11 @@
 [gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://Assets/fonts/CompassPro.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Assets/Background/background.png" type="Texture" id=2]
+[ext_resource path="res://Assets/background/background.png" type="Texture" id=2]
 [ext_resource path="res://Scripts/Credits.gd" type="Script" id=3]
 [ext_resource path="res://Assets/items/previous.png" type="Texture" id=4]
 [ext_resource path="res://Scenes/CreditsVictorM.tscn" type="PackedScene" id=5]
-[ext_resource path="res://scenes/PlayerCredits.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/CelsoCredits.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scenes/CreditsDavi.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/CreditsHenriqueO.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scenes/CreditsCaioK.tscn" type="PackedScene" id=9]
@@ -266,7 +266,7 @@ shape = SubResource( 14 )
 visible = false
 
 [node name="PlayerCredits" parent="." instance=ExtResource( 6 )]
-position = Vector2( 296, 256 )
+position = Vector2( 298, 224 )
 
 [connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]
 [connection signal="body_entered" from="Area2DVictor" to="." method="_on_Area2DVictor_body_entered"]
