@@ -1,7 +1,7 @@
 extends CanvasLayer
 
 
-var isMainMenu = false
+var isMainMenu = false # Variável de controle para verificar se clicou "esc" na tela de pause
 
 
 func _ready():

@@ -6,7 +6,6 @@ onready var dialog # Variável utilizada para carregar os diálogos
 func _ready():
 	Global.level = 2
 	# Define posição do personagem - se vier do pause (energy == 0), spawna na cama
-	
 	if Global.energy <= 0:
 		$Energy0Area.collision_mask = 1
 		$Energy0Area.collision_layer = 3

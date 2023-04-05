@@ -2,6 +2,7 @@ extends CanvasLayer
 
 
 func _ready():
+	# Altera label de acordo com o idioma
 	if Global.selectedLanguage == 1:
 		$Button.text = "RESTART"
 	elif Global.selectedLanguage == 2:

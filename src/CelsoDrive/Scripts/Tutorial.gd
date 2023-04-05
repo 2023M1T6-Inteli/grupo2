@@ -103,10 +103,12 @@ func dialog_listener(string):
 				$Message.visible = true	
 			else:
 				$Message.visible = true;
-				
+		
+		# Diminui a cor da tela para mostrar a moeda
 		"coin-intro":
 			$HUD/ColorRectCoin.visible = true
 		
+		# Diminui a cor da tela para mostrar a barra de energia
 		"energy-intro":
 			$HUD/ColorRectCoin.visible = false
 			$HUD/ColorRectEnergy.visible = true

@@ -10,18 +10,18 @@ func _physics_process(_delta):
 
 
 func _on_TireObstacle_body_entered(_body):
-	# Emite "sinal" de pause quando colide com o caminhão
+	# Emite "sinal" de pause quando o pneu colide com o caminhão
 	Global.pausedGame = true
 	emit_signal("colide")
 
 
 func _on_TrunkObstacle_body_entered(_body):
-	# Emite "sinal" de pause quando colide com o caminhão
+	# Emite "sinal" de pause quando o tronco colide com o caminhão
 	Global.pausedGame = true
 	emit_signal("colide")
 
 
 func _on_ConeObstacle_body_entered(_body):
-	# Emite "sinal" de pause quando colide com o caminhão
+	# Emite "sinal" de pause quando o cone colide com o caminhão
 	Global.pausedGame = true
 	emit_signal("colide")

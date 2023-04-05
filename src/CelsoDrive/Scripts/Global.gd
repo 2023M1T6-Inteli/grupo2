@@ -23,7 +23,6 @@ var alcohol : bool # caso true, sofrerá debuff de álcool
 var slept : bool # caso false, sofrerá debuff de sono
 var mutedPhone : bool = false # caso false, sofrerá debuff de notificação na tela
 var healthyFood : bool # caso false, sofrerá debuff de energia reduzindo mais rapidamente
-var achievements : int # quantidade de medalhas do jogador
 
 var timer = Timer.new() # tempo para controlar a barra de energia
 var waitTime = 120 # Tempo de espera entre cada timeout

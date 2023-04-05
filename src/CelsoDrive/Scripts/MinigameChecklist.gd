@@ -115,15 +115,18 @@ func _on_exploded(currentContent, currentPosition):
 		clipboardElement += 1
 	
 		add_item(currentPosition) # Adiciona um novo item no mesmo lugar do que foi clicado
-		
+	
+	# Se a prancheta estiver cheia, exibe botão para validar escolhas.
 	if clipboardElement >= 5:
 		$ConfirmButton.visible = true
 		if Global.selectedLanguage == 1:
 			$ConfirmButton.text = "Validate Choices"
 
 
+# Função responsável por validar se todas as escolhas são boas ou se há alguma escolha ruim
 func _on_ConfirmButton_pressed():
 	var values = []
+	# Adiciona o conteúdo dos itens da prancheta na lista values
 	for item in $Clipboard/VBoxContainer.get_children():
 		values.append(itemsdictValues[String(item.get_children()[1].text)])
 	
@@ -147,6 +150,7 @@ func _on_ConfirmButton_pressed():
 		return get_tree().change_scene("res://Scenes/SuccessChecklist.tscn")
 
 
+# Recebe e trata sinais dos diálogos
 func dialog_listener(sinal):
 	match sinal:
 		"check":
@@ -157,6 +161,7 @@ func dialog_listener(sinal):
 			$ItemsTimer.start()
 
 
+# Exibe diálogos do tutorial de acordo com o idioma selecionado
 func _on_CheckItemTutorial_exploded(_currentContent, _currentPosition):
 	$ClipboardTutorial.visible = true
 	if Global.selectedLanguage == 1:

@@ -10,6 +10,7 @@ onready var sambaAudio = $SambaAudio
 func _ready():
 	play_music() # Reproduz música
 
+
 func play_music():
 	# Reproduz o áudio do forró
 	if Global.selectedMusic == 0:

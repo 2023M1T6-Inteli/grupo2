@@ -46,5 +46,6 @@ func _on_TruckTimer_timeout():
 	newTruckRight.linear_velocity = Vector2(0, rand_range(newTruckRight.minSpeed, newTruckRight.maxSpeed))
 
 
+# Direciona para a tela de créditos
 func _on_CreditsButton_pressed():
 	return get_tree().change_scene("res://Scenes/Credits.tscn")
