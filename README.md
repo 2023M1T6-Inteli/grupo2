@@ -98,6 +98,24 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 ## 🗃 Histórico de lançamentos
 
 A cada atualização os detalhes são lançados aqui.
+* 1.0.0 - 05/04/2023
+    * **Primeira versão (MAJOR) do jogo, com todas as funcionalidades planejadas implementadas**.
+    * Primeira versão jogável do **Celso Caminhões Pocket Edition** para Android;
+    * Refatoração dos scripts com base em *Clean Code* e boas práticas de programação;
+    * Adição de 2 novos personagens na tela de seleção;
+    * Finalização do Game Design Document.
+* 0.9.0 - 02/04/2023
+    * Tradução do jogo para espanhol;
+    * Adição do sistema de diminuição de energia;
+    * Sinalização das interações no mapa da casa;
+    * Sistema de rádio no run game;
+    * Melhora sprite da pontuação;
+    * Adiciona zoom no personagem.
+* 0.8.0 - 28/03/2023
+    * Melhoria do run game - jogabilidade, background e spawn dos inimigos;
+    * Tradução do jogo para inglês;
+    * Correção da tela inicial de pause;
+    * Incrementa o tutorial do jogo.
 * 0.7.0 - 24/03/2023
     * Finalização do Minigame de checklist;
     * Interações na cena do tutorial;
