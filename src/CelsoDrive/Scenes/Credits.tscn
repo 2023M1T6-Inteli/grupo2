@@ -4,16 +4,16 @@
 [ext_resource path="res://Assets/Background/background.png" type="Texture" id=2]
 [ext_resource path="res://Scripts/Credits.gd" type="Script" id=3]
 [ext_resource path="res://Assets/items/previous.png" type="Texture" id=4]
-[ext_resource path="res://scenes/CreditsVictor.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/CreditsVictorM.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/PlayerCredits.tscn" type="PackedScene" id=6]
-[ext_resource path="res://scenes/CreditsDavi.tscn" type="PackedScene" id=7]
-[ext_resource path="res://scenes/CreditsGabriel.tscn" type="PackedScene" id=8]
-[ext_resource path="res://scenes/CreditsCaio.tscn" type="PackedScene" id=9]
-[ext_resource path="res://scenes/CreditsJoao.tscn" type="PackedScene" id=10]
-[ext_resource path="res://scenes/CreditsHenrique.tscn" type="PackedScene" id=11]
-[ext_resource path="res://scenes/CreditsRafael.tscn" type="PackedScene" id=12]
-[ext_resource path="res://scenes/CreditsFabiana.tscn" type="PackedScene" id=13]
-[ext_resource path="res://scenes/CreditsInteli.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Scenes/CreditsDavi.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/CreditsHenriqueO.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/CreditsCaioK.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/CreditsJoaoS.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/CreditsGabrielF.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/CreditsRafaelC.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Scenes/CreditsFabi.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scenes/CreditsInteliUnipar.tscn" type="PackedScene" id=14]
 
 [sub_resource type="DynamicFont" id=3]
 size = 50
@@ -195,21 +195,21 @@ visible = false
 
 [node name="Area2DDavi" type="Area2D" parent="."]
 
-[node name="CreditsDavi" parent="Area2DDavi" instance=ExtResource( 7 )]
-visible = false
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DDavi"]
 position = Vector2( 150.75, 184 )
 shape = SubResource( 7 )
 
-[node name="Area2DGabriel" type="Area2D" parent="."]
-
-[node name="CreditsGabriel" parent="Area2DGabriel" instance=ExtResource( 8 )]
+[node name="CreditsDavi" parent="Area2DDavi" instance=ExtResource( 7 )]
 visible = false
+
+[node name="Area2DGabriel" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DGabriel"]
 position = Vector2( 143, 248 )
 shape = SubResource( 8 )
+
+[node name="CreditsGabriel" parent="Area2DGabriel" instance=ExtResource( 11 )]
+visible = false
 
 [node name="Area2DJoao" type="Area2D" parent="."]
 
@@ -231,39 +231,39 @@ visible = false
 
 [node name="Area2DCaio" type="Area2D" parent="."]
 
-[node name="CreditsCaio" parent="Area2DCaio" instance=ExtResource( 9 )]
-visible = false
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DCaio"]
 position = Vector2( 467, 184 )
 shape = SubResource( 11 )
 
-[node name="Area2DHenrique" type="Area2D" parent="."]
-
-[node name="CreditsHenrique" parent="Area2DHenrique" instance=ExtResource( 11 )]
+[node name="CreditsCaio" parent="Area2DCaio" instance=ExtResource( 9 )]
 visible = false
+
+[node name="Area2DHenrique" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DHenrique"]
 position = Vector2( 472, 248.75 )
 shape = SubResource( 12 )
 
-[node name="Area2DFabiana" type="Area2D" parent="."]
-
-[node name="CreditsFabiana" parent="Area2DFabiana" instance=ExtResource( 13 )]
+[node name="CreditsHenrique" parent="Area2DHenrique" instance=ExtResource( 8 )]
 visible = false
+
+[node name="Area2DFabiana" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DFabiana"]
 position = Vector2( 495, 312 )
 shape = SubResource( 13 )
 
-[node name="Area2DCredits" type="Area2D" parent="."]
-
-[node name="CreditsInteli" parent="Area2DCredits" instance=ExtResource( 14 )]
+[node name="CreditsFabiana" parent="Area2DFabiana" instance=ExtResource( 13 )]
 visible = false
+
+[node name="Area2DCredits" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2DCredits"]
 position = Vector2( 320, 57 )
 shape = SubResource( 14 )
+
+[node name="CreditsInteli" parent="Area2DCredits" instance=ExtResource( 14 )]
+visible = false
 
 [node name="PlayerCredits" parent="." instance=ExtResource( 6 )]
 position = Vector2( 296, 256 )
