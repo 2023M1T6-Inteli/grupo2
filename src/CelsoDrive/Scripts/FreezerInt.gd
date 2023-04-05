@@ -6,7 +6,7 @@ func _on_ButtonJuice_pressed():
 	Global.alcohol = false
 	visible = false
 	Global.interactedFreezer = true
-	Global.achievements += 1
+
 
 # Caso o usuário escolha a bebida alcoolica -> define alcohol para true e esconde a cena
 func _on_Button51_pressed():
