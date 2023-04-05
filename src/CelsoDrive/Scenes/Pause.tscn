@@ -1,31 +1,19 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Assets/fonts/CompassPro.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Assets/items/coin.png" type="Texture" id=2]
-[ext_resource path="res://Assets/items/config_icon.png" type="Texture" id=3]
+[ext_resource path="res://Scenes/HUD.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scripts/Pause.gd" type="Script" id=4]
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=1]
 size = 25
 font_data = ExtResource( 1 )
 
-[sub_resource type="DynamicFontData" id=2]
-font_path = "res://Assets/Fonts/CompassPro.ttf"
-
-[sub_resource type="DynamicFont" id=3]
-size = 32
-font_data = SubResource( 2 )
-
-[node name="Pause" type="Control"]
+[node name="Pause" type="CanvasLayer"]
 pause_mode = 2
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -320.0
-margin_top = -184.0
-margin_right = 320.0
-margin_bottom = 184.0
+layer = 5
 script = ExtResource( 4 )
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -37,17 +25,31 @@ margin_left = -322.5
 margin_top = -184.5
 margin_right = 322.5
 margin_bottom = 184.5
-color = Color( 0.054902, 0.239216, 0.00784314, 0.231373 )
+color = Color( 0, 0, 0, 0.960784 )
 
-[node name="PlayButton" type="Button" parent="."]
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -65.5
-margin_top = -17.5
-margin_right = 65.5
-margin_bottom = 17.5
+[node name="HUD" parent="." instance=ExtResource( 2 )]
+visible = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 185.0
+margin_top = 64.0
+margin_right = 456.0
+margin_bottom = 304.0
+custom_constants/separation = 20
+alignment = 1
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+visible = false
+margin_top = 37.0
+margin_right = 271.0
+margin_bottom = 52.0
+custom_fonts/font = SubResource( 2 )
+text = "Você está cansado. Sua energia se esgotou..."
+
+[node name="ContinueButton" type="Button" parent="VBoxContainer"]
+margin_top = 55.0
+margin_right = 271.0
+margin_bottom = 85.0
 focus_mode = 0
 custom_colors/font_color_hover = Color( 0.133333, 0.658824, 0.129412, 1 )
 custom_fonts/font = SubResource( 1 )
@@ -55,26 +57,41 @@ enabled_focus_mode = 0
 text = "CONTINUAR"
 flat = true
 
-[node name="Coin" type="Sprite" parent="."]
-position = Vector2( 26, 20 )
-scale = Vector2( 0.1, 0.1 )
-texture = ExtResource( 2 )
-
-[node name="CoinLabel" type="Label" parent="."]
-margin_left = 48.0
-margin_top = 5.0
-margin_right = 76.0
-margin_bottom = 35.0
-custom_fonts/font = SubResource( 3 )
-text = "00"
-
-[node name="ConfigButton" type="Button" parent="."]
-margin_left = 600.0
-margin_top = 1.0
-margin_right = 638.0
-margin_bottom = 38.0
-icon = ExtResource( 3 )
+[node name="BreakButton" type="Button" parent="VBoxContainer"]
+visible = false
+margin_top = 80.0
+margin_right = 271.0
+margin_bottom = 110.0
+focus_mode = 0
+custom_colors/font_color_hover = Color( 0.133333, 0.658824, 0.129412, 1 )
+custom_fonts/font = SubResource( 1 )
+enabled_focus_mode = 0
+text = "FAZER UMA PAUSA"
 flat = true
-expand_icon = true
 
-[connection signal="pressed" from="ConfigButton" to="." method="_on_ConfigButton_pressed"]
+[node name="MainMenuButton" type="Button" parent="VBoxContainer"]
+margin_top = 105.0
+margin_right = 271.0
+margin_bottom = 135.0
+focus_mode = 0
+custom_colors/font_color_hover = Color( 0.133333, 0.658824, 0.129412, 1 )
+custom_fonts/font = SubResource( 1 )
+enabled_focus_mode = 0
+text = "NOVO JOGO"
+flat = true
+
+[node name="Home" type="Button" parent="VBoxContainer"]
+margin_top = 155.0
+margin_right = 271.0
+margin_bottom = 185.0
+focus_mode = 0
+custom_colors/font_color_hover = Color( 0.133333, 0.658824, 0.129412, 1 )
+custom_fonts/font = SubResource( 1 )
+enabled_focus_mode = 0
+text = "IR PARA CASA"
+flat = true
+
+[connection signal="pressed" from="VBoxContainer/ContinueButton" to="." method="_on_ContinueButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/BreakButton" to="." method="_on_BreakButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/MainMenuButton" to="." method="_on_MainMenuButton_pressed"]
+[connection signal="pressed" from="VBoxContainer/Home" to="." method="_on_Home_pressed"]

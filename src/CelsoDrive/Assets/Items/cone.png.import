@@ -1,0 +1,44 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+<<<<<<< HEAD:src/CelsoDrive/Assets/Items/coin.png.import
+path="res://.import/coin.png-db556bea10d7d185d0edbb23c6a3ae2e.stex"
+=======
+path="res://.import/cone.png-e1df91734b33b7ea668710518f63d8f0.stex"
+>>>>>>> de1317f53a74e22c927d1a2ce66a198623de498e:src/CelsoDrive/Assets/Items/cone.png.import
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+<<<<<<< HEAD:src/CelsoDrive/Assets/Items/coin.png.import
+source_file="res://Assets/Items/coin.png"
+dest_files=[ "res://.import/coin.png-db556bea10d7d185d0edbb23c6a3ae2e.stex" ]
+=======
+source_file="res://Assets/items/cone.png"
+dest_files=[ "res://.import/cone.png-e1df91734b33b7ea668710518f63d8f0.stex" ]
+>>>>>>> de1317f53a74e22c927d1a2ce66a198623de498e:src/CelsoDrive/Assets/Items/cone.png.import
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+process/normal_map_invert_y=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

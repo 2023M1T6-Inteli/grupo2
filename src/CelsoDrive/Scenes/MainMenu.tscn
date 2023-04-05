@@ -106,4 +106,5 @@ position = Vector2( 560, 0 )
 
 [connection signal="pressed" from="PlayButton" to="." method="_on_PlayButton_pressed"]
 [connection signal="pressed" from="ConfigButton" to="." method="_on_ConfigButton_pressed"]
+[connection signal="pressed" from="CreditsButton" to="." method="_on_CreditsButton_pressed"]
 [connection signal="timeout" from="TruckTimer" to="." method="_on_TruckTimer_timeout"]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/forro.mp3-207169a1225f9d942b74784766e7af7e.mp3str"
+
+[deps]
+
+source_file="res://Assets/music/forro.mp3"
+dest_files=[ "res://.import/forro.mp3-207169a1225f9d942b74784766e7af7e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

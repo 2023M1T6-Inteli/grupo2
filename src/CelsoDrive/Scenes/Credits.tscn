@@ -1,0 +1,135 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Assets/fonts/CompassPro.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Assets/background/background.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/Credits.gd" type="Script" id=3]
+[ext_resource path="res://Assets/items/previous.png" type="Texture" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 50
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFontData" id=2]
+font_path = "res://Assets/fonts/CompassPro.ttf"
+
+[sub_resource type="DynamicFont" id=3]
+size = 20
+font_data = SubResource( 2 )
+
+[node name="Credits" type="Node2D"]
+script = ExtResource( 3 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = -16.0
+margin_right = 656.0
+margin_bottom = 400.0
+texture = ExtResource( 2 )
+expand = true
+
+[node name="SettingsLabel" type="Label" parent="."]
+anchor_right = 0.5
+margin_left = 226.0
+margin_top = 32.0
+margin_right = 417.0
+margin_bottom = 80.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 4
+custom_constants/shadow_offset_y = 4
+custom_fonts/font = SubResource( 1 )
+text = "CRÉDITOS"
+align = 1
+valign = 1
+
+[node name="VictorLabel" type="Label" parent="."]
+margin_left = 64.0
+margin_top = 120.0
+margin_right = 256.0
+margin_bottom = 139.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+custom_fonts/font = SubResource( 3 )
+text = "Victor Gabriel Marques"
+align = 1
+
+[node name="RafaelLabel" type="Label" parent="."]
+margin_left = 384.0
+margin_top = 120.0
+margin_right = 592.0
+margin_bottom = 139.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+custom_fonts/font = SubResource( 3 )
+text = "Rafael Cauã C Montenegro"
+align = 1
+
+[node name="DaviLabel" type="Label" parent="."]
+margin_left = 64.0
+margin_top = 182.0
+margin_right = 256.0
+margin_bottom = 201.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+custom_fonts/font = SubResource( 3 )
+text = "Davi Ferreira Arantes"
+align = 1
+
+[node name="CaioLabel" type="Label" parent="."]
+margin_left = 384.0
+margin_top = 182.0
+margin_right = 592.0
+margin_bottom = 201.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+custom_fonts/font = SubResource( 3 )
+text = "Caio Enoki Kakunaka"
+align = 1
+
+[node name="GabrielLabel" type="Label" parent="."]
+margin_left = 64.0
+margin_top = 247.0
+margin_right = 256.0
+margin_bottom = 266.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+custom_fonts/font = SubResource( 3 )
+text = "Gabriel Farias Alves"
+align = 1
+
+[node name="HenriqueLabel" type="Label" parent="."]
+margin_left = 384.0
+margin_top = 247.0
+margin_right = 600.0
+margin_bottom = 266.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+custom_fonts/font = SubResource( 3 )
+text = "Henrique O Magalhães"
+align = 1
+
+[node name="JoaoLabel" type="Label" parent="."]
+margin_left = 251.0
+margin_top = 311.0
+margin_right = 391.0
+margin_bottom = 330.0
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_constants/shadow_offset_x = 2
+custom_constants/shadow_offset_y = 2
+custom_fonts/font = SubResource( 3 )
+text = "João Paulo Santos"
+
+[node name="BackButton" type="Button" parent="."]
+margin_right = 32.0
+margin_bottom = 32.0
+focus_mode = 0
+enabled_focus_mode = 0
+icon = ExtResource( 4 )
+flat = true
+icon_align = 1
+
+[connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]

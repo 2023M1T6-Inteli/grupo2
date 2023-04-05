@@ -1,0 +1,25 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Con el ratón, haga clic en los elementos que considera buenas acciones que deben realizarse antes de conducir."
+		},
+		{
+			"emit_signal": "check",
+			"event_id": "dialogic_040"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Por ejemplo, ¿crees que \"buena noche de sueño\" es bueno o malo? Si es bueno, haga clic en él."
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1680201443.json",
+		"name": "tutorial-checklist-es"
+	}
+}

@@ -2,6 +2,9 @@ extends Node2D
 
 
 func _ready():
+	if Global.energy <= 0:
+		$"/root/Global".pause_scene() # se a energia acabar, exibe tela de pause
+		
 	Global.level = 1
 	# Define posição do personagem
 	Global.playerPosition = Vector2(64, 208)
@@ -10,6 +13,7 @@ func _ready():
 	var spawnPlayer = load("res://Scenes/SpawnPlayer.tscn").instance()
 	add_child(spawnPlayer)
 	
+	# Exibe caminhão somente quando  visibleTruck for verdadeiro
 	if Global.visibleTruck:
 		$Truck.visible = true
 	else:
@@ -22,20 +26,22 @@ func _on_CelsoHouse_body_entered(_body):
 	return get_tree().change_scene("res://Scenes/InsideHouse.tscn")
 
 
+# Verifica, a cada frame, se a tecla E foi pressionada
 func _process(_delta):
 	e_pressed()
-	
-# Mostra tecla E do teclado ao se aproximar do caminhao 
+
+
+# Mostra sprite da tecla E ao se aproximar do caminhao 
 func _on_Caminhao_body_entered(_body):
 	$Truck/Einteract.visible = true
-	#return get_tree().change_scene("")
-	#adicionar caminho para estrada/checklist
 
-# Esconde tecla E ao se afastar
+
+# Esconde sprite da tecla E ao se afastar
 func _on_Caminhao_body_exited(_body):
 	$Truck/Einteract.visible = false
-	
-# Captura input ao pressionar tecla, função é executada ocorrendo troca de cena
+
+
+# Caso a tecla E seja pressionada, há uma troca de cena
 func e_pressed():
 	if Input.is_action_just_pressed("interagir"):
-		return get_tree().change_scene("res://Scenes/RunGame.tscn")
+		return get_tree().change_scene("res://Scenes/CutScene.tscn")

@@ -13,10 +13,10 @@
 <div align="center">
   <table>
     <tr>
-      <td align="center"><a href="https://www.linkedin.com/in/victor-marques-profile/"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/86068797?v=4" width="100px;" alt=""/><br><sub><b>Victor M.</b></sub></a></td>
-      <td align="center"><a href="https://www.linkedin.com/in/gabriel-farias-alves/"><img style="border-radius: 50%;" src="https://media.licdn.com/dms/image/D5603AQHNYWy5HO9VDw/profile-displayphoto-shrink_800_800/0/1666369397380?e=2147483647&v=beta&t=zrSpyiGUp42RXypj049sCHPFJwqQEHCz3VEPSztcA5o" width="100px;" alt=""/><br><sub><b> Gabriel F.</b></sub></a></td>
-      <td align="center"><a href="https://www.linkedin.com/in/rafael-coutinho2004/"><img style="border-radius: 50%;" src="https://media.licdn.com/dms/image/D4D03AQHmLtvlUWXv5Q/profile-displayphoto-shrink_800_800/0/1674154004110?e=2147483647&v=beta&t=LiQl4N323LrXm2gogw8VB32gGcLGNE9cKdSlKp1US_c" width="100px;" alt=""/><br><sub><b>Rafael C.</b></sub></a></td>
-      <td align="center"><a href="https://www.linkedin.com/in/henrique-ottoboni-magalh%C3%A3es-77b950264/"><img style="border-radius: 50%;" src="https://media.licdn.com/dms/image/D4D03AQFpEYmWNhzKXA/profile-displayphoto-shrink_800_800/0/1675342628864?e=2147483647&v=beta&t=hpjnN6yJx_lOJUBRgbROt-_OgVAmW5M2Z08-R8S3ybk" width="100px;" alt=""/><br><sub><b>Henrique O.</b></sub></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/victor-marques-profile/"><img style="border-radius: 50%;" src="./imagens/equipe/victor_marques.jpg" alt="" width="100px;"/><br><sub><b>Victor M.</b></sub></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/gabriel-farias-alves/"><img style="border-radius: 50%;" src="./imagens/equipe/gabriel_farias.jpg" alt="" width="100px;""/><br><sub><b> Gabriel F.</b></sub></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/rafael-coutinho2004/"><img style="border-radius: 50%;" src="./imagens/equipe/rafael_montenegro.jpg" alt="" width="100px;"/><br><sub><b>Rafael C.</b></sub></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/henrique-ottoboni-magalh%C3%A3es-77b950264/"><img style="border-radius: 50%;" src="./imagens/equipe/henrique_ottoboni.jpg" alt="" width="100px;"/><br><sub><b>Henrique O.</b></sub></a></td>
     </tr>
   </table>
 </div>
@@ -24,9 +24,9 @@
 <div align="center">
   <table>
     <tr>
-    <td align="center"><a href="https://www.linkedin.com/in/davi-arantes-308949264/"><img style="border-radius: 50%;" src="https://ca.slack-edge.com/T02DWH2MXQR-U04L9SLTTPX-f4dae6001f00-512" width="100px;" alt=""/><br><sub><b>Davi A.</b></sub></a></td>
-      <td align="center"><a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-santos-872753264/"><img style="border-radius: 50%;" src="https://media.licdn.com/dms/image/D4E03AQGSVonA5ccgGA/profile-displayphoto-shrink_800_800/0/1675344154580?e=2147483647&v=beta&t=FKFCBNRHJOo1At5l6BmMI_Fy1RGjaowu1VQlgTqgdHE" width="100px;" alt=""/><br><sub><b>João S.</b></sub></a></td>
-      <td align="center"><a href="https://www.linkedin.com/in/caio-kakunaka-235754264"><img style="border-radius: 50%;" src="https://user-images.githubusercontent.com/86068797/217929712-a0bf23fc-760c-48a9-b424-3344cd90e7b0.jpg" height="100px;" width="100px;" alt=""/><br><sub><b>Caio E.</b></sub></a></td>
+    <td align="center"><a href="https://www.linkedin.com/in/davi-arantes-308949264/"><img style="border-radius: 50%;" src="./imagens/equipe/davi_arantes.jpg" alt="" width="100px;"><br><sub><b>Davi A.</b></sub></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-santos-872753264/"><img style="border-radius: 50%;" src="./imagens/equipe/joao_paulo.jpg" alt="" width="100px;"/><br><sub><b>João S.</b></sub></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/caio-kakunaka-235754264"><img style="border-radius: 50%;" src="./imagens/equipe/caio_kakunaka.jpg" alt="" width="100px;"/><br><sub><b>Caio E.</b></sub></a></td>
     </tr>
   </table>
 </div>
@@ -57,13 +57,14 @@ May the force be with you!
 |-->src<br>
 |readme.md<br>
 
-A pasta raiz contem dois arquivos que devem ser alterados:
+A pasta raiz contém um arquivo principal:
 
 <b>README.MD</b>: Arquivo que serve como guia e explicação geral sobre o projeto. O mesmo que você está lendo agora.
 
-Há também 4 pastas que seguem da seguinte forma:
+Há também 5 pastas que seguem da seguinte forma:
 
 <b>docs</b>: Local onde ficam os arquivos compilados em HTML do jogo.
+
 <b>documentos</b>: Aqui ficam todos os documentos do projeto, mas principalmente o <b>GDD (Game Design Document)/Documentação do Sistema</b>. Há uma pasta <b>antigos</b> onde estão todas as versões antigas da documentação.
 
 <b>executáveis</b>: Aqui ficam todos os executáveis do jogo, prontos para rodar. Há no mínimo 3 pastas, uma para binários <b>Windows</b>, uma para binários <b>android</b> e uma para a <b>Web/HTML</b>
@@ -97,15 +98,27 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 ## 🗃 Histórico de lançamentos
 
 A cada atualização os detalhes são lançados aqui.
-* 0.6.1 - 20/03/2023
+* 0.7.0 - 24/03/2023
+    * Finalização do Minigame de checklist;
+    * Interações na cena do tutorial;
+    * Debuff de celular com notificação ativada;
+    * Criação de cutscenes;
+    * Criação da tela de pause;
+    * Randomização da cor dos carros no RunGame;
+    * Obstáculos (cones, pneus e árvores) na pista da direita do RunGame;
+    * Criação e implantação de novos Celsos (Celsoverso);
+    * Início do desenvolvimento da solução para Android.
+* 0.6.1 - 21/03/2023
     * Cena do RunGame;
     * Diálogos das interações;
     * Melhoria das interações - layout e programação;
     * Transição de cena da casa para o minigame; 
-    * Debuff de controle trocado.
+    * Debuff de controle trocado;
+    * Criação e implantação de novos Celsos (Celsoverso).
 * 0.5.0 - 16/03/2023
     * Interação básica com as partes da casa;
-    * Desenvolvimento da mecânica básica do minigame do checklist.
+    * Desenvolvimento da mecânica básica do minigame do checklist;
+    * Criação e implantação de novos Celsos (Celsoverso);
 * 0.4.0 - 13/03/2023
     * Seleção de personagens (tela de seleção e spritesheets).
 * 0.3.0 - 10/03/2023

@@ -117,3 +117,19 @@ func _on_LanguagePortLabel_pressed():
 	# Retorna idioma para português
 	Global.selectedLanguage = 0
 	return get_tree().reload_current_scene()
+
+
+func _on_LanguageEsLabel_pressed():
+	# Altera linguagem do jogo para espanhol (2)
+	Global.selectedLanguage = 2
+	
+	# Traduz elementos da tela atual para espanhol
+	if language != 2:
+		$SettingsLabel.text = "Ajustes"
+		$MainContainer/AudioLabel.text = "Sonido"
+		$MainContainer/LanguageLabel.text = "Idioma"
+		$MainContainer/ControlsLabel.text = "Controles"
+		$MainContainer/VideoLabel.text = "Vídeo"
+		$SettingsAudioContainer/MusicVolumeLabel.text = "Volumen de la música"
+		$SettingsAudioContainer/MusicalGenreLabel.text = "Género musical favorito"
+		$SettingsVideoContainer/HBoxContainer/FullScreenButton.text = "Pantalla completa"

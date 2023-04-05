@@ -2,12 +2,21 @@
 
 importer="mp3"
 type="AudioStreamMP3"
+<<<<<<< HEAD
 path="res://.import/Samba.mp3-453197d9b2683be091fe3b11b77f6c36.mp3str"
 
 [deps]
 
 source_file="res://Assets/Music/Samba.mp3"
 dest_files=[ "res://.import/Samba.mp3-453197d9b2683be091fe3b11b77f6c36.mp3str" ]
+=======
+path="res://.import/samba.mp3-7e0a743184448616516aea828f1f03cf.mp3str"
+
+[deps]
+
+source_file="res://Assets/music/samba.mp3"
+dest_files=[ "res://.import/samba.mp3-7e0a743184448616516aea828f1f03cf.mp3str" ]
+>>>>>>> de1317f53a74e22c927d1a2ce66a198623de498e
 
 [params]
 

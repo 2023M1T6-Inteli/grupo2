@@ -1,0 +1,34 @@
+{
+	"events": [
+		{
+			"block_input": true,
+			"event_id": "dialogic_050",
+			"wait_time": 4
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ao clicar sobre um item, ele será destruído e anotado na prancheta."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Para completar o jogo, selecione 5 itens e valide as suas escolhas. Vamos lá?"
+		},
+		{
+			"emit_signal": "check-finished",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1680014931.json",
+		"name": "tutorial-checklist-2"
+	}
+}

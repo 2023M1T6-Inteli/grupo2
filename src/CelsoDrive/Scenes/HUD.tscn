@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Assets/items/energy_2.png" type="Texture" id=1]
 [ext_resource path="res://Assets/items/energy_4.png" type="Texture" id=2]
@@ -6,7 +6,7 @@
 [ext_resource path="res://Assets/items/energy_0.png" type="Texture" id=4]
 [ext_resource path="res://Assets/items/energy_3.png" type="Texture" id=5]
 [ext_resource path="res://Scripts/HUD.gd" type="Script" id=6]
-[ext_resource path="res://Assets/items/coin.png" type="Texture" id=7]
+[ext_resource path="res://Assets/items/coin_spritesheet.png" type="Texture" id=7]
 [ext_resource path="res://Assets/fonts/CompassPro.ttf" type="DynamicFontData" id=8]
 
 [sub_resource type="SpriteFrames" id=1]
@@ -37,6 +37,34 @@ animations = [ {
 "speed": 5.0
 } ]
 
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 7 )
+region = Rect2( 0, 0, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 7 )
+region = Rect2( 16, 0, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 7 )
+region = Rect2( 32, 0, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 7 )
+region = Rect2( 48, 0, 16, 16 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 7 )
+region = Rect2( 64, 0, 16, 16 )
+
+[sub_resource type="SpriteFrames" id=9]
+animations = [ {
+"frames": [ SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
 [sub_resource type="DynamicFont" id=3]
 size = 32
 font_data = ExtResource( 8 )
@@ -44,16 +72,30 @@ font_data = ExtResource( 8 )
 [node name="HUD" type="CanvasLayer"]
 script = ExtResource( 6 )
 
+[node name="ColorRectEnergy" type="ColorRect" parent="."]
+visible = false
+margin_right = 640.0
+margin_bottom = 368.0
+color = Color( 0, 0, 0, 0.862745 )
+
 [node name="EnergySprite" type="AnimatedSprite" parent="."]
-position = Vector2( 598, 18 )
-scale = Vector2( 0.2, 0.2 )
+position = Vector2( 600, 16 )
+scale = Vector2( 0.27907, 0.307692 )
 frames = SubResource( 1 )
 animation = "4"
 
-[node name="Coin" type="Sprite" parent="."]
-position = Vector2( 26, 20 )
-scale = Vector2( 0.1, 0.1 )
-texture = ExtResource( 7 )
+[node name="ColorRectCoin" type="ColorRect" parent="."]
+visible = false
+margin_right = 640.0
+margin_bottom = 368.0
+color = Color( 0, 0, 0, 0.862745 )
+
+[node name="Coin" type="AnimatedSprite" parent="."]
+position = Vector2( 24, 20 )
+scale = Vector2( 2, 1.5 )
+frames = SubResource( 9 )
+frame = 3
+playing = true
 
 [node name="CoinLabel" type="Label" parent="."]
 margin_left = 48.0

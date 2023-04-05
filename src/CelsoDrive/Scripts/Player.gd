@@ -16,12 +16,14 @@ func _ready():
 		$Camera2D.limit_top = 0
 		$Camera2D.limit_left = -100
 		$Camera2D.limit_right = 640
+		$Camera2D.zoom = Vector2(0.8, 0.8)
 	# Limita a câmera de acordo com o nível 2
 	elif Global.level == 2:
 		$Camera2D.limit_bottom = 368
 		$Camera2D.limit_top = 0
 		$Camera2D.limit_left = 0
 		$Camera2D.limit_right = 640
+		$Camera2D.zoom = Vector2(0.8, 0.8)
 
 
 func _physics_process(_delta):

@@ -1,7 +1,7 @@
 [gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
-[ext_resource path="res://Assets/player/spritesheet_celso_06.png" type="Texture" id=2]
+[ext_resource path="res://Assets/player/spritesheet_celsa_06.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=27]
 extents = Vector2( 10.5, 12 )
@@ -254,6 +254,7 @@ parameters/Run/blend_position = Vector2( 0, 0 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
+zoom = Vector2( 0.9, 0.9 )
 limit_left = -100
 limit_top = 0
 limit_right = 650

@@ -17,6 +17,10 @@ func _ready():
 		dialog = Dialogic.start("minigame-tinhoso-tutorial-en")
 		dialog.connect("dialogic_signal", self, "dialog_listener")
 		add_child(dialog)
+	elif language == 2:
+		dialog = Dialogic.start("minigame-tinhoso-tutorial-es")
+		dialog.connect("dialogic_signal", self, "dialog_listener")
+		add_child(dialog)	
 	else:
 		dialog = Dialogic.start("minigame-tinhoso-tutorial")
 		dialog.connect("dialogic_signal", self, "dialog_listener")
@@ -91,6 +95,10 @@ func _on_SpawnCarTimer_timeout():
 			dialog = Dialogic.start("moral-minigame-en")
 			dialog.connect("dialogic_signal", self, "dialog_listener")
 			add_child(dialog)
+		elif language == 2:
+			dialog = Dialogic.start("moral-minigame-es")
+			dialog.connect("dialogic_signal", self, "dialog_listener")
+			add_child(dialog)	
 		else:
 			dialog = Dialogic.start("moral-minigame")
 			dialog.connect("dialogic_signal", self, "dialog_listener")

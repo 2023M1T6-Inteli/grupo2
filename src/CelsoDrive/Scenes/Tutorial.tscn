@@ -1,4 +1,4 @@
-[gd_scene load_steps=79 format=2]
+[gd_scene load_steps=80 format=2]
 
 [ext_resource path="res://Assets/Tilesets/Modern_Exteriors_Complete_Tileset.png" type="Texture" id=1]
 [ext_resource path="res://Assets/items/e_interact.png" type="Texture" id=2]
@@ -20,7 +20,8 @@
 [ext_resource path="res://Scenes/Message.tscn" type="PackedScene" id=18]
 [ext_resource path="res://Assets/items/close.png" type="Texture" id=19]
 [ext_resource path="res://Assets/items/close_hover.png" type="Texture" id=20]
-[ext_resource path="res://Assets/npc/tinhosoInGame.png" type="Texture" id=21]
+[ext_resource path="res://Assets/npc/tinhoso_in_game.png" type="Texture" id=21]
+[ext_resource path="res://Assets/Tilesets/exterior.png" type="Texture" id=22]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Modern_Exteriors_Complete_Tileset.png 0"
@@ -912,7 +913,7 @@ points = PoolVector2Array( 0, 48, 16, 48, 16, 80, 0, 80 )
 8/shapes = [  ]
 8/z_index = 0
 9/name = "Modern_Exteriors_Complete_Tileset.png 9"
-9/texture = ExtResource( 1 )
+9/texture = ExtResource( 22 )
 9/tex_offset = Vector2( 0, 0 )
 9/modulate = Color( 1, 1, 1, 1 )
 9/region = Rect2( 288, 624, 16, 16 )
@@ -1272,7 +1273,7 @@ collision_layer = 2
 position = Vector2( 30, -46.6667 )
 scale = Vector2( 2.91666, 2.73062 )
 frames = SubResource( 65 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="TinhosoSceneArea/TinhosoNPC"]

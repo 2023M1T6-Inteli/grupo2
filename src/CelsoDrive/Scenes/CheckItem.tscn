@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Scripts/CheckItem.gd" type="Script" id=1]
-[ext_resource path="res://Assets/items/check_item-2.png" type="Texture" id=3]
+[ext_resource path="res://Assets/items/check_item-final.png" type="Texture" id=2]
+[ext_resource path="res://Assets/items/crash_ceck_final.png" type="Texture" id=3]
 
 [sub_resource type="DynamicFontData" id=3]
 font_path = "res://Assets/fonts/CompassPro.ttf"
@@ -22,18 +23,21 @@ margin_top = 20.0
 margin_right = 92.0
 margin_bottom = 68.0
 focus_mode = 0
+mouse_default_cursor_shape = 1
 enabled_focus_mode = 0
-texture_normal = ExtResource( 3 )
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
 expand = true
 
 [node name="Content" type="Label" parent="."]
-margin_left = 18.0
+margin_left = 15.0
 margin_top = 26.0
-margin_right = 86.0
+margin_right = 90.0
 margin_bottom = 62.0
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 4 )
-text = "Usar Cinto"
+text = "Boa noite
+de sono"
 align = 1
 valign = 1
 
