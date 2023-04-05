@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/phone_disable.png-cee8f1db56fcbe3de1f58451831d74cb.stex"
+path="res://.import/phone_disable.png-75746820decc42619520bd1ad483edd9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Items/phone_disable.png"
-dest_files=[ "res://.import/phone_disable.png-cee8f1db56fcbe3de1f58451831d74cb.stex" ]
+source_file="res://Assets/items/phone_disable.png"
+dest_files=[ "res://.import/phone_disable.png-75746820decc42619520bd1ad483edd9.stex" ]
 
 [params]
 

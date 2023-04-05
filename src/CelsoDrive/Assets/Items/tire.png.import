@@ -2,24 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-<<<<<<< HEAD:src/CelsoDrive/Assets/Items/test.png.import
-path="res://.import/test.png-2830f11b1775ffa51a9fd220851d0f52.stex"
-=======
 path="res://.import/tire.png-2fd21084ce9d2a9ad87c5aca2a323096.stex"
->>>>>>> de1317f53a74e22c927d1a2ce66a198623de498e:src/CelsoDrive/Assets/Items/tire.png.import
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD:src/CelsoDrive/Assets/Items/test.png.import
-source_file="res://Assets/Items/test.png"
-dest_files=[ "res://.import/test.png-2830f11b1775ffa51a9fd220851d0f52.stex" ]
-=======
 source_file="res://Assets/items/tire.png"
 dest_files=[ "res://.import/tire.png-2fd21084ce9d2a9ad87c5aca2a323096.stex" ]
->>>>>>> de1317f53a74e22c927d1a2ce66a198623de498e:src/CelsoDrive/Assets/Items/tire.png.import
 
 [params]
 
@@ -29,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

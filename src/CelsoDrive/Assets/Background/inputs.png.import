@@ -2,24 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-<<<<<<< HEAD:src/CelsoDrive/Assets/Player/celso_06.png.import
-path="res://.import/celso_06.png-dbd42a5d24ec7ea67cf55376306897fa.stex"
-=======
-path="res://.import/inputs.png-a537cae5fcda008bccc42608e1053476.stex"
->>>>>>> de1317f53a74e22c927d1a2ce66a198623de498e:src/CelsoDrive/Assets/Background/inputs.png.import
+path="res://.import/inputs.png-54b1fe8301ebb052f790ebe60d90ca04.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<< HEAD:src/CelsoDrive/Assets/Player/celso_06.png.import
-source_file="res://Assets/Player/celso_06.png"
-dest_files=[ "res://.import/celso_06.png-dbd42a5d24ec7ea67cf55376306897fa.stex" ]
-=======
-source_file="res://Assets/background/inputs.png"
-dest_files=[ "res://.import/inputs.png-a537cae5fcda008bccc42608e1053476.stex" ]
->>>>>>> de1317f53a74e22c927d1a2ce66a198623de498e:src/CelsoDrive/Assets/Background/inputs.png.import
+source_file="res://Assets/Background/inputs.png"
+dest_files=[ "res://.import/inputs.png-54b1fe8301ebb052f790ebe60d90ca04.stex" ]
 
 [params]
 
@@ -29,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

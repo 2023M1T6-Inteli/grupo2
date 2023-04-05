@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/night_time_scenary.png-f74b8db0ce16f2a9510f855c5b99de45.stex"
+path="res://.import/night_time_scenary.png-5116a3fa4e939d97a649a8cfb4453eb1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/background/night_time_scenary.png"
-dest_files=[ "res://.import/night_time_scenary.png-f74b8db0ce16f2a9510f855c5b99de45.stex" ]
+source_file="res://Assets/Background/night_time_scenary.png"
+dest_files=[ "res://.import/night_time_scenary.png-5116a3fa4e939d97a649a8cfb4453eb1.stex" ]
 
 [params]
 

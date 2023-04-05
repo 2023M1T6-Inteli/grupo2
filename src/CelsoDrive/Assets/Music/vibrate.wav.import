@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/vibrate.wav-b52d36c51b2a69dc32832834ae29c894.sample"
+path="res://.import/vibrate.wav-62e3614d695609362a14492fc7e9ef1f.sample"
 
 [deps]
 
-source_file="res://Assets/Music/vibrate.wav"
-dest_files=[ "res://.import/vibrate.wav-b52d36c51b2a69dc32832834ae29c894.sample" ]
+source_file="res://Assets/music/vibrate.wav"
+dest_files=[ "res://.import/vibrate.wav-62e3614d695609362a14492fc7e9ef1f.sample" ]
 
 [params]
 
