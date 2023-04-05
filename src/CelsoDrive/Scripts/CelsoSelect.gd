@@ -22,10 +22,8 @@ var currentCelso := 1 # "Index" para o aparecimento dos personagens na tela
 
 
 func _process(_delta):
-	$BG.visible = true
-	$TitleLabel.visible = true
 	# Verifica, constantemente, qual Celso exibir
-	show_current_celso()
+	show_only_current_celso()
 
 
 # Função usada para direcionar ao tutorial
@@ -33,316 +31,66 @@ func go_to_tutorial():
 	return get_tree().change_scene("res://Scenes/Tutorial.tscn")
 
 
-# Carrega sprite dinamicamente de acordo com o index
-func show_current_celso():
-	if currentCelso == 1:
-		$Celso01.visible = true
-		$Celso02.visible = false
-		$Celso03.visible = false
-		$Celso04.visible = false
-		$Celso05.visible = false
-		$Celso06.visible = false
-		$Celso07.visible = false
-		$Celso08.visible = false
-		$Celso09.visible = false
-		$Celso10.visible = false
-		$Celso11.visible = false
-		$Celso12.visible = false
-		$Celso13.visible = false
-		$Celso14.visible = false
-		$Celso15.visible = false
-		$Celso16.visible = false
-		$Celso17.visible = false
-	elif currentCelso == 2:
-		$Celso01.visible = false
-		$Celso02.visible = true
-		$Celso03.visible = false
-		$Celso04.visible = false
-		$Celso05.visible = false
-		$Celso06.visible = false
-		$Celso07.visible = false
-		$Celso08.visible = false
-		$Celso09.visible = false
-		$Celso10.visible = false
-		$Celso11.visible = false
-		$Celso12.visible = false
-		$Celso13.visible = false
-		$Celso14.visible = false
-		$Celso15.visible = false
-		$Celso16.visible = false
-		$Celso17.visible = false
-	elif currentCelso == 3:
-		$Celso01.visible = false
-		$Celso02.visible = false
-		$Celso03.visible = true
-		$Celso04.visible = false
-		$Celso05.visible = false
-		$Celso06.visible = false
-		$Celso07.visible = false
-		$Celso08.visible = false
-		$Celso09.visible = false
-		$Celso10.visible = false
-		$Celso11.visible = false
-		$Celso12.visible = false
-		$Celso13.visible = false
-		$Celso14.visible = false
-		$Celso15.visible = false
-		$Celso16.visible = false
-		$Celso17.visible = false
-	elif currentCelso == 4:
-		$Celso01.visible = false
-		$Celso02.visible = false
-		$Celso03.visible = false
-		$Celso04.visible = true
-		$Celso05.visible = false
-		$Celso06.visible = false
-		$Celso07.visible = false
-		$Celso08.visible = false
-		$Celso09.visible = false
-		$Celso10.visible = false
-		$Celso11.visible = false
-		$Celso12.visible = false
-		$Celso13.visible = false
-		$Celso14.visible = false
-		$Celso15.visible = false
-		$Celso16.visible = false
-		$Celso17.visible = false
-	elif currentCelso == 5:
-		$Celso01.visible = false
-		$Celso02.visible = false
-		$Celso03.visible = false
-		$Celso04.visible = false
-		$Celso05.visible = true
-		$Celso06.visible = false
-		$Celso07.visible = false
-		$Celso08.visible = false
-		$Celso09.visible = false
-		$Celso10.visible = false
-		$Celso11.visible = false
-		$Celso12.visible = false
-		$Celso13.visible = false
-		$Celso14.visible = false
-		$Celso15.visible = false
-		$Celso16.visible = false
-		$Celso17.visible = false
-	elif currentCelso == 6:
-		$Celso01.visible = false
-		$Celso02.visible = false
-		$Celso03.visible = false
-		$Celso04.visible = false
-		$Celso05.visible = false
-		$Celso06.visible = true
-		$Celso07.visible = false
-		$Celso08.visible = false
-		$Celso09.visible = false
-		$Celso10.visible = false
-		$Celso11.visible = false
-		$Celso12.visible = false
-		$Celso13.visible = false
-		$Celso14.visible = false
-		$Celso15.visible = false
-		$Celso16.visible = false
-		$Celso17.visible = false
-	elif currentCelso == 7:
-		$Celso01.visible = false
-		$Celso02.visible = false
-		$Celso03.visible = false
-		$Celso04.visible = false
-		$Celso05.visible = false
-		$Celso06.visible = false
-		$Celso07.visible = true
-		$Celso08.visible = false
-		$Celso09.visible = false
-		$Celso10.visible = false
-		$Celso11.visible = false
-		$Celso12.visible = false
-		$Celso13.visible = false
-		$Celso14.visible = false
-		$Celso15.visible = false
-		$Celso16.visible = false
-		$Celso17.visible = false
-	elif currentCelso == 8:
-		$Celso01.visible = false
-		$Celso02.visible = false
-		$Celso03.visible = false
-		$Celso04.visible = false
-		$Celso05.visible = false
-		$Celso06.visible = false
-		$Celso07.visible = false
-		$Celso08.visible = true
-		$Celso09.visible = false
-		$Celso10.visible = false
-		$Celso11.visible = false
-		$Celso12.visible = false
-		$Celso13.visible = false
-		$Celso14.visible = false
-		$Celso15.visible = false
-		$Celso16.visible = false
-		$Celso17.visible = false
-	elif currentCelso == 9:
-		$Celso01.visible = false
-		$Celso02.visible = false
-		$Celso03.visible = false
-		$Celso04.visible = false
-		$Celso05.visible = false
-		$Celso06.visible = false
-		$Celso07.visible = false
-		$Celso08.visible = false
-		$Celso09.visible = true
-		$Celso10.visible = false
-		$Celso11.visible = false
-		$Celso12.visible = false
-		$Celso13.visible = false
-		$Celso14.visible = false
-		$Celso15.visible = false
-		$Celso16.visible = false
-		$Celso17.visible = false
-	elif currentCelso == 10:
-		$Celso01.visible = false
-		$Celso02.visible = false
-		$Celso03.visible = false
-		$Celso04.visible = false
-		$Celso05.visible = false
-		$Celso06.visible = false
-		$Celso07.visible = false
-		$Celso08.visible = false
-		$Celso09.visible = false
-		$Celso10.visible = true
-		$Celso11.visible = false
-		$Celso12.visible = false
-		$Celso13.visible = false
-		$Celso14.visible = false
-		$Celso15.visible = false
-		$Celso16.visible = false
-		$Celso17.visible = false
-	elif currentCelso == 11:
-		$Celso01.visible = false
-		$Celso02.visible = false
-		$Celso03.visible = false
-		$Celso04.visible = false
-		$Celso05.visible = false
-		$Celso06.visible = false
-		$Celso07.visible = false
-		$Celso08.visible = false
-		$Celso09.visible = false
-		$Celso10.visible = false
-		$Celso11.visible = true
-		$Celso12.visible = false
-		$Celso13.visible = false
-		$Celso14.visible = false
-		$Celso15.visible = false
-		$Celso16.visible = false
-		$Celso17.visible = false
-	elif currentCelso == 12:
-		$Celso01.visible = false
-		$Celso02.visible = false
-		$Celso03.visible = false
-		$Celso04.visible = false
-		$Celso05.visible = false
-		$Celso06.visible = false
-		$Celso07.visible = false
-		$Celso08.visible = false
-		$Celso09.visible = false
-		$Celso10.visible = false
-		$Celso11.visible = false
-		$Celso12.visible = true
-		$Celso13.visible = false
-		$Celso14.visible = false
-		$Celso15.visible = false
-		$Celso16.visible = false
-		$Celso17.visible = false
-	elif currentCelso == 13:
-		$Celso01.visible = false
-		$Celso02.visible = false
-		$Celso03.visible = false
-		$Celso04.visible = false
-		$Celso05.visible = false
-		$Celso06.visible = false
-		$Celso07.visible = false
-		$Celso08.visible = false
-		$Celso09.visible = false
-		$Celso10.visible = false
-		$Celso11.visible = false
-		$Celso12.visible = false
-		$Celso13.visible = true
-		$Celso14.visible = false
-		$Celso15.visible = false
-		$Celso16.visible = false
-		$Celso17.visible = false
-	elif currentCelso == 14:
-		$Celso01.visible = false
-		$Celso02.visible = false
-		$Celso03.visible = false
-		$Celso04.visible = false
-		$Celso05.visible = false
-		$Celso06.visible = false
-		$Celso07.visible = false
-		$Celso08.visible = false
-		$Celso09.visible = false
-		$Celso10.visible = false
-		$Celso11.visible = false
-		$Celso12.visible = false
-		$Celso13.visible = false
-		$Celso14.visible = true
-		$Celso15.visible = false
-		$Celso16.visible = false
-		$Celso17.visible = false
-	elif currentCelso == 15:
-		$Celso01.visible = false
-		$Celso02.visible = false
-		$Celso03.visible = false
-		$Celso04.visible = false
-		$Celso05.visible = false
-		$Celso06.visible = false
-		$Celso07.visible = false
-		$Celso08.visible = false
-		$Celso09.visible = false
-		$Celso10.visible = false
-		$Celso11.visible = false
-		$Celso12.visible = false
-		$Celso13.visible = false
-		$Celso14.visible = false
-		$Celso15.visible = true
-		$Celso16.visible = false
-		$Celso17.visible = false
-	elif currentCelso == 16:
-		$Celso01.visible = false
-		$Celso02.visible = false
-		$Celso03.visible = false
-		$Celso04.visible = false
-		$Celso05.visible = false
-		$Celso06.visible = false
-		$Celso07.visible = false
-		$Celso08.visible = false
-		$Celso09.visible = false
-		$Celso10.visible = false
-		$Celso11.visible = false
-		$Celso12.visible = false
-		$Celso13.visible = false
-		$Celso14.visible = false
-		$Celso15.visible = false
-		$Celso16.visible = true
-		$Celso17.visible = false
-	elif currentCelso == 17:
-		$Celso01.visible = false
-		$Celso02.visible = false
-		$Celso03.visible = false
-		$Celso04.visible = false
-		$Celso05.visible = false
-		$Celso06.visible = false
-		$Celso07.visible = false
-		$Celso08.visible = false
-		$Celso09.visible = false
-		$Celso10.visible = false
-		$Celso11.visible = false
-		$Celso12.visible = false
-		$Celso13.visible = false
-		$Celso14.visible = false
-		$Celso15.visible = false
-		$Celso16.visible = false
-		$Celso17.visible = true
-		
+# Função para tornar todos os celsos invisíveis, exceto o celso passado como argumento
+func make_celso_visible(celso):
+	for item in $Celsos.get_children():
+		item.visible = false
 	
+	celso.visible = true
+
+
+# Exibe sprite de acordo com o index
+func show_only_current_celso():
+	if currentCelso == 1:
+		make_celso_visible($Celsos/Celso01)
+		
+	elif currentCelso == 2:
+		make_celso_visible($Celsos/Celso02)
+		
+	elif currentCelso == 3:
+		make_celso_visible($Celsos/Celso03)
+		
+	elif currentCelso == 4:
+		make_celso_visible($Celsos/Celso04)
+		
+	elif currentCelso == 5:
+		make_celso_visible($Celsos/Celso05)
+		
+	elif currentCelso == 6:
+		make_celso_visible($Celsos/Celso06)
+		
+	elif currentCelso == 7:
+		make_celso_visible($Celsos/Celso07)
+		
+	elif currentCelso == 8:
+		make_celso_visible($Celsos/Celso08)
+		
+	elif currentCelso == 9:
+		make_celso_visible($Celsos/Celso09)
+		
+	elif currentCelso == 10:
+		make_celso_visible($Celsos/Celso10)
+		
+	elif currentCelso == 11:
+		make_celso_visible($Celsos/Celso11)
+		
+	elif currentCelso == 12:
+		make_celso_visible($Celsos/Celso12)
+		
+	elif currentCelso == 13:
+		make_celso_visible($Celsos/Celso13)
+		
+	elif currentCelso == 14:
+		make_celso_visible($Celsos/Celso14)
+		
+	elif currentCelso == 15:
+		make_celso_visible($Celsos/Celso15)
+		
+	elif currentCelso == 16:
+		make_celso_visible($Celsos/Celso16)
+		
+	elif currentCelso == 17:
+		make_celso_visible($Celsos/Celso17)
 
 
 # Incrementa o index do personagem selecionado

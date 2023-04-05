@@ -2,12 +2,12 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/Rock.mp3-874426acbb2fff2d75aa730cca85ac1f.mp3str"
+path="res://.import/rock.mp3-067626bb90dbc5e0a8acbda06b483b64.mp3str"
 
 [deps]
 
-source_file="res://Assets/music/Rock.mp3"
-dest_files=[ "res://.import/Rock.mp3-874426acbb2fff2d75aa730cca85ac1f.mp3str" ]
+source_file="res://Assets/music/rock.mp3"
+dest_files=[ "res://.import/rock.mp3-067626bb90dbc5e0a8acbda06b483b64.mp3str" ]
 
 [params]
 
