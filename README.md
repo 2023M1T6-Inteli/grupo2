@@ -33,12 +33,18 @@
 
 ## Descrição
 
-> 📜 O projeto foi desenvolvido no módulo 1 da turma de 2023.1 do Inteli - Instituto de Tecnologia e Liderança, pela equipe PlayVC. Sem pormenorizar, o projeto visa demonstrar, sobretudo aos motoristas que transportam os produtos do parceiro (Grupo Unipar), a importância das boas atitudes antes e durante o transporte, de modo a enfatizar que o processo da direção de um veículo começa antes de sair de casa.
+> 📜 O jogo "Celso Caminhões" foi desenvolvido no módulo 1 da turma de 2023.1 do Inteli - Instituto de Tecnologia e Liderança, pela equipe PlayVC. Sem pormenorizar, o projeto visa demonstrar, sobretudo aos motoristas que transportam os produtos do parceiro (Grupo Unipar), a importância das boas atitudes antes e durante a viagem de caminhão, de modo a enfatizar que o processo da direção de um veículo começa antes mesmo do motorista sair de casa.
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/86068797/224431233-6509adbc-dc0e-4afe-8924-876063d6fd5a.png" alt="Celso Drive">
   Celso Caminhões by PlayVC
 </p>
+
+Sob essa perspectiva, este jogo trata-se de um *Serious Game* que visa a conscientização dos usuários acerca das consequências das "pequenas" decisões diárias, como comer bem, por exemplo. Destarte, o jogo "Celso Caminhões", de maneira lúdica e intuitiva, disponibiliza ao usuário uma série de interações, em um cenário que simula a casa do jogador, para depois mostrar os efeitos dessas deciões na jogabilidade da fase final (*run game*). Sendo assim, a equipe procurou mostrar aos motoristas que, assim como no jogo, é necessário tomar atitudes conscientes antes mesmo de sair de casa, haja vista que elas impactam diretamente na direção do caminhão.
+
+Além da finalidade educativa, o jogo foi desenvolvido considerando importantes questões sociais, como a inclusão de gênero e de raça e a acessibilidade - tanto digital, no sentido técnico, quanto informacional, no sentido da complexidade dos diálogos do jogo. Sendo assim, com o intuito de incluir o maior número de pessoas possível, os desenvolvedores criaram o conceito de **Celsoverso**, que, em linhas gerais, trata-se de um multiverso de Celsos (protagonista do jogo). Com essa atitute, foi possível criar personagens com raças, gêneros e características singulares, garantindo a identificação do jogador com o personagem principal.
+
+Ademais, com o intuito de garantir uma maior imersão no jogo, a equipe PlayVC prezou por criar outro elemento totalmente novo nos jogos do Inteli (além do Celsoverso): a possibilidade de seleção do estilo musical tocado durante toda a gameplay. Tal ação objetiva a garantia de uma experiência significativa ao jogador, já que, assim como ele pode fazer na vida real através de um rádio, é possível selecionar o estilo musical que mais lhe agrada.
 
 May the force be with you!
 
