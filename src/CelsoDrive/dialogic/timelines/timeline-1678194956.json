@@ -40,7 +40,8 @@
 			"character": "character-1677975634.json",
 			"event_id": "dialogic_002",
 			"mirror_portrait": false,
-			"portrait": "Default",
+			"port_defn": "1680738826-648",
+			"portrait": "[Definition]",
 			"portrait_definition": "",
 			"position": {
 				"0": false,
@@ -55,7 +56,7 @@
 		{
 			"character": "character-1677975634.json",
 			"event_id": "dialogic_001",
-			"portrait": "",
+			"portrait": "(Don't change)",
 			"text": "Notei que estava difícil de dirigir, parecia pesado demais"
 		},
 		{

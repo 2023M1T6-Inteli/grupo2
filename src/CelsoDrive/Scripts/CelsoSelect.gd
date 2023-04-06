@@ -21,6 +21,13 @@ onready var celso17 = "res://Scenes/Player17.tscn"
 var currentCelso := 1 # "Index" para o aparecimento dos personagens na tela
 
 
+func _ready():
+	if Global.selectedLanguage == 1:
+		$TitleLabel.text = "Choose Your Character"
+	elif Global.selectedLanguage == 2:
+		$TitleLabel.text = "Elige a Tu Personaje"
+
+
 func _process(_delta):
 	# Verifica, constantemente, qual Celso exibir
 	show_only_current_celso()

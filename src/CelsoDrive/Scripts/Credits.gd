@@ -1,11 +1,19 @@
 extends Node2D
 
 
+func _ready():
+	if Global.selectedLanguage == 1:
+		$CreditsLabel.text = "CREDITS"
+	elif Global.selectedLanguage == 2:
+		$CreditsLabel.text = "CREDITOS"
+
+
 # Retorna para a tela do menu inicial
 func _on_BackButton_pressed():
 	return get_tree().change_scene("res://Scenes/MainMenu.tscn")
 
-# Aciona visibilidade das diferentes telas de créditos 
+# Aciona visibilidade das diferentes telas de créditos:
+
 func _on_Area2DVictor_body_entered(_body):
 	$Area2DVictor/CreditsVictor.visible = true
 

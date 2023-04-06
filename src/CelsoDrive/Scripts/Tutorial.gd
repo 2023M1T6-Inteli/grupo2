@@ -3,9 +3,34 @@ extends Node2D
 onready var dialog # Variável utilizada para carregar os diálogos
 onready var language = Global.selectedLanguage # Carrega informações da variável global de idioma
 var finishedDialog = false # Variável que contém valor do sinal ao finalizar dialogo
+onready var playerDir = Global.playerDir # Verifica o caminho do personagem selecionado
 
 
 func _ready():
+	# Define o Celso que aparecerá nos diálogos de acordo com a escolha na seleção de personagem
+	if playerDir == "res://Scenes/Player05.tscn" or playerDir == "res://Scenes/Player13.tscn":
+		Dialogic.set_variable("selectedCharacter", "Celsa Branca")
+	elif playerDir == "res://Scenes/Player06.tscn" or playerDir == "res://Scenes/Player14.tscn":
+		Dialogic.set_variable("selectedCharacter", "Celsa Negra")
+	elif playerDir == "res://Scenes/Player03.tscn":
+		Dialogic.set_variable("selectedCharacter", "Celso Negro")
+	elif playerDir == "res://Scenes/Player04.tscn":
+		Dialogic.set_variable("selectedCharacter", "Celso Sério Negro")
+	elif playerDir == "res://Scenes/Player07.tscn":
+		Dialogic.set_variable("selectedCharacter", "Celso Unipar")
+	elif playerDir == "res://Scenes/Player08.tscn":
+		Dialogic.set_variable("selectedCharacter", "Celso Cientista")
+	elif playerDir == "res://Scenes/Player09.tscn":
+		Dialogic.set_variable("selectedCharacter", "Celso Elegante")
+	elif playerDir == "res://Scenes/Player10.tscn":
+		Dialogic.set_variable("selectedCharacter", "Celso Amarelão")
+	elif playerDir == "res://Scenes/Player15.tscn":
+		Dialogic.set_variable("selectedCharacter", "Celso Encanador")
+	elif playerDir == "res://Scenes/Player01.tscn":
+		Dialogic.set_variable("selectedCharacter", "Celso Regatinha")
+	else:
+		Dialogic.set_variable("selectedCharacter", "Defalut")
+	
 	# Define posição do personagem
 	Global.playerPosition = Vector2(79, 304)
 	# Instancia cena para mostrar o personagem
@@ -82,7 +107,6 @@ func dialog_listener(string):
 		# Adiciona na lista de escolhas a decisão boa de recusar a corrida do tinhoso
 		"refused":
 			Global.choices.append(0);
-			Global.achievements += 1
 		
 		# Quando o sinal for emitido, a variável finishedDialog recebe true
 		"finishedDialog":

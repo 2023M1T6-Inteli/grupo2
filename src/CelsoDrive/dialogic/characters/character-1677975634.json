@@ -1,7 +1,7 @@
 {
 	"color": "#ff0d8e34",
 	"description": "",
-	"display_name": "Celso",
+	"display_name": "Celso(a)",
 	"display_name_bool": true,
 	"id": "character-1677975634.json",
 	"mirror_portraits": false,
@@ -14,6 +14,46 @@
 		{
 			"name": "Default",
 			"path": "res://Assets/player/big_celso0.png"
+		},
+		{
+			"name": "Celsa Branca",
+			"path": "res://Assets/player/big_celsa05.png"
+		},
+		{
+			"name": "Celso Negro",
+			"path": "res://Assets/player/big_celso03.png"
+		},
+		{
+			"name": "Celsa Negra",
+			"path": "res://Assets/player/big_celsa06.png"
+		},
+		{
+			"name": "Celso Encanador",
+			"path": "res://Assets/player/big_celso_15.png"
+		},
+		{
+			"name": "Celso Unipar",
+			"path": "res://Assets/player/big_celso_07.png"
+		},
+		{
+			"name": "Celso Cientista",
+			"path": "res://Assets/player/big_celso_08.png"
+		},
+		{
+			"name": "Celso Elegante",
+			"path": "res://Assets/player/big_celso_09.png"
+		},
+		{
+			"name": "Celso Amarelão",
+			"path": "res://Assets/player/big_celso_10.png"
+		},
+		{
+			"name": "Celso Regatinha",
+			"path": "res://Assets/player/big_celso_01.png"
+		},
+		{
+			"name": "Celso Sério Negro",
+			"path": "res://Assets/player/big_celso_04.png"
 		}
 	],
 	"scale": 247,

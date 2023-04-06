@@ -10,6 +10,11 @@
 		}
 	],
 	"variables": [
-
+		{
+			"id": "1680738826-648",
+			"name": "selectedCharacter",
+			"type": 0,
+			"value": ""
+		}
 	]
 }

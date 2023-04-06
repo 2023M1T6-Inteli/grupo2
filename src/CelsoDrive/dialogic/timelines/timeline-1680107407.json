@@ -24,7 +24,7 @@
 			"character": "character-1677975462.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Cof cof... ¡Celsão!Me alegra que hayas llegado!"
+			"text": "Cof cof... !Me alegra que hayas llegado!"
 		},
 		{
 			"character": "character-1677975462.json",
@@ -58,7 +58,8 @@
 			"character": "character-1677975634.json",
 			"event_id": "dialogic_002",
 			"mirror_portrait": false,
-			"portrait": "Default",
+			"port_defn": "1680738826-648",
+			"portrait": "[Definition]",
 			"portrait_definition": "",
 			"position": {
 				"0": false,

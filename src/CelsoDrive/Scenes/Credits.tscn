@@ -6,7 +6,7 @@
 [ext_resource path="res://Assets/items/previous.png" type="Texture" id=4]
 [ext_resource path="res://Scenes/CreditsVictorM.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/CelsoCredits.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Scenes/CreditsDavi.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/CreditsDaviA.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/CreditsHenriqueO.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scenes/CreditsCaioK.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Scenes/CreditsJoaoS.tscn" type="PackedScene" id=10]
@@ -67,7 +67,7 @@ margin_bottom = 400.0
 texture = ExtResource( 2 )
 expand = true
 
-[node name="SettingsLabel" type="Label" parent="."]
+[node name="CreditsLabel" type="Label" parent="."]
 anchor_right = 0.5
 margin_left = 226.0
 margin_top = 32.0
