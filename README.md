@@ -42,9 +42,39 @@
 
 Sob essa perspectiva, este jogo trata-se de um *Serious Game* que visa a conscientização dos usuários acerca das consequências das "pequenas" decisões diárias, como comer bem, por exemplo. Destarte, o jogo "Celso Caminhões", de maneira lúdica e intuitiva, disponibiliza ao usuário uma série de interações, em um cenário que simula a casa do jogador, para depois mostrar os efeitos dessas deciões na jogabilidade da fase final (*run game*). Sendo assim, a equipe procurou mostrar aos motoristas que, assim como no jogo, é necessário tomar atitudes conscientes antes mesmo de sair de casa, haja vista que elas impactam diretamente na direção do caminhão.
 
-Além da finalidade educativa, o jogo foi desenvolvido considerando importantes questões sociais, como a inclusão de gênero e de raça e a acessibilidade - tanto digital, no sentido técnico, quanto informacional, no sentido da complexidade dos diálogos do jogo. Sendo assim, com o intuito de incluir o maior número de pessoas possível, os desenvolvedores criaram o conceito de **Celsoverso**, que, em linhas gerais, trata-se de um multiverso de Celsos (protagonista do jogo). Com essa atitute, foi possível criar personagens com raças, gêneros e características singulares, garantindo a identificação do jogador com o personagem principal.
+<p align="center">
+  <img src="./imagens/jogo/interacao.png" alt="Exemplo de interação com o celular do Celso.">
+  Exemplo de Interação by PlayVC
+</p>
+
+Além da finalidade educativa, o jogo foi desenvolvido considerando importantes questões sociais, como a inclusão de gênero e de raça e a acessibilidade - tanto digital, no sentido técnico, quanto informacional, no sentido da complexidade dos diálogos do jogo. Sendo assim, com o intuito de incluir o maior número de pessoas possível, os desenvolvedores criaram o conceito de **Celsoverso**, que, em linhas gerais, trata-se de um multiverso de Celsos (protagonista do jogo). Com essa atitute, foi possível criar personagens com raças, gêneros e características singulares, garantindo a identificação do jogador com o personagem principal. Ao todo, existem 17 variações de Celsos e, por conseguinte, as imagens a seguir exibem apenas algumas das variações.
+
+<p align="center">
+  <img src="./imagens/jogo/celso_regatinha_branco.png" alt="Celso Versão Regatinha com Cor de Pele Branca">
+  Celso Versão Regatinha com Cor de Pele Branca by PlayVC
+</p>
+
+<p align="center">
+  <img src="./imagens/jogo/celso_regatinha_negro.png" alt="Celso Versão Regatinha com Cor de Pele Negra">
+  Celso Versão Regatinha com Cor de Pele Negra by PlayVC
+</p>
+
+<p align="center">
+  <img src="./imagens/jogo/celsa.png" alt="Celso Versão Feminina com Cor de Pele Branca">
+  Celso Versão Feminina by PlayVC
+</p>
+
+<p align="center">
+  <img src="./imagens/jogo/celso_unipar.png" alt="Celso Versão Unipar">
+  Celso Versão Unipar by PlayVC
+</p>
 
 Ademais, com o intuito de garantir uma maior imersão no jogo, a equipe PlayVC prezou por criar outro elemento totalmente novo nos jogos do Inteli (além do Celsoverso): a possibilidade de seleção do estilo musical tocado durante toda a gameplay. Tal ação objetiva a garantia de uma experiência significativa ao jogador, já que, assim como ele pode fazer na vida real através de um rádio, é possível selecionar o estilo musical que mais lhe agrada.
+
+<p align="center">
+  <img src="./imagens/jogo/selecao_audio.png" alt="Tela de seleção de estilo musical">
+  Tela de Seleção de Estilo Musical by PlayVC
+</p>
 
 May the force be with you!
 
@@ -84,6 +114,11 @@ Há também 5 pastas que seguem da seguinte forma:
 <b>Android:</b>
 
 Como um grande diferencial e destaque dos jogos desenvolvidos pelas turmas do Inteli, o "Celso Caminhões" está disponível para, além do sistema operacional Windows, celulares com sistema operacional Android. Nesse sentido, para instalar o aplicativo basta baixar o apk na pasta executáveis e, em seguida, seguir os procedimentos de instalação disponíveis nesta pasta.
+
+<p align="center">
+  <img src="./imagens/jogo/android.jpg" alt="Celso Caminhões para Android">
+  Celso Caminhões para Android PlayVC
+</p>
 
 <b>Windows:</b>
 
