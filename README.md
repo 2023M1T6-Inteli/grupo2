@@ -207,4 +207,7 @@ A cada atualização os detalhes são lançados aqui.
 
 > 🤖 [Documentação do Godot](https://docs.godotengine.org/pt_BR/latest/about/index.html) <br>
 🏠 [Modern Exteriors](https://limezu.itch.io/moderninteriors) e [Modern Interiors](https://limezu.itch.io/moderninteriors) <br>
-📻 [Forró](https://www.youtube.com/watch?v=IGgg8PajPN8), [Samba](https://www.youtube.com/watch?v=CoAP1ZjOD_Q), [Sertanejo](https://www.youtube.com/watch?v=9MoDQTe10vs) e [Rock](https://www.youtube.com/watch?v=fh-o8Bxc3Ys)
+📻 [Forró](https://www.youtube.com/watch?v=IGgg8PajPN8), [Samba](https://www.youtube.com/watch?v=CoAP1ZjOD_Q), [Sertanejo](https://www.youtube.com/watch?v=9MoDQTe10vs), [Rock](https://www.youtube.com/watch?v=fh-o8Bxc3Ys) e [FreeSound](https://freesound.org/)<br>
+💲[Coins Free](https://laredgames.itch.io/gems-coins-free) <br>
+💡Inspiração - *Pokemon FireRed* e *Subway Surfers* <br>
+🔋[Barra de energia e frame](https://github.com/2022M1T4-Inteli/My-roadlab) <br>
