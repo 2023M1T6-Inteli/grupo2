@@ -75,6 +75,10 @@ Há também 5 pastas que seguem da seguinte forma:
 
 ## 🛠 Instalação
 
+<b>Android:</b>
+
+Como um grande diferencial e destaque dos jogos desenvolvidos pelas turmas do Inteli, o "Celso Caminhões" está disponível para, além do sistema operacional Windows, celulares com sistema operacional Android. Nesse sentido, para instalar o aplicativo basta baixar o apk na pasta executáveis e, em seguida, seguir os procedimentos de instalação disponíveis nesta pasta.
+
 <b>Windows:</b>
 
 Não há instalação! Apenas executável!
