@@ -21,6 +21,18 @@ func _physics_process(delta):
 			velocity = velocity.move_toward(Vector2.ZERO, friction * delta)
 		
 		velocity = move_and_slide(velocity)
+		
+	elif Global.roadTinhoso:
+		inputDirection.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
+		
+		if inputDirection != Vector2.ZERO:
+		# Calula o vetor velocidade considerando a velocidade máxima e a aceleração
+			velocity = velocity.move_toward(inputDirection * maxSpeed, acceleration * delta)
+		else: 
+			# Responsável por desacelerar o caminhão de forma gradativa e pela movimentação fluída
+			velocity = velocity.move_toward(Vector2.ZERO, friction * delta)
+		
+		velocity = move_and_slide(velocity)
 	
 	# Movimentação padrão - sem debuff
 	else:

@@ -17,6 +17,7 @@ var interactedPhone := false # Variável de controle para não repetir a intera�
 var interactedBed := false # Variável de controle para não repetir a interação da cama
 var visibleTruck := false # Variável para exibir ou não o caminhão fora da casa
 var checklistTutorial := false # Variável de controle para não repetir o diálogo do checklist
+var roadTinhoso := false # Variável de controle para verificar se o jogador está no game do tinhoso
 
 # Variáveis para controlar debuffs
 var alcohol : bool # caso true, sofrerá debuff de álcool

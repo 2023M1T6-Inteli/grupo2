@@ -19,7 +19,6 @@ var count = 0 # Variável para mudar animação do rádio
 
 
 func _ready():
-	$"/root/PauseScene/VBoxContainer/BreakButton".visible = true
 	
 	Global.pausedGame = false
 	if Global.alcohol:
@@ -115,7 +114,6 @@ func _on_SpawnTimer_timeout():
 		$SpawnObstacleTimer.stop()
 		Global.energy -= 1 # Diminui energia
 		$GameOver.visible = true
-		$"/root/PauseScene/VBoxContainer/BreakButton".visible = false
 
 
 func _on_SpawnObstacleTimer_timeout():

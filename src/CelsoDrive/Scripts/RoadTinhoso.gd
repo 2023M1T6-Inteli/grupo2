@@ -12,6 +12,7 @@ var time = 10 # Variável para o cronômetro
 
 
 func _ready():
+	Global.roadTinhoso = true
 	# Carrega os diálogos de acordo com o idioma do jogo
 	if language == 1:
 		dialog = Dialogic.start("minigame-tinhoso-tutorial-en")
@@ -104,6 +105,7 @@ func _on_SpawnCarTimer_timeout():
 			dialog.connect("dialogic_signal", self, "dialog_listener")
 			add_child(dialog)
 		Global.energy -= 1 # Diminui energia
+		Global.roadTinhoso = false
 
 
 # Randomiza aparecimento dos carros

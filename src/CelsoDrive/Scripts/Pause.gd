@@ -40,7 +40,6 @@ func _on_ContinueButton_pressed():
 func _on_Home_pressed():
 	show_pause(false)
 	get_tree().paused = false
-	$VBoxContainer/BreakButton.hide()
 	return get_tree().change_scene("res://Scenes/InsideHouse.tscn")
 
 
@@ -48,12 +47,4 @@ func _on_Home_pressed():
 func _on_MainMenuButton_pressed():
 	show_pause(false)
 	get_tree().paused = false
-	$VBoxContainer/BreakButton.hide()
 	return get_tree().change_scene("res://Scenes/MainMenu.tscn")
-
-
-# Direciona para a cutscene de pausa. Somente aparece no RunGame
-func _on_BreakButton_pressed():
-	show_pause(false)
-	get_tree().paused = false
-	$VBoxContainer/BreakButton.hide()
