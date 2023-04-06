@@ -13,10 +13,10 @@
 <div align="center">
   <table>
     <tr>
-      <td align="center"><a href="https://www.linkedin.com/in/victor-marques-profile/"><img style="border-radius: 50%;" src="./imagens/equipe/victor_marques.jpg" alt="" width="100px;"/><br><sub><b>Victor M.</b></sub></a></td>
-      <td align="center"><a href="https://www.linkedin.com/in/gabriel-farias-alves/"><img style="border-radius: 50%;" src="./imagens/equipe/gabriel_farias.jpg" alt="" width="100px;""/><br><sub><b> Gabriel F.</b></sub></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/victor-marques-profile/"><img style="border-radius: 50%;" src="./imagens/equipe/victor_marques.jpg" alt="" width="100px;"/><br><sub><b>Victor M.</b></sub></a> <br></td>
       <td align="center"><a href="https://www.linkedin.com/in/rafael-coutinho2004/"><img style="border-radius: 50%;" src="./imagens/equipe/rafael_montenegro.jpg" alt="" width="100px;"/><br><sub><b>Rafael C.</b></sub></a></td>
-      <td align="center"><a href="https://www.linkedin.com/in/henrique-ottoboni-magalh%C3%A3es-77b950264/"><img style="border-radius: 50%;" src="./imagens/equipe/henrique_ottoboni.jpg" alt="" width="100px;"/><br><sub><b>Henrique O.</b></sub></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/davi-arantes-308949264/"><img style="border-radius: 50%;" src="./imagens/equipe/davi_arantes.jpg" alt="" width="100px;"><br><sub><b>Davi A.</b></sub></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/caio-kakunaka-235754264"><img style="border-radius: 50%;" src="./imagens/equipe/caio_kakunaka.jpg" alt="" width="100px;"/><br><sub><b>Caio E.</b></sub></a></td>
     </tr>
   </table>
 </div>
@@ -24,9 +24,9 @@
 <div align="center">
   <table>
     <tr>
-    <td align="center"><a href="https://www.linkedin.com/in/davi-arantes-308949264/"><img style="border-radius: 50%;" src="./imagens/equipe/davi_arantes.jpg" alt="" width="100px;"><br><sub><b>Davi A.</b></sub></a></td>
       <td align="center"><a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-santos-872753264/"><img style="border-radius: 50%;" src="./imagens/equipe/joao_paulo.jpg" alt="" width="100px;"/><br><sub><b>João S.</b></sub></a></td>
-      <td align="center"><a href="https://www.linkedin.com/in/caio-kakunaka-235754264"><img style="border-radius: 50%;" src="./imagens/equipe/caio_kakunaka.jpg" alt="" width="100px;"/><br><sub><b>Caio E.</b></sub></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/gabriel-farias-alves/"><img style="border-radius: 50%;" src="./imagens/equipe/gabriel_farias.jpg" alt="" width="100px;""/><br><sub><b> Gabriel F.</b></sub></a></td>
+      <td align="center"><a href="https://www.linkedin.com/in/henrique-ottoboni-magalh%C3%A3es-77b950264/"><img style="border-radius: 50%;" src="./imagens/equipe/henrique_ottoboni.jpg" alt="" width="100px;"/><br><sub><b>Henrique O.</b></sub></a></td>
     </tr>
   </table>
 </div>
