@@ -4,32 +4,19 @@
 <a href= "https://www.inteli.edu.br/"><img src="https://www.inteli.edu.br/wp-content/uploads/2021/08/20172028/marca_1-2.png" alt="Inteli - Instituto de Tecnologia e Liderança" border="0"></a>
 </p>
 
-# Celso Caminhões 🚛
+# Celso Caminhões
 
 ## PlayVC
 
 ## Integrantes
 
-<div align="center">
-  <table>
-    <tr>
-      <td align="center"><a href="https://www.linkedin.com/in/victor-marques-profile/"><img style="border-radius: 50%;" src="./imagens/equipe/victor_marques.jpg" alt="" width="100px;"/><br><sub><b>Victor M.</b></sub></a> <br></td>
-      <td align="center"><a href="https://www.linkedin.com/in/rafael-coutinho2004/"><img style="border-radius: 50%;" src="./imagens/equipe/rafael_montenegro.jpg" alt="" width="100px;"/><br><sub><b>Rafael C.</b></sub></a></td>
-      <td align="center"><a href="https://www.linkedin.com/in/davi-arantes-308949264/"><img style="border-radius: 50%;" src="./imagens/equipe/davi_arantes.jpg" alt="" width="100px;"><br><sub><b>Davi A.</b></sub></a></td>
-      <td align="center"><a href="https://www.linkedin.com/in/caio-kakunaka-235754264"><img style="border-radius: 50%;" src="./imagens/equipe/caio_kakunaka.jpg" alt="" width="100px;"/><br><sub><b>Caio E.</b></sub></a></td>
-    </tr>
-  </table>
-</div>
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center"><a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-santos-872753264/"><img style="border-radius: 50%;" src="./imagens/equipe/joao_paulo.jpg" alt="" width="100px;"/><br><sub><b>João S.</b></sub></a></td>
-      <td align="center"><a href="https://www.linkedin.com/in/gabriel-farias-alves/"><img style="border-radius: 50%;" src="./imagens/equipe/gabriel_farias.jpg" alt="" width="100px;""/><br><sub><b> Gabriel F.</b></sub></a></td>
-      <td align="center"><a href="https://www.linkedin.com/in/henrique-ottoboni-magalh%C3%A3es-77b950264/"><img style="border-radius: 50%;" src="./imagens/equipe/henrique_ottoboni.jpg" alt="" width="100px;"/><br><sub><b>Henrique O.</b></sub></a></td>
-    </tr>
-  </table>
-</div>
+- <a href="https://www.linkedin.com/in/victor-marques-profile/">Victor Marques</a>
+- <a href="https://www.linkedin.com/in/rafael-coutinho2004/">Rafael Coutinho</a>
+- <a href="https://www.linkedin.com/in/davi-arantes-308949264/">Davi Arantes</a>
+- <a href="https://www.linkedin.com/in/caio-kakunaka-235754264">Caio Kakunaka</a>
+- <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-santos-872753264/">João Paulo Santos</a>
+- <a href="https://www.linkedin.com/in/gabriel-farias-alves/">Gabriel Farias</a> 
+- <a href="https://www.linkedin.com/in/henrique-ottoboni-magalh%C3%A3es-77b950264/">Henrique Ottoboni</a>  
 
 ## Descrição
 
@@ -77,6 +64,10 @@ Ademais, com o intuito de garantir uma maior imersão no jogo, a equipe PlayVC p
 </p>
 
 May the force be with you!
+
+## 🎮 Jogue agora
+
+Para acessar o jogo diretamente do seu navegador entre no seguinte link: [PlayVC](https://2023m1t6-inteli.github.io/grupo2/)
 
 ## 🛠 Estrutura de pastas
 
@@ -201,7 +192,8 @@ A cada atualização os detalhes são lançados aqui.
 
 ## 📋 Licença/License
 
-<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/Spidus/Teste_Final_1">MODELO GIT INTELI</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.yggbrasil.com.br/vr">INTELI, VICTOR BRUNO ALEXANDER ROSETTI DE QUIROZ</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p>
+<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"> <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1">
+<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/2023M1T6-inteli/grupo2">PlayVC</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://github.com/InteliProjects">Inteli</a>, <a href="https://www.linkedin.com/in/victor-marques-profile/">Victor Marques</a>, <a href="https://www.linkedin.com/in/rafael-coutinho2004/">Rafael Coutinho</a>, <a href="https://www.linkedin.com/in/davi-arantes-308949264/">Davi Arantes</a>, <a href="https://www.linkedin.com/in/caio-kakunaka-235754264">Caio Kakunaka</a>, <a href="https://www.linkedin.com/in/jo%C3%A3o-paulo-santos-872753264/">João Paulo Santos</a>, <a href="https://www.linkedin.com/in/gabriel-farias-alves/">Gabriel Farias</a>, <a href="https://www.linkedin.com/in/henrique-ottoboni-magalh%C3%A3es-77b950264/">Henrique Ottoboni</a>, is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
 
 ## 🎓 Referências & Créditos
 
